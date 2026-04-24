@@ -1,0 +1,45 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const modules = import.meta.glob("../../content/articles/*.json", { eager: true });
+const articles = Object.values(modules)
+  .map((m: any) => m.default)
+  .sort((a: any, b: any) => (a.date < b.date ? 1 : -1));
+---
+<Layout title="記事一覧" description="日本人メジャーリーガーに関する分析記事・ニュース一覧" lang="ja" currentPath="/articles/">
+  <h1>記事一覧</h1>
+  <p class="lede">日本人メジャーリーガーに関する分析記事・ニュースをまとめています。</p>
+  <div class="article-list">
+    {articles.map((a: any) => (
+      <a class="article-card" href={`/articles/${a.slug}/`}>
+        <div class="meta">
+          <span class="date">{a.date}</span>
+          <span class="cat">{a.category}</span>
+        </div>
+        <div class="title">{a.title_jp}</div>
+        <div class="summary">{a.summary_jp}</div>
+      </a>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  h1 { font-size: 1.8rem; margin-bottom: 0.4rem; }
+  .lede { color: var(--muted); margin-bottom: 1.5rem; }
+  .article-list { display: grid; gap: 0.6rem; }
+  .article-card {
+    display: block; padding: 1rem; background: white;
+    border: 1px solid var(--border); border-radius: 8px; color: var(--text);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .article-card:hover {
+    transform: translateY(-2px); text-decoration: none;
+    box-shadow: 0 4px 12px rgba(216, 130, 150, 0.2);
+  }
+  .meta { display: flex; gap: 0.6rem; font-size: 0.8rem; color: var(--muted); margin-bottom: 0.3rem; }
+  .cat {
+    background: var(--pink); color: white; padding: 0.1rem 0.5rem; border-radius: 3px;
+  }
+  .title { font-size: 1.1rem; font-weight: bold; color: var(--pink-dark); margin-bottom: 0.3rem; }
+  .summary { font-size: 0.9rem; color: var(--muted); }
+</style>

@@ -1,0 +1,25 @@
+{
+  "slug": "pitch-clock-impact",
+  "date": "2026-03-28",
+  "category": "rules",
+  "tags": [
+    "rules",
+    "pitch-clock"
+  ],
+  "title_jp": "MLB新ルール: ピッチクロックの影響",
+  "title_en": "MLB Rule Change: Pitch Clock's Impact",
+  "summary_jp": "2023年導入のピッチクロックがもたらした試合時間短縮と、選手のリズムへの影響を整理する。",
+  "summary_en": "We examine game-length reductions and rhythm effects from the 2023 pitch-clock rules.",
+  "body_jp": [
+    "2023年に導入されたピッチクロックは、MLBの平均試合時間を30分以上短縮した。",
+    "日本人投手には、NPB時代からテンポの良い投手が多く、ピッチクロックへの適応は比較的スムーズだったと言える。",
+    "一方で、打者への影響は大きく、打席でのタイミング調整に苦労する選手も見られる。",
+    "リズムが変わった結果、盗塁数の増加や四球率の変動など副次的な影響も生じている。"
+  ],
+  "body_en": [
+    "The pitch clock introduced in 2023 cut average MLB game times by more than 30 minutes.",
+    "Many Japanese pitchers were already tempo-driven from their NPB days, so adaptation has been relatively smooth.",
+    "For hitters, the effect has been larger — some have struggled to manage timing within the box.",
+    "Secondary effects include higher stolen base totals and shifts in walk rates."
+  ]
+}

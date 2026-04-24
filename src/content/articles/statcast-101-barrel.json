@@ -1,0 +1,25 @@
+{
+  "slug": "statcast-101-barrel",
+  "date": "2026-04-20",
+  "category": "statcast",
+  "tags": [
+    "statcast",
+    "barrel"
+  ],
+  "title_jp": "Statcast入門: Barrel率とは何か",
+  "title_en": "Statcast 101: What Is Barrel Rate?",
+  "summary_jp": "Barrelの定義、計算基準、なぜ打球速度と打球角度の組み合わせが重要なのかを解説する。",
+  "summary_en": "We explain what a Barrel is, how it's calculated, and why the combination of exit velocity and launch angle matters.",
+  "body_jp": [
+    "Barrelとは、打球速度と打球角度の組み合わせが、打率.500・長打率1.500以上を生む条件を満たした打球のことだ。",
+    "具体的には打球速度98mph以上、打球角度26-30度が基本となり、打球速度が上がるほど許容される打球角度の幅も広がる。",
+    "Barrel率が高い打者は、本塁打や長打を量産する可能性が高い。大谷翔平の22.1%はMLBトップクラスだ。",
+    "ただしBarrel率だけでは評価できない部分もあり、Contact率や選球眼と併せて見る必要がある。"
+  ],
+  "body_en": [
+    "A Barrel is a batted ball whose combination of exit velocity and launch angle produces at least a .500 AVG and 1.500 SLG historically.",
+    "The baseline is 98+ mph exit velocity at 26-30° launch angle, with the angle range widening as velocity increases.",
+    "Hitters with high barrel rates tend to generate HRs and extra-base hits. Ohtani's 22.1% rate is elite in MLB.",
+    "That said, barrel rate alone doesn't tell the full story — it should be read alongside contact rate and plate discipline."
+  ]
+}

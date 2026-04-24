@@ -1,0 +1,25 @@
+{
+  "slug": "murakami-pull-power",
+  "date": "2026-04-15",
+  "category": "player",
+  "tags": [
+    "murakami",
+    "pull"
+  ],
+  "title_jp": "村上の長打力 — Pull%で見る打球方向",
+  "title_en": "Murakami's Power: A Pull% Breakdown",
+  "summary_jp": "村上宗隆のプル方向への打球割合と、長打力との相関を検証する。",
+  "summary_en": "We check the correlation between Murakami's pull direction frequency and his power output.",
+  "body_jp": [
+    "村上宗隆の長打は多くがプル方向(右方向)に集中している。本塁打10本のうち大多数が右翼スタンドだ。",
+    "Pull%が高い左打者は相手シフトの影響を受けやすかったが、2023年のシフト禁止後はプル打者の利点が増した。",
+    "MLB球場の多くは右中間から右翼が狭めで、村上のような引っ張り型にとって有利な球場が複数存在する。",
+    "今後は逆方向への長打が増えるかどうかが、本塁打40本ペースを維持できるかの鍵となる。"
+  ],
+  "body_en": [
+    "Most of Murakami's extra-base hits cluster to the pull side — the large majority of his 10 HRs have cleared the right-field fence.",
+    "High-Pull% LHHs historically suffered from the shift, but the 2023 shift ban flipped this into an advantage.",
+    "Many MLB parks play small in right-center and right field, favoring pull hitters like Murakami.",
+    "Whether he starts driving balls the other way will decide if he can hold a 40-HR pace."
+  ]
+}

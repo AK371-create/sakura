@@ -1,0 +1,25 @@
+{
+  "slug": "jp-war-career-rankings",
+  "date": "2026-03-21",
+  "category": "history",
+  "tags": [
+    "history",
+    "war"
+  ],
+  "title_jp": "MLB日本人選手 WAR累計ランキング",
+  "title_en": "Japanese MLB Career WAR Rankings",
+  "summary_jp": "日本人MLB選手の通算WAR上位を紹介し、ポジション別の評価もまとめる。",
+  "summary_en": "We list Japanese MLB players at the top of career WAR and group them by position.",
+  "body_jp": [
+    "通算WARで見る日本人MLB選手の上位は、イチロー、ダルビッシュ有、野茂英雄、田中将大などが並ぶ。",
+    "野手ではイチローが圧倒的で、投手ではダルビッシュ有と野茂英雄がしのぎを削る。",
+    "現役では大谷翔平が投打両面で高いWARを稼ぐ異質な存在だ。",
+    "今後10年で、大谷・山本由伸・今永昇太のWARがこのランキングをどう塗り替えるかが注目だ。"
+  ],
+  "body_en": [
+    "By career WAR, the top Japanese MLB players include Ichiro, Darvish, Nomo, and Tanaka.",
+    "Ichiro stands alone among position players; Darvish and Nomo contend at the top among pitchers.",
+    "Among active players, Ohtani's unique two-way WAR accumulation stands apart.",
+    "In the next decade, Ohtani, Yamamoto, and Imanaga will likely reshape this list."
+  ]
+}

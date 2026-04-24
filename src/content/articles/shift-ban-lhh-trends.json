@@ -1,0 +1,25 @@
+{
+  "slug": "shift-ban-lhh-trends",
+  "date": "2026-03-26",
+  "category": "rules",
+  "tags": [
+    "rules",
+    "shift"
+  ],
+  "title_jp": "シフト禁止後の左打者成績トレンド",
+  "title_en": "Left-Handed Hitter Trends Since the Shift Ban",
+  "summary_jp": "2023年のシフト制限以降、左打者の打率とBABIPがどう変化しているかを分析する。",
+  "summary_en": "We analyze how LHH batting average and BABIP have shifted since the 2023 shift restrictions.",
+  "body_jp": [
+    "2023年にMLBは極端な守備シフトを制限した。特に左打者のBABIPが平均で.010程度上昇している。",
+    "この変化は村上宗隆のようなプル型左打者に恩恵をもたらしている。",
+    "一方、シフト対策として逆方向打法を磨いてきた選手は、変化への再適応を求められている。",
+    "投手側ではゴロを打たせる投球の価値が若干変わり、配球の見直しが進んでいる。"
+  ],
+  "body_en": [
+    "MLB restricted extreme defensive shifts in 2023, and LHH BABIP has risen roughly .010 on average.",
+    "This change has helped pull-heavy LHHs like Murakami.",
+    "Meanwhile, hitters who had trained to hit the other way against shifts are now re-adjusting.",
+    "On the pitching side, the value of ground-ball induction has shifted slightly, prompting pitch-mix changes."
+  ]
+}

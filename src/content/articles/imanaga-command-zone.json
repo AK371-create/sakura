@@ -1,0 +1,25 @@
+{
+  "slug": "imanaga-command-zone",
+  "date": "2026-04-16",
+  "category": "player",
+  "tags": [
+    "imanaga",
+    "command"
+  ],
+  "title_jp": "今永の制球力 — ゾーン内投球率でみる",
+  "title_en": "Imanaga's Command: A Zone% Perspective",
+  "summary_jp": "今永のゾーン内投球率と、それを支える投球フォームの特徴を整理する。",
+  "summary_en": "We examine Imanaga's Zone% and the mechanical traits that enable it.",
+  "body_jp": [
+    "今永昇太のゾーン内投球率はMLB平均を上回る。ストライクゾーンに投げ込む能力が、MLB打者相手にも通用している。",
+    "特徴は低いリリースポイントから浮き上がるように見える4シームで、打者からは実際の球速以上に速く感じられる。",
+    "ゾーン内に投げ込みつつ長打を打たれない理由は、ゾーン内での投球の質と変化球のシグナルが分かりにくい点にある。",
+    "シーズン通してこの制球を維持できれば、WHIPも1.00台に収束する可能性が高い。"
+  ],
+  "body_en": [
+    "Imanaga's Zone% sits above the MLB average. His ability to challenge the strike zone translates cleanly to MLB.",
+    "His signature is a 4-seam that appears to rise out of a low release slot, making it feel faster than its radar reading.",
+    "He avoids hard contact in the zone thanks to pitch quality and disguised offspeed signals.",
+    "If he holds this command all season, his WHIP should settle near 1.00."
+  ]
+}

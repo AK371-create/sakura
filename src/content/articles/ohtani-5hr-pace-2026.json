@@ -1,0 +1,25 @@
+{
+  "slug": "ohtani-5hr-pace-2026",
+  "date": "2026-04-24",
+  "category": "player",
+  "tags": [
+    "ohtani",
+    "hr-pace"
+  ],
+  "title_jp": "大谷翔平 5本塁打到達の速さ — 歴代ペース比較",
+  "title_en": "Ohtani's Pace to 5 HR: A Historical Look",
+  "summary_jp": "シーズン序盤で5号に到達した大谷翔平のペースを、過去の50本塁打達成者の初期ペースと比べて検証する。",
+  "summary_en": "Ohtani reached his 5th HR early in the 2026 season. How does this compare with past 50-HR hitters' early pace?",
+  "body_jp": [
+    "大谷翔平は2026年シーズン序盤で5本塁打に到達した。1試合あたりの本塁打ペースで言えば、過去の50本塁打到達者の平均ペースとほぼ一致する水準だ。",
+    "2024年以降の大谷は、打球速度と打球角度の両面で極めて安定している。平均打球速度94.1mph、Barrel率22.1%という数値は、MLB全体でも上位5%に入る。",
+    "注目すべきは、5本塁打の内訳が逆方向とプル方向で分かれている点だ。対左右投手ともに対応できるため、シーズン後半にかけて本塁打の伸びが期待できる。",
+    "過去の50本塁打打者との比較では、同時期時点の打撃指標が酷似している。xSLGが.500を超えている点も同じで、長期トレンドとしてこのペースは現実的と言える。"
+  ],
+  "body_en": [
+    "Shohei Ohtani hit his 5th home run early in the 2026 season. In per-game pace, this closely matches the average early-season pace of past 50-HR hitters.",
+    "Since 2024, Ohtani has been remarkably consistent in both exit velocity and launch angle. A 94.1 mph average exit velocity and 22.1% barrel rate place him in the top 5% of MLB.",
+    "What stands out is that his 5 HR are split between opposite-field and pull-side drives. His ability to handle both LHP and RHP suggests further HR growth later in the season.",
+    "Compared with past 50-HR hitters at the same point, his batting indicators are strikingly similar. With xSLG above .500, this pace is realistically sustainable."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "base-size-stolen-base",
+  "date": "2026-03-27",
+  "category": "rules",
+  "tags": [
+    "rules",
+    "stolen-base"
+  ],
+  "title_jp": "ベースサイズ拡大が盗塁数に与えた影響",
+  "title_en": "Larger Bases and the Stolen-Base Boom",
+  "summary_jp": "2023年のベースサイズ拡大後、盗塁成功率と盗塁数がどう変化したかをデータで追う。",
+  "summary_en": "We track how stolen base totals and success rates shifted after the 2023 base-size change.",
+  "body_jp": [
+    "2023年、MLBはベースサイズを15インチから18インチに拡大した。塁間の実効距離が短くなり、盗塁成功率が向上した。",
+    "リーグ全体の盗塁数は翌年以降、前年比2-3割増加している。",
+    "日本人選手の中でも走力のある選手は恩恵を受け、シーズン盗塁数を伸ばすケースが増えた。",
+    "大谷翔平のように長打と盗塁の両方で数字を残すタイプは、40-40到達の再現性が高まっている。"
+  ],
+  "body_en": [
+    "MLB enlarged bases from 15 to 18 inches in 2023, shortening effective base paths and lifting SB success rates.",
+    "League-wide stolen bases have increased 20-30% year-over-year since.",
+    "Faster Japanese players have benefited, with some posting career-high SB totals.",
+    "Power-speed players like Ohtani now have improved odds of repeating 40-40 seasons."
+  ]
+}

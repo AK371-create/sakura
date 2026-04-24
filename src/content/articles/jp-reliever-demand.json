@@ -1,0 +1,25 @@
+{
+  "slug": "jp-reliever-demand",
+  "date": "2026-03-17",
+  "category": "market",
+  "tags": [
+    "reliever",
+    "market"
+  ],
+  "title_jp": "日本人リリーバー需要の高まり",
+  "title_en": "Rising MLB Demand for Japanese Relievers",
+  "summary_jp": "近年MLBで日本人リリーバーの起用が増えている背景と、各球団の戦略を分析する。",
+  "summary_en": "We analyze why MLB teams are increasingly signing Japanese relievers, and how they use them.",
+  "body_jp": [
+    "MLBでは短期契約で日本人リリーバーを獲得するケースが増えている。コスト対効果が高いためだ。",
+    "スプリットやフォークといった変化球を武器にする投手は、MLB打者に対して優位性を持ちやすい。",
+    "左投手の需要は特に高く、1イニング限定の起用でも価値がある。",
+    "NPBからのポスティング以外に、メジャーリーガー契約後にマイナー経由で定着する選手も増えている。"
+  ],
+  "body_en": [
+    "MLB teams increasingly sign Japanese relievers on short deals — the cost-benefit is strong.",
+    "Pitchers with splitters and forkballs tend to hold an advantage against MLB hitters.",
+    "Left-handers are especially in demand; even one-inning roles carry value.",
+    "Beyond NPB postings, more players now lock in via minor-league deals that convert to majors."
+  ]
+}

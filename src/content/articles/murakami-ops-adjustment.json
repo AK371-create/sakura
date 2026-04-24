@@ -1,0 +1,25 @@
+{
+  "slug": "murakami-ops-adjustment",
+  "date": "2026-04-22",
+  "category": "player",
+  "tags": [
+    "murakami",
+    "adjustment"
+  ],
+  "title_jp": "村上宗隆 OPS .992 — MLB適応の軌跡",
+  "title_en": "Murakami's .992 OPS and His MLB Adjustment Arc",
+  "summary_jp": "ホワイトソックス移籍初年度の村上宗隆が示す高いOPSの内訳を、選球眼とパワー指標から読み解く。",
+  "summary_en": "We break down first-year ChiSox slugger Munetaka Murakami's .992 OPS via plate discipline and power indicators.",
+  "body_jp": [
+    "村上宗隆は移籍初年度の序盤でOPS.992を記録している。出塁率.420はMLB全体でも上位だ。",
+    "BB% 19.3%という高い四球率は、NPB時代から磨いた選球眼がMLBでも通用している証明と言える。",
+    "一方でK% 32.1%は高めで、特に高めのストレートへの対応に課題が残る。ここは今後の改善余地だ。",
+    "xwOBA .433・xSLG .649という期待値指標も極めて高い水準で、出来過ぎではなく実力に裏付けられた数値と言える。"
+  ],
+  "body_en": [
+    "Munetaka Murakami is putting up a .992 OPS early in his MLB debut season. His .420 OBP is among the league leaders.",
+    "A 19.3% walk rate demonstrates that the plate discipline he honed in NPB translates directly to MLB.",
+    "On the flip side, his 32.1% K rate is high, particularly against high fastballs — a clear area for future improvement.",
+    "His .433 xwOBA and .649 xSLG expected metrics are also elite, suggesting the numbers are backed by real quality rather than luck."
+  ]
+}

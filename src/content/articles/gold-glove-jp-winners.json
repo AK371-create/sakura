@@ -1,0 +1,25 @@
+{
+  "slug": "gold-glove-jp-winners",
+  "date": "2026-03-20",
+  "category": "history",
+  "tags": [
+    "history",
+    "gold-glove"
+  ],
+  "title_jp": "ゴールドグラブ賞 日本人受賞者史",
+  "title_en": "Japanese MLB Gold Glove Winners",
+  "summary_jp": "ゴールドグラブ賞を受賞した日本人選手の一覧と、守備面での評価ポイントをまとめる。",
+  "summary_en": "A list of Japanese MLB Gold Glove recipients and what set their defense apart.",
+  "body_jp": [
+    "ゴールドグラブ賞は、各ポジションで守備を評価される最高栄誉だ。日本人選手ではイチローが10回受賞している。",
+    "イチローの受賞ポジションは右翼で、強肩と一塁送球の速さが評価された。",
+    "投手では特定の年に受賞した選手もいるが、外野手ほど多くない。",
+    "守備指標(DRS、UZR)の発展で、今後の評価はさらに客観化される見込みだ。"
+  ],
+  "body_en": [
+    "The Gold Glove is the top defensive honor at each position. Ichiro has won it 10 times among Japanese players.",
+    "Ichiro won as a right fielder, celebrated for his arm strength and quick throws to first.",
+    "Some pitchers have won in specific years, but the count is smaller than outfielders.",
+    "With DRS and UZR expanding, future awards should be judged more objectively."
+  ]
+}

@@ -1,0 +1,54 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob("../../../content/articles/*.json", { eager: true });
+  return Object.values(modules).map((m: any) => ({
+    params: { slug: m.default.slug },
+    props: { article: m.default },
+  }));
+}
+
+const { article } = Astro.props;
+---
+<Layout
+  title={article.title_en}
+  description={article.summary_en}
+  lang="en"
+  currentPath={`/en/articles/${article.slug}/`}
+>
+  <nav class="breadcrumb">
+    <a href="/en/articles/">← Back to articles</a>
+  </nav>
+  <article>
+    <header class="article-header">
+      <div class="meta">
+        <span class="date">{article.date}</span>
+        <span class="cat">{article.category}</span>
+      </div>
+      <h1>{article.title_en}</h1>
+      <p class="summary">{article.summary_en}</p>
+    </header>
+    <div class="body">
+      {article.body_en.map((p: string) => <p>{p}</p>)}
+    </div>
+    <footer class="article-footer">
+      <div class="tags">
+        {article.tags.map((t: string) => <span class="tag">#{t}</span>)}
+      </div>
+    </footer>
+  </article>
+</Layout>
+
+<style>
+  .breadcrumb { margin-bottom: 1rem; font-size: 0.9rem; }
+  .article-header { border-bottom: 2px solid var(--pink); padding-bottom: 1.2rem; margin-bottom: 1.5rem; }
+  .meta { display: flex; gap: 0.6rem; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.6rem; }
+  .cat { background: var(--pink); color: white; padding: 0.1rem 0.6rem; border-radius: 3px; }
+  .article-header h1 { font-size: 1.8rem; margin: 0 0 0.6rem; color: var(--pink-dark); line-height: 1.35; }
+  .summary { color: var(--text); font-size: 1rem; margin: 0; }
+  .body p { margin: 0 0 1rem; line-height: 1.85; font-size: 1rem; }
+  .article-footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+  .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .tag { font-size: 0.85rem; color: var(--muted); background: white; padding: 0.2rem 0.6rem; border: 1px solid var(--border); border-radius: 3px; }
+</style>

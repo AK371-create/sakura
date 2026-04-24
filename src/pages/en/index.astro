@@ -15,10 +15,15 @@ const players = [ohtani, imanaga, murakami];
       <PlayerCard player={p} lang="en" href={`/en/players/${p.key}/`} />
     ))}
   </div>
+  <div class="section-link">
+    <a href="/en/articles/">📰 View all articles →</a>
+  </div>
 </Layout>
 
 <style>
   h1 { font-size: 1.8rem; margin-bottom: 0.4rem; }
   .lede { color: var(--muted); margin-bottom: 1.5rem; }
   .player-list { display: grid; gap: 0.6rem; }
+  .section-link { margin-top: 2rem; text-align: center; }
+  .section-link a { font-size: 1rem; font-weight: bold; }
 </style>
