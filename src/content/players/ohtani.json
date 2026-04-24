@@ -1,0 +1,32 @@
+{
+  "key": "ohtani",
+  "name_jp": "大谷翔平",
+  "name_en": "Shohei Ohtani",
+  "team_jp": "ロサンゼルス・ドジャース",
+  "team_en": "Los Angeles Dodgers",
+  "league": "NL",
+  "type": "two_way",
+  "position_jp": "指名打者 / 投手",
+  "position_en": "DH / Pitcher",
+  "basic": {
+    "hitting": { "avg": ".245", "hr": 5, "rbi": 12, "obp": ".380", "ops": ".900", "sb": 3 },
+    "pitching": { "era": "0.38", "w": 2, "l": 0, "so": 15, "whip": "0.85", "ip": "11.2" }
+  },
+  "savant": {
+    "hitting": {
+      "exit_velocity_avg": 94.1,
+      "launch_angle_avg": 12.6,
+      "barrel_batted_rate": 22.1,
+      "hard_hit_percent": 51.5,
+      "xba": ".261",
+      "xslg": ".516",
+      "xwoba": ".388",
+      "k_percent": 24.1,
+      "bb_percent": 13.8
+    },
+    "pitch_arsenal": [
+      { "pitch": "FF", "jp": "4シーム", "en": "4-Seam Fastball", "usage": 44.4, "ba": ".105", "whiff": 27.0, "hard_hit": 40.7 }
+    ]
+  },
+  "updated_at": "2026-04-25"
+}

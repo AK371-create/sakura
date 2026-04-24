@@ -1,11 +1,24 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import PlayerCard from "../components/PlayerCard.astro";
+import ohtani from "../content/players/ohtani.json";
+import imanaga from "../content/players/imanaga.json";
+import murakami from "../content/players/murakami.json";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const players = [ohtani, imanaga, murakami];
 ---
-
-<Layout>
-	<Welcome />
+<Layout title="ホーム" description="日本人メジャーリーガーのシーズン成績とStatcast指標を掲載" lang="ja" currentPath="/">
+  <h1>日本人メジャーリーガー 2026</h1>
+  <p class="lede">シーズン成績と Statcast 指標を選手ごとにまとめました。</p>
+  <div class="player-list">
+    {players.map((p) => (
+      <PlayerCard player={p} lang="ja" href={`/players/${p.key}/`} />
+    ))}
+  </div>
 </Layout>
+
+<style>
+  h1 { font-size: 1.8rem; margin-bottom: 0.4rem; }
+  .lede { color: var(--muted); margin-bottom: 1.5rem; }
+  .player-list { display: grid; gap: 0.6rem; }
+</style>

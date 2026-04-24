@@ -1,0 +1,129 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const ohtani = (await import("../../../content/players/ohtani.json")).default;
+  const imanaga = (await import("../../../content/players/imanaga.json")).default;
+  const murakami = (await import("../../../content/players/murakami.json")).default;
+  const all = [ohtani, imanaga, murakami];
+  return all.map((p) => ({ params: { key: p.key }, props: { player: p } }));
+}
+
+const { player } = Astro.props;
+const hitting = player.basic?.hitting;
+const pitching = player.basic?.pitching;
+const savantHit = player.savant?.hitting;
+const arsenal = player.savant?.pitch_arsenal;
+---
+<Layout
+  title={player.name_en}
+  description={`${player.name_en} (${player.team_en}) - 2026 season stats and Statcast metrics`}
+  lang="en"
+  currentPath={`/en/players/${player.key}/`}
+>
+  <nav class="breadcrumb">
+    <a href="/en/">← Back to list</a>
+  </nav>
+  <header class="player-header">
+    <h1>{player.name_en}</h1>
+    <div class="team">{player.team_en}</div>
+    <div class="pos">{player.position_en}</div>
+  </header>
+
+  {hitting && (
+    <section class="stat-section">
+      <h2>Batting (Basic)</h2>
+      <div class="stat-grid">
+        <div class="stat-box"><span class="label">AVG</span><span class="value">{hitting.avg}</span></div>
+        <div class="stat-box"><span class="label">HR</span><span class="value">{hitting.hr}</span></div>
+        <div class="stat-box"><span class="label">RBI</span><span class="value">{hitting.rbi}</span></div>
+        <div class="stat-box"><span class="label">OBP</span><span class="value">{hitting.obp}</span></div>
+        <div class="stat-box"><span class="label">OPS</span><span class="value">{hitting.ops}</span></div>
+        <div class="stat-box"><span class="label">SB</span><span class="value">{hitting.sb}</span></div>
+      </div>
+    </section>
+  )}
+
+  {pitching && (
+    <section class="stat-section">
+      <h2>Pitching (Basic)</h2>
+      <div class="stat-grid">
+        <div class="stat-box"><span class="label">ERA</span><span class="value">{pitching.era}</span></div>
+        <div class="stat-box"><span class="label">W</span><span class="value">{pitching.w}</span></div>
+        <div class="stat-box"><span class="label">L</span><span class="value">{pitching.l}</span></div>
+        <div class="stat-box"><span class="label">SO</span><span class="value">{pitching.so}</span></div>
+        <div class="stat-box"><span class="label">WHIP</span><span class="value">{pitching.whip}</span></div>
+        <div class="stat-box"><span class="label">IP</span><span class="value">{pitching.ip}</span></div>
+      </div>
+    </section>
+  )}
+
+  {savantHit && (
+    <section class="stat-section">
+      <h2>Batting Statcast</h2>
+      <div class="stat-grid">
+        <div class="stat-box"><span class="label">Exit Velocity (mph)</span><span class="value">{savantHit.exit_velocity_avg}</span></div>
+        <div class="stat-box"><span class="label">Launch Angle (°)</span><span class="value">{savantHit.launch_angle_avg}</span></div>
+        <div class="stat-box"><span class="label">Barrel %</span><span class="value">{savantHit.barrel_batted_rate}</span></div>
+        <div class="stat-box"><span class="label">Hard-Hit %</span><span class="value">{savantHit.hard_hit_percent}</span></div>
+        <div class="stat-box"><span class="label">xBA</span><span class="value">{savantHit.xba}</span></div>
+        <div class="stat-box"><span class="label">xSLG</span><span class="value">{savantHit.xslg}</span></div>
+        <div class="stat-box"><span class="label">xwOBA</span><span class="value">{savantHit.xwoba}</span></div>
+        <div class="stat-box"><span class="label">K%</span><span class="value">{savantHit.k_percent}</span></div>
+        <div class="stat-box"><span class="label">BB%</span><span class="value">{savantHit.bb_percent}</span></div>
+      </div>
+    </section>
+  )}
+
+  {arsenal && arsenal.length > 0 && (
+    <section class="stat-section">
+      <h2>Pitch Arsenal</h2>
+      <table class="arsenal-table">
+        <thead>
+          <tr>
+            <th>Pitch</th>
+            <th>Usage %</th>
+            <th>BA</th>
+            <th>Whiff %</th>
+            <th>Hard-Hit %</th>
+          </tr>
+        </thead>
+        <tbody>
+          {arsenal.map((a) => (
+            <tr>
+              <td>{a.en}</td>
+              <td>{a.usage}</td>
+              <td>{a.ba}</td>
+              <td>{a.whiff}</td>
+              <td>{a.hard_hit}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  )}
+
+  <p class="updated">Last updated: {player.updated_at}</p>
+</Layout>
+
+<style>
+  .breadcrumb { margin-bottom: 1rem; font-size: 0.9rem; }
+  .player-header { border-bottom: 2px solid var(--pink); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+  .player-header h1 { font-size: 2rem; margin: 0 0 0.3rem; color: var(--pink-dark); }
+  .team { font-size: 1rem; color: var(--text); }
+  .pos { font-size: 0.85rem; color: var(--muted); }
+  .stat-section { margin-bottom: 2rem; }
+  .stat-section h2 { font-size: 1.1rem; border-left: 4px solid var(--pink); padding-left: 0.6rem; margin-bottom: 0.8rem; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.6rem; }
+  .stat-box {
+    background: white; border: 1px solid var(--border); border-radius: 6px;
+    padding: 0.7rem; display: flex; flex-direction: column; gap: 0.2rem;
+  }
+  .stat-box .label { font-size: 0.75rem; color: var(--muted); }
+  .stat-box .value { font-size: 1.2rem; font-weight: bold; color: var(--text); }
+  .arsenal-table { width: 100%; border-collapse: collapse; background: white; border-radius: 6px; overflow: hidden; }
+  .arsenal-table th, .arsenal-table td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
+  .arsenal-table th { background: var(--pink); color: white; font-size: 0.85rem; }
+  .arsenal-table td { font-size: 0.9rem; }
+  .updated { text-align: right; color: var(--muted); font-size: 0.8rem; }
+</style>

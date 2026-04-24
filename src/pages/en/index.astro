@@ -1,0 +1,24 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PlayerCard from "../../components/PlayerCard.astro";
+import ohtani from "../../content/players/ohtani.json";
+import imanaga from "../../content/players/imanaga.json";
+import murakami from "../../content/players/murakami.json";
+
+const players = [ohtani, imanaga, murakami];
+---
+<Layout title="Home" description="Season stats and Statcast metrics for Japanese MLB players" lang="en" currentPath="/">
+  <h1>Japanese MLB Players 2026</h1>
+  <p class="lede">Season stats and Statcast metrics, organized by player.</p>
+  <div class="player-list">
+    {players.map((p) => (
+      <PlayerCard player={p} lang="en" href={`/en/players/${p.key}/`} />
+    ))}
+  </div>
+</Layout>
+
+<style>
+  h1 { font-size: 1.8rem; margin-bottom: 0.4rem; }
+  .lede { color: var(--muted); margin-bottom: 1.5rem; }
+  .player-list { display: grid; gap: 0.6rem; }
+</style>

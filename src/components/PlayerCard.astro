@@ -1,0 +1,62 @@
+---
+export interface Props {
+  player: any;
+  lang: "ja" | "en";
+  href: string;
+}
+const { player, lang, href } = Astro.props;
+const name = lang === "ja" ? player.name_jp : player.name_en;
+const team = lang === "ja" ? player.team_jp : player.team_en;
+const pos = lang === "ja" ? player.position_jp : player.position_en;
+const hitting = player.basic?.hitting;
+const pitching = player.basic?.pitching;
+---
+<a class="player-card" href={href}>
+  <div class="player-name">{name}</div>
+  <div class="player-team">{team}</div>
+  <div class="player-pos">{pos}</div>
+  <div class="player-stats">
+    {hitting && (
+      <span class="stat-line">
+        <span class="stat-label">AVG</span> {hitting.avg}
+        <span class="stat-label">HR</span> {hitting.hr}
+        <span class="stat-label">OPS</span> {hitting.ops}
+      </span>
+    )}
+    {pitching && (
+      <span class="stat-line">
+        <span class="stat-label">ERA</span> {pitching.era}
+        <span class="stat-label">{lang === "ja" ? "勝敗" : "W-L"}</span> {pitching.w}-{pitching.l}
+        <span class="stat-label">{lang === "ja" ? "奪三振" : "SO"}</span> {pitching.so}
+      </span>
+    )}
+  </div>
+</a>
+
+<style>
+  .player-card {
+    display: block;
+    padding: 1.2rem;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    color: var(--text);
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .player-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(216, 130, 150, 0.2);
+    text-decoration: none;
+  }
+  .player-name { font-size: 1.4rem; font-weight: bold; color: var(--pink-dark); }
+  .player-team { color: var(--muted); font-size: 0.9rem; }
+  .player-pos { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.6rem; }
+  .player-stats { margin-top: 0.6rem; }
+  .stat-line { display: inline-flex; gap: 0.3rem; flex-wrap: wrap; }
+  .stat-label {
+    font-size: 0.75rem; color: var(--muted);
+    margin-right: 0.2rem; margin-left: 0.6rem;
+  }
+  .stat-label:first-child { margin-left: 0; }
+</style>

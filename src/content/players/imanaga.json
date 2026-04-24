@@ -1,0 +1,21 @@
+{
+  "key": "imanaga",
+  "name_jp": "今永昇太",
+  "name_en": "Shota Imanaga",
+  "team_jp": "シカゴ・カブス",
+  "team_en": "Chicago Cubs",
+  "league": "NL",
+  "type": "pitcher",
+  "position_jp": "先発投手",
+  "position_en": "Starting Pitcher",
+  "basic": {
+    "pitching": { "era": "2.15", "w": 2, "l": 1, "so": 22, "whip": "1.05", "ip": "25.0" }
+  },
+  "savant": {
+    "pitch_arsenal": [
+      { "pitch": "FF", "jp": "4シーム", "en": "4-Seam Fastball", "usage": 44.5, "ba": ".163", "whiff": 17.7, "hard_hit": 63.3 },
+      { "pitch": "FS", "jp": "スプリット", "en": "Split-Finger", "usage": 33.4, "ba": ".175", "whiff": 41.9, "hard_hit": 20.0 }
+    ]
+  },
+  "updated_at": "2026-04-25"
+}

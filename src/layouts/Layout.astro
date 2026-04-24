@@ -1,23 +1,86 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  lang?: "ja" | "en";
+  currentPath?: string;
+}
+const { title, description = "", lang = "ja", currentPath = "/" } = Astro.props;
+const siteName = lang === "ja" ? "SakuraBall - 日本人メジャーリーガー" : "SakuraBall - Japanese MLB Players";
+
+let otherLangUrl: string;
+if (lang === "ja") {
+  otherLangUrl = currentPath === "/" ? "/en/" : "/en" + currentPath;
+} else {
+  otherLangUrl = currentPath.replace(/^\/en/, "") || "/";
+}
+const otherLangLabel = lang === "ja" ? "English" : "日本語";
+const fullTitle = `${title} | ${siteName}`;
+---
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{fullTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <meta property="og:title" content={fullTitle} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-logo" href={lang === "ja" ? "/" : "/en/"}>SakuraBall</a>
+      <nav>
+        <a href={otherLangUrl}>{otherLangLabel}</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>© 2026 SakuraBall</p>
+    </footer>
+  </body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+<style is:global>
+  :root {
+    --pink: #f8b7c5;
+    --pink-dark: #d88296;
+    --bg: #fff8f9;
+    --text: #2a1e22;
+    --muted: #7a6a70;
+    --border: #ead5da;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Hiragino Sans", "Yu Gothic", system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  a { color: var(--pink-dark); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .site-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 1.5rem;
+    background: white;
+    border-bottom: 2px solid var(--pink);
+  }
+  .site-logo { font-weight: bold; font-size: 1.2rem; color: var(--pink-dark); }
+  .site-header nav a {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--pink);
+    border-radius: 4px;
+  }
+  main { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
+  .site-footer {
+    text-align: center; padding: 2rem; color: var(--muted);
+    border-top: 1px solid var(--border); margin-top: 3rem;
+  }
+  h1, h2, h3 { color: var(--text); }
 </style>
