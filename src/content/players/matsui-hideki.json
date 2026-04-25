@@ -180,5 +180,6 @@
   ],
   "basic_season": {
     "hitting": "career"
-  }
+  },
+  "legend": true
 }

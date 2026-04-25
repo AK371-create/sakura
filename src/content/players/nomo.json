@@ -225,5 +225,6 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "legend": true
 }

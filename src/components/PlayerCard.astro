@@ -65,36 +65,17 @@ const noCurrentLabel = lang === "ja" ? "今季出場なし" : "Not played";
       )}
       {pitching && !hitting && (
         <>
-          <div class="stat"><div class="stat-label">{lang === "ja" ? "防御率" : "ERA"}</div><div class="stat-value">{pitching.era}</div></div>
-          <div class="stat"><div class="stat-label">{lang === "ja" ? "奪三振" : "SO"}</div><div class="stat-value">{pitching.so}</div></div>
-          <div class="stat"><div class="stat-label">WHIP</div><div class="stat-value">{pitching.whip}</div></div>
+          <div class="stat"><div class="stat-label">{lang === "ja" ? "勝利" : "W"}</div><div class="stat-value">{pitching.w ?? 0}</div></div>
+          <div class="stat"><div class="stat-label">{lang === "ja" ? "敗戦" : "L"}</div><div class="stat-value">{pitching.l ?? 0}</div></div>
+          <div class="stat"><div class="stat-label">{lang === "ja" ? "セーブ" : "SV"}</div><div class="stat-value">{pitching.sv ?? 0}</div></div>
         </>
       )}
       {pitching && hitting && (
-        <div class="stat"><div class="stat-label">{lang === "ja" ? "防御率" : "ERA"}</div><div class="stat-value">{pitching.era}</div></div>
+        <div class="stat"><div class="stat-label">{lang === "ja" ? "勝利" : "W"}</div><div class="stat-value">{pitching.w ?? 0}</div></div>
       )}
     </div>
   )}
-  {savantHit && !noCurrentSeason && (
-    <div class="card-spark">
-      <div class="spark-item">
-        <span class="spark-lbl">EV</span>
-        <span class="spark-val">{savantHit.exit_velocity_avg}</span>
-      </div>
-      <div class="spark-item">
-        <span class="spark-lbl">BRL%</span>
-        <span class="spark-val">{savantHit.barrel_batted_rate}</span>
-      </div>
-      <div class="spark-item">
-        <span class="spark-lbl">HH%</span>
-        <span class="spark-val">{savantHit.hard_hit_percent}</span>
-      </div>
-      <div class="spark-item">
-        <span class="spark-lbl">xwOBA</span>
-        <span class="spark-val">{savantHit.xwoba}</span>
-      </div>
-    </div>
-  )}
+  {/* Savant spark removed: hitting Statcast data is not from a verified source */}
 </a>
 
 <style>

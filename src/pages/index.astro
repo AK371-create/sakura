@@ -17,7 +17,9 @@ function sortPlayers(arr: any[]) {
 }
 const mlbPlayers = sortPlayers(allPlayers.filter((p) => p.level === "MLB"));
 const aaaPlayers = sortPlayers(allPlayers.filter((p) => p.level === "AAA"));
-const formerPlayers = [...allPlayers.filter((p) => p.level === "FORMER")]
+const allFormer = allPlayers.filter((p) => p.level === "FORMER");
+const legendPlayers = allFormer.filter((p) => p.legend === true);
+const formerPlayers = [...allFormer.filter((p) => !p.legend)]
   .sort((a, b) => {
     // sort by MLB start year descending
     const ya = parseInt((a.mlb_years ?? "0").split("-")[0]) || 0;
@@ -105,11 +107,28 @@ const stats = {
     </section>
   )}
 
+  {legendPlayers.length > 0 && (
+    <section class="section legend-section">
+      <div class="section-head">
+        <div class="section-head-main">
+          <span class="section-num mono">03</span>
+          <h2><span class="legend-icon" aria-hidden="true">⭐</span>レジェンド</h2>
+        </div>
+        <span class="mono section-count">{legendPlayers.length}名</span>
+      </div>
+      <div class="player-grid">
+        {legendPlayers.map((p) => (
+          <PlayerCard player={p} lang="ja" href={`/players/${p.key}/`} />
+        ))}
+      </div>
+    </section>
+  )}
+
   {formerPlayers.length > 0 && (
     <section class="section">
       <div class="section-head">
         <div class="section-head-main">
-          <span class="section-num mono">03</span>
+          <span class="section-num mono">04</span>
           <h2>過去のMLB所属</h2>
         </div>
         <span class="mono section-count">{formerPlayers.length}名</span>
@@ -184,6 +203,15 @@ const stats = {
   }
 
   .section { margin-top: 3rem; }
+  .legend-section .section-head h2 {
+    color: #8a6914;
+    display: inline-flex; align-items: center; gap: 0.4rem;
+  }
+  .legend-icon { color: #d9a92e; font-size: 1.1rem; }
+  .legend-section .player-grid > * {
+    box-shadow: 0 2px 8px rgba(217, 169, 46, 0.12);
+    border-color: rgba(217, 169, 46, 0.3);
+  }
   .section-head {
     display: flex; align-items: flex-end; justify-content: space-between;
     margin-bottom: 1.2rem;
