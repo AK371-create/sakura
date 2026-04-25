@@ -87,27 +87,33 @@ const pitchColors: Record<string, string> = {
   {hitting && (
     <section class="summary-row">
       <div class="summary-card primary">
-        <div class="sc-label mono">AVG</div>
+        <div class="sc-label">打率</div>
         <div class="sc-value mono">{hitting.avg}</div>
       </div>
+      {hitting.h !== undefined && (
+        <div class="summary-card">
+          <div class="sc-label">安打</div>
+          <div class="sc-value mono">{hitting.h}</div>
+        </div>
+      )}
       <div class="summary-card">
-        <div class="sc-label mono">HR</div>
+        <div class="sc-label">本塁打</div>
         <div class="sc-value mono">{hitting.hr}</div>
       </div>
       <div class="summary-card">
-        <div class="sc-label mono">RBI</div>
+        <div class="sc-label">打点</div>
         <div class="sc-value mono">{hitting.rbi}</div>
       </div>
       <div class="summary-card">
-        <div class="sc-label mono">OBP</div>
+        <div class="sc-label">出塁率</div>
         <div class="sc-value mono">{hitting.obp}</div>
       </div>
       <div class="summary-card primary">
-        <div class="sc-label mono">OPS</div>
+        <div class="sc-label">OPS</div>
         <div class="sc-value mono">{hitting.ops}</div>
       </div>
       <div class="summary-card">
-        <div class="sc-label mono">SB</div>
+        <div class="sc-label">盗塁</div>
         <div class="sc-value mono">{hitting.sb}</div>
       </div>
     </section>
@@ -116,25 +122,103 @@ const pitchColors: Record<string, string> = {
   {pitching && (
     <section class="summary-row">
       <div class="summary-card primary">
-        <div class="sc-label mono">ERA</div>
+        <div class="sc-label">防御率</div>
         <div class="sc-value mono">{pitching.era}</div>
       </div>
       <div class="summary-card">
-        <div class="sc-label mono">W-L</div>
+        <div class="sc-label">勝敗</div>
         <div class="sc-value mono">{pitching.w}-{pitching.l}</div>
       </div>
+      {pitching.sv !== undefined && (
+        <div class="summary-card">
+          <div class="sc-label">セーブ</div>
+          <div class="sc-value mono">{pitching.sv}</div>
+        </div>
+      )}
       <div class="summary-card primary">
-        <div class="sc-label mono">SO</div>
+        <div class="sc-label">奪三振</div>
         <div class="sc-value mono">{pitching.so}</div>
       </div>
       <div class="summary-card">
-        <div class="sc-label mono">WHIP</div>
+        <div class="sc-label">WHIP</div>
         <div class="sc-value mono">{pitching.whip}</div>
       </div>
       <div class="summary-card">
-        <div class="sc-label mono">IP</div>
+        <div class="sc-label">投球回</div>
         <div class="sc-value mono">{pitching.ip}</div>
       </div>
+    </section>
+  )}
+
+  {player.yearly && player.yearly.length > 0 && (
+    <section class="panel">
+      <div class="panel-head">
+        <h2>年度別成績</h2>
+        <span class="panel-sub">{player.mlb_years ?? ""}</span>
+      </div>
+      {player.yearly[0].type === "hit" ? (
+        <div class="yearly-wrap">
+          <table class="yearly-table">
+            <thead>
+              <tr>
+                <th class="num">年</th>
+                <th>チーム</th>
+                <th class="num">打率</th>
+                <th class="num">安打</th>
+                <th class="num">本塁打</th>
+                <th class="num">打点</th>
+                <th class="num">盗塁</th>
+                <th class="num">OPS</th>
+              </tr>
+            </thead>
+            <tbody>
+              {player.yearly.map((y: any) => (
+                <tr>
+                  <td class="num mono">{y.year}</td>
+                  <td class="mono">{y.team}</td>
+                  <td class="num mono">{y.avg}</td>
+                  <td class="num mono">{y.h}</td>
+                  <td class="num mono">{y.hr}</td>
+                  <td class="num mono">{y.rbi}</td>
+                  <td class="num mono">{y.sb}</td>
+                  <td class="num mono">{y.ops}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : (
+        <div class="yearly-wrap">
+          <table class="yearly-table">
+            <thead>
+              <tr>
+                <th class="num">年</th>
+                <th>チーム</th>
+                <th class="num">勝</th>
+                <th class="num">敗</th>
+                <th class="num">防御率</th>
+                <th class="num">奪三振</th>
+                <th class="num">投球回</th>
+                <th class="num">WHIP</th>
+              </tr>
+            </thead>
+            <tbody>
+              {player.yearly.map((y: any) => (
+                <tr>
+                  <td class="num mono">{y.year}</td>
+                  <td class="mono">{y.team}</td>
+                  <td class="num mono">{y.w}</td>
+                  <td class="num mono">{y.l}</td>
+                  <td class="num mono">{y.era}</td>
+                  <td class="num mono">{y.so}</td>
+                  <td class="num mono">{y.ip}</td>
+                  <td class="num mono">{y.whip}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
     </section>
   )}
 
@@ -478,6 +562,28 @@ const pitchColors: Record<string, string> = {
     color: var(--text-dim);
     margin-top: 1.5rem;
   }
+
+  /* Yearly stats table */
+  .yearly-wrap { overflow-x: auto; }
+  .yearly-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  .yearly-table th {
+    text-align: left;
+    padding: 0.7rem 0.9rem;
+    font-size: 0.78rem; font-weight: 600;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-elev);
+    white-space: nowrap;
+  }
+  .yearly-table td {
+    padding: 0.65rem 0.9rem;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+    color: var(--text);
+  }
+  .yearly-table th.num, .yearly-table td.num { text-align: right; }
+  .yearly-table tr:last-child td { border-bottom: none; }
+  .yearly-table tr:hover td { background: var(--surface-2); }
 
   @media (max-width: 720px) {
     .pct-row { grid-template-columns: 90px 1fr 60px; gap: 0.6rem; }

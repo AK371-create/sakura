@@ -44,20 +44,20 @@ if (player.level === "AAA") {
   <div class="card-stats">
     {hitting && (
       <>
-        <div class="stat"><div class="stat-label">AVG</div><div class="stat-value">{hitting.avg}</div></div>
-        <div class="stat"><div class="stat-label">HR</div><div class="stat-value">{hitting.hr}</div></div>
+        <div class="stat"><div class="stat-label">{lang === "ja" ? "打率" : "AVG"}</div><div class="stat-value">{hitting.avg}</div></div>
+        <div class="stat"><div class="stat-label">{lang === "ja" ? "本塁打" : "HR"}</div><div class="stat-value">{hitting.hr}</div></div>
         <div class="stat"><div class="stat-label">OPS</div><div class="stat-value">{hitting.ops}</div></div>
       </>
     )}
     {pitching && !hitting && (
       <>
-        <div class="stat"><div class="stat-label">ERA</div><div class="stat-value">{pitching.era}</div></div>
-        <div class="stat"><div class="stat-label">SO</div><div class="stat-value">{pitching.so}</div></div>
+        <div class="stat"><div class="stat-label">{lang === "ja" ? "防御率" : "ERA"}</div><div class="stat-value">{pitching.era}</div></div>
+        <div class="stat"><div class="stat-label">{lang === "ja" ? "奪三振" : "SO"}</div><div class="stat-value">{pitching.so}</div></div>
         <div class="stat"><div class="stat-label">WHIP</div><div class="stat-value">{pitching.whip}</div></div>
       </>
     )}
     {pitching && hitting && (
-      <div class="stat"><div class="stat-label">ERA</div><div class="stat-value">{pitching.era}</div></div>
+      <div class="stat"><div class="stat-label">{lang === "ja" ? "防御率" : "ERA"}</div><div class="stat-value">{pitching.era}</div></div>
     )}
   </div>
   {savantHit && (
