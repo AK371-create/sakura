@@ -24,16 +24,19 @@ else leagueLabel = (({ NL: "ナ・リーグ", AL: "ア・リーグ" } as Record<
 
 const isFormer = player.level === "FORMER";
 const basicSeason = player.basic_season ?? {};
-function fmtSeason(s: any): string {
-  if (s === "career") return "MLB通算";
-  if (typeof s === "number") return `${s}年シーズン`;
-  return "";
+const CURRENT_SEASON = 2026;
+
+// For active players, detect "no 2026 appearance" cases (basic data is from earlier)
+function seasonStatus(s: any): { label: string; isStale: boolean; year: number | null } {
+  if (s === "career") return { label: "MLB通算", isStale: false, year: null };
+  if (typeof s === "number") {
+    if (s === CURRENT_SEASON) return { label: `${s}年シーズン`, isStale: false, year: s };
+    return { label: `今季出場なし (前年${s}参考)`, isStale: true, year: s };
+  }
+  return { label: "", isStale: false, year: null };
 }
-const hitSeasonLabel = fmtSeason(basicSeason.hitting);
-const pitSeasonLabel = fmtSeason(basicSeason.pitching);
-const summarySubtitle = isFormer
-  ? `MLB通算 · ${player.mlb_years ?? ""}`
-  : (hitting ? `打撃 · ${hitSeasonLabel || "2026"}` : `投手 · ${pitSeasonLabel || "2026"}`);
+const hitStatus = seasonStatus(basicSeason.hitting);
+const pitStatus = seasonStatus(basicSeason.pitching);
 
 // Build percentile rows from savant hitting data
 const percentileMetrics = savantHit ? [
@@ -260,10 +263,13 @@ const playerJsonLd: object[] = [
 
   <!-- SUMMARY ROW: Big primary stats -->
   {hitting && (
-    <div class="basic-season-label">{hitSeasonLabel || "2026年シーズン"}<span class="basic-season-sub">(打撃)</span></div>
+    <div class:list={["basic-season-label", { stale: hitStatus.isStale }]}>
+      <span class="bsl-main">{hitStatus.label || "2026年シーズン"}</span>
+      <span class="basic-season-sub">(打撃)</span>
+    </div>
   )}
   {hitting && (
-    <section class="summary-row">
+    <section class:list={["summary-row", { stale: hitStatus.isStale }]}>
       <div class="summary-card primary">
         <div class="sc-label">打率</div>
         <div class="sc-value mono">{hitting.avg}</div>
@@ -304,10 +310,13 @@ const playerJsonLd: object[] = [
   )}
 
   {pitching && (
-    <div class="basic-season-label">{pitSeasonLabel || "2026年シーズン"}<span class="basic-season-sub">(投手)</span></div>
+    <div class:list={["basic-season-label", { stale: pitStatus.isStale }]}>
+      <span class="bsl-main">{pitStatus.label || "2026年シーズン"}</span>
+      <span class="basic-season-sub">(投手)</span>
+    </div>
   )}
   {pitching && (
-    <section class="summary-row">
+    <section class:list={["summary-row", { stale: pitStatus.isStale }]}>
       <div class="summary-card primary">
         <div class="sc-label">防御率</div>
         <div class="sc-value mono">{pitching.era}</div>
@@ -714,6 +723,28 @@ const playerJsonLd: object[] = [
   }
   .basic-season-sub {
     font-size: 0.75rem; color: var(--text-dim); font-weight: 400;
+  }
+  .basic-season-label.stale .bsl-main {
+    color: var(--sv-orange);
+    background: rgba(237, 124, 44, 0.08);
+    border: 1px solid rgba(237, 124, 44, 0.2);
+    padding: 0.15rem 0.6rem;
+    border-radius: 100px;
+    font-size: 0.78rem;
+  }
+  .summary-row.stale {
+    opacity: 0.7;
+    filter: saturate(0.6);
+  }
+  .summary-row.stale::before {
+    content: "前年成績の参考表示"; display: block;
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    letter-spacing: 0.08em;
+    padding: 0.4rem 0;
+    background: rgba(237, 124, 44, 0.04);
   }
 
   /* Summary Row */

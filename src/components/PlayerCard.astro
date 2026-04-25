@@ -26,12 +26,21 @@ if (player.level === "AAA") {
 } else {
   leagueLabel = player.league;
 }
+
+// Detect "no current-season appearance" for active MLB players
+const CURRENT_SEASON = 2026;
+const bs = player.basic_season ?? {};
+const playerType = player.type;
+const expected = playerType === "two_way" ? ["hitting", "pitching"] : (playerType === "batter" ? ["hitting"] : ["pitching"]);
+const noCurrentSeason = player.level === "MLB" && expected.every((g: string) => bs[g] !== undefined && bs[g] !== CURRENT_SEASON);
+const noCurrentLabel = lang === "ja" ? "今季出場なし" : "Not played";
 ---
 <a class="player-card" href={href}>
   <div class="card-head">
     <div class="head-tags">
       <span class={`tag type type-${player.type}`}>{typeCode}</span>
       <span class:list={["tag league", `league-${player.league.toLowerCase()}`, { former: player.level === "FORMER" }]}>{leagueLabel}</span>
+      {noCurrentSeason && <span class="tag no-current">{noCurrentLabel}</span>}
     </div>
     <div class="go" aria-hidden="true">→</div>
   </div>
@@ -131,6 +140,11 @@ if (player.level === "AAA") {
   .tag.league.league-al { color: var(--sv-red); border-color: rgba(214, 37, 56, 0.25); background: rgba(214, 37, 56, 0.06); }
   .tag.league.league-aaa { color: var(--sv-orange); border-color: rgba(237, 124, 44, 0.3); background: rgba(237, 124, 44, 0.08); }
   .tag.league.former { color: var(--text-muted); background: var(--surface-3); border-color: var(--border-strong); }
+  .tag.no-current {
+    color: var(--sv-orange);
+    background: rgba(237, 124, 44, 0.1);
+    border: 1px solid rgba(237, 124, 44, 0.3);
+  }
 
   .go {
     color: var(--text-dim);
