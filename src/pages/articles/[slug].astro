@@ -28,12 +28,55 @@ const catLabel = categoryLabels[article.category] ?? article.category;
 
 const wordCount = article.body_jp.join("").length;
 const readMin = Math.max(1, Math.round(wordCount / 500));
+
+const articleJsonLd: object[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title_jp,
+    "description": article.summary_jp,
+    "datePublished": article.date,
+    "dateModified": article.date,
+    "inLanguage": "ja-JP",
+    "author": {
+      "@type": "Organization",
+      "name": "SakuraBall",
+      "url": "https://sakuraballpark.com",
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SakuraBall",
+      "url": "https://sakuraballpark.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sakuraballpark.com/og-default.svg",
+      },
+    },
+    "mainEntityOfPage": `https://sakuraballpark.com/articles/${article.slug}/`,
+    "articleSection": catLabel,
+    "keywords": (article.tags ?? []).join(", "),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://sakuraballpark.com/" },
+      { "@type": "ListItem", "position": 2, "name": "記事", "item": "https://sakuraballpark.com/articles/" },
+      { "@type": "ListItem", "position": 3, "name": catLabel, "item": `https://sakuraballpark.com/articles/?cat=${article.category}` },
+      { "@type": "ListItem", "position": 4, "name": article.title_jp, "item": `https://sakuraballpark.com/articles/${article.slug}/` },
+    ],
+  },
+];
 ---
 <Layout
   title={article.title_jp}
   description={article.summary_jp}
   lang="ja"
   currentPath={`/articles/${article.slug}/`}
+  ogType="article"
+  jsonLd={articleJsonLd}
+  publishedDate={article.date}
+  modifiedDate={article.date}
 >
   <nav class="breadcrumb">
     <a href="/">← ホーム</a>

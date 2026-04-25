@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /_astro/
+Disallow: /api/
+
+Sitemap: https://sakuraballpark.com/sitemap-index.xml

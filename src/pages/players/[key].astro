@@ -128,12 +128,42 @@ for (const a of allAwards) {
 const CAT_ORDER = ["ws-mvp", "mvp", "cy", "roy", "alcs-mvp", "nlcs-mvp", "silver", "gold", "aaron", "comeback", "historic", "as"];
 const groupedAwards = Array.from(awardsByCat.values())
   .sort((a, b) => CAT_ORDER.indexOf(a.cat) - CAT_ORDER.indexOf(b.cat));
+
+// JSON-LD: Person + BreadcrumbList
+const playerJsonLd: object[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": player.name_jp,
+    "alternateName": player.name_en,
+    "url": `https://sakuraballpark.com/players/${player.key}/`,
+    "jobTitle": player.position_jp,
+    "affiliation": isFormer ? undefined : {
+      "@type": "SportsTeam",
+      "name": player.team_jp,
+      "alternateName": player.team_en,
+    },
+    "nationality": "Japan",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://sakuraballpark.com/" },
+      { "@type": "ListItem", "position": 2, "name": "選手", "item": "https://sakuraballpark.com/#players" },
+      { "@type": "ListItem", "position": 3, "name": player.name_jp, "item": `https://sakuraballpark.com/players/${player.key}/` },
+    ],
+  },
+];
 ---
 <Layout
   title={player.name_jp}
-  description={`${player.name_jp}（${player.team_jp}）の2026シーズン成績とStatcast指標`}
+  description={`${player.name_jp}（${player.team_jp}）の${isFormer ? "MLB通算成績" : "2026シーズン成績"}・年度別データ・受賞歴`}
   lang="ja"
   currentPath={`/players/${player.key}/`}
+  ogType="profile"
+  jsonLd={playerJsonLd}
+  modifiedDate={player.updated_at}
 >
   <nav class="breadcrumb"><a href="/">← ホーム</a> <span class="sep">/</span> <span>選手</span> <span class="sep">/</span> <span class="current">{player.name_jp}</span></nav>
 

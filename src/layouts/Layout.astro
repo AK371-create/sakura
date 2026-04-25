@@ -4,10 +4,26 @@ export interface Props {
   description?: string;
   lang?: "ja" | "en";
   currentPath?: string;
+  ogImage?: string;
+  ogType?: "website" | "article" | "profile";
+  jsonLd?: object | object[];
+  publishedDate?: string;
+  modifiedDate?: string;
 }
-const { title, description = "", lang = "ja", currentPath = "/" } = Astro.props;
+const {
+  title,
+  description = "",
+  lang = "ja",
+  currentPath = "/",
+  ogImage,
+  ogType = "website",
+  jsonLd,
+  publishedDate,
+  modifiedDate,
+} = Astro.props;
 const siteName = "SakuraBall";
 const siteTagline = lang === "ja" ? "日本人MLBデータ分析" : "Japanese MLB Analytics";
+const SITE_ORIGIN = "https://sakuraballpark.com";
 
 let otherLangUrl: string;
 if (lang === "ja") {
@@ -28,6 +44,37 @@ const navLinks = lang === "ja"
     ];
 
 const fullTitle = title === siteName ? `${siteName} · ${siteTagline}` : `${title} · ${siteName}`;
+const canonicalUrl = SITE_ORIGIN + currentPath;
+const altLangUrl = SITE_ORIGIN + otherLangUrl;
+const ogImageUrl = ogImage ? (ogImage.startsWith("http") ? ogImage : SITE_ORIGIN + ogImage) : SITE_ORIGIN + "/og-default.svg";
+
+// Build base WebSite + Organization JSON-LD always
+const baseLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": siteName,
+    "alternateName": "Sakura Ball Park",
+    "url": SITE_ORIGIN,
+    "inLanguage": lang === "ja" ? "ja-JP" : "en-US",
+    "description": lang === "ja"
+      ? "日本人メジャーリーガーのシーズン成績、Statcast指標、分析記事を掲載"
+      : "Season stats, Statcast metrics, and analysis for Japanese MLB players",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": SITE_ORIGIN + "/articles/?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": siteName,
+    "url": SITE_ORIGIN,
+    "logo": SITE_ORIGIN + "/og-default.svg",
+  },
+];
+const allJsonLd = [...baseLd, ...(Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [])];
 ---
 <!doctype html>
 <html lang={lang}>
@@ -38,11 +85,40 @@ const fullTitle = title === siteName ? `${siteName} · ${siteTagline}` : `${titl
     <meta name="generator" content={Astro.generator} />
     <title>{fullTitle}</title>
     {description && <meta name="description" content={description} />}
+
+    <!-- Canonical & alternate languages -->
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang={lang === "ja" ? "ja" : "en"} href={canonicalUrl} />
+    <link rel="alternate" hreflang={lang === "ja" ? "en" : "ja"} href={altLangUrl} />
+    <link rel="alternate" hreflang="x-default" href={lang === "ja" ? canonicalUrl : altLangUrl} />
+
+    <!-- Open Graph -->
     <meta property="og:title" content={fullTitle} />
     {description && <meta property="og:description" content={description} />}
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:locale" content={lang === "ja" ? "ja_JP" : "en_US"} />
+    <meta property="og:locale:alternate" content={lang === "ja" ? "en_US" : "ja_JP"} />
+    {publishedDate && <meta property="article:published_time" content={publishedDate} />}
+    {modifiedDate && <meta property="article:modified_time" content={modifiedDate} />}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    {description && <meta name="twitter:description" content={description} />}
+    <meta name="twitter:image" content={ogImageUrl} />
+
     <meta name="theme-color" content="#faf8f7" />
     <meta name="color-scheme" content="light" />
+
+    <!-- JSON-LD -->
+    {allJsonLd.map((ld) => (
+      <script type="application/ld+json" set:html={JSON.stringify(ld)} />
+    ))}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
