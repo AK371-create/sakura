@@ -339,39 +339,14 @@ const groupedAwards = Array.from(awardsByCat.values())
     </section>
   )}
 
-  {percentileMetrics.length > 0 && (
+  {false && percentileMetrics.length > 0 && (
     <section class="panel">
       <div class="panel-head">
         <h2>Percentile Rankings</h2>
         <span class="panel-sub mono">BATTING · 2026</span>
       </div>
-      <div class="pct-list">
-        {percentileMetrics.map((m) => (
-          <div class="pct-row">
-            <div class="pct-label">{m.label}</div>
-            <div class="pct-track">
-              <div class="pct-grid">
-                <span class="pct-tick" style="left: 25%"></span>
-                <span class="pct-tick" style="left: 50%"></span>
-                <span class="pct-tick" style="left: 75%"></span>
-              </div>
-              <div class="pct-bar" style={`width: ${m.pct}%; background: ${percentileColor(m.pct)};`}></div>
-              <div class="pct-dot" style={`left: calc(${m.pct}% - 8px); background: ${percentileColor(m.pct)};`}>
-                <span class="pct-num mono">{m.pct}</span>
-              </div>
-            </div>
-            <div class="pct-value mono">{m.fmt(m.value as any)}</div>
-          </div>
-        ))}
-      </div>
-      <div class="pct-legend mono">
-        <span>←</span>
-        <span class="leg-bar"></span>
-        <span>POOR</span>
-        <span class="leg-mid">AVG</span>
-        <span>ELITE</span>
-        <span>→</span>
-      </div>
+      <div class="pct-list"></div>
+      <div class="pct-legend mono"></div>
     </section>
   )}
 

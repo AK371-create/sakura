@@ -15,38 +15,29 @@
   "current_status_en": "Returned to NPB",
   "basic": {
     "pitching": {
-      "era": "7.18",
       "w": 7,
-      "l": 12,
-      "so": 132,
-      "whip": "1.66",
-      "ip": "121.2"
+      "l": 8,
+      "era": "7.18",
+      "so": 83,
+      "ip": "79.0",
+      "whip": "1.49",
+      "sv": 2,
+      "hld": 5
     }
   },
   "yearly": [
     {
       "year": 2023,
-      "team": "OAK/BAL",
+      "team": "?",
       "type": "pit",
       "w": 7,
       "l": 8,
       "era": "7.18",
-      "so": 96,
+      "so": 83,
       "ip": "79.0",
-      "whip": "1.66",
+      "whip": "1.49",
       "sv": 2,
       "hld": 5
-    },
-    {
-      "year": 2024,
-      "team": "NYM",
-      "type": "pit",
-      "w": 0,
-      "l": 4,
-      "era": "7.18",
-      "so": 36,
-      "ip": "42.2",
-      "whip": "1.84"
     }
   ],
   "updated_at": "2026-04-25"

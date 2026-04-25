@@ -15,52 +15,53 @@
   "current_status_en": "Now with Orix (NPB)",
   "basic": {
     "pitching": {
-      "era": "4.40",
-      "w": 6,
-      "l": 7,
-      "sv": 9,
-      "so": 130,
-      "whip": "1.32",
-      "ip": "133.0"
+      "w": 9,
+      "l": 9,
+      "era": "3.69",
+      "so": 131,
+      "ip": "131.2",
+      "whip": "1.30",
+      "sv": 8,
+      "hld": 48
     }
   },
   "yearly": [
     {
       "year": 2018,
-      "team": "ARI",
+      "team": "?",
       "type": "pit",
       "w": 4,
       "l": 3,
       "era": "2.44",
       "so": 59,
-      "ip": "75.0",
-      "whip": "0.95",
+      "ip": "66.1",
+      "whip": "1.09",
       "sv": 3,
       "hld": 32
     },
     {
       "year": 2019,
-      "team": "ARI",
+      "team": "?",
       "type": "pit",
       "w": 5,
       "l": 5,
       "era": "4.75",
-      "so": 65,
+      "so": 61,
       "ip": "53.0",
-      "whip": "1.45",
+      "whip": "1.38",
       "sv": 1,
       "hld": 15
     },
     {
       "year": 2020,
-      "team": "SEA",
+      "team": "?",
       "type": "pit",
       "w": 0,
       "l": 1,
-      "era": "9.00",
-      "so": 6,
-      "ip": "8.0",
-      "whip": "2.13",
+      "era": "5.84",
+      "so": 11,
+      "ip": "12.1",
+      "whip": "2.11",
       "sv": 4,
       "hld": 1
     }

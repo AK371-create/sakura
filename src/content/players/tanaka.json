@@ -15,91 +15,107 @@
   "current_status_en": "Now with Rakuten (NPB)",
   "basic": {
     "pitching": {
-      "era": "3.74",
       "w": 78,
       "l": 46,
+      "era": "3.74",
       "so": 991,
+      "ip": "1054.1",
       "whip": "1.13",
-      "ip": "1054.1"
+      "sv": 0,
+      "hld": 0
     }
   },
   "yearly": [
     {
       "year": 2014,
-      "team": "NYY",
+      "team": "?",
       "type": "pit",
       "w": 13,
       "l": 5,
       "era": "2.77",
       "so": 141,
       "ip": "136.1",
-      "whip": "1.06"
+      "whip": "1.06",
+      "sv": 0,
+      "hld": 0
     },
     {
       "year": 2015,
-      "team": "NYY",
+      "team": "?",
       "type": "pit",
       "w": 12,
       "l": 7,
       "era": "3.51",
       "so": 139,
       "ip": "154.0",
-      "whip": "0.99"
+      "whip": "0.99",
+      "sv": 0,
+      "hld": 0
     },
     {
       "year": 2016,
-      "team": "NYY",
+      "team": "?",
       "type": "pit",
       "w": 14,
       "l": 4,
       "era": "3.07",
       "so": 165,
       "ip": "199.2",
-      "whip": "1.08"
+      "whip": "1.08",
+      "sv": 0,
+      "hld": 0
     },
     {
       "year": 2017,
-      "team": "NYY",
+      "team": "?",
       "type": "pit",
       "w": 13,
       "l": 12,
       "era": "4.74",
       "so": 194,
       "ip": "178.1",
-      "whip": "1.24"
+      "whip": "1.24",
+      "sv": 0,
+      "hld": 0
     },
     {
       "year": 2018,
-      "team": "NYY",
+      "team": "?",
       "type": "pit",
       "w": 12,
       "l": 6,
       "era": "3.75",
       "so": 159,
       "ip": "156.0",
-      "whip": "1.13"
+      "whip": "1.13",
+      "sv": 0,
+      "hld": 0
     },
     {
       "year": 2019,
-      "team": "NYY",
+      "team": "?",
       "type": "pit",
       "w": 11,
       "l": 9,
       "era": "4.45",
       "so": 149,
       "ip": "182.0",
-      "whip": "1.24"
+      "whip": "1.24",
+      "sv": 0,
+      "hld": 0
     },
     {
       "year": 2020,
-      "team": "NYY",
+      "team": "?",
       "type": "pit",
       "w": 3,
       "l": 3,
       "era": "3.56",
       "so": 44,
       "ip": "48.0",
-      "whip": "1.17"
+      "whip": "1.17",
+      "sv": 0,
+      "hld": 0
     }
   ],
   "updated_at": "2026-04-25",

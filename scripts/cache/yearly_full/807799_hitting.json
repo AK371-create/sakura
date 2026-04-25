@@ -1,0 +1,242 @@
+[
+  {
+    "season": "2023",
+    "stat": {
+      "age": 29,
+      "gamesPlayed": 140,
+      "groundOuts": 195,
+      "airOuts": 108,
+      "runs": 71,
+      "doubles": 33,
+      "triples": 3,
+      "homeRuns": 15,
+      "strikeOuts": 81,
+      "baseOnBalls": 34,
+      "intentionalWalks": 0,
+      "hits": 155,
+      "hitByPitch": 7,
+      "avg": ".289",
+      "atBats": 537,
+      "obp": ".338",
+      "slg": ".445",
+      "ops": ".783",
+      "caughtStealing": 0,
+      "stolenBases": 8,
+      "stolenBasePercentage": "1.000",
+      "caughtStealingPercentage": ".000",
+      "groundIntoDoublePlay": 20,
+      "numberOfPitches": 2197,
+      "plateAppearances": 580,
+      "totalBases": 239,
+      "rbi": 72,
+      "leftOnBase": 247,
+      "sacBunts": 0,
+      "sacFlies": 2,
+      "babip": ".316",
+      "groundOutsToAirouts": "1.81",
+      "catchersInterference": 0,
+      "atBatsPerHomeRun": "35.80"
+    },
+    "team": {
+      "id": 111,
+      "name": "Boston Red Sox",
+      "link": "/api/v1/teams/111"
+    },
+    "player": {
+      "id": 807799,
+      "fullName": "Masataka Yoshida",
+      "link": "/api/v1/people/807799"
+    },
+    "league": {
+      "id": 103,
+      "name": "American League",
+      "link": "/api/v1/league/103"
+    },
+    "sport": {
+      "id": 1,
+      "link": "/api/v1/sports/1",
+      "abbreviation": "MLB"
+    },
+    "gameType": "R"
+  },
+  {
+    "season": "2024",
+    "stat": {
+      "age": 30,
+      "gamesPlayed": 108,
+      "groundOuts": 108,
+      "airOuts": 114,
+      "runs": 45,
+      "doubles": 21,
+      "triples": 0,
+      "homeRuns": 10,
+      "strikeOuts": 52,
+      "baseOnBalls": 27,
+      "intentionalWalks": 0,
+      "hits": 106,
+      "hitByPitch": 14,
+      "avg": ".280",
+      "atBats": 378,
+      "obp": ".349",
+      "slg": ".415",
+      "ops": ".764",
+      "caughtStealing": 0,
+      "stolenBases": 2,
+      "stolenBasePercentage": "1.000",
+      "caughtStealingPercentage": ".000",
+      "groundIntoDoublePlay": 6,
+      "numberOfPitches": 1593,
+      "plateAppearances": 421,
+      "totalBases": 157,
+      "rbi": 56,
+      "leftOnBase": 137,
+      "sacBunts": 0,
+      "sacFlies": 2,
+      "babip": ".302",
+      "groundOutsToAirouts": "0.95",
+      "catchersInterference": 0,
+      "atBatsPerHomeRun": "37.80"
+    },
+    "team": {
+      "id": 111,
+      "name": "Boston Red Sox",
+      "link": "/api/v1/teams/111"
+    },
+    "player": {
+      "id": 807799,
+      "fullName": "Masataka Yoshida",
+      "link": "/api/v1/people/807799"
+    },
+    "league": {
+      "id": 103,
+      "name": "American League",
+      "link": "/api/v1/league/103"
+    },
+    "sport": {
+      "id": 1,
+      "link": "/api/v1/sports/1",
+      "abbreviation": "MLB"
+    },
+    "gameType": "R"
+  },
+  {
+    "season": "2025",
+    "stat": {
+      "age": 31,
+      "gamesPlayed": 55,
+      "groundOuts": 73,
+      "airOuts": 45,
+      "runs": 16,
+      "doubles": 11,
+      "triples": 0,
+      "homeRuns": 4,
+      "strikeOuts": 24,
+      "baseOnBalls": 10,
+      "intentionalWalks": 0,
+      "hits": 50,
+      "hitByPitch": 3,
+      "avg": ".266",
+      "atBats": 188,
+      "obp": ".307",
+      "slg": ".388",
+      "ops": ".695",
+      "caughtStealing": 0,
+      "stolenBases": 3,
+      "stolenBasePercentage": "1.000",
+      "caughtStealingPercentage": ".000",
+      "groundIntoDoublePlay": 3,
+      "numberOfPitches": 715,
+      "plateAppearances": 205,
+      "totalBases": 73,
+      "rbi": 26,
+      "leftOnBase": 82,
+      "sacBunts": 0,
+      "sacFlies": 4,
+      "babip": ".280",
+      "groundOutsToAirouts": "1.62",
+      "catchersInterference": 0,
+      "atBatsPerHomeRun": "47.00"
+    },
+    "team": {
+      "id": 111,
+      "name": "Boston Red Sox",
+      "link": "/api/v1/teams/111"
+    },
+    "player": {
+      "id": 807799,
+      "fullName": "Masataka Yoshida",
+      "link": "/api/v1/people/807799"
+    },
+    "league": {
+      "id": 103,
+      "name": "American League",
+      "link": "/api/v1/league/103"
+    },
+    "sport": {
+      "id": 1,
+      "link": "/api/v1/sports/1",
+      "abbreviation": "MLB"
+    },
+    "gameType": "R"
+  },
+  {
+    "season": "2026",
+    "stat": {
+      "age": 32,
+      "gamesPlayed": 17,
+      "groundOuts": 18,
+      "airOuts": 10,
+      "runs": 5,
+      "doubles": 3,
+      "triples": 0,
+      "homeRuns": 0,
+      "strikeOuts": 6,
+      "baseOnBalls": 9,
+      "intentionalWalks": 0,
+      "hits": 12,
+      "hitByPitch": 1,
+      "avg": ".261",
+      "atBats": 46,
+      "obp": ".393",
+      "slg": ".326",
+      "ops": ".719",
+      "caughtStealing": 0,
+      "stolenBases": 1,
+      "stolenBasePercentage": "1.000",
+      "caughtStealingPercentage": ".000",
+      "groundIntoDoublePlay": 0,
+      "numberOfPitches": 213,
+      "plateAppearances": 56,
+      "totalBases": 15,
+      "rbi": 5,
+      "leftOnBase": 25,
+      "sacBunts": 0,
+      "sacFlies": 0,
+      "babip": ".300",
+      "groundOutsToAirouts": "1.80",
+      "catchersInterference": 0,
+      "atBatsPerHomeRun": "-.--"
+    },
+    "team": {
+      "id": 111,
+      "name": "Boston Red Sox",
+      "link": "/api/v1/teams/111"
+    },
+    "player": {
+      "id": 807799,
+      "fullName": "Masataka Yoshida",
+      "link": "/api/v1/people/807799"
+    },
+    "league": {
+      "id": 103,
+      "name": "American League",
+      "link": "/api/v1/league/103"
+    },
+    "sport": {
+      "id": 1,
+      "link": "/api/v1/sports/1",
+      "abbreviation": "MLB"
+    },
+    "gameType": "R"
+  }
+]
