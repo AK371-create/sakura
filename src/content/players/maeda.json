@@ -6,20 +6,20 @@
   "team_en": "Detroit Tigers",
   "team_short": "DET",
   "league": "AL",
-  "level": "MLB",
+  "level": "FORMER",
   "type": "pitcher",
   "position_jp": "先発投手",
   "position_en": "Starting Pitcher",
   "basic": {
     "pitching": {
-      "w": 0,
-      "l": 0,
-      "era": "7.88",
-      "so": 8,
-      "ip": "8.0",
-      "whip": "1.88",
-      "sv": 0,
-      "hld": 0
+      "w": 68,
+      "l": 56,
+      "era": "4.20",
+      "so": 1055,
+      "ip": "986.2",
+      "whip": "1.17",
+      "sv": 6,
+      "hld": 10
     }
   },
   "savant": {
@@ -200,6 +200,9 @@
   ],
   "updated_at": "2026-04-25",
   "basic_season": {
-    "pitching": 2025
-  }
+    "pitching": "career"
+  },
+  "mlb_years": "2016-2025",
+  "current_status_jp": "東北楽天ゴールデンイーグルス所属",
+  "current_status_en": "Now with Rakuten (NPB)"
 }
