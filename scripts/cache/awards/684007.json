@@ -1,0 +1,86 @@
+[
+  {
+    "id": "NLROM",
+    "name": "NL Rookie of the Month",
+    "date": "2024-04-30",
+    "season": "2024",
+    "team": {
+      "id": 112,
+      "link": "/api/v1/teams/112",
+      "teamName": "Chi Cubs"
+    },
+    "player": {
+      "id": 684007,
+      "link": "/api/v1/people/684007",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "NLAS",
+    "name": "NL All-Star",
+    "date": "2024-07-16",
+    "season": "2024",
+    "team": {
+      "id": 112,
+      "link": "/api/v1/teams/112",
+      "teamName": "Chi Cubs"
+    },
+    "player": {
+      "id": 684007,
+      "link": "/api/v1/people/684007",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "BAMLART",
+    "name": "Baseball America Major League All-Rookie Team",
+    "date": "2024-09-30",
+    "season": "2024",
+    "team": {
+      "id": 112,
+      "link": "/api/v1/teams/112",
+      "teamName": "Chi Cubs"
+    },
+    "player": {
+      "id": 684007,
+      "link": "/api/v1/people/684007",
+      "primaryPosition": {
+        "code": "S",
+        "name": "Starting Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "SP"
+      }
+    }
+  },
+  {
+    "id": "MLBSECOND",
+    "name": "All-MLB Second Team",
+    "date": "2024-11-14",
+    "season": "2024",
+    "team": {
+      "id": 112,
+      "link": "/api/v1/teams/112",
+      "teamName": "Chi Cubs"
+    },
+    "player": {
+      "id": 684007,
+      "link": "/api/v1/people/684007",
+      "primaryPosition": {
+        "code": "S",
+        "name": "Starting Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "SP"
+      }
+    }
+  }
+]

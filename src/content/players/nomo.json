@@ -182,5 +182,19 @@
       "whip": "3.46"
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "awards": [
+    {
+      "year": 1995,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "NL All-Star"
+    },
+    {
+      "year": 1995,
+      "label": "新人王",
+      "cat": "roy",
+      "raw": "Jackie Robinson NL Rookie of the Year"
+    }
+  ]
 }

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "WSCHAMP",
+    "name": "World Series Championship",
+    "date": "2024-10-30",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 808967,
+      "link": "/api/v1/people/808967",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "NLPITOM",
+    "name": "NL Pitcher of the Month",
+    "date": "2025-04-30",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 808967,
+      "link": "/api/v1/people/808967",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "NLAS",
+    "name": "NL All-Star",
+    "date": "2025-07-15",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 808967,
+      "link": "/api/v1/people/808967",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "NLPITOM",
+    "name": "NL Pitcher of the Month",
+    "date": "2025-09-28",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 808967,
+      "link": "/api/v1/people/808967",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "WSMVP",
+    "name": "Willie Mays World Series MVP",
+    "date": "2025-11-01",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 808967,
+      "link": "/api/v1/people/808967",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "WSCHAMP",
+    "name": "World Series Championship",
+    "date": "2025-11-01",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 808967,
+      "link": "/api/v1/people/808967",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "BABERUTH",
+    "name": "Babe Ruth Award",
+    "date": "2025-11-10",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 808967,
+      "link": "/api/v1/people/808967",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "MLBAFIRST",
+    "name": "All-MLB First Team",
+    "date": "2025-11-13",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 808967,
+      "link": "/api/v1/people/808967",
+      "primaryPosition": {
+        "code": "S",
+        "name": "Starting Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "SP"
+      }
+    }
+  }
+]

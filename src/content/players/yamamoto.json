@@ -106,5 +106,19 @@
       "whip": "1.05"
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "awards": [
+    {
+      "year": 2025,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "NL All-Star"
+    },
+    {
+      "year": 2025,
+      "label": "ワールドシリーズMVP",
+      "cat": "ws-mvp",
+      "raw": "Willie Mays World Series MVP"
+    }
+  ]
 }

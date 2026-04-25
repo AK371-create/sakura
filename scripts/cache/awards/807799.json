@@ -1,0 +1,44 @@
+[
+  {
+    "id": "WBCTT",
+    "name": "WBC All-Tournament Team",
+    "date": "2023-03-22",
+    "season": "2023",
+    "team": {
+      "id": 843,
+      "link": "/api/v1/teams/843",
+      "teamName": "Japan"
+    },
+    "player": {
+      "id": 807799,
+      "link": "/api/v1/people/807799",
+      "primaryPosition": {
+        "code": "O",
+        "name": "Outfield",
+        "type": "Outfielder",
+        "abbreviation": "OF"
+      }
+    }
+  },
+  {
+    "id": "ALPOW",
+    "name": "AL Player of the Week",
+    "date": "2023-05-07",
+    "season": "2023",
+    "team": {
+      "id": 111,
+      "link": "/api/v1/teams/111",
+      "teamName": "Boston"
+    },
+    "player": {
+      "id": 807799,
+      "link": "/api/v1/people/807799",
+      "primaryPosition": {
+        "code": "7",
+        "name": "Outfielder",
+        "type": "Outfielder",
+        "abbreviation": "LF"
+      }
+    }
+  }
+]

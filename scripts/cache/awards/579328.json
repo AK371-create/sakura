@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ALAS",
+    "name": "AL All-Star",
+    "date": "2021-07-13",
+    "season": "2021",
+    "team": {
+      "id": 136,
+      "link": "/api/v1/teams/136",
+      "teamName": "Seattle"
+    },
+    "player": {
+      "id": 579328,
+      "link": "/api/v1/people/579328",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "TORMIP",
+    "name": "Blue Jays Most Improved Player",
+    "date": "2023-11-28",
+    "season": "2023",
+    "team": {
+      "id": 141,
+      "link": "/api/v1/teams/141",
+      "teamName": "Toronto"
+    },
+    "player": {
+      "id": 579328,
+      "link": "/api/v1/people/579328",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "ALAS",
+    "name": "AL All-Star",
+    "date": "2025-07-15",
+    "season": "2025",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 579328,
+      "link": "/api/v1/people/579328",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  }
+]

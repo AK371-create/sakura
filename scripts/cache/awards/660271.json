@@ -1,0 +1,1451 @@
+[
+  {
+    "id": "ALPOW",
+    "name": "AL Player of the Week",
+    "date": "2018-04-08",
+    "season": "2018",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "S",
+        "name": "Starting Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "SP"
+      }
+    }
+  },
+  {
+    "id": "ALROM",
+    "name": "AL Rookie of the Month",
+    "date": "2018-04-30",
+    "season": "2018",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "S",
+        "name": "Starting Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "SP"
+      }
+    }
+  },
+  {
+    "id": "ALPOW",
+    "name": "AL Player of the Week",
+    "date": "2018-09-09",
+    "season": "2018",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "ALROM",
+    "name": "AL Rookie of the Month",
+    "date": "2018-09-30",
+    "season": "2018",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "BAMLART",
+    "name": "Baseball America Major League All-Rookie Team",
+    "date": "2018-10-04",
+    "season": "2018",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "BAMLROY",
+    "name": "Baseball America Major League Rookie of the Year",
+    "date": "2018-10-08",
+    "season": "2018",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "ALROY",
+    "name": "Jackie Robinson AL Rookie of the Year",
+    "date": "2018-11-12",
+    "season": "2018",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "ALPOW",
+    "name": "AL Player of the Week",
+    "date": "2021-06-20",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "ALPOM",
+    "name": "AL Player of the Month",
+    "date": "2021-06-30",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "ALPOW",
+    "name": "AL Player of the Week",
+    "date": "2021-07-04",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "HRDERBY",
+    "name": "Home Run Derby Participant",
+    "date": "2021-07-12",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "ALAS",
+    "name": "AL All-Star",
+    "date": "2021-07-13",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "ALPOM",
+    "name": "AL Player of the Month",
+    "date": "2021-07-31",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "BAMLPOY",
+    "name": "Baseball America Major League Player of the Year",
+    "date": "2021-10-22",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "MLBCOMHA",
+    "name": "Commissioner’s Historic Achievement Award",
+    "date": "2021-10-26",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "MLBPCALOP",
+    "name": "MLB Players Choice AL Outstanding Player",
+    "date": "2021-10-28",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "MLBPCPOY",
+    "name": "MLB Players Choice Player of the Year",
+    "date": "2021-10-28",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "ALSS",
+    "name": "AL Silver Slugger",
+    "date": "2021-11-11",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "ALMVP",
+    "name": "AL MVP",
+    "date": "2021-11-18",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "MLBAFIRST",
+    "name": "All-MLB First Team",
+    "date": "2021-11-23",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "MLBSECOND",
+    "name": "All-MLB Second Team",
+    "date": "2021-11-23",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "S",
+        "name": "Starting Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "SP"
+      }
+    }
+  },
+  {
+    "id": "DHOY",
+    "name": "Edgar Martinez Outstanding DH of the Year",
+    "date": "2021-11-29",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "APATHLETE",
+    "name": "AP Male Athlete of the Year",
+    "date": "2021-12-21",
+    "season": "2021",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "ALAS",
+    "name": "AL All-Star",
+    "date": "2022-07-19",
+    "season": "2022",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "DHOY",
+    "name": "Edgar Martinez Outstanding DH of the Year",
+    "date": "2022-11-28",
+    "season": "2022",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "MLBAFIRST",
+    "name": "All-MLB First Team",
+    "date": "2022-12-05",
+    "season": "2022",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "S",
+        "name": "Starting Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "SP"
+      }
+    }
+  },
+  {
+    "id": "MLBSECOND",
+    "name": "All-MLB Second Team",
+    "date": "2022-12-05",
+    "season": "2022",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "WBCMVPB",
+    "name": "World Baseball Classic Pool B MVP",
+    "date": "2023-03-14",
+    "season": "2023",
+    "team": {
+      "id": 843,
+      "link": "/api/v1/teams/843",
+      "teamName": "Japan"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "WBCMVP",
+    "name": "World Baseball Classic MVP",
+    "date": "2023-03-21",
+    "season": "2023",
+    "team": {
+      "id": 843,
+      "link": "/api/v1/teams/843",
+      "teamName": "Japan"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "WBCTT",
+    "name": "WBC All-Tournament Team",
+    "date": "2023-03-22",
+    "season": "2023",
+    "team": {
+      "id": 843,
+      "link": "/api/v1/teams/843",
+      "teamName": "Japan"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "WBCTT",
+    "name": "WBC All-Tournament Team",
+    "date": "2023-03-23",
+    "season": "2023",
+    "team": {
+      "id": 843,
+      "link": "/api/v1/teams/843",
+      "teamName": "Japan"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "ALPOW",
+    "name": "AL Player of the Week",
+    "date": "2023-06-18",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "ALPOM",
+    "name": "AL Player of the Month",
+    "date": "2023-06-30",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "ALPOW",
+    "name": "AL Player of the Week",
+    "date": "2023-07-02",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "ALAS",
+    "name": "AL All-Star",
+    "date": "2023-07-11",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "ALPOW",
+    "name": "AL Player of the Week",
+    "date": "2023-07-30",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "ALPOM",
+    "name": "AL Player of the Month",
+    "date": "2023-07-31",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "BAMLPOY",
+    "name": "Baseball America Major League Player of the Year",
+    "date": "2023-10-02",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "MLBPCALOP",
+    "name": "MLB Players Choice AL Outstanding Player",
+    "date": "2023-11-02",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "ALSS",
+    "name": "AL Silver Slugger",
+    "date": "2023-11-09",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "ALMVP",
+    "name": "AL MVP",
+    "date": "2023-11-16",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "DHOY",
+    "name": "Edgar Martinez Outstanding DH of the Year",
+    "date": "2023-11-30",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "ALHAA",
+    "name": "AL Hank Aaron Award",
+    "date": "2023-12-16",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "MLBAFIRST",
+    "name": "All-MLB First Team",
+    "date": "2023-12-16",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "S",
+        "name": "Starting Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "SP"
+      }
+    }
+  },
+  {
+    "id": "APATHLETE",
+    "name": "AP Male Athlete of the Year",
+    "date": "2023-12-21",
+    "season": "2023",
+    "team": {
+      "id": 108,
+      "link": "/api/v1/teams/108",
+      "teamName": "LA Angels"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "NLPOW",
+    "name": "NL Player of the Week",
+    "date": "2024-05-05",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "NLPOW",
+    "name": "NL Player of the Week",
+    "date": "2024-06-23",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "NLAS",
+    "name": "NL All-Star",
+    "date": "2024-07-16",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "NLPOW",
+    "name": "NL Player of the Week",
+    "date": "2024-09-22",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "NLPOW",
+    "name": "NL Player of the Week",
+    "date": "2024-09-29",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "NLPOM",
+    "name": "NL Player of the Month",
+    "date": "2024-09-30",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "MLBPCNLOP",
+    "name": "MLB Players Choice NL Outstanding Player",
+    "date": "2024-10-26",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "WSCHAMP",
+    "name": "World Series Championship",
+    "date": "2024-10-30",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "NLSS",
+    "name": "NL Silver Slugger",
+    "date": "2024-11-12",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "MLBAFIRST",
+    "name": "All-MLB First Team",
+    "date": "2024-11-14",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "DHOY",
+    "name": "Edgar Martinez Outstanding DH of the Year",
+    "date": "2024-11-14",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "NLHAA",
+    "name": "NL Hank Aaron Award",
+    "date": "2024-11-14",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "NLMVP",
+    "name": "NL MVP",
+    "date": "2024-11-21",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "APATHLETE",
+    "name": "AP Male Athlete of the Year",
+    "date": "2024-12-23",
+    "season": "2024",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "NLPOM",
+    "name": "NL Player of the Month",
+    "date": "2025-05-31",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "NLAS",
+    "name": "NL All-Star",
+    "date": "2025-07-15",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "NLCSMVP",
+    "name": "NLCS MVP",
+    "date": "2025-10-17",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "WSCHAMP",
+    "name": "World Series Championship",
+    "date": "2025-11-01",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "NLSS",
+    "name": "NL Silver Slugger",
+    "date": "2025-11-06",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "MLBAFIRST",
+    "name": "All-MLB First Team",
+    "date": "2025-11-13",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "DHOY",
+    "name": "Edgar Martinez Outstanding DH of the Year",
+    "date": "2025-11-13",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "NLHAA",
+    "name": "NL Hank Aaron Award",
+    "date": "2025-11-13",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "NLMVP",
+    "name": "NL MVP",
+    "date": "2025-11-13",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "Y",
+        "name": "Two-Way Player",
+        "type": "Two-Way Player",
+        "abbreviation": "TWP"
+      }
+    }
+  },
+  {
+    "id": "WBCTT",
+    "name": "WBC All-Tournament Team",
+    "date": "2026-03-17",
+    "season": "2026",
+    "team": {
+      "id": 843,
+      "link": "/api/v1/teams/843",
+      "teamName": "Japan"
+    },
+    "player": {
+      "id": 660271,
+      "link": "/api/v1/people/660271",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  }
+]

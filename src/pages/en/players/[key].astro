@@ -63,6 +63,32 @@ const ledSeasons = yearly
     year: y.year, team: y.team, type: y.type,
     items: y.led.map((field: string) => ({ field, value: y[field], label: STAT_LABEL_EN[field] ?? field })),
   }));
+
+// Awards (English labels)
+const AWARD_EN: Record<string, string> = {
+  "ws-mvp": "World Series MVP",
+  "mvp": "League MVP",
+  "cy": "Cy Young Award",
+  "roy": "Rookie of the Year",
+  "lcs-mvp": "LCS MVP",
+  "silver": "Silver Slugger",
+  "gold": "Gold Glove",
+  "aaron": "Hank Aaron Award",
+  "comeback": "Comeback Player",
+  "historic": "Commissioner's Historic",
+  "as": "All-Star",
+};
+const allAwards = (player.awards ?? []) as Array<{year: number; label: string; cat: string}>;
+type AwardGroup = { label: string; cat: string; count: number; years: number[] };
+const awardsByCat: Map<string, AwardGroup> = new Map();
+for (const a of allAwards) {
+  const g = awardsByCat.get(a.cat);
+  if (g) { g.count++; g.years.push(a.year); }
+  else { awardsByCat.set(a.cat, { label: AWARD_EN[a.cat] ?? a.label, cat: a.cat, count: 1, years: [a.year] }); }
+}
+const CAT_ORDER = ["ws-mvp", "mvp", "cy", "roy", "lcs-mvp", "silver", "gold", "aaron", "comeback", "historic", "as"];
+const groupedAwards = Array.from(awardsByCat.values())
+  .sort((a, b) => CAT_ORDER.indexOf(a.cat) - CAT_ORDER.indexOf(b.cat));
 ---
 <Layout
   title={player.name_en}
@@ -98,11 +124,36 @@ const ledSeasons = yearly
     </div>
   )}
 
+  {groupedAwards.length > 0 && (
+    <section class="awards-panel">
+      <div class="awards-head">
+        <span class="awards-icon" aria-hidden="true">🏅</span>
+        <h2>Awards</h2>
+        <span class="awards-count">{allAwards.length} total</span>
+      </div>
+      <div class="awards-grid">
+        {groupedAwards.map((g) => (
+          <div class:list={["award-card", `cat-${g.cat}`]}>
+            <div class="award-label">{g.label}</div>
+            <div class="award-meta">
+              {g.count > 1 && <span class="award-count">{g.count}x</span>}
+              <span class="award-years mono">
+                {g.years.length <= 3
+                  ? g.years.join(", ")
+                  : `${Math.min(...g.years)}–${Math.max(...g.years)}`}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
   {ledSeasons.length > 0 && (
     <section class="led-panel">
       <div class="led-head">
         <span class="led-icon" aria-hidden="true">🏆</span>
-        <h2>MLB Leading Seasons</h2>
+        <h2>MLB-Leading Stats</h2>
         <span class="led-count">{ledSeasons.reduce((s: number, x: any) => s + x.items.length, 0)} titles</span>
       </div>
       <div class="led-list">
@@ -144,6 +195,9 @@ const ledSeasons = yearly
       <div class="summary-card"><div class="sc-label mono">W-L</div><div class="sc-value mono">{pitching.w}-{pitching.l}</div></div>
       {pitching.sv !== undefined && (
         <div class="summary-card"><div class="sc-label mono">SV</div><div class="sc-value mono">{pitching.sv}</div></div>
+      )}
+      {pitching.hld !== undefined && (
+        <div class="summary-card"><div class="sc-label mono">HLD</div><div class="sc-value mono">{pitching.hld}</div></div>
       )}
       <div class="summary-card primary"><div class="sc-label mono">SO</div><div class="sc-value mono">{pitching.so}</div></div>
       <div class="summary-card"><div class="sc-label mono">WHIP</div><div class="sc-value mono">{pitching.whip}</div></div>
@@ -212,6 +266,8 @@ const ledSeasons = yearly
               <th class="num">SO</th>
               <th class="num">IP</th>
               <th class="num">WHIP</th>
+              {pitchingYearly.some((y: any) => y.sv !== undefined) && <th class="num">SV</th>}
+              {pitchingYearly.some((y: any) => y.hld !== undefined) && <th class="num">HLD</th>}
             </tr>
           </thead>
           <tbody>
@@ -225,6 +281,8 @@ const ledSeasons = yearly
                 <td class:list={["num", "mono", statClass(y, "so")]}>{y.so}</td>
                 <td class:list={["num", "mono", statClass(y, "ip")]}>{y.ip}</td>
                 <td class:list={["num", "mono", statClass(y, "whip")]}>{y.whip}</td>
+                {pitchingYearly.some((r: any) => r.sv !== undefined) && <td class="num mono">{y.sv ?? "—"}</td>}
+                {pitchingYearly.some((r: any) => r.hld !== undefined) && <td class="num mono">{y.hld ?? "—"}</td>}
               </tr>
             ))}
           </tbody>
@@ -374,6 +432,61 @@ const ledSeasons = yearly
   }
   .banner-label { font-weight: 700; color: var(--text); font-size: 0.92rem; }
   .banner-years { color: var(--text-muted); font-size: 0.85rem; }
+
+  .awards-panel {
+    background: linear-gradient(135deg, rgba(217, 169, 46, 0.06), rgba(214, 37, 56, 0.04));
+    border: 1px solid rgba(217, 169, 46, 0.25);
+    border-radius: var(--radius-md);
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  .awards-head {
+    display: flex; align-items: center; gap: 0.6rem;
+    padding: 0.85rem 1.3rem;
+    border-bottom: 1px solid rgba(217, 169, 46, 0.2);
+    background: rgba(217, 169, 46, 0.08);
+  }
+  .awards-icon { font-size: 1.1rem; }
+  .awards-head h2 { font-size: 1rem; font-weight: 700; margin: 0; color: #8a6914; flex: 1; }
+  .awards-count {
+    font-size: 0.72rem; color: #8a6914; font-weight: 600;
+    background: white;
+    padding: 0.15rem 0.6rem;
+    border-radius: 100px;
+    border: 1px solid rgba(217, 169, 46, 0.3);
+    letter-spacing: 0.05em;
+  }
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.6rem;
+    padding: 1rem 1.3rem;
+  }
+  .award-card {
+    display: flex; flex-direction: column; gap: 0.35rem;
+    padding: 0.7rem 0.9rem;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+  }
+  .award-card.cat-mvp, .award-card.cat-ws-mvp, .award-card.cat-cy {
+    border-color: rgba(214, 37, 56, 0.4);
+    background: linear-gradient(135deg, white, rgba(214, 37, 56, 0.04));
+  }
+  .award-card.cat-roy {
+    border-color: rgba(237, 124, 44, 0.4);
+    background: linear-gradient(135deg, white, rgba(237, 124, 44, 0.04));
+  }
+  .award-label { font-weight: 700; color: var(--text); font-size: 0.92rem; }
+  .award-meta { display: flex; gap: 0.4rem; align-items: center; font-size: 0.78rem; }
+  .award-count {
+    color: var(--accent);
+    font-weight: 700;
+    background: rgba(214, 37, 56, 0.1);
+    padding: 0.1rem 0.5rem;
+    border-radius: 100px;
+  }
+  .award-years { color: var(--text-muted); }
 
   .led-panel {
     background: linear-gradient(135deg, rgba(214, 37, 56, 0.04), rgba(237, 124, 44, 0.04));

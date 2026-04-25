@@ -291,5 +291,121 @@
       "whip": "0.85"
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "awards": [
+    {
+      "year": 2018,
+      "label": "新人王",
+      "cat": "roy",
+      "raw": "Jackie Robinson AL Rookie of the Year"
+    },
+    {
+      "year": 2021,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2021,
+      "label": "コミッショナー特別賞",
+      "cat": "historic",
+      "raw": "Commissioner’s Historic Achievement Award"
+    },
+    {
+      "year": 2021,
+      "label": "リーグMVP",
+      "cat": "mvp",
+      "raw": "AL MVP"
+    },
+    {
+      "year": 2021,
+      "label": "シルバースラッガー賞",
+      "cat": "silver",
+      "raw": "AL Silver Slugger"
+    },
+    {
+      "year": 2022,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2023,
+      "label": "ハンク・アーロン賞",
+      "cat": "aaron",
+      "raw": "AL Hank Aaron Award"
+    },
+    {
+      "year": 2023,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2023,
+      "label": "リーグMVP",
+      "cat": "mvp",
+      "raw": "AL MVP"
+    },
+    {
+      "year": 2023,
+      "label": "シルバースラッガー賞",
+      "cat": "silver",
+      "raw": "AL Silver Slugger"
+    },
+    {
+      "year": 2024,
+      "label": "ハンク・アーロン賞",
+      "cat": "aaron",
+      "raw": "NL Hank Aaron Award"
+    },
+    {
+      "year": 2024,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "NL All-Star"
+    },
+    {
+      "year": 2024,
+      "label": "リーグMVP",
+      "cat": "mvp",
+      "raw": "NL MVP"
+    },
+    {
+      "year": 2024,
+      "label": "シルバースラッガー賞",
+      "cat": "silver",
+      "raw": "NL Silver Slugger"
+    },
+    {
+      "year": 2025,
+      "label": "ハンク・アーロン賞",
+      "cat": "aaron",
+      "raw": "NL Hank Aaron Award"
+    },
+    {
+      "year": 2025,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "NL All-Star"
+    },
+    {
+      "year": 2025,
+      "label": "NLCS MVP",
+      "cat": "lcs-mvp",
+      "raw": "NLCS MVP"
+    },
+    {
+      "year": 2025,
+      "label": "リーグMVP",
+      "cat": "mvp",
+      "raw": "NL MVP"
+    },
+    {
+      "year": 2025,
+      "label": "シルバースラッガー賞",
+      "cat": "silver",
+      "raw": "NL Silver Slugger"
+    }
+  ]
 }

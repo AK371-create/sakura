@@ -136,5 +136,25 @@
       "ops": ".459"
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "awards": [
+    {
+      "year": 2003,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2004,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2009,
+      "label": "ワールドシリーズMVP",
+      "cat": "ws-mvp",
+      "raw": "Willie Mays World Series MVP"
+    }
+  ]
 }

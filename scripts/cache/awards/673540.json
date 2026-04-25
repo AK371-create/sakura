@@ -1,0 +1,65 @@
+[
+  {
+    "id": "WBCTT",
+    "name": "WBC All-Tournament Team",
+    "date": "2017-03-22",
+    "season": "2017",
+    "team": {
+      "id": 843,
+      "link": "/api/v1/teams/843",
+      "teamName": "Japan"
+    },
+    "player": {
+      "id": 673540,
+      "link": "/api/v1/people/673540",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "NLAS",
+    "name": "NL All-Star",
+    "date": "2023-07-11",
+    "season": "2023",
+    "team": {
+      "id": 121,
+      "link": "/api/v1/teams/121",
+      "teamName": "NY Mets"
+    },
+    "player": {
+      "id": 673540,
+      "link": "/api/v1/people/673540",
+      "primaryPosition": {
+        "code": "S",
+        "name": "Starting Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "SP"
+      }
+    }
+  },
+  {
+    "id": "BAMLART",
+    "name": "Baseball America Major League All-Rookie Team",
+    "date": "2023-10-05",
+    "season": "2023",
+    "team": {
+      "id": 121,
+      "link": "/api/v1/teams/121",
+      "teamName": "NY Mets"
+    },
+    "player": {
+      "id": 673540,
+      "link": "/api/v1/people/673540",
+      "primaryPosition": {
+        "code": "S",
+        "name": "Starting Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "SP"
+      }
+    }
+  }
+]

@@ -282,5 +282,163 @@
       "ops": ".536"
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "awards": [
+    {
+      "year": 2001,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2001,
+      "label": "ゴールドグラブ賞",
+      "cat": "gold",
+      "raw": "Rawlings AL Gold Glove"
+    },
+    {
+      "year": 2001,
+      "label": "リーグMVP",
+      "cat": "mvp",
+      "raw": "AL MVP"
+    },
+    {
+      "year": 2001,
+      "label": "新人王",
+      "cat": "roy",
+      "raw": "Jackie Robinson AL Rookie of the Year"
+    },
+    {
+      "year": 2001,
+      "label": "シルバースラッガー賞",
+      "cat": "silver",
+      "raw": "AL Silver Slugger"
+    },
+    {
+      "year": 2002,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2002,
+      "label": "ゴールドグラブ賞",
+      "cat": "gold",
+      "raw": "Rawlings AL Gold Glove"
+    },
+    {
+      "year": 2003,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2003,
+      "label": "ゴールドグラブ賞",
+      "cat": "gold",
+      "raw": "Rawlings AL Gold Glove"
+    },
+    {
+      "year": 2004,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2004,
+      "label": "ゴールドグラブ賞",
+      "cat": "gold",
+      "raw": "Rawlings AL Gold Glove"
+    },
+    {
+      "year": 2005,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2005,
+      "label": "ゴールドグラブ賞",
+      "cat": "gold",
+      "raw": "Rawlings AL Gold Glove"
+    },
+    {
+      "year": 2005,
+      "label": "コミッショナー特別賞",
+      "cat": "historic",
+      "raw": "Commissioner’s Historic Achievement Award"
+    },
+    {
+      "year": 2006,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2006,
+      "label": "ゴールドグラブ賞",
+      "cat": "gold",
+      "raw": "Rawlings AL Gold Glove"
+    },
+    {
+      "year": 2007,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2007,
+      "label": "ゴールドグラブ賞",
+      "cat": "gold",
+      "raw": "Rawlings AL Gold Glove"
+    },
+    {
+      "year": 2007,
+      "label": "シルバースラッガー賞",
+      "cat": "silver",
+      "raw": "AL Silver Slugger"
+    },
+    {
+      "year": 2008,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2008,
+      "label": "ゴールドグラブ賞",
+      "cat": "gold",
+      "raw": "Rawlings AL Gold Glove"
+    },
+    {
+      "year": 2009,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2009,
+      "label": "ゴールドグラブ賞",
+      "cat": "gold",
+      "raw": "Rawlings AL Gold Glove"
+    },
+    {
+      "year": 2009,
+      "label": "シルバースラッガー賞",
+      "cat": "silver",
+      "raw": "AL Silver Slugger"
+    },
+    {
+      "year": 2010,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2010,
+      "label": "ゴールドグラブ賞",
+      "cat": "gold",
+      "raw": "Rawlings AL Gold Glove"
+    }
+  ]
 }

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "WBCMVPB",
+    "name": "World Baseball Classic Pool B MVP",
+    "date": "2017-03-10",
+    "season": "2017",
+    "team": {
+      "id": 843,
+      "link": "/api/v1/teams/843",
+      "teamName": "Japan"
+    },
+    "player": {
+      "id": 660294,
+      "link": "/api/v1/people/660294",
+      "primaryPosition": {
+        "code": "I",
+        "name": "Infield",
+        "type": "Infielder",
+        "abbreviation": "IF"
+      }
+    }
+  }
+]

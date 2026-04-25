@@ -1,0 +1,23 @@
+[
+  {
+    "id": "BAMLART",
+    "name": "Baseball America Major League All-Rookie Team",
+    "date": "2008-10-15",
+    "season": "2008",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 493133,
+      "link": "/api/v1/people/493133",
+      "primaryPosition": {
+        "code": "S",
+        "name": "Starting Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "SP"
+      }
+    }
+  }
+]

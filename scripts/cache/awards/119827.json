@@ -1,0 +1,213 @@
+[
+  {
+    "id": "NLPOW",
+    "name": "NL Player of the Week",
+    "date": "1995-06-25",
+    "season": "1995",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 119827,
+      "link": "/api/v1/people/119827",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "NLPITOM",
+    "name": "NL Pitcher of the Month",
+    "date": "1995-06-30",
+    "season": "1995",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 119827,
+      "link": "/api/v1/people/119827",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "NLAS",
+    "name": "NL All-Star",
+    "date": "1995-07-11",
+    "season": "1995",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 119827,
+      "link": "/api/v1/people/119827",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "BAMLROY",
+    "name": "Baseball America Major League Rookie of the Year",
+    "date": "1995-10-05",
+    "season": "1995",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 119827,
+      "link": "/api/v1/people/119827",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "NLROY",
+    "name": "Jackie Robinson NL Rookie of the Year",
+    "date": "1995-11-01",
+    "season": "1995",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 119827,
+      "link": "/api/v1/people/119827",
+      "primaryPosition": {
+        "code": "S",
+        "name": "Starting Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "SP"
+      }
+    },
+    "votes": 118
+  },
+  {
+    "id": "NLPOW",
+    "name": "NL Player of the Week",
+    "date": "1996-04-14",
+    "season": "1996",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 119827,
+      "link": "/api/v1/people/119827",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "NLPOW",
+    "name": "NL Player of the Week",
+    "date": "1996-09-22",
+    "season": "1996",
+    "team": {
+      "id": 115,
+      "link": "/api/v1/teams/115",
+      "teamName": "Colorado"
+    },
+    "player": {
+      "id": 119827,
+      "link": "/api/v1/people/119827",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "NLPITOM",
+    "name": "NL Pitcher of the Month",
+    "date": "1996-09-30",
+    "season": "1996",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 119827,
+      "link": "/api/v1/people/119827",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "ALPOW",
+    "name": "AL Player of the Week",
+    "date": "2001-04-08",
+    "season": "2001",
+    "team": {
+      "id": 111,
+      "link": "/api/v1/teams/111",
+      "teamName": "Boston"
+    },
+    "player": {
+      "id": 119827,
+      "link": "/api/v1/people/119827",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  },
+  {
+    "id": "BOSPOY",
+    "name": "Red Sox Pitcher of the Year",
+    "date": "2001-12-01",
+    "season": "2001",
+    "team": {
+      "id": 111,
+      "link": "/api/v1/teams/111",
+      "teamName": "Boston"
+    },
+    "player": {
+      "id": 119827,
+      "link": "/api/v1/people/119827",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  }
+]

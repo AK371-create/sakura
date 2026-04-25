@@ -1,0 +1,23 @@
+[
+  {
+    "id": "NLAS",
+    "name": "NL All-Star",
+    "date": "2008-07-15",
+    "season": "2008",
+    "team": {
+      "id": 112,
+      "link": "/api/v1/teams/112",
+      "teamName": "Chi Cubs"
+    },
+    "player": {
+      "id": 493120,
+      "link": "/api/v1/people/493120",
+      "primaryPosition": {
+        "code": "O",
+        "name": "Outfield",
+        "type": "Outfielder",
+        "abbreviation": "OF"
+      }
+    }
+  }
+]

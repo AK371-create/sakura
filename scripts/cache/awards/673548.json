@@ -1,0 +1,107 @@
+[
+  {
+    "id": "NLPOW",
+    "name": "NL Player of the Week",
+    "date": "2022-04-17",
+    "season": "2022",
+    "team": {
+      "id": 112,
+      "link": "/api/v1/teams/112",
+      "teamName": "Chi Cubs"
+    },
+    "player": {
+      "id": 673548,
+      "link": "/api/v1/people/673548",
+      "primaryPosition": {
+        "code": "O",
+        "name": "Outfield",
+        "type": "Outfielder",
+        "abbreviation": "OF"
+      }
+    }
+  },
+  {
+    "id": "NLROM",
+    "name": "NL Rookie of the Month",
+    "date": "2022-04-30",
+    "season": "2022",
+    "team": {
+      "id": 112,
+      "link": "/api/v1/teams/112",
+      "teamName": "Chi Cubs"
+    },
+    "player": {
+      "id": 673548,
+      "link": "/api/v1/people/673548",
+      "primaryPosition": {
+        "code": "O",
+        "name": "Outfield",
+        "type": "Outfielder",
+        "abbreviation": "OF"
+      }
+    }
+  },
+  {
+    "id": "BAMLART",
+    "name": "Baseball America Major League All-Rookie Team",
+    "date": "2022-10-07",
+    "season": "2022",
+    "team": {
+      "id": 112,
+      "link": "/api/v1/teams/112",
+      "teamName": "Chi Cubs"
+    },
+    "player": {
+      "id": 673548,
+      "link": "/api/v1/people/673548",
+      "primaryPosition": {
+        "code": "10",
+        "name": "Designated Hitter",
+        "type": "Hitter",
+        "abbreviation": "DH"
+      }
+    }
+  },
+  {
+    "id": "NLPOW",
+    "name": "NL Player of the Week",
+    "date": "2025-05-25",
+    "season": "2025",
+    "team": {
+      "id": 112,
+      "link": "/api/v1/teams/112",
+      "teamName": "Chi Cubs"
+    },
+    "player": {
+      "id": 673548,
+      "link": "/api/v1/people/673548",
+      "primaryPosition": {
+        "code": "O",
+        "name": "Outfield",
+        "type": "Outfielder",
+        "abbreviation": "OF"
+      }
+    }
+  },
+  {
+    "id": "NLPOW",
+    "name": "NL Player of the Week",
+    "date": "2025-09-28",
+    "season": "2025",
+    "team": {
+      "id": 112,
+      "link": "/api/v1/teams/112",
+      "teamName": "Chi Cubs"
+    },
+    "player": {
+      "id": 673548,
+      "link": "/api/v1/people/673548",
+      "primaryPosition": {
+        "code": "9",
+        "name": "Outfielder",
+        "type": "Outfielder",
+        "abbreviation": "RF"
+      }
+    }
+  }
+]

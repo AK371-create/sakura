@@ -1,0 +1,23 @@
+[
+  {
+    "id": "WSCHAMP",
+    "name": "World Series Championship",
+    "date": "2025-11-01",
+    "season": "2025",
+    "team": {
+      "id": 119,
+      "link": "/api/v1/teams/119",
+      "teamName": "LA Dodgers"
+    },
+    "player": {
+      "id": 808963,
+      "link": "/api/v1/people/808963",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  }
+]

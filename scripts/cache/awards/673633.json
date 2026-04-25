@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ARIROY",
+    "name": "Diamondbacks Rookie of the Year",
+    "date": "2018-10-05",
+    "season": "2018",
+    "team": {
+      "id": 109,
+      "link": "/api/v1/teams/109",
+      "teamName": "Arizona"
+    },
+    "player": {
+      "id": 673633,
+      "link": "/api/v1/people/673633",
+      "primaryPosition": {
+        "code": "1",
+        "name": "Pitcher",
+        "type": "Pitcher",
+        "abbreviation": "P"
+      }
+    }
+  }
+]

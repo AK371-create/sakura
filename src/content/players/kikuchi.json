@@ -103,7 +103,8 @@
       "era": "5.19",
       "so": 124,
       "ip": "100.2",
-      "whip": "1.55"
+      "whip": "1.55",
+      "sv": 1
     },
     {
       "year": 2023,
@@ -153,5 +154,19 @@
       "whip": "1.20"
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "awards": [
+    {
+      "year": 2021,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2025,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    }
+  ]
 }

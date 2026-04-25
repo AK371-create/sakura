@@ -259,5 +259,37 @@
       "whip": "1.15"
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "awards": [
+    {
+      "year": 2012,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2013,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2014,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2017,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "AL All-Star"
+    },
+    {
+      "year": 2021,
+      "label": "オールスター",
+      "cat": "as",
+      "raw": "NL All-Star"
+    }
+  ]
 }
