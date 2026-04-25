@@ -50,26 +50,32 @@ const noCurrentLabel = lang === "ja" ? "今季出場なし" : "Not played";
     <span class="sep">·</span>
     <span>{pos}</span>
   </div>
-  <div class="card-stats">
-    {hitting && (
-      <>
-        <div class="stat"><div class="stat-label">{lang === "ja" ? "打率" : "AVG"}</div><div class="stat-value">{hitting.avg}</div></div>
-        <div class="stat"><div class="stat-label">{lang === "ja" ? "本塁打" : "HR"}</div><div class="stat-value">{hitting.hr}</div></div>
-        <div class="stat"><div class="stat-label">OPS</div><div class="stat-value">{hitting.ops}</div></div>
-      </>
-    )}
-    {pitching && !hitting && (
-      <>
+  {noCurrentSeason ? (
+    <div class="card-no-stats">
+      {lang === "ja" ? "2026シーズンの出場なし" : "No 2026 season appearances"}
+    </div>
+  ) : (
+    <div class="card-stats">
+      {hitting && (
+        <>
+          <div class="stat"><div class="stat-label">{lang === "ja" ? "打率" : "AVG"}</div><div class="stat-value">{hitting.avg}</div></div>
+          <div class="stat"><div class="stat-label">{lang === "ja" ? "本塁打" : "HR"}</div><div class="stat-value">{hitting.hr}</div></div>
+          <div class="stat"><div class="stat-label">OPS</div><div class="stat-value">{hitting.ops}</div></div>
+        </>
+      )}
+      {pitching && !hitting && (
+        <>
+          <div class="stat"><div class="stat-label">{lang === "ja" ? "防御率" : "ERA"}</div><div class="stat-value">{pitching.era}</div></div>
+          <div class="stat"><div class="stat-label">{lang === "ja" ? "奪三振" : "SO"}</div><div class="stat-value">{pitching.so}</div></div>
+          <div class="stat"><div class="stat-label">WHIP</div><div class="stat-value">{pitching.whip}</div></div>
+        </>
+      )}
+      {pitching && hitting && (
         <div class="stat"><div class="stat-label">{lang === "ja" ? "防御率" : "ERA"}</div><div class="stat-value">{pitching.era}</div></div>
-        <div class="stat"><div class="stat-label">{lang === "ja" ? "奪三振" : "SO"}</div><div class="stat-value">{pitching.so}</div></div>
-        <div class="stat"><div class="stat-label">WHIP</div><div class="stat-value">{pitching.whip}</div></div>
-      </>
-    )}
-    {pitching && hitting && (
-      <div class="stat"><div class="stat-label">{lang === "ja" ? "防御率" : "ERA"}</div><div class="stat-value">{pitching.era}</div></div>
-    )}
-  </div>
-  {savantHit && (
+      )}
+    </div>
+  )}
+  {savantHit && !noCurrentSeason && (
     <div class="card-spark">
       <div class="spark-item">
         <span class="spark-lbl">EV</span>
@@ -172,6 +178,17 @@ const noCurrentLabel = lang === "ja" ? "今季出場なし" : "Not played";
     padding: 0.8rem 0;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
+  }
+  .card-no-stats {
+    padding: 0.85rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--sv-orange);
+    font-weight: 500;
+    background: rgba(237, 124, 44, 0.04);
+    border-radius: var(--radius-sm);
   }
   .stat { display: flex; flex-direction: column; gap: 0.15rem; }
   .stat-label {
