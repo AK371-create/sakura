@@ -7,41 +7,41 @@ const articles = Object.values(modules)
   .sort((a: any, b: any) => (a.date < b.date ? 1 : -1));
 
 const categoryLabels: Record<string, string> = {
-  player: "PLAYER", statcast: "STATCAST", history: "HISTORY", rivalry: "MATCHUP",
-  rules: "RULES", team: "TEAM", prospects: "PROSPECT", culture: "CULTURE", market: "MARKET",
+  player: "選手", statcast: "Statcast", history: "歴史", rivalry: "対戦",
+  rules: "ルール", team: "チーム", prospects: "若手", culture: "文化", market: "市場",
 };
 const categories = ["all", ...Array.from(new Set(articles.map((a: any) => a.category)))];
 ---
 <Layout title="Analysis" description="日本人メジャーリーガーに関する分析記事・ニュース一覧" lang="ja" currentPath="/articles/">
-  <nav class="breadcrumb mono"><a href="/">← HOME</a> <span class="sep">/</span> <span class="current">ANALYSIS</span></nav>
+  <nav class="breadcrumb"><a href="/">← ホーム</a> <span class="sep">/</span> <span class="current">記事</span></nav>
 
   <header class="page-hero">
-    <div class="hero-eyebrow mono">ANALYSIS // {articles.length} ENTRIES</div>
-    <h1>Analysis</h1>
+    <div class="hero-eyebrow">記事 / 全{articles.length}本</div>
+    <h1>記事</h1>
     <p>日本人メジャーリーガーの分析・歴史・展望。</p>
   </header>
 
   <div class="toolbar">
     <div class="filter-bar" role="tablist" aria-label="カテゴリフィルター">
       {categories.map((c) => (
-        <button class="filter-chip mono" data-cat={c} role="tab" aria-selected={c === "all"}>
-          {c === "all" ? "ALL" : (categoryLabels[c] ?? c.toUpperCase())}
+        <button class="filter-chip" data-cat={c} role="tab" aria-selected={c === "all"}>
+          {c === "all" ? "すべて" : (categoryLabels[c] ?? c)}
         </button>
       ))}
     </div>
   </div>
 
   <div class="article-table">
-    <div class="table-head mono">
-      <span class="col-date">DATE</span>
-      <span class="col-cat">CAT</span>
-      <span class="col-title">TITLE</span>
+    <div class="table-head">
+      <span class="col-date">日付</span>
+      <span class="col-cat">カテゴリ</span>
+      <span class="col-title">タイトル</span>
     </div>
     <div class="table-body">
       {articles.map((a: any) => (
         <a class="row" href={`/articles/${a.slug}/`} data-cat={a.category}>
           <span class="col-date mono">{a.date}</span>
-          <span class="col-cat mono">{categoryLabels[a.category] ?? a.category.toUpperCase()}</span>
+          <span class="col-cat">{categoryLabels[a.category] ?? a.category}</span>
           <span class="col-title">
             <span class="title">{a.title_jp}</span>
             <span class="summary">{a.summary_jp}</span>
@@ -72,7 +72,7 @@ const categories = ["all", ...Array.from(new Set(articles.map((a: any) => a.cate
 
 <style>
   .breadcrumb {
-    font-size: 0.7rem; letter-spacing: 0.08em;
+    font-size: 0.82rem;
     color: var(--text-dim); margin-bottom: 1.5rem;
     display: flex; gap: 0.5rem; align-items: center;
   }
@@ -83,9 +83,8 @@ const categories = ["all", ...Array.from(new Set(articles.map((a: any) => a.cate
 
   .page-hero { padding: 2rem 0 2rem; }
   .hero-eyebrow {
-    font-size: 0.72rem; font-weight: 600;
+    font-size: 0.85rem; font-weight: 600;
     color: var(--accent);
-    letter-spacing: 0.2em;
     margin-bottom: 0.8rem;
   }
   .page-hero h1 {
@@ -112,18 +111,18 @@ const categories = ["all", ...Array.from(new Set(articles.map((a: any) => a.cate
     appearance: none; cursor: pointer;
     background: transparent;
     border: 1px solid var(--border);
-    padding: 0.35rem 0.8rem;
-    border-radius: var(--radius-sm);
-    font-size: 0.68rem;
-    font-weight: 600;
+    padding: 0.4rem 0.95rem;
+    border-radius: 100px;
+    font-size: 0.82rem;
+    font-weight: 500;
     color: var(--text-muted);
-    letter-spacing: 0.1em;
+    font-family: inherit;
     transition: all 0.15s ease;
   }
-  .filter-chip:hover { border-color: var(--border-strong); color: var(--text); }
+  .filter-chip:hover { border-color: var(--border-strong); color: var(--text); background: var(--surface); }
   .filter-chip[aria-selected="true"] {
-    background: rgba(239, 62, 62, 0.12);
-    color: var(--accent);
+    background: var(--accent);
+    color: white;
     border-color: var(--accent);
   }
 
@@ -137,12 +136,11 @@ const categories = ["all", ...Array.from(new Set(articles.map((a: any) => a.cate
   .table-head {
     display: grid;
     grid-template-columns: 100px 110px 1fr;
-    padding: 0.7rem 1.3rem;
+    padding: 0.85rem 1.3rem;
     background: var(--bg-elev);
     border-bottom: 1px solid var(--border);
-    font-size: 0.65rem; font-weight: 600;
-    color: var(--text-dim);
-    letter-spacing: 0.1em;
+    font-size: 0.78rem; font-weight: 600;
+    color: var(--text-muted);
   }
   .table-body { display: flex; flex-direction: column; }
   .row {
@@ -169,10 +167,9 @@ const categories = ["all", ...Array.from(new Set(articles.map((a: any) => a.cate
     padding-top: 0.15rem;
   }
   .col-cat {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     font-weight: 600;
     color: var(--accent);
-    letter-spacing: 0.1em;
     padding-top: 0.2rem;
   }
   .col-title { display: flex; flex-direction: column; gap: 0.3rem; min-width: 0; }
@@ -189,13 +186,12 @@ const categories = ["all", ...Array.from(new Set(articles.map((a: any) => a.cate
   }
   .tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.15rem; }
   .tag {
-    font-size: 0.6rem; font-weight: 500;
-    color: var(--text-dim);
+    font-size: 0.7rem; font-weight: 500;
+    color: var(--text-muted);
     background: var(--bg-elev);
-    padding: 0.15rem 0.45rem;
+    padding: 0.15rem 0.5rem;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border);
-    letter-spacing: 0.05em;
   }
 
   @media (max-width: 640px) {

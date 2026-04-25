@@ -21,10 +21,10 @@ export async function getStaticPaths() {
 const { article, prev, next, related } = Astro.props;
 
 const categoryLabels: Record<string, string> = {
-  player: "PLAYER", statcast: "STATCAST", history: "HISTORY", rivalry: "MATCHUP",
-  rules: "RULES", team: "TEAM", prospects: "PROSPECT", culture: "CULTURE", market: "MARKET",
+  player: "選手", statcast: "Statcast", history: "歴史", rivalry: "対戦",
+  rules: "ルール", team: "チーム", prospects: "若手", culture: "文化", market: "市場",
 };
-const catLabel = categoryLabels[article.category] ?? article.category.toUpperCase();
+const catLabel = categoryLabels[article.category] ?? article.category;
 
 const wordCount = article.body_jp.join("").length;
 const readMin = Math.max(1, Math.round(wordCount / 500));
@@ -35,22 +35,22 @@ const readMin = Math.max(1, Math.round(wordCount / 500));
   lang="ja"
   currentPath={`/articles/${article.slug}/`}
 >
-  <nav class="breadcrumb mono">
-    <a href="/">← HOME</a>
+  <nav class="breadcrumb">
+    <a href="/">← ホーム</a>
     <span class="sep">/</span>
-    <a href="/articles/">ANALYSIS</a>
+    <a href="/articles/">記事</a>
     <span class="sep">/</span>
     <span class="current">{catLabel}</span>
   </nav>
 
   <article class="article">
     <header class="article-header">
-      <div class="meta mono">
+      <div class="meta">
         <span class="meta-cat">{catLabel}</span>
         <span class="sep">·</span>
-        <span class="meta-date">{article.date}</span>
+        <span class="meta-date mono">{article.date}</span>
         <span class="sep">·</span>
-        <span class="meta-read">{readMin} MIN READ</span>
+        <span class="meta-read">{readMin}分で読了</span>
       </div>
       <h1 class="article-title">{article.title_jp}</h1>
       <p class="article-summary">{article.summary_jp}</p>
@@ -71,13 +71,13 @@ const readMin = Math.max(1, Math.round(wordCount / 500));
     <nav class="pager" aria-label="記事ナビゲーション">
       {prev ? (
         <a class="pager-link prev" href={`/articles/${prev.slug}/`}>
-          <span class="pager-label mono">← 新しい記事</span>
+          <span class="pager-label">← 新しい記事</span>
           <span class="pager-title">{prev.title_jp}</span>
         </a>
       ) : <div></div>}
       {next ? (
         <a class="pager-link next" href={`/articles/${next.slug}/`}>
-          <span class="pager-label mono">古い記事 →</span>
+          <span class="pager-label">古い記事 →</span>
           <span class="pager-title">{next.title_jp}</span>
         </a>
       ) : <div></div>}
@@ -86,7 +86,7 @@ const readMin = Math.max(1, Math.round(wordCount / 500));
 
   {related.length > 0 && (
     <section class="related">
-      <div class="related-head mono">RELATED · {catLabel}</div>
+      <div class="related-head">関連記事 · {catLabel}</div>
       <div class="related-grid">
         {related.map((r: any) => (
           <a class="related-card" href={`/articles/${r.slug}/`}>
@@ -101,7 +101,7 @@ const readMin = Math.max(1, Math.round(wordCount / 500));
 
 <style>
   .breadcrumb {
-    font-size: 0.7rem; letter-spacing: 0.08em;
+    font-size: 0.85rem;
     color: var(--text-dim); margin-bottom: 1.5rem;
     display: flex; gap: 0.5rem; align-items: center;
     flex-wrap: wrap;
@@ -122,14 +122,20 @@ const readMin = Math.max(1, Math.round(wordCount / 500));
     margin-bottom: 2.2rem;
   }
   .meta {
-    display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
-    font-size: 0.7rem; letter-spacing: 0.08em;
-    color: var(--text-dim);
+    display: flex; align-items: center; gap: 0.55rem; flex-wrap: wrap;
+    font-size: 0.82rem;
+    color: var(--text-muted);
     margin-bottom: 1.3rem;
   }
-  .meta-cat { color: var(--accent); font-weight: 700; }
+  .meta-cat {
+    color: var(--accent); font-weight: 600;
+    background: rgba(214, 37, 56, 0.08);
+    padding: 0.18rem 0.6rem;
+    border-radius: 100px;
+    font-size: 0.78rem;
+  }
   .meta-date { color: var(--text-muted); font-weight: 500; }
-  .meta-read { color: var(--text-dim); font-weight: 500; }
+  .meta-read { color: var(--text-dim); }
   .meta .sep { color: var(--text-dim); }
 
   .article-title {
@@ -197,10 +203,9 @@ const readMin = Math.max(1, Math.round(wordCount / 500));
   }
   .pager-link.next { text-align: right; }
   .pager-label {
-    font-size: 0.65rem;
+    font-size: 0.78rem;
     color: var(--text-muted);
-    letter-spacing: 0.1em;
-    font-weight: 600;
+    font-weight: 500;
   }
   .pager-title {
     font-size: 0.9rem;
@@ -218,9 +223,8 @@ const readMin = Math.max(1, Math.round(wordCount / 500));
     margin: 3rem auto 0;
   }
   .related-head {
-    font-size: 0.7rem;
-    color: var(--accent);
-    letter-spacing: 0.15em;
+    font-size: 0.95rem;
+    color: var(--text);
     margin-bottom: 1rem;
     font-weight: 700;
     padding-bottom: 0.7rem;
@@ -246,9 +250,8 @@ const readMin = Math.max(1, Math.round(wordCount / 500));
     text-decoration: none;
   }
   .rc-date {
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     color: var(--text-dim);
-    letter-spacing: 0.08em;
   }
   .rc-title {
     font-size: 0.88rem; font-weight: 600;

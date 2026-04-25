@@ -14,8 +14,8 @@ const articles = Object.values(articleModules)
 const featured = articles.slice(0, 6);
 
 const categoryLabels: Record<string, string> = {
-  player: "SELECT", statcast: "STATCAST", history: "HISTORY", rivalry: "MATCHUP",
-  rules: "RULES", team: "TEAM", prospects: "PROSPECT", culture: "CULTURE", market: "MARKET",
+  player: "選手", statcast: "Statcast", history: "歴史", rivalry: "対戦",
+  rules: "ルール", team: "チーム", prospects: "若手", culture: "文化", market: "市場",
 };
 
 const stats = {
@@ -26,23 +26,23 @@ const stats = {
 ---
 <Layout title="SakuraBall" description="日本人メジャーリーガーのシーズン成績、Statcast指標、分析記事" lang="ja" currentPath="/">
   <section class="hero">
-    <div class="hero-eyebrow mono">JAPANESE MLB // 2026 SEASON</div>
-    <h1 class="hero-title">Japanese MLB,<br /><span class="accent">read as data.</span></h1>
+    <div class="hero-eyebrow mono">日本人メジャーリーガー / 2026シーズン</div>
+    <h1 class="hero-title">日本人MLB、<br /><span class="accent">データで読む。</span></h1>
     <p class="hero-lede">
       Statcast指標、球種別成績、パーセンタイルで日本人メジャーリーガーを解剖する。
     </p>
     <div class="hero-stats">
       <div class="hstat">
         <div class="hstat-val mono">{stats.players}</div>
-        <div class="hstat-lbl mono">PLAYERS</div>
+        <div class="hstat-lbl">選手</div>
       </div>
       <div class="hstat">
         <div class="hstat-val mono">{stats.articles}</div>
-        <div class="hstat-lbl mono">ARTICLES</div>
+        <div class="hstat-lbl">記事</div>
       </div>
       <div class="hstat">
         <div class="hstat-val mono">{stats.lastUpdate}</div>
-        <div class="hstat-lbl mono">LAST UPDATE</div>
+        <div class="hstat-lbl">最終更新</div>
       </div>
     </div>
   </section>
@@ -51,9 +51,9 @@ const stats = {
     <div class="section-head">
       <div class="section-head-main">
         <span class="section-num mono">01</span>
-        <h2>Players</h2>
+        <h2>選手</h2>
       </div>
-      <span class="mono section-count">N={players.length}</span>
+      <span class="mono section-count">{players.length}名</span>
     </div>
     <div class="player-grid">
       {players.map((p) => (
@@ -66,16 +66,16 @@ const stats = {
     <div class="section-head">
       <div class="section-head-main">
         <span class="section-num mono">02</span>
-        <h2>Analysis</h2>
+        <h2>記事</h2>
       </div>
-      <a class="section-link mono" href="/articles/">VIEW ALL →</a>
+      <a class="section-link" href="/articles/">すべて見る →</a>
     </div>
     <div class="article-grid">
       {featured.map((a: any) => (
         <a class="article-tile" href={`/articles/${a.slug}/`}>
-          <div class="tile-meta mono">
-            <span class="tile-cat">{categoryLabels[a.category] ?? a.category.toUpperCase()}</span>
-            <span class="tile-date">{a.date}</span>
+          <div class="tile-meta">
+            <span class="tile-cat">{categoryLabels[a.category] ?? a.category}</span>
+            <span class="tile-date mono">{a.date}</span>
           </div>
           <div class="tile-title">{a.title_jp}</div>
           <div class="tile-summary">{a.summary_jp}</div>
@@ -127,9 +127,10 @@ const stats = {
     font-feature-settings: "tnum" 1;
   }
   .hstat-lbl {
-    font-size: 0.65rem;
-    color: var(--text-dim);
-    letter-spacing: 0.15em;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+    font-weight: 500;
   }
 
   /* Section */
@@ -152,10 +153,9 @@ const stats = {
   }
   .section-count { font-size: 0.7rem; color: var(--text-dim); letter-spacing: 0.08em; }
   .section-link {
-    font-size: 0.72rem;
-    font-weight: 600;
+    font-size: 0.85rem;
+    font-weight: 500;
     color: var(--text-muted);
-    letter-spacing: 0.1em;
   }
   .section-link:hover { color: var(--accent); text-decoration: none; }
 
@@ -185,15 +185,17 @@ const stats = {
     text-decoration: none;
   }
   .tile-meta {
-    display: flex; gap: 0.8rem; align-items: center;
-    font-size: 0.65rem;
-    letter-spacing: 0.08em;
+    display: flex; gap: 0.6rem; align-items: center;
+    font-size: 0.75rem;
   }
   .tile-cat {
     color: var(--accent);
-    font-weight: 700;
+    font-weight: 600;
+    background: rgba(214, 37, 56, 0.08);
+    padding: 0.1rem 0.5rem;
+    border-radius: 100px;
   }
-  .tile-date { color: var(--text-dim); }
+  .tile-date { color: var(--text-dim); font-size: 0.72rem; }
   .tile-title {
     font-size: 1rem;
     font-weight: 700;

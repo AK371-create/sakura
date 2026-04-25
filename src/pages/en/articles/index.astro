@@ -119,8 +119,8 @@ const categories = ["all", ...Array.from(new Set(articles.map((a: any) => a.cate
   }
   .filter-chip:hover { border-color: var(--border-strong); color: var(--text); }
   .filter-chip[aria-selected="true"] {
-    background: rgba(239, 62, 62, 0.12);
-    color: var(--accent);
+    background: var(--accent);
+    color: white;
     border-color: var(--accent);
   }
 

@@ -16,7 +16,7 @@ const pitching = player.basic?.pitching;
 const savantHit = player.savant?.hitting;
 const arsenal = player.savant?.pitch_arsenal;
 
-const typeCode = { two_way: "TWO-WAY", batter: "BATTER", pitcher: "PITCHER" }[player.type] ?? player.type;
+const typeCode = { two_way: "二刀流", batter: "野手", pitcher: "投手" }[player.type] ?? player.type;
 
 // Build percentile rows from savant hitting data
 const percentileMetrics = savantHit ? [
@@ -46,7 +46,7 @@ const pitchColors: Record<string, string> = {
   lang="ja"
   currentPath={`/players/${player.key}/`}
 >
-  <nav class="breadcrumb mono"><a href="/">← HOME</a> <span class="sep">/</span> <span>PLAYERS</span> <span class="sep">/</span> <span class="current">{player.key.toUpperCase()}</span></nav>
+  <nav class="breadcrumb"><a href="/">← ホーム</a> <span class="sep">/</span> <span>選手</span> <span class="sep">/</span> <span class="current">{player.name_jp}</span></nav>
 
   <header class="player-hero">
     <div class="hero-tags">
@@ -120,8 +120,8 @@ const pitchColors: Record<string, string> = {
   {percentileMetrics.length > 0 && (
     <section class="panel">
       <div class="panel-head">
-        <h2>Percentile Rankings</h2>
-        <span class="panel-sub mono">BATTING · 2026</span>
+        <h2>パーセンタイル</h2>
+        <span class="panel-sub">打撃 · 2026</span>
       </div>
       <div class="pct-list">
         {percentileMetrics.map((m) => (
@@ -142,13 +142,10 @@ const pitchColors: Record<string, string> = {
           </div>
         ))}
       </div>
-      <div class="pct-legend mono">
-        <span>←</span>
+      <div class="pct-legend">
+        <span class="leg-side">弱</span>
         <span class="leg-bar"></span>
-        <span>POOR</span>
-        <span class="leg-mid">AVG</span>
-        <span>ELITE</span>
-        <span>→</span>
+        <span class="leg-side">強</span>
       </div>
     </section>
   )}
@@ -157,18 +154,18 @@ const pitchColors: Record<string, string> = {
   {arsenal && arsenal.length > 0 && (
     <section class="panel">
       <div class="panel-head">
-        <h2>Pitch Arsenal</h2>
-        <span class="panel-sub mono">USAGE · WHIFF · HARD-HIT</span>
+        <h2>球種別データ</h2>
+        <span class="panel-sub">使用率・空振り率・Hard-Hit率</span>
       </div>
       <table class="arsenal-table">
         <thead>
           <tr>
-            <th>Pitch</th>
-            <th class="num">Usage</th>
-            <th class="num">BAA</th>
-            <th class="num">Whiff</th>
-            <th class="num">Hard-Hit</th>
-            <th class="dist">Distribution</th>
+            <th>球種</th>
+            <th class="num">使用率</th>
+            <th class="num">被打率</th>
+            <th class="num">空振り率</th>
+            <th class="num">Hard-Hit率</th>
+            <th class="dist">分布</th>
           </tr>
         </thead>
         <tbody>
@@ -198,24 +195,24 @@ const pitchColors: Record<string, string> = {
           ))}
         </tbody>
       </table>
-      <div class="arsenal-legend mono">
-        <span><span class="leg-dot" style="background: var(--pitch-default)"></span>USAGE</span>
-        <span><span class="leg-dot" style="background: var(--sv-cyan)"></span>WHIFF</span>
-        <span><span class="leg-dot" style="background: var(--sv-orange)"></span>HARD-HIT</span>
+      <div class="arsenal-legend">
+        <span><span class="leg-dot" style="background: var(--pitch-default)"></span>使用率</span>
+        <span><span class="leg-dot" style="background: var(--sv-cyan)"></span>空振り率</span>
+        <span><span class="leg-dot" style="background: var(--sv-orange)"></span>Hard-Hit率</span>
       </div>
     </section>
   )}
 
-  <div class="footer-meta mono">LAST UPDATED · {player.updated_at}</div>
+  <div class="footer-meta">最終更新 · <span class="mono">{player.updated_at}</span></div>
 </Layout>
 
 <style>
   .breadcrumb {
-    font-size: 0.7rem;
-    letter-spacing: 0.08em;
+    font-size: 0.85rem;
     color: var(--text-dim);
     margin-bottom: 1.5rem;
     display: flex; gap: 0.5rem; align-items: center;
+    flex-wrap: wrap;
   }
   .breadcrumb a { color: var(--text-muted); }
   .breadcrumb a:hover { color: var(--accent); }
@@ -236,11 +233,11 @@ const pitchColors: Record<string, string> = {
     padding: 0.22rem 0.55rem;
     border-radius: var(--radius-sm);
   }
-  .tag.type { background: rgba(239, 62, 62, 0.12); color: var(--sv-red); border: 1px solid rgba(239, 62, 62, 0.25); }
-  .tag.type.type-two_way { background: linear-gradient(90deg, rgba(239, 62, 62, 0.15), rgba(245, 129, 66, 0.15)); color: var(--sv-orange); border-color: rgba(245, 129, 66, 0.3); }
+  .tag.type { background: rgba(214, 37, 56, 0.08); color: var(--sv-red); border: 1px solid rgba(214, 37, 56, 0.2); }
+  .tag.type.type-two_way { background: linear-gradient(90deg, rgba(214, 37, 56, 0.1), rgba(237, 124, 44, 0.1)); color: var(--sv-orange); border-color: rgba(237, 124, 44, 0.25); }
   .tag.league { background: var(--surface-3); color: var(--text-muted); border: 1px solid var(--border); }
-  .tag.league.league-nl { color: var(--sv-blue); border-color: rgba(66, 112, 228, 0.3); background: rgba(66, 112, 228, 0.08); }
-  .tag.league.league-al { color: var(--sv-red); border-color: rgba(239, 62, 62, 0.3); background: rgba(239, 62, 62, 0.08); }
+  .tag.league.league-nl { color: var(--sv-blue); border-color: rgba(44, 93, 209, 0.25); background: rgba(44, 93, 209, 0.06); }
+  .tag.league.league-al { color: var(--sv-red); border-color: rgba(214, 37, 56, 0.25); background: rgba(214, 37, 56, 0.06); }
 
   .player-name {
     font-size: clamp(2.4rem, 6vw, 3.6rem);
@@ -296,7 +293,7 @@ const pitchColors: Record<string, string> = {
     background: var(--bg-elev);
   }
   .panel-head h2 { font-size: 1.05rem; font-weight: 700; margin: 0; }
-  .panel-sub { font-size: 0.68rem; color: var(--text-dim); letter-spacing: 0.1em; }
+  .panel-sub { font-size: 0.78rem; color: var(--text-muted); }
 
   /* Percentile */
   .pct-list {
@@ -327,13 +324,13 @@ const pitchColors: Record<string, string> = {
   .pct-tick {
     position: absolute;
     top: 0; bottom: 0; width: 1px;
-    background: rgba(255,255,255,0.08);
+    background: rgba(0,0,0,0.06);
   }
   .pct-bar {
     position: absolute; left: 0; top: 0; bottom: 0;
     border-radius: 100px;
     transition: width 0.5s ease;
-    opacity: 0.35;
+    opacity: 0.25;
   }
   .pct-dot {
     position: absolute;
@@ -341,7 +338,7 @@ const pitchColors: Record<string, string> = {
     width: 30px; height: 30px;
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 0 0 3px var(--surface), 0 4px 12px rgba(0,0,0,0.4);
+    box-shadow: 0 0 0 3px var(--surface), 0 2px 6px rgba(0,0,0,0.12);
     transition: left 0.5s ease, background 0.3s ease;
   }
   .pct-num {
@@ -357,17 +354,16 @@ const pitchColors: Record<string, string> = {
     color: var(--text);
   }
   .pct-legend {
-    display: flex; justify-content: center; gap: 1rem; align-items: center;
+    display: flex; justify-content: center; gap: 0.8rem; align-items: center;
     padding: 0.8rem 1.3rem;
     border-top: 1px solid var(--border);
-    font-size: 0.65rem; color: var(--text-dim);
-    letter-spacing: 0.1em;
+    font-size: 0.78rem; color: var(--text-muted);
   }
+  .leg-side { font-weight: 500; }
   .leg-bar {
-    width: 200px; height: 6px; border-radius: 100px;
+    width: 240px; height: 6px; border-radius: 100px;
     background: linear-gradient(90deg, var(--sv-blue), var(--sv-cyan), var(--sv-neutral), var(--sv-yellow), var(--sv-orange), var(--sv-red));
   }
-  .leg-mid { color: var(--text-muted); }
 
   /* Arsenal table */
   .arsenal-table {
@@ -377,12 +373,10 @@ const pitchColors: Record<string, string> = {
   }
   .arsenal-table th {
     text-align: left;
-    padding: 0.7rem 1.3rem;
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
+    padding: 0.85rem 1.3rem;
+    font-size: 0.78rem;
     font-weight: 600;
-    color: var(--text-dim);
-    letter-spacing: 0.1em;
+    color: var(--text-muted);
     border-bottom: 1px solid var(--border);
     background: var(--bg-elev);
   }
@@ -394,16 +388,16 @@ const pitchColors: Record<string, string> = {
     vertical-align: middle;
   }
   .arsenal-table tr:last-child td { border-bottom: none; }
-  .arsenal-table tr:hover td { background: rgba(255,255,255,0.02); }
+  .arsenal-table tr:hover td { background: var(--surface-2); }
 
   .pitch-cell { display: flex; align-items: center; gap: 0.7rem; }
   .pitch-dot {
     width: 12px; height: 12px;
     border-radius: 50%;
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.08);
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.05);
   }
   .pitch-name { font-weight: 600; color: var(--text); }
-  .pitch-sub { font-size: 0.65rem; color: var(--text-dim); letter-spacing: 0.1em; }
+  .pitch-sub { font-size: 0.7rem; color: var(--text-dim); letter-spacing: 0.05em; }
 
   .dist-bars { display: flex; flex-direction: column; gap: 3px; }
   .dist-bar {
@@ -417,10 +411,9 @@ const pitchColors: Record<string, string> = {
   .dist-bar.hh-bar { background: var(--sv-orange); opacity: 0.85; }
 
   .arsenal-legend {
-    display: flex; gap: 1.5rem; padding: 0.8rem 1.3rem;
+    display: flex; gap: 1.5rem; padding: 0.85rem 1.3rem;
     border-top: 1px solid var(--border);
-    font-size: 0.65rem; color: var(--text-dim);
-    letter-spacing: 0.1em;
+    font-size: 0.78rem; color: var(--text-muted);
   }
   .arsenal-legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
   .leg-dot {
@@ -430,9 +423,8 @@ const pitchColors: Record<string, string> = {
 
   .footer-meta {
     text-align: right;
-    font-size: 0.65rem;
+    font-size: 0.78rem;
     color: var(--text-dim);
-    letter-spacing: 0.1em;
     margin-top: 1.5rem;
   }
 

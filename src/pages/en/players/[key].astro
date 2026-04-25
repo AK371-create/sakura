@@ -195,11 +195,11 @@ const pitchColors: Record<string, string> = {
     padding: 0.22rem 0.55rem;
     border-radius: var(--radius-sm);
   }
-  .tag.type { background: rgba(239, 62, 62, 0.12); color: var(--sv-red); border: 1px solid rgba(239, 62, 62, 0.25); }
-  .tag.type.type-two_way { background: linear-gradient(90deg, rgba(239, 62, 62, 0.15), rgba(245, 129, 66, 0.15)); color: var(--sv-orange); border-color: rgba(245, 129, 66, 0.3); }
+  .tag.type { background: rgba(214, 37, 56, 0.08); color: var(--sv-red); border: 1px solid rgba(214, 37, 56, 0.2); }
+  .tag.type.type-two_way { background: linear-gradient(90deg, rgba(214, 37, 56, 0.1), rgba(237, 124, 44, 0.1)); color: var(--sv-orange); border-color: rgba(237, 124, 44, 0.25); }
   .tag.league { background: var(--surface-3); color: var(--text-muted); border: 1px solid var(--border); }
-  .tag.league.league-nl { color: var(--sv-blue); border-color: rgba(66, 112, 228, 0.3); background: rgba(66, 112, 228, 0.08); }
-  .tag.league.league-al { color: var(--sv-red); border-color: rgba(239, 62, 62, 0.3); background: rgba(239, 62, 62, 0.08); }
+  .tag.league.league-nl { color: var(--sv-blue); border-color: rgba(44, 93, 209, 0.25); background: rgba(44, 93, 209, 0.06); }
+  .tag.league.league-al { color: var(--sv-red); border-color: rgba(214, 37, 56, 0.25); background: rgba(214, 37, 56, 0.06); }
 
   .player-name {
     font-size: clamp(2.4rem, 6vw, 3.6rem);
@@ -270,20 +270,20 @@ const pitchColors: Record<string, string> = {
   .pct-grid { position: absolute; inset: 0; pointer-events: none; }
   .pct-tick {
     position: absolute; top: 0; bottom: 0; width: 1px;
-    background: rgba(255,255,255,0.08);
+    background: rgba(0,0,0,0.06);
   }
   .pct-bar {
     position: absolute; left: 0; top: 0; bottom: 0;
     border-radius: 100px;
     transition: width 0.5s ease;
-    opacity: 0.35;
+    opacity: 0.25;
   }
   .pct-dot {
     position: absolute;
     top: 50%; transform: translateY(-50%);
     width: 30px; height: 30px; border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 0 0 3px var(--surface), 0 4px 12px rgba(0,0,0,0.4);
+    box-shadow: 0 0 0 3px var(--surface), 0 2px 6px rgba(0,0,0,0.12);
     transition: left 0.5s ease, background 0.3s ease;
   }
   .pct-num { font-size: 0.72rem; font-weight: 700; color: white; }
@@ -324,12 +324,12 @@ const pitchColors: Record<string, string> = {
     vertical-align: middle;
   }
   .arsenal-table tr:last-child td { border-bottom: none; }
-  .arsenal-table tr:hover td { background: rgba(255,255,255,0.02); }
+  .arsenal-table tr:hover td { background: var(--surface-2); }
 
   .pitch-cell { display: flex; align-items: center; gap: 0.7rem; }
   .pitch-dot {
     width: 12px; height: 12px; border-radius: 50%;
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.08);
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.05);
   }
   .pitch-name { font-weight: 600; color: var(--text); }
   .pitch-sub { font-size: 0.65rem; color: var(--text-dim); letter-spacing: 0.1em; }
