@@ -335,6 +335,47 @@ const playerJsonLd: object[] = [
     </section>
   )}
 
+  {arsenal && arsenal.length > 0 && (
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Pitch Arsenal</h2>
+        <span class="panel-sub mono">{player.savant?.arsenal_season ?? 2026} SEASON · USAGE · AVG VELOCITY (MLB Stats API)</span>
+      </div>
+      <table class="arsenal-table">
+        <thead>
+          <tr>
+            <th>Pitch</th>
+            <th class="num">Usage</th>
+            <th class="dist">Distribution</th>
+            <th class="num">Avg Velocity (mph)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {arsenal.map((a: any) => (
+            <tr>
+              <td>
+                <div class="pitch-cell">
+                  <span class="pitch-dot" style={`background: ${pitchColors[a.pitch] ?? "var(--pitch-default)"}`}></span>
+                  <div>
+                    <div class="pitch-name">{a.en}</div>
+                    <div class="pitch-sub mono">{a.pitch}</div>
+                  </div>
+                </div>
+              </td>
+              <td class="num mono">{a.usage}%</td>
+              <td class="dist">
+                <div class="dist-bars">
+                  <div class="dist-bar" style={`--w: ${Math.min(a.usage, 100)}%; --c: ${pitchColors[a.pitch] ?? "var(--pitch-default)"}`} title={`Usage ${a.usage}%`}></div>
+                </div>
+              </td>
+              <td class="num mono">{a.speed ? a.speed.toFixed(1) : "—"}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+  )}
+
   {hittingYearly.length > 0 && (
     <section class="panel">
       <div class="panel-head">
@@ -487,18 +528,6 @@ const playerJsonLd: object[] = [
   )}
 
   {/* Pitch arsenal moved above (before yearly tables) */}
-  {false && arsenal && arsenal.length > 0 && (
-    <section class="panel">
-      <div class="panel-head">
-        <h2>Pitch Arsenal</h2>
-        <span class="panel-sub mono"></span>
-      </div>
-      <table class="arsenal-table">
-        <thead><tr></tr></thead>
-        <tbody>
-      </table>
-    </section>
-  )}
 
   <div class="footer-meta mono">LAST UPDATED · {player.updated_at}</div>
 </Layout>
