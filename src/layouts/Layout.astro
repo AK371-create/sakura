@@ -46,7 +46,7 @@ const navLinks = lang === "ja"
 const fullTitle = title === siteName ? `${siteName} · ${siteTagline}` : `${title} · ${siteName}`;
 const canonicalUrl = SITE_ORIGIN + currentPath;
 const altLangUrl = SITE_ORIGIN + otherLangUrl;
-const ogImageUrl = ogImage ? (ogImage.startsWith("http") ? ogImage : SITE_ORIGIN + ogImage) : SITE_ORIGIN + "/og-default.svg";
+const ogImageUrl = ogImage ? (ogImage.startsWith("http") ? ogImage : SITE_ORIGIN + ogImage) : SITE_ORIGIN + "/og-default.png";
 
 // Build base WebSite + Organization JSON-LD always
 const baseLd = [
@@ -71,7 +71,7 @@ const baseLd = [
     "@type": "Organization",
     "name": siteName,
     "url": SITE_ORIGIN,
-    "logo": SITE_ORIGIN + "/og-default.svg",
+    "logo": SITE_ORIGIN + "/og-default.png",
   },
 ];
 const allJsonLd = [...baseLd, ...(Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : [])];
