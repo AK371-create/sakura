@@ -1,0 +1,26 @@
+{
+  "slug": "stats-pitch-fourseam",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitch-type"
+  ],
+  "title_jp": "4シーム・ファストボール (FF)",
+  "title_en": "Four-Seam Fastball (FF)",
+  "summary_jp": "MLB最も基本的な速球。回転軸と回転数で『伸び』が変わる。",
+  "summary_en": "The most common fastball in MLB. Movement profile depends on spin axis and rate.",
+  "body_jp": [
+    "4シームは縫い目を4本横切るように握る速球。回転数が高いと『ライズ』して見え、空振りを取りやすい。",
+    "球速95mph以上で平均的に強い、98+で支配級。佐々木朗希・大谷翔平は100mph超えを連発する。",
+    "高めゾーンに投げ込むと『浮き上がる』錯覚で空振り率が上がる(今永昇太の戦術)。",
+    "近年はSeam-Shifted Wakeにより同じ4シームでも変化量が異なる現象が研究されている。"
+  ],
+  "body_en": [
+    "Four-seam grip crosses 4 seams. High spin produces apparent 'rise' and drives whiffs.",
+    "95+ mph is solid; 98+ is dominant. Sasaki and Ohtani routinely break 100 mph.",
+    "Locating up in the zone uses the apparent-rise effect to boost whiffs (Imanaga's signature).",
+    "Recent research on Seam-Shifted Wake explains different movement on visually similar pitches."
+  ],
+  "updated_at": "2026-04-25"
+}

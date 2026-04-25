@@ -1,0 +1,26 @@
+{
+  "slug": "stats-statcast-whiff",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitching"
+  ],
+  "title_jp": "Whiff% (空振り率) とは",
+  "title_en": "What is Whiff %?",
+  "summary_jp": "打者がスイングして空振りした割合。投手の決め球の支配力指標。",
+  "summary_en": "Percentage of swings that miss — how dominant a pitch's swing-and-miss profile is.",
+  "body_jp": [
+    "Whiff% = 空振り回数 ÷ スイング回数。MLB平均は25%前後、35%超えで一流、45%以上はMLB屈指。",
+    "球種別に見ると価値が分かる。スプリッターやスライダーで40%超えれば「決め球」級。",
+    "今永昇太のスプリッターは2024年にWhiff 41.9%を記録した。",
+    "ストライクゾーン外への誘い球(chase)が多いとWhiff%は上がる。"
+  ],
+  "body_en": [
+    "Whiff% = whiffs / swings. MLB average is ~25%, 35%+ is elite, 45%+ is rarefied.",
+    "Per-pitch breakdown reveals putaway pitches — splitters and sliders above 40% are 'wipeout' offerings.",
+    "Imanaga's splitter posted a 41.9% whiff rate in 2024.",
+    "Inducing chases (out-of-zone swings) tends to lift Whiff%."
+  ],
+  "updated_at": "2026-04-25"
+}

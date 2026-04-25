@@ -24,6 +24,7 @@ const { article, prev, next, related } = Astro.props;
 const categoryLabels: Record<string, string> = {
   player: "PLAYER", statcast: "STATCAST", history: "HISTORY", rivalry: "MATCHUP",
   rules: "RULES", team: "TEAM", prospects: "PROSPECT", culture: "CULTURE", market: "MARKET",
+  stats: "STATS",
 };
 const catLabel = categoryLabels[article.category] ?? article.category.toUpperCase();
 

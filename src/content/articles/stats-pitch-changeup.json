@@ -1,0 +1,26 @@
+{
+  "slug": "stats-pitch-changeup",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitch-type"
+  ],
+  "title_jp": "チェンジアップ (CH)",
+  "title_en": "Changeup (CH)",
+  "summary_jp": "球速を抑えてタイミングを外す技巧派の決め球。低回転が特徴。",
+  "summary_en": "A speed-decreasing pitch that fools timing. Low spin is the hallmark.",
+  "body_jp": [
+    "チェンジアップは4シームと同じ腕の振りで投げ、握りで球速を10-15mph落とす。",
+    "回転数が低いほど沈みやすく、いわゆる『dead ball』効果でバットの下を通る。",
+    "サークルチェンジ、Vulcan、フォーク系チェンジなどグリップ多数。",
+    "菊池雄星はチェンジアップを使って左打者の対応を改善している。"
+  ],
+  "body_en": [
+    "Same arm action as a 4-seamer, but the grip drops velocity by 10-15 mph.",
+    "Low spin lets the ball drop ('dead ball' effect), passing under the bat.",
+    "Variations include circle-change, Vulcan, and split-change.",
+    "Yusei Kikuchi has leaned on changeups to attack lefty batters."
+  ],
+  "updated_at": "2026-04-25"
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "stats-batting-avg",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "batting"
+  ],
+  "title_jp": "打率 (AVG) とは",
+  "title_en": "What is Batting Average (AVG)?",
+  "summary_jp": "打率は最も古典的な打撃指標。安打数 ÷ 打数で算出される。",
+  "summary_en": "Batting average is the most classic hitting metric: hits divided by at-bats.",
+  "body_jp": [
+    "打率(AVG)は安打を打数で割った値で、打者の安打を打つ確率を示す。.300以上は一流の目安、.350を超えれば首位打者級だ。",
+    "計算式: 安打 ÷ 打数。四球・死球・犠打は打数に含めないため、選球眼の良い打者でも打数が増えにくい。",
+    "イチローは2004年にMLB単独シーズン安打記録(262本)を樹立、打率.372で首位打者を獲得した。",
+    "限界: 打率は単打もホームランも同じ1扱いで、長打力を反映しない。OPSやxwOBAと併用するのが一般的。"
+  ],
+  "body_en": [
+    "Batting average (AVG) divides hits by at-bats, showing how often a batter gets a hit. .300 is the standard for elite, .350+ is batting-title territory.",
+    "Formula: hits / at-bats. Walks, hit-by-pitches, and sacrifices are not counted as at-bats, so disciplined hitters don't accumulate at-bats as quickly.",
+    "Ichiro set the MLB single-season hits record (262) in 2004 with a .372 average, winning the batting title.",
+    "Limitations: AVG treats singles and home runs equally, missing power. Pair it with OPS or xwOBA."
+  ],
+  "updated_at": "2026-04-25"
+}

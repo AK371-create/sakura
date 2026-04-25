@@ -1,0 +1,26 @@
+{
+  "slug": "stats-batting-ops",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "batting"
+  ],
+  "title_jp": "OPS とは",
+  "title_en": "What is OPS?",
+  "summary_jp": "OBP + SLG。出塁能力と長打力を一つにまとめた、最も一般的な総合打撃指標。",
+  "summary_en": "OBP + SLG combined — the most popular all-in-one offensive metric.",
+  "body_jp": [
+    "OPSは出塁率と長打率の単純な和。例: OBP .380 + SLG .500 → OPS .880。",
+    ".700前後がMLB平均、.800で良打者、.900で強打者、1.000超えはMVP級。",
+    "計算が直感的で野球解説でも頻出する。ただし出塁と長打を等価値に扱うため、より精密にはwOBA/xwOBAが推奨される。",
+    "大谷翔平は2024年にOPS 1.036をマーク、ナ・リーグ首位を獲得した。"
+  ],
+  "body_en": [
+    "OPS is simply OBP + SLG. Example: .380 + .500 = .880.",
+    ".700 is around average, .800 is good, .900 is great, 1.000+ is MVP-level.",
+    "Easy to compute and widely cited. For more precise analysis, wOBA/xwOBA is preferred since OPS treats OBP and SLG as equally valued.",
+    "Ohtani led the NL with a 1.036 OPS in 2024."
+  ],
+  "updated_at": "2026-04-25"
+}

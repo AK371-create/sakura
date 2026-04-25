@@ -1,0 +1,26 @@
+{
+  "slug": "stats-pitching-sv-hld",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitching"
+  ],
+  "title_jp": "セーブ (SV) と ホールド (HLD) の違い",
+  "title_en": "Saves (SV) vs. Holds (HLD)",
+  "summary_jp": "クローザーとセットアッパーを区別する役割別指標。",
+  "summary_en": "Stats that distinguish closers (saves) from setup men (holds).",
+  "body_jp": [
+    "セーブ: リード時に登板し最終アウトまで投げ切ること。3点リード以下、走者あり、または同点ピンチで登板して逃げ切るのが代表条件。",
+    "ホールド: リード時に登板し、リードを保ったまま降板すること(救援に引き継ぐ)。9回完全制圧でなくても評価される。",
+    "上原浩治はBOS時代に通算95セーブ(2013年AL最多21)、松井裕樹はパドレス2024年9ホールドで起用された。",
+    "両指標とも「機会」が必要なため、クローザー/セットアッパーの起用ポリシー次第で数字が左右される。"
+  ],
+  "body_en": [
+    "Save: protect a lead from entry through the final out — typically up by 3 or fewer with runners on or in a tie-break situation.",
+    "Hold: enter with a lead and exit before the final out while preserving it. Setup men's bread and butter.",
+    "Koji Uehara collected 95 saves in his Red Sox tenure (21 in 2013); Yuki Matsui posted 9 holds with the Padres in 2024.",
+    "Both stats depend on opportunities — bullpen role assignment heavily affects the numbers."
+  ],
+  "updated_at": "2026-04-25"
+}

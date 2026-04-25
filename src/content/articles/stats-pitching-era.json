@@ -1,0 +1,26 @@
+{
+  "slug": "stats-pitching-era",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitching"
+  ],
+  "title_jp": "防御率 (ERA) とは",
+  "title_en": "What is ERA?",
+  "summary_jp": "投手の最も基本的な指標。9イニングあたりの自責点。",
+  "summary_en": "The most fundamental pitcher metric: earned runs per 9 innings.",
+  "body_jp": [
+    "防御率(ERA) = (自責点 × 9) ÷ 投球回。3.50以下で良好、2点台で一流、1点台はMLB屈指。",
+    "「自責点」とは野手のエラーや捕逸が絡まない失点のことで、純粋に投手の責任とされるもの。",
+    "ただし、ERAは球場・守備・運の影響を受けるため、FIPなど守備独立指標と併用するのが現代分析の主流。",
+    "野茂英雄は1995年にナ・リーグ最多奪三振(236)でERA 2.54をマーク、新人王に輝いた。"
+  ],
+  "body_en": [
+    "ERA = (Earned Runs × 9) / Innings Pitched. Sub-3.50 is good, 2.xx is elite, 1.xx is rarefied.",
+    "An 'earned run' excludes runs scoring due to fielding errors or passed balls.",
+    "ERA is influenced by ballpark, defense, and luck. Modern analysis pairs it with FIP for a defense-independent view.",
+    "Hideo Nomo won the 1995 NL Rookie of the Year with a 2.54 ERA and 236 strikeouts."
+  ],
+  "updated_at": "2026-04-25"
+}

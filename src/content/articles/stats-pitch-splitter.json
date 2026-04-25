@@ -1,0 +1,26 @@
+{
+  "slug": "stats-pitch-splitter",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitch-type"
+  ],
+  "title_jp": "スプリット・フィンガー (FS) / フォーク",
+  "title_en": "Splitter (FS) / Forkball",
+  "summary_jp": "握りを開いて落とす変化球。日本人投手の代名詞的決め球。",
+  "summary_en": "Wide-grip pitch that drops sharply. A signature offering for Japanese pitchers.",
+  "body_jp": [
+    "人差し指と中指を縫い目から離して挟むように握り、回転を抑えて重力で落とす。",
+    "4シームと同じ軌道で来て、急激に沈むためバットの上を通過しやすい。Whiff率は40%を超えるケースが多い。",
+    "千賀滉大の『お化けフォーク』、今永昇太のスプリッター、佐々木朗希のフォークがMLBで猛威を振るう。",
+    "肘への負担が比較的重く、長期使用にはケアが必要。"
+  ],
+  "body_en": [
+    "Wide split-finger grip suppresses spin so gravity drops the ball.",
+    "Looks like a 4-seamer until it dives — whiff rates often exceed 40%.",
+    "Senga's 'ghost forkball', Imanaga's splitter, and Sasaki's forkball all dominate in MLB.",
+    "Higher elbow load than typical pitches — usage needs careful management."
+  ],
+  "updated_at": "2026-04-25"
+}

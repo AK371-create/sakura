@@ -1,0 +1,26 @@
+{
+  "slug": "stats-pitch-slider-sweeper",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitch-type"
+  ],
+  "title_jp": "スライダー (SL) とスイーパー (ST)",
+  "title_en": "Slider (SL) and Sweeper (ST)",
+  "summary_jp": "横変化の主力。近年スイーパーは独立した球種として認識された。",
+  "summary_en": "Horizontal-movement workhorses. The sweeper recently emerged as a distinct pitch type.",
+  "body_jp": [
+    "スライダー: カッター寄りの小さな横変化。80年代から定番の決め球。",
+    "スイーパー: 大きく横にスライドする現代版。MLB Statcastが2023年から正式に分類。大谷翔平の代名詞。",
+    "右投手 vs 右打者で特に有効。ゾーン外への誘い球で空振り量産。",
+    "スイーパーは伝統的なスライダーより約3-5インチ多く横変化する。"
+  ],
+  "body_en": [
+    "Slider: smaller, harder horizontal break (cutter-adjacent). A staple putaway pitch since the '80s.",
+    "Sweeper: bigger sweeping break, formally classified by Statcast in 2023. Ohtani's signature.",
+    "Especially nasty in same-handed matchups (RHP vs RHH).",
+    "Sweepers typically break ~3-5 inches more horizontally than traditional sliders."
+  ],
+  "updated_at": "2026-04-25"
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "stats-pitching-fip",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitching"
+  ],
+  "title_jp": "FIP (守備独立投手指標) とは",
+  "title_en": "What is FIP?",
+  "summary_jp": "投手が「自分でコントロールできる」結果(三振/四球/本塁打)だけで防御率風に計算した指標。",
+  "summary_en": "An ERA-style metric using only outcomes a pitcher controls: strikeouts, walks, home runs.",
+  "body_jp": [
+    "FIP = (13×HR + 3×BB − 2×K) ÷ IP + 定数。守備の影響を排除した「真の投手力」とされる。",
+    "ERAより低い → 運/守備に恵まれている。ERAより高い → 運/守備が悪い。",
+    "三振が多くBB・HRが少ない投手はFIPが低くなる。長期的にはERAがFIPに収束する傾向。",
+    "現代の年俸査定や予測モデルではFIPやxFIP、SIERAが重視される。"
+  ],
+  "body_en": [
+    "FIP = (13×HR + 3×BB − 2×K) / IP + constant. Strips out defense and luck.",
+    "FIP below ERA suggests good luck/defense; above ERA suggests bad luck/defense.",
+    "Pitchers with high K, low BB and HR have low FIP. ERA tends to regress toward FIP over time.",
+    "Modern projection systems favor FIP/xFIP/SIERA over raw ERA."
+  ],
+  "updated_at": "2026-04-25"
+}

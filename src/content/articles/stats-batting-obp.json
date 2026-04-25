@@ -1,0 +1,26 @@
+{
+  "slug": "stats-batting-obp",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "batting"
+  ],
+  "title_jp": "出塁率 (OBP) とは",
+  "title_en": "What is On-Base Percentage (OBP)?",
+  "summary_jp": "打席に立った時に塁に出る確率。打率に四球と死球を加味した出塁能力の総合指標。",
+  "summary_en": "How often a batter reaches base, including walks and hit-by-pitches. The headline plate-discipline metric.",
+  "body_jp": [
+    "出塁率(OBP)は (安打 + 四球 + 死球) ÷ (打数 + 四球 + 死球 + 犠飛)。打率より出塁の機会全般を捉える。",
+    ".330台が平均、.380以上で優秀、.400以上は MLB 屈指。",
+    "出塁率が高い打者は得点機会を作るため、上位打線で起用される傾向がある。",
+    "OBP は打率より「失点を防ぐ」観点で価値があり、Moneyball 以降の評価軸として定着した。"
+  ],
+  "body_en": [
+    "OBP = (Hits + BB + HBP) / (AB + BB + HBP + SF). Captures all plate appearances ending on base.",
+    ".330s is league average, .380+ is excellent, .400+ is elite among MLB.",
+    "High-OBP hitters create scoring chances and tend to bat at the top of the order.",
+    "OBP became a foundational metric post-Moneyball, valued for its tight correlation with team runs."
+  ],
+  "updated_at": "2026-04-25"
+}

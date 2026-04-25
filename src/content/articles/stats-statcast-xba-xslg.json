@@ -1,0 +1,26 @@
+{
+  "slug": "stats-statcast-xba-xslg",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "batting"
+  ],
+  "title_jp": "xBA / xSLG (期待値統計) とは",
+  "title_en": "What are xBA and xSLG?",
+  "summary_jp": "打球速度と角度から「本来期待される」打率と長打率。実数値との差で運の影響を見る。",
+  "summary_en": "Expected AVG and SLG based on exit velocity and launch angle — strip out luck.",
+  "body_jp": [
+    "xBA は打球速度・角度・走力から計算される打率の期待値。打者の打球内容を運抜きで評価する。",
+    "xSLG も同様で、長打力の期待値を出す。実SLG > xSLG なら運に恵まれた、実SLG < xSLG なら不運。",
+    "サンプルサイズが大きくなるほど、実値はxBA/xSLGに収束する。シーズン途中で乖離が大きい打者は今後の調整候補。",
+    "xwOBA も同じ系統で、出塁全般の期待値を表す総合指標。"
+  ],
+  "body_en": [
+    "xBA is the expected batting average based on exit velocity, launch angle, and (for some plays) sprint speed — strips out luck.",
+    "xSLG analogously projects expected slugging. Actual SLG > xSLG means lucky; actual < xSLG means unlucky.",
+    "Over larger samples, actual stats regress toward xBA/xSLG. Big mid-season gaps flag likely regression.",
+    "xwOBA extends the same idea to overall offensive value."
+  ],
+  "updated_at": "2026-04-25"
+}

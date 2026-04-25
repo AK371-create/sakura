@@ -1,0 +1,26 @@
+{
+  "slug": "stats-statcast-hardhit",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "batting"
+  ],
+  "title_jp": "Hard-Hit率とは",
+  "title_en": "What is Hard-Hit %?",
+  "summary_jp": "打球速度95mph以上の打球の割合。Barrel率の前提となる強い打球の頻度。",
+  "summary_en": "Percentage of batted balls with exit velocity 95+ mph — the precursor to Barrel rate.",
+  "body_jp": [
+    "Hard-Hit率は95mph以上の打球の比率。MLB平均は40%前後、50%超えで強打者、60%超えで MLB屈指。",
+    "Barrel率は「強くかつ理想角度」で打った打球だが、Hard-Hit率は角度を問わない。打球の純粋な強さを測る。",
+    "ゴロでも95mph超えなら Hard-Hit にカウントされる。長打にならなくても投手にプレッシャーをかける指標。",
+    "Hard-Hit率が高くBarrel率も高い打者は理想形(例: 大谷翔平、ジャッジ)。"
+  ],
+  "body_en": [
+    "Hard-Hit% is the share of batted balls 95+ mph. MLB average is ~40%, 50%+ is strong, 60%+ is elite.",
+    "Unlike Barrel%, Hard-Hit% doesn't require an ideal launch angle — pure raw contact strength.",
+    "Even ground balls count if hit hard enough, signaling pressure on opposing defenses.",
+    "Hitters strong in both Hard-Hit% and Barrel% are the ideal (Ohtani, Judge, etc.)."
+  ],
+  "updated_at": "2026-04-25"
+}

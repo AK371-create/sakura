@@ -1,0 +1,26 @@
+{
+  "slug": "stats-statcast-spin-rate",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitching"
+  ],
+  "title_jp": "回転数 (Spin Rate) とは",
+  "title_en": "What is Spin Rate?",
+  "summary_jp": "ボールが1分間に回転する数(rpm)。球種ごとに最適レンジがあり、伸び・変化に直結。",
+  "summary_en": "Revolutions per minute on the ball — directly affects movement profile by pitch type.",
+  "body_jp": [
+    "回転数は単位 rpm で計測。同じ95mphでも、4シーム高回転(2400+)は『伸び』てバットに当たりにくい。",
+    "ライザー系4シームは2300-2700rpm、カーブは2700+rpm が望ましい。",
+    "球種ごとの最適範囲があり、闇雲に高ければ良いわけではない(チェンジアップは低めが理想)。",
+    "近年はスティッキー物質規制でMLB平均rpmが減少傾向。"
+  ],
+  "body_en": [
+    "Spin rate is measured in RPM. At the same 95 mph, a high-spin (2400+) 4-seamer 'rises' and is harder to hit.",
+    "Riding 4-seamers want 2300-2700 RPM; curveballs benefit from 2700+ RPM.",
+    "Each pitch type has an optimal band — higher isn't universally better (changeups prefer low spin).",
+    "The 2021 sticky-substance crackdown lowered MLB average RPMs."
+  ],
+  "updated_at": "2026-04-25"
+}

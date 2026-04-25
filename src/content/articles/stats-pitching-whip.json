@@ -1,0 +1,26 @@
+{
+  "slug": "stats-pitching-whip",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitching"
+  ],
+  "title_jp": "WHIP とは",
+  "title_en": "What is WHIP?",
+  "summary_jp": "1イニングあたりに許す走者数 (与四球 + 被安打)。",
+  "summary_en": "Walks + Hits per Inning Pitched — baserunners allowed per inning.",
+  "body_jp": [
+    "WHIP = (与四球 + 被安打) ÷ 投球回。1.30以下で良好、1.10以下で一流、1.00未満は怪物級。",
+    "ERAは失点だが、WHIPは「走者を許さない能力」を直接示す。長期的にはERAより安定する傾向。",
+    "上原浩治は2013年にWHIP 0.57という歴史的数字を残した(レッドソックスのリリーフ)。",
+    "計算がシンプルで、リリーフ・先発両方に応用可能。"
+  ],
+  "body_en": [
+    "WHIP = (BB + Hits) / IP. Sub-1.30 is good, 1.10 is elite, sub-1.00 is exceptional.",
+    "Where ERA tracks runs, WHIP captures the rate of allowing baserunners — often more stable over time.",
+    "Koji Uehara posted a historic 0.57 WHIP in 2013 (Boston relief).",
+    "Simple to compute and applies equally to starters and relievers."
+  ],
+  "updated_at": "2026-04-25"
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "stats-batting-iso",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "batting"
+  ],
+  "title_jp": "ISO (純長打率) とは",
+  "title_en": "What is ISO (Isolated Power)?",
+  "summary_jp": "長打率から打率を引いた値。純粋な長打力を取り出す指標。",
+  "summary_en": "SLG minus AVG — isolates raw power from contact ability.",
+  "body_jp": [
+    "ISO = SLG − AVG。例: AVG .280 SLG .500 → ISO .220。",
+    ".200を超えれば強打者、.250以上で長距離砲、.300超えはMLB屈指。",
+    "打率が低くてもISOが高ければホームランバッターとして機能する。",
+    "ホームラン量産型打者の評価に有用で、AVG単独より打者タイプを正確に表す。"
+  ],
+  "body_en": [
+    "ISO = SLG − AVG. Example: .280 / .500 → ISO of .220.",
+    ".200+ is a power hitter, .250+ is a slugger, .300+ is elite.",
+    "A low-AVG hitter with a high ISO can still be valuable as a HR threat.",
+    "Useful for distinguishing pure power hitters; complements AVG."
+  ],
+  "updated_at": "2026-04-25"
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "stats-statcast-launch-angle",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "batting"
+  ],
+  "title_jp": "打球角度 (Launch Angle) とは",
+  "title_en": "What is Launch Angle?",
+  "summary_jp": "打球が水平からどれだけ上に飛んだかの角度。長打を生む最重要パラメータの一つ。",
+  "summary_en": "The vertical angle of a batted ball off the bat — a key driver of extra-base hits.",
+  "body_jp": [
+    "打球角度は水平を0°、真上を90°として計測される。一般に10°〜25°で打球が伸び、本塁打になりやすい。",
+    "10°未満はゴロが多くなり、35°以上はフライ/ポップが増えて凡打になる。",
+    "最適角度は打球速度と相関する。速い打球ほど許容角度の幅が広い。",
+    "近年は『フライボール革命』で打者が意識的にLAを上げる傾向(平均LAは2010年代から徐々に上昇)。"
+  ],
+  "body_en": [
+    "Launch angle measures the vertical angle of contact — 0° is horizontal, 90° is straight up. Most extra-base hits come in the 10-25° range.",
+    "Below 10° tends to produce ground balls; above 35° leads to flies/pop-ups.",
+    "The ideal angle correlates with exit velocity — harder hits expand the productive angle range.",
+    "The 'fly-ball revolution' has gradually pushed average LA upward since the 2010s."
+  ],
+  "updated_at": "2026-04-25"
+}

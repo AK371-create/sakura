@@ -1,0 +1,26 @@
+{
+  "slug": "stats-pitching-k9-bb9",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitching"
+  ],
+  "title_jp": "K/9 と BB/9 とは",
+  "title_en": "What are K/9 and BB/9?",
+  "summary_jp": "9イニング換算の奪三振数と与四球数。投手の支配力を端的に示す。",
+  "summary_en": "Strikeouts and walks per 9 innings — quick gauge of dominance and command.",
+  "body_jp": [
+    "K/9 = (奪三振 × 9) ÷ 投球回、BB/9 も同様。",
+    "K/9 が 9 を超えれば強い投手、12+ なら超一流。BB/9 は 2.0 以下が理想。",
+    "K/BB (K/9 ÷ BB/9 ではなく純粋な奪三振÷与四球比) も併用される。3.0以上が良好、5.0+ で一流。",
+    "ダルビッシュ有は2013年にAL最多奪三振(277)を記録、K/9 11.9 という支配力を見せた。"
+  ],
+  "body_en": [
+    "K/9 = (Strikeouts × 9) / IP, with BB/9 computed the same way.",
+    "K/9 above 9 is strong; 12+ is elite. BB/9 under 2.0 is ideal.",
+    "K/BB ratio is also useful (above 3.0 is good, 5.0+ is elite).",
+    "Yu Darvish led the AL with 277 strikeouts in 2013, posting an 11.9 K/9."
+  ],
+  "updated_at": "2026-04-25"
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "stats-batting-slg",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "batting"
+  ],
+  "title_jp": "長打率 (SLG) とは",
+  "title_en": "What is Slugging Percentage (SLG)?",
+  "summary_jp": "打数あたりの塁打数。単打1・二塁打2・三塁打3・本塁打4と重み付け。",
+  "summary_en": "Total bases per at-bat: singles=1, doubles=2, triples=3, HR=4. Pure power output.",
+  "body_jp": [
+    "長打率(SLG)は (単打 + 二塁打×2 + 三塁打×3 + 本塁打×4) ÷ 打数。打者の長打力を直接表す。",
+    "MLB平均は .400 前後、.500を超えれば強打者、.600以上は怪物級。",
+    "本塁打が多い打者ほどSLGは高くなるが、二塁打・三塁打を量産する Doubles Hitter (例: 鈴木誠也) も .500 近くを狙える。",
+    "SLGはOBPと組み合わせてOPS(=OBP+SLG)として扱われることが多い。"
+  ],
+  "body_en": [
+    "SLG = (1B + 2B×2 + 3B×3 + HR×4) / AB. Direct measure of power.",
+    "MLB average is around .400; .500+ is a strong slugger, .600+ is monster territory.",
+    "Big home run hitters lead SLG, but doubles hitters (like Suzuki) can approach .500 too.",
+    "SLG is often combined with OBP to form OPS (= OBP + SLG)."
+  ],
+  "updated_at": "2026-04-25"
+}

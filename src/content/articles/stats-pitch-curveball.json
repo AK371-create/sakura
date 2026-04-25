@@ -1,0 +1,26 @@
+{
+  "slug": "stats-pitch-curveball",
+  "date": "2026-04-25",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitch-type"
+  ],
+  "title_jp": "カーブ (CU) / ナックルカーブ (KC)",
+  "title_en": "Curveball (CU) / Knuckle-Curve (KC)",
+  "summary_jp": "縦変化の代表格。回転数2700+rpmで『落とす』のが理想。",
+  "summary_en": "The vertical-break standard. Ideally 2700+ RPM for sharp drop.",
+  "body_jp": [
+    "カーブは前向きの縦変化(=12-6落ち)が基本。山なりの軌道で打者のタイミングを外す緩急球種。",
+    "ナックルカーブはナックル握りで指を立て、よりシャープな縦変化を生む。",
+    "山本由伸の縦変化系カーブは Statcast で2700+rpm を記録、被打率を低く抑える。",
+    "球速差(4シームから-15mph前後)でタイミングを外す効果が大きい。"
+  ],
+  "body_en": [
+    "Curveball delivers 12-6 vertical break — a slow, looping shape that disrupts timing.",
+    "Knuckle-curve grips the index finger like a knuckleball for sharper drop.",
+    "Yamamoto's vertical curve hits 2700+ RPM and limits BAA effectively.",
+    "The 15+ mph velocity gap from a fastball is critical for the timing-disruption effect."
+  ],
+  "updated_at": "2026-04-25"
+}
