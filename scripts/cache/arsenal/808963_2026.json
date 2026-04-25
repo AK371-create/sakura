@@ -1,0 +1,26 @@
+[
+  {
+    "code": "FF",
+    "name": "Four-seam FB",
+    "usage": 44.7,
+    "speed": 97.0,
+    "count": 152,
+    "totalPitches": 340
+  },
+  {
+    "code": "SL",
+    "name": "Slider",
+    "usage": 24.1,
+    "speed": 86.4,
+    "count": 82,
+    "totalPitches": 340
+  },
+  {
+    "code": "FS",
+    "name": "Splitter",
+    "usage": 31.2,
+    "speed": 85.0,
+    "count": 106,
+    "totalPitches": 340
+  }
+]

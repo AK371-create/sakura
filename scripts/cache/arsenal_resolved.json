@@ -1,0 +1,495 @@
+{
+  "ohtani": {
+    "season": 2026,
+    "arsenal": [
+      {
+        "code": "FF",
+        "name": "Four-seam FB",
+        "usage": 44.4,
+        "speed": 98.0,
+        "count": 164,
+        "totalPitches": 369
+      },
+      {
+        "code": "ST",
+        "name": "Sweeper",
+        "usage": 22.0,
+        "speed": 85.2,
+        "count": 81,
+        "totalPitches": 369
+      },
+      {
+        "code": "CU",
+        "name": "Curveball",
+        "usage": 13.8,
+        "speed": 74.9,
+        "count": 51,
+        "totalPitches": 369
+      },
+      {
+        "code": "SI",
+        "name": "Sinker",
+        "usage": 4.9,
+        "speed": 95.8,
+        "count": 18,
+        "totalPitches": 369
+      },
+      {
+        "code": "SL",
+        "name": "Slider",
+        "usage": 2.2,
+        "speed": 87.5,
+        "count": 8,
+        "totalPitches": 369
+      },
+      {
+        "code": "FS",
+        "name": "Splitter",
+        "usage": 11.9,
+        "speed": 88.3,
+        "count": 44,
+        "totalPitches": 369
+      },
+      {
+        "code": "FC",
+        "name": "Cutter",
+        "usage": 0.8,
+        "speed": 93.1,
+        "count": 3,
+        "totalPitches": 369
+      }
+    ]
+  },
+  "yamamoto": {
+    "season": 2026,
+    "arsenal": [
+      {
+        "code": "FF",
+        "name": "Four-seam FB",
+        "usage": 24.6,
+        "speed": 95.4,
+        "count": 119,
+        "totalPitches": 484
+      },
+      {
+        "code": "CU",
+        "name": "Curveball",
+        "usage": 12.8,
+        "speed": 76.6,
+        "count": 62,
+        "totalPitches": 484
+      },
+      {
+        "code": "SI",
+        "name": "Sinker",
+        "usage": 8.7,
+        "speed": 95.1,
+        "count": 42,
+        "totalPitches": 484
+      },
+      {
+        "code": "SL",
+        "name": "Slider",
+        "usage": 6.4,
+        "speed": 86.7,
+        "count": 31,
+        "totalPitches": 484
+      },
+      {
+        "code": "FS",
+        "name": "Splitter",
+        "usage": 29.8,
+        "speed": 91.2,
+        "count": 144,
+        "totalPitches": 484
+      },
+      {
+        "code": "FC",
+        "name": "Cutter",
+        "usage": 17.8,
+        "speed": 90.9,
+        "count": 86,
+        "totalPitches": 484
+      }
+    ]
+  },
+  "imanaga": {
+    "season": 2026,
+    "arsenal": [
+      {
+        "code": "FF",
+        "name": "Four-seam FB",
+        "usage": 44.5,
+        "speed": 92.0,
+        "count": 204,
+        "totalPitches": 458
+      },
+      {
+        "code": "ST",
+        "name": "Sweeper",
+        "usage": 14.0,
+        "speed": 82.2,
+        "count": 64,
+        "totalPitches": 458
+      },
+      {
+        "code": "CU",
+        "name": "Curveball",
+        "usage": 2.4,
+        "speed": 74.2,
+        "count": 11,
+        "totalPitches": 458
+      },
+      {
+        "code": "SI",
+        "name": "Sinker",
+        "usage": 5.7,
+        "speed": 90.3,
+        "count": 26,
+        "totalPitches": 458
+      },
+      {
+        "code": "FS",
+        "name": "Splitter",
+        "usage": 33.4,
+        "speed": 83.5,
+        "count": 153,
+        "totalPitches": 458
+      }
+    ]
+  },
+  "darvish": {
+    "season": 2025,
+    "arsenal": [
+      {
+        "code": "FF",
+        "name": "Four-seam FB",
+        "usage": 16.5,
+        "speed": 93.9,
+        "count": 191,
+        "totalPitches": 1158
+      },
+      {
+        "code": "ST",
+        "name": "Sweeper",
+        "usage": 10.1,
+        "speed": 82.8,
+        "count": 117,
+        "totalPitches": 1158
+      },
+      {
+        "code": "CU",
+        "name": "Curveball",
+        "usage": 15.3,
+        "speed": 71.1,
+        "count": 177,
+        "totalPitches": 1158
+      },
+      {
+        "code": "CH",
+        "name": "Changeup",
+        "usage": 0.7,
+        "speed": 88.0,
+        "count": 8,
+        "totalPitches": 1158
+      },
+      {
+        "code": "SI",
+        "name": "Sinker",
+        "usage": 20.0,
+        "speed": 93.4,
+        "count": 232,
+        "totalPitches": 1158
+      },
+      {
+        "code": "KC",
+        "name": "Knuckle Curve",
+        "usage": 1.3,
+        "speed": 78.6,
+        "count": 15,
+        "totalPitches": 1158
+      },
+      {
+        "code": "SL",
+        "name": "Slider",
+        "usage": 13.8,
+        "speed": 85.8,
+        "count": 160,
+        "totalPitches": 1158
+      },
+      {
+        "code": "FC",
+        "name": "Cutter",
+        "usage": 11.7,
+        "speed": 90.7,
+        "count": 136,
+        "totalPitches": 1158
+      },
+      {
+        "code": "FS",
+        "name": "Splitter",
+        "usage": 10.4,
+        "speed": 86.3,
+        "count": 121,
+        "totalPitches": 1158
+      }
+    ]
+  },
+  "senga": {
+    "season": 2026,
+    "arsenal": [
+      {
+        "code": "FF",
+        "name": "Four-seam FB",
+        "usage": 34.1,
+        "speed": 96.3,
+        "count": 108,
+        "totalPitches": 317
+      },
+      {
+        "code": "ST",
+        "name": "Sweeper",
+        "usage": 12.0,
+        "speed": 79.9,
+        "count": 38,
+        "totalPitches": 317
+      },
+      {
+        "code": "CU",
+        "name": "Curveball",
+        "usage": 0.3,
+        "speed": 66.9,
+        "count": 1,
+        "totalPitches": 317
+      },
+      {
+        "code": "SI",
+        "name": "Sinker",
+        "usage": 5.0,
+        "speed": 88.5,
+        "count": 16,
+        "totalPitches": 317
+      },
+      {
+        "code": "FO",
+        "name": "Forkball",
+        "usage": 23.0,
+        "speed": 83.2,
+        "count": 73,
+        "totalPitches": 317
+      },
+      {
+        "code": "SL",
+        "name": "Slider",
+        "usage": 0.9,
+        "speed": 85.4,
+        "count": 3,
+        "totalPitches": 317
+      },
+      {
+        "code": "FC",
+        "name": "Cutter",
+        "usage": 24.6,
+        "speed": 89.5,
+        "count": 78,
+        "totalPitches": 317
+      }
+    ]
+  },
+  "sasaki": {
+    "season": 2026,
+    "arsenal": [
+      {
+        "code": "FF",
+        "name": "Four-seam FB",
+        "usage": 44.7,
+        "speed": 97.0,
+        "count": 152,
+        "totalPitches": 340
+      },
+      {
+        "code": "SL",
+        "name": "Slider",
+        "usage": 24.1,
+        "speed": 86.4,
+        "count": 82,
+        "totalPitches": 340
+      },
+      {
+        "code": "FS",
+        "name": "Splitter",
+        "usage": 31.2,
+        "speed": 85.0,
+        "count": 106,
+        "totalPitches": 340
+      }
+    ]
+  },
+  "kikuchi": {
+    "season": 2026,
+    "arsenal": [
+      {
+        "code": "FF",
+        "name": "Four-seam FB",
+        "usage": 32.9,
+        "speed": 95.6,
+        "count": 175,
+        "totalPitches": 532
+      },
+      {
+        "code": "CU",
+        "name": "Curveball",
+        "usage": 9.0,
+        "speed": 78.7,
+        "count": 48,
+        "totalPitches": 532
+      },
+      {
+        "code": "SI",
+        "name": "Sinker",
+        "usage": 0.6,
+        "speed": 96.3,
+        "count": 3,
+        "totalPitches": 532
+      },
+      {
+        "code": "SL",
+        "name": "Slider",
+        "usage": 18.4,
+        "speed": 86.0,
+        "count": 98,
+        "totalPitches": 532
+      },
+      {
+        "code": "FS",
+        "name": "Splitter",
+        "usage": 22.4,
+        "speed": 86.8,
+        "count": 119,
+        "totalPitches": 532
+      },
+      {
+        "code": "FC",
+        "name": "Cutter",
+        "usage": 16.7,
+        "speed": 90.1,
+        "count": 89,
+        "totalPitches": 532
+      }
+    ]
+  },
+  "maeda": {
+    "season": 2025,
+    "arsenal": [
+      {
+        "code": "FF",
+        "name": "Four-seam FB",
+        "usage": 18.2,
+        "speed": 90.2,
+        "count": 31,
+        "totalPitches": 170
+      },
+      {
+        "code": "ST",
+        "name": "Sweeper",
+        "usage": 17.6,
+        "speed": 80.1,
+        "count": 30,
+        "totalPitches": 170
+      },
+      {
+        "code": "SV",
+        "name": "Slurve",
+        "usage": 1.2,
+        "speed": 81.6,
+        "count": 2,
+        "totalPitches": 170
+      },
+      {
+        "code": "SI",
+        "name": "Sinker",
+        "usage": 8.2,
+        "speed": 90.0,
+        "count": 14,
+        "totalPitches": 170
+      },
+      {
+        "code": "SL",
+        "name": "Slider",
+        "usage": 17.6,
+        "speed": 81.4,
+        "count": 30,
+        "totalPitches": 170
+      },
+      {
+        "code": "FS",
+        "name": "Splitter",
+        "usage": 36.5,
+        "speed": 84.5,
+        "count": 62,
+        "totalPitches": 170
+      },
+      {
+        "code": "FC",
+        "name": "Cutter",
+        "usage": 0.6,
+        "speed": 86.3,
+        "count": 1,
+        "totalPitches": 170
+      }
+    ]
+  },
+  "matsui-yuki": {
+    "season": 2025,
+    "arsenal": [
+      {
+        "code": "FF",
+        "name": "Four-seam FB",
+        "usage": 39.5,
+        "speed": 92.1,
+        "count": 420,
+        "totalPitches": 1063
+      },
+      {
+        "code": "ST",
+        "name": "Sweeper",
+        "usage": 10.7,
+        "speed": 81.4,
+        "count": 114,
+        "totalPitches": 1063
+      },
+      {
+        "code": "CU",
+        "name": "Curveball",
+        "usage": 0.2,
+        "speed": 74.8,
+        "count": 2,
+        "totalPitches": 1063
+      },
+      {
+        "code": "SI",
+        "name": "Sinker",
+        "usage": 1.5,
+        "speed": 91.5,
+        "count": 16,
+        "totalPitches": 1063
+      },
+      {
+        "code": "SL",
+        "name": "Slider",
+        "usage": 15.9,
+        "speed": 86.6,
+        "count": 169,
+        "totalPitches": 1063
+      },
+      {
+        "code": "FS",
+        "name": "Splitter",
+        "usage": 32.2,
+        "speed": 84.0,
+        "count": 342,
+        "totalPitches": 1063
+      }
+    ]
+  }
+}

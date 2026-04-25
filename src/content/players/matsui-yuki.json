@@ -24,33 +24,42 @@
   "savant": {
     "pitch_arsenal": [
       {
-        "pitch": "SL",
-        "jp": "スライダー",
-        "en": "Slider",
-        "usage": 42.5,
-        "ba": ".165",
-        "whiff": 42.0,
-        "hard_hit": 25.0
-      },
-      {
         "pitch": "FF",
         "jp": "4シーム",
         "en": "4-Seam Fastball",
-        "usage": 35.2,
-        "ba": ".200",
-        "whiff": 25.0,
-        "hard_hit": 38.0
+        "usage": 39.5,
+        "speed": 92.1
       },
       {
-        "pitch": "CH",
-        "jp": "チェンジアップ",
-        "en": "Changeup",
-        "usage": 22.3,
-        "ba": ".180",
-        "whiff": 38.0,
-        "hard_hit": 28.0
+        "pitch": "FS",
+        "jp": "スプリット",
+        "en": "Splitter",
+        "usage": 32.2,
+        "speed": 84.0
+      },
+      {
+        "pitch": "SL",
+        "jp": "スライダー",
+        "en": "Slider",
+        "usage": 15.9,
+        "speed": 86.6
+      },
+      {
+        "pitch": "ST",
+        "jp": "スイーパー",
+        "en": "Sweeper",
+        "usage": 10.7,
+        "speed": 81.4
+      },
+      {
+        "pitch": "SI",
+        "jp": "シンカー",
+        "en": "Sinker",
+        "usage": 1.5,
+        "speed": 91.5
       }
-    ]
+    ],
+    "arsenal_season": 2025
   },
   "yearly": [
     {

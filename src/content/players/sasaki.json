@@ -26,30 +26,25 @@
         "pitch": "FF",
         "jp": "4シーム",
         "en": "4-Seam Fastball",
-        "usage": 48.5,
-        "ba": ".180",
-        "whiff": 28.0,
-        "hard_hit": 35.0
+        "usage": 44.7,
+        "speed": 97.0
       },
       {
         "pitch": "FS",
-        "jp": "フォーク",
-        "en": "Forkball",
-        "usage": 36.2,
-        "ba": ".120",
-        "whiff": 52.0,
-        "hard_hit": 20.0
+        "jp": "スプリット",
+        "en": "Splitter",
+        "usage": 31.2,
+        "speed": 85.0
       },
       {
         "pitch": "SL",
         "jp": "スライダー",
         "en": "Slider",
-        "usage": 15.3,
-        "ba": ".195",
-        "whiff": 35.0,
-        "hard_hit": 28.0
+        "usage": 24.1,
+        "speed": 86.4
       }
-    ]
+    ],
+    "arsenal_season": 2026
   },
   "yearly": [
     {

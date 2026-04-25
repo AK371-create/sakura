@@ -47,47 +47,45 @@
         "jp": "4シーム",
         "en": "4-Seam Fastball",
         "usage": 44.4,
-        "ba": ".105",
-        "whiff": 27.0,
-        "hard_hit": 40.7
+        "speed": 98.0
       },
       {
-        "pitch": "SL",
+        "pitch": "ST",
         "jp": "スイーパー",
         "en": "Sweeper",
-        "usage": 28.2,
-        "ba": ".150",
-        "whiff": 38.5,
-        "hard_hit": 30.0
-      },
-      {
-        "pitch": "FS",
-        "jp": "スプリット",
-        "en": "Splitter",
-        "usage": 14.6,
-        "ba": ".080",
-        "whiff": 50.0,
-        "hard_hit": 22.0
-      },
-      {
-        "pitch": "FC",
-        "jp": "カッター",
-        "en": "Cutter",
-        "usage": 8.4,
-        "ba": ".180",
-        "whiff": 22.0,
-        "hard_hit": 35.0
+        "usage": 22.0,
+        "speed": 85.2
       },
       {
         "pitch": "CU",
         "jp": "カーブ",
         "en": "Curveball",
-        "usage": 4.4,
-        "ba": ".200",
-        "whiff": 28.0,
-        "hard_hit": 33.0
+        "usage": 13.8,
+        "speed": 74.9
+      },
+      {
+        "pitch": "FS",
+        "jp": "スプリット",
+        "en": "Splitter",
+        "usage": 11.9,
+        "speed": 88.3
+      },
+      {
+        "pitch": "SI",
+        "jp": "シンカー",
+        "en": "Sinker",
+        "usage": 4.9,
+        "speed": 95.8
+      },
+      {
+        "pitch": "SL",
+        "jp": "スライダー",
+        "en": "Slider",
+        "usage": 2.2,
+        "speed": 87.5
       }
-    ]
+    ],
+    "arsenal_season": 2026
   },
   "yearly": [
     {

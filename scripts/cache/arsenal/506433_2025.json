@@ -1,0 +1,74 @@
+[
+  {
+    "code": "FF",
+    "name": "Four-seam FB",
+    "usage": 16.5,
+    "speed": 93.9,
+    "count": 191,
+    "totalPitches": 1158
+  },
+  {
+    "code": "ST",
+    "name": "Sweeper",
+    "usage": 10.1,
+    "speed": 82.8,
+    "count": 117,
+    "totalPitches": 1158
+  },
+  {
+    "code": "CU",
+    "name": "Curveball",
+    "usage": 15.3,
+    "speed": 71.1,
+    "count": 177,
+    "totalPitches": 1158
+  },
+  {
+    "code": "CH",
+    "name": "Changeup",
+    "usage": 0.7,
+    "speed": 88.0,
+    "count": 8,
+    "totalPitches": 1158
+  },
+  {
+    "code": "SI",
+    "name": "Sinker",
+    "usage": 20.0,
+    "speed": 93.4,
+    "count": 232,
+    "totalPitches": 1158
+  },
+  {
+    "code": "KC",
+    "name": "Knuckle Curve",
+    "usage": 1.3,
+    "speed": 78.6,
+    "count": 15,
+    "totalPitches": 1158
+  },
+  {
+    "code": "SL",
+    "name": "Slider",
+    "usage": 13.8,
+    "speed": 85.8,
+    "count": 160,
+    "totalPitches": 1158
+  },
+  {
+    "code": "FC",
+    "name": "Cutter",
+    "usage": 11.7,
+    "speed": 90.7,
+    "count": 136,
+    "totalPitches": 1158
+  },
+  {
+    "code": "FS",
+    "name": "Splitter",
+    "usage": 10.4,
+    "speed": 86.3,
+    "count": 121,
+    "totalPitches": 1158
+  }
+]

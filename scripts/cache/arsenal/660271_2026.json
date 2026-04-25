@@ -1,0 +1,58 @@
+[
+  {
+    "code": "FF",
+    "name": "Four-seam FB",
+    "usage": 44.4,
+    "speed": 98.0,
+    "count": 164,
+    "totalPitches": 369
+  },
+  {
+    "code": "ST",
+    "name": "Sweeper",
+    "usage": 22.0,
+    "speed": 85.2,
+    "count": 81,
+    "totalPitches": 369
+  },
+  {
+    "code": "CU",
+    "name": "Curveball",
+    "usage": 13.8,
+    "speed": 74.9,
+    "count": 51,
+    "totalPitches": 369
+  },
+  {
+    "code": "SI",
+    "name": "Sinker",
+    "usage": 4.9,
+    "speed": 95.8,
+    "count": 18,
+    "totalPitches": 369
+  },
+  {
+    "code": "SL",
+    "name": "Slider",
+    "usage": 2.2,
+    "speed": 87.5,
+    "count": 8,
+    "totalPitches": 369
+  },
+  {
+    "code": "FS",
+    "name": "Splitter",
+    "usage": 11.9,
+    "speed": 88.3,
+    "count": 44,
+    "totalPitches": 369
+  },
+  {
+    "code": "FC",
+    "name": "Cutter",
+    "usage": 0.8,
+    "speed": 93.1,
+    "count": 3,
+    "totalPitches": 369
+  }
+]

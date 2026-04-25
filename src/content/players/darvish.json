@@ -23,60 +23,63 @@
   "savant": {
     "pitch_arsenal": [
       {
-        "pitch": "FC",
-        "jp": "カッター",
-        "en": "Cutter",
-        "usage": 22.3,
-        "ba": ".225",
-        "whiff": 26.0,
-        "hard_hit": 37.0
-      },
-      {
-        "pitch": "SL",
-        "jp": "スライダー",
-        "en": "Slider",
-        "usage": 20.8,
-        "ba": ".180",
-        "whiff": 36.5,
-        "hard_hit": 28.0
+        "pitch": "SI",
+        "jp": "シンカー",
+        "en": "Sinker",
+        "usage": 20.0,
+        "speed": 93.4
       },
       {
         "pitch": "FF",
         "jp": "4シーム",
         "en": "4-Seam Fastball",
-        "usage": 18.2,
-        "ba": ".240",
-        "whiff": 21.0,
-        "hard_hit": 41.0
-      },
-      {
-        "pitch": "FS",
-        "jp": "スプリット",
-        "en": "Splitter",
-        "usage": 14.5,
-        "ba": ".165",
-        "whiff": 42.0,
-        "hard_hit": 22.0
-      },
-      {
-        "pitch": "SI",
-        "jp": "シンカー",
-        "en": "Sinker",
-        "usage": 12.0,
-        "ba": ".265",
-        "whiff": 12.0,
-        "hard_hit": 45.0
+        "usage": 16.5,
+        "speed": 93.9
       },
       {
         "pitch": "CU",
         "jp": "カーブ",
         "en": "Curveball",
-        "usage": 12.2,
-        "ba": ".200",
-        "whiff": 30.0,
-        "hard_hit": 30.0
+        "usage": 15.3,
+        "speed": 71.1
+      },
+      {
+        "pitch": "SL",
+        "jp": "スライダー",
+        "en": "Slider",
+        "usage": 13.8,
+        "speed": 85.8
+      },
+      {
+        "pitch": "FC",
+        "jp": "カッター",
+        "en": "Cutter",
+        "usage": 11.7,
+        "speed": 90.7
+      },
+      {
+        "pitch": "FS",
+        "jp": "スプリット",
+        "en": "Splitter",
+        "usage": 10.4,
+        "speed": 86.3
+      },
+      {
+        "pitch": "ST",
+        "jp": "スイーパー",
+        "en": "Sweeper",
+        "usage": 10.1,
+        "speed": 82.8
+      },
+      {
+        "pitch": "KC",
+        "jp": "ナックルカーブ",
+        "en": "Knuckle-Curve",
+        "usage": 1.3,
+        "speed": 78.6
       }
-    ]
+    ],
+    "arsenal_season": 2025
   },
   "yearly": [
     {
