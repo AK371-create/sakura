@@ -186,6 +186,7 @@ const playerJsonLd: object[] = [
       <span class="sep">·</span>
       <span class="pos">{player.position_en}</span>
     </div>
+    {player.bio_en && <p class="player-bio">{player.bio_en}</p>}
     {isFormer && (
       <div class="former-info">
         <div class="former-row"><span class="former-lbl">MLB years</span><span class="former-val mono">{player.mlb_years}</span></div>
@@ -485,43 +486,16 @@ const playerJsonLd: object[] = [
     </section>
   )}
 
-  {arsenal && arsenal.length > 0 && (
+  {/* Pitch arsenal moved above (before yearly tables) */}
+  {false && arsenal && arsenal.length > 0 && (
     <section class="panel">
       <div class="panel-head">
         <h2>Pitch Arsenal</h2>
-        <span class="panel-sub mono">{player.savant?.arsenal_season ?? 2026} SEASON · USAGE · AVG VELOCITY (MLB Stats API)</span>
+        <span class="panel-sub mono"></span>
       </div>
       <table class="arsenal-table">
-        <thead>
-          <tr>
-            <th>Pitch</th>
-            <th class="num">Usage</th>
-            <th class="dist">Distribution</th>
-            <th class="num">Avg Velocity (mph)</th>
-          </tr>
-        </thead>
+        <thead><tr></tr></thead>
         <tbody>
-          {arsenal.map((a: any) => (
-            <tr>
-              <td>
-                <div class="pitch-cell">
-                  <span class="pitch-dot" style={`background: ${pitchColors[a.pitch] ?? "var(--pitch-default)"}`}></span>
-                  <div>
-                    <div class="pitch-name">{a.en}</div>
-                    <div class="pitch-sub mono">{a.pitch}</div>
-                  </div>
-                </div>
-              </td>
-              <td class="num mono">{a.usage}%</td>
-              <td class="dist">
-                <div class="dist-bars">
-                  <div class="dist-bar" style={`--w: ${Math.min(a.usage, 100)}%; --c: ${pitchColors[a.pitch] ?? "var(--pitch-default)"}`} title={`Usage ${a.usage}%`}></div>
-                </div>
-              </td>
-              <td class="num mono">{a.speed ? a.speed.toFixed(1) : "—"}</td>
-            </tr>
-          ))}
-        </tbody>
       </table>
     </section>
   )}
@@ -718,6 +692,17 @@ const playerJsonLd: object[] = [
     font-size: 0.95rem; color: var(--text-muted);
   }
   .player-meta .sep { color: var(--text-dim); }
+  .player-bio {
+    margin: 0.7rem 0 0;
+    max-width: 720px;
+    font-size: 0.95rem;
+    color: var(--text);
+    line-height: 1.65;
+    padding: 0.6rem 0.9rem;
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  }
 
   .basic-season-label {
     display: inline-flex; align-items: baseline; gap: 0.5rem;
