@@ -353,12 +353,12 @@ const playerJsonLd: object[] = [
               <th>Team</th>
               <th class="num">W</th>
               <th class="num">L</th>
+              {pitchingYearly.some((y: any) => y.hld !== undefined) && <th class="num">HLD</th>}
+              {pitchingYearly.some((y: any) => y.sv !== undefined) && <th class="num">SV</th>}
               <th class="num">ERA</th>
               <th class="num">SO</th>
               <th class="num">IP</th>
               <th class="num">WHIP</th>
-              {pitchingYearly.some((y: any) => y.sv !== undefined) && <th class="num">SV</th>}
-              {pitchingYearly.some((y: any) => y.hld !== undefined) && <th class="num">HLD</th>}
             </tr>
           </thead>
           <tbody>
@@ -368,12 +368,12 @@ const playerJsonLd: object[] = [
                 <td class="mono">{y.team}</td>
                 <td class:list={["num", "mono", statClass(y, "w", pitCareerRanks.w[i])]}>{y.w}</td>
                 <td class:list={["num", "mono", statClass(y, "l", pitCareerRanks.l[i])]}>{y.l}</td>
+                {pitchingYearly.some((r: any) => r.hld !== undefined) && <td class:list={["num", "mono", statClass(y, "hld", pitCareerRanks.hld[i])]}>{y.hld ?? "—"}</td>}
+                {pitchingYearly.some((r: any) => r.sv !== undefined) && <td class:list={["num", "mono", statClass(y, "sv", pitCareerRanks.sv[i])]}>{y.sv ?? "—"}</td>}
                 <td class:list={["num", "mono", statClass(y, "era", pitCareerRanks.era[i])]}>{y.era}</td>
                 <td class:list={["num", "mono", statClass(y, "so", pitCareerRanks.so[i])]}>{y.so}</td>
                 <td class:list={["num", "mono", statClass(y, "ip", pitCareerRanks.ip[i])]}>{y.ip}</td>
                 <td class:list={["num", "mono", statClass(y, "whip", pitCareerRanks.whip[i])]}>{y.whip}</td>
-                {pitchingYearly.some((r: any) => r.sv !== undefined) && <td class:list={["num", "mono", statClass(y, "sv", pitCareerRanks.sv[i])]}>{y.sv ?? "—"}</td>}
-                {pitchingYearly.some((r: any) => r.hld !== undefined) && <td class:list={["num", "mono", statClass(y, "hld", pitCareerRanks.hld[i])]}>{y.hld ?? "—"}</td>}
               </tr>
             ))}
           </tbody>
