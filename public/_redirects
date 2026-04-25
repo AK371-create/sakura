@@ -2,24 +2,14 @@
 /sitemap.xml      /sitemap-index.xml      301
 /sitemap_index.xml /sitemap-index.xml     301
 
-# Removed pages — return 410 Gone so search engines stop indexing
-/players/murakami                       /                  410
-/players/murakami/                      /                  410
-/en/players/murakami                    /en/               410
-/en/players/murakami/                   /en/               410
-/articles/ohtani-5hr-pace-2026          /articles/         410
-/articles/ohtani-5hr-pace-2026/         /articles/         410
-/articles/murakami-low-slider-problem   /articles/         410
-/articles/murakami-low-slider-problem/  /articles/         410
-/articles/murakami-ops-adjustment       /articles/         410
-/articles/murakami-ops-adjustment/      /articles/         410
-/articles/murakami-pull-power           /articles/         410
-/articles/murakami-pull-power/          /articles/         410
-/en/articles/ohtani-5hr-pace-2026       /en/articles/      410
-/en/articles/ohtani-5hr-pace-2026/      /en/articles/      410
-/en/articles/murakami-low-slider-problem  /en/articles/   410
-/en/articles/murakami-low-slider-problem/ /en/articles/   410
-/en/articles/murakami-ops-adjustment    /en/articles/      410
-/en/articles/murakami-ops-adjustment/   /en/articles/      410
-/en/articles/murakami-pull-power        /en/articles/      410
-/en/articles/murakami-pull-power/       /en/articles/      410
+# Removed pages — 301 to relevant listing (search engines de-index over time)
+/players/murakami/*                       /                301
+/en/players/murakami/*                    /en/             301
+/articles/ohtani-5hr-pace-2026/*          /articles/       301
+/articles/murakami-low-slider-problem/*   /articles/       301
+/articles/murakami-ops-adjustment/*       /articles/       301
+/articles/murakami-pull-power/*           /articles/       301
+/en/articles/ohtani-5hr-pace-2026/*       /en/articles/    301
+/en/articles/murakami-low-slider-problem/* /en/articles/   301
+/en/articles/murakami-ops-adjustment/*    /en/articles/    301
+/en/articles/murakami-pull-power/*        /en/articles/    301
