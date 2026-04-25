@@ -13,8 +13,7 @@
   "body_jp": [
     "wOBAはOn-Base Percentageを進化させた総合打撃指標で、各種打撃イベントを加重して算出される。",
     "xwOBAは、打球の打球速度・打球角度・走力から期待値を算出した指標で、実績ではなく「内容」を評価する。",
-    "xwOBA > wOBAなら不運、xwOBA < wOBAなら幸運と解釈できる。サンプルサイズが大きいほど両者は収束する。",
-    "村上宗隆の2026年序盤はxwOBA.433と極めて高く、この調子が続けばOPSはさらに伸びる可能性がある。"
+    "xwOBA > wOBAなら不運、xwOBA < wOBAなら幸運と解釈できる。サンプルサイズが大きいほど両者は収束する。"
   ],
   "body_en": [
     "wOBA is a rate stat that weights each offensive event (walk, single, HR, etc.) and improves on OBP.",
