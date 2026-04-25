@@ -134,14 +134,14 @@ const groupedAwards = Array.from(awardsByCat.values())
       </div>
       <div class="awards-grid">
         {groupedAwards.map((g) => (
-          <div class:list={["award-card", `cat-${g.cat}`]}>
+          <div class={"award-card cat-" + g.cat}>
             <div class="award-label">{g.label}</div>
             <div class="award-meta">
               {g.count > 1 && <span class="award-count">{g.count}回</span>}
               <span class="award-years mono">
                 {g.years.length <= 3
                   ? g.years.join(", ")
-                  : `${Math.min(...g.years)}–${Math.max(...g.years)}`}
+                  : Math.min(...g.years) + "–" + Math.max(...g.years)}
               </span>
             </div>
           </div>
