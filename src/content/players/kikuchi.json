@@ -65,7 +65,7 @@
   "yearly": [
     {
       "year": 2019,
-      "team": "?",
+      "team": "SEA",
       "type": "pit",
       "w": 6,
       "l": 11,
@@ -78,7 +78,7 @@
     },
     {
       "year": 2020,
-      "team": "?",
+      "team": "SEA",
       "type": "pit",
       "w": 2,
       "l": 4,
@@ -91,7 +91,7 @@
     },
     {
       "year": 2021,
-      "team": "?",
+      "team": "SEA",
       "type": "pit",
       "w": 7,
       "l": 9,
@@ -104,7 +104,7 @@
     },
     {
       "year": 2022,
-      "team": "?",
+      "team": "TOR",
       "type": "pit",
       "w": 6,
       "l": 7,
@@ -117,7 +117,7 @@
     },
     {
       "year": 2023,
-      "team": "?",
+      "team": "TOR",
       "type": "pit",
       "w": 11,
       "l": 6,
@@ -130,7 +130,7 @@
     },
     {
       "year": 2024,
-      "team": "?",
+      "team": "TOR/HOU",
       "type": "pit",
       "w": 9,
       "l": 10,
@@ -146,7 +146,7 @@
     },
     {
       "year": 2025,
-      "team": "?",
+      "team": "LAA",
       "type": "pit",
       "w": 7,
       "l": 11,
@@ -159,7 +159,7 @@
     },
     {
       "year": 2026,
-      "team": "?",
+      "team": "LAA",
       "type": "pit",
       "w": 0,
       "l": 3,
@@ -185,5 +185,8 @@
       "cat": "as",
       "raw": "AL All-Star"
     }
-  ]
+  ],
+  "basic_season": {
+    "pitching": 2026
+  }
 }

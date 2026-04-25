@@ -38,9 +38,51 @@
       "atBatsPerHomeRun": "50.10"
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 112,
       "name": "Chicago Cubs",
-      "link": "/api/v1/teams/112"
+      "link": "/api/v1/teams/112",
+      "season": 2008,
+      "venue": {
+        "id": 17,
+        "name": "Wrigley Field",
+        "link": "/api/v1/venues/17"
+      },
+      "springVenue": {
+        "id": 2507,
+        "link": "/api/v1/venues/2507"
+      },
+      "teamCode": "chn",
+      "fileCode": "chc",
+      "abbreviation": "CHC",
+      "teamName": "Cubs",
+      "locationName": "Chicago",
+      "firstYearOfPlay": "1874",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 205,
+        "name": "National League Central",
+        "link": "/api/v1/divisions/205"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Chi Cubs",
+      "franchiseName": "Chicago",
+      "clubName": "Cubs",
+      "active": true
     },
     "player": {
       "id": 493120,
@@ -98,9 +140,51 @@
       "atBatsPerHomeRun": "45.36"
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 112,
       "name": "Chicago Cubs",
-      "link": "/api/v1/teams/112"
+      "link": "/api/v1/teams/112",
+      "season": 2009,
+      "venue": {
+        "id": 17,
+        "name": "Wrigley Field",
+        "link": "/api/v1/venues/17"
+      },
+      "springVenue": {
+        "id": 2507,
+        "link": "/api/v1/venues/2507"
+      },
+      "teamCode": "chn",
+      "fileCode": "chc",
+      "abbreviation": "CHC",
+      "teamName": "Cubs",
+      "locationName": "Chicago",
+      "firstYearOfPlay": "1874",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 205,
+        "name": "National League Central",
+        "link": "/api/v1/divisions/205"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Chi Cubs",
+      "franchiseName": "Chicago",
+      "clubName": "Cubs",
+      "active": true
     },
     "player": {
       "id": 493120,
@@ -158,9 +242,51 @@
       "atBatsPerHomeRun": "27.54"
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 112,
       "name": "Chicago Cubs",
-      "link": "/api/v1/teams/112"
+      "link": "/api/v1/teams/112",
+      "season": 2010,
+      "venue": {
+        "id": 17,
+        "name": "Wrigley Field",
+        "link": "/api/v1/venues/17"
+      },
+      "springVenue": {
+        "id": 2507,
+        "link": "/api/v1/venues/2507"
+      },
+      "teamCode": "chn",
+      "fileCode": "chc",
+      "abbreviation": "CHC",
+      "teamName": "Cubs",
+      "locationName": "Chicago",
+      "firstYearOfPlay": "1874",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 205,
+        "name": "National League Central",
+        "link": "/api/v1/divisions/205"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Chi Cubs",
+      "franchiseName": "Chicago",
+      "clubName": "Cubs",
+      "active": true
     },
     "player": {
       "id": 493120,
@@ -218,9 +344,51 @@
       "atBatsPerHomeRun": "97.67"
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 112,
       "name": "Chicago Cubs",
-      "link": "/api/v1/teams/112"
+      "link": "/api/v1/teams/112",
+      "season": 2011,
+      "venue": {
+        "id": 17,
+        "name": "Wrigley Field",
+        "link": "/api/v1/venues/17"
+      },
+      "springVenue": {
+        "id": 2507,
+        "link": "/api/v1/venues/2507"
+      },
+      "teamCode": "chn",
+      "fileCode": "chc",
+      "abbreviation": "CHC",
+      "teamName": "Cubs",
+      "locationName": "Chicago",
+      "firstYearOfPlay": "1874",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 205,
+        "name": "National League Central",
+        "link": "/api/v1/divisions/205"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Chi Cubs",
+      "franchiseName": "Chicago",
+      "clubName": "Cubs",
+      "active": true
     },
     "player": {
       "id": 493120,
@@ -278,9 +446,51 @@
       "atBatsPerHomeRun": "47.40"
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 114,
       "name": "Cleveland Indians",
-      "link": "/api/v1/teams/114"
+      "link": "/api/v1/teams/114",
+      "season": 2011,
+      "venue": {
+        "id": 5,
+        "name": "Progressive Field",
+        "link": "/api/v1/venues/5"
+      },
+      "springVenue": {
+        "id": 3834,
+        "link": "/api/v1/venues/3834"
+      },
+      "teamCode": "cle",
+      "fileCode": "cle",
+      "abbreviation": "CLE",
+      "teamName": "Indians",
+      "locationName": "Cleveland",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 202,
+        "name": "American League Central",
+        "link": "/api/v1/divisions/202"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Cleveland",
+      "franchiseName": "Cleveland",
+      "clubName": "Indians",
+      "active": true
     },
     "player": {
       "id": 493120,
@@ -390,9 +600,51 @@
       "atBatsPerHomeRun": "-.--"
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 145,
       "name": "Chicago White Sox",
-      "link": "/api/v1/teams/145"
+      "link": "/api/v1/teams/145",
+      "season": 2012,
+      "venue": {
+        "id": 4,
+        "name": "U.S. Cellular Field",
+        "link": "/api/v1/venues/4"
+      },
+      "springVenue": {
+        "id": 3809,
+        "link": "/api/v1/venues/3809"
+      },
+      "teamCode": "cha",
+      "fileCode": "cws",
+      "abbreviation": "CWS",
+      "teamName": "White Sox",
+      "locationName": "Chicago",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 202,
+        "name": "American League Central",
+        "link": "/api/v1/divisions/202"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Chi White Sox",
+      "franchiseName": "Chicago",
+      "clubName": "White Sox",
+      "active": true
     },
     "player": {
       "id": 493120,

@@ -28,7 +28,7 @@
   "yearly": [
     {
       "year": 2023,
-      "team": "?",
+      "team": "OAK/BAL",
       "type": "pit",
       "w": 7,
       "l": 8,
@@ -40,5 +40,8 @@
       "hld": 5
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "basic_season": {
+    "pitching": "career"
+  }
 }

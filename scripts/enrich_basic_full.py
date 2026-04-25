@@ -81,30 +81,37 @@ def main():
             continue
 
         new_basic = {}
+        season_used: dict[str, int | str] = {}
         for group in groups:
             mapping = HIT_MAP if group == "hitting" else PIT_MAP
             stat = {}
+            used_season: int | str | None = None
             if is_former:
                 stat = fetch_stats(pid, group, "career")
+                used_season = "career"
             else:
-                # Try most recent season
                 for season in (2026, 2025, 2024):
                     stat = fetch_stats(pid, group, "season", season)
                     time.sleep(0.1)
                     if stat:
+                        used_season = season
                         break
             time.sleep(0.1)
             mapped = map_stat(stat, mapping)
             if mapped:
                 key_in_basic = "hitting" if group == "hitting" else "pitching"
                 new_basic[key_in_basic] = mapped
+                if used_season is not None:
+                    season_used[key_in_basic] = used_season
 
         if not new_basic:
             continue
         data["basic"] = new_basic
+        if season_used:
+            data["basic_season"] = season_used
         f.write_text(json.dumps(data, ensure_ascii=False, indent=2))
         updated += 1
-        parts = [f"{g}({len(new_basic[g])} fields)" for g in new_basic]
+        parts = [f"{g}({len(new_basic[g])} fields, {season_used.get(g, '?')})" for g in new_basic]
         print(f"  {key}: {' + '.join(parts)}")
     print(f"Updated {updated} players' basic stats")
 

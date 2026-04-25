@@ -66,9 +66,51 @@
       "sacFlies": 3
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 110,
       "name": "Baltimore Orioles",
-      "link": "/api/v1/teams/110"
+      "link": "/api/v1/teams/110",
+      "season": 2009,
+      "venue": {
+        "id": 2,
+        "name": "Oriole Park at Camden Yards",
+        "link": "/api/v1/venues/2"
+      },
+      "springVenue": {
+        "id": 2505,
+        "link": "/api/v1/venues/2505"
+      },
+      "teamCode": "bal",
+      "fileCode": "bal",
+      "abbreviation": "BAL",
+      "teamName": "Orioles",
+      "locationName": "Baltimore",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Baltimore",
+      "franchiseName": "Baltimore",
+      "clubName": "Orioles",
+      "active": true
     },
     "player": {
       "id": 493157,
@@ -154,9 +196,51 @@
       "sacFlies": 0
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 110,
       "name": "Baltimore Orioles",
-      "link": "/api/v1/teams/110"
+      "link": "/api/v1/teams/110",
+      "season": 2010,
+      "venue": {
+        "id": 2,
+        "name": "Oriole Park at Camden Yards",
+        "link": "/api/v1/venues/2"
+      },
+      "springVenue": {
+        "id": 2508,
+        "link": "/api/v1/venues/2508"
+      },
+      "teamCode": "bal",
+      "fileCode": "bal",
+      "abbreviation": "BAL",
+      "teamName": "Orioles",
+      "locationName": "Baltimore",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Baltimore",
+      "franchiseName": "Baltimore",
+      "clubName": "Orioles",
+      "active": true
     },
     "player": {
       "id": 493157,
@@ -242,9 +326,51 @@
       "sacFlies": 1
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 110,
       "name": "Baltimore Orioles",
-      "link": "/api/v1/teams/110"
+      "link": "/api/v1/teams/110",
+      "season": 2011,
+      "venue": {
+        "id": 2,
+        "name": "Oriole Park at Camden Yards",
+        "link": "/api/v1/venues/2"
+      },
+      "springVenue": {
+        "id": 2508,
+        "link": "/api/v1/venues/2508"
+      },
+      "teamCode": "bal",
+      "fileCode": "bal",
+      "abbreviation": "BAL",
+      "teamName": "Orioles",
+      "locationName": "Baltimore",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Baltimore",
+      "franchiseName": "Baltimore",
+      "clubName": "Orioles",
+      "active": true
     },
     "player": {
       "id": 493157,
@@ -330,9 +456,51 @@
       "sacFlies": 0
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 140,
       "name": "Texas Rangers",
-      "link": "/api/v1/teams/140"
+      "link": "/api/v1/teams/140",
+      "season": 2011,
+      "venue": {
+        "id": 13,
+        "name": "Rangers Ballpark in Arlington",
+        "link": "/api/v1/venues/13"
+      },
+      "springVenue": {
+        "id": 2603,
+        "link": "/api/v1/venues/2603"
+      },
+      "teamCode": "tex",
+      "fileCode": "tex",
+      "abbreviation": "TEX",
+      "teamName": "Rangers",
+      "locationName": "Arlington",
+      "firstYearOfPlay": "1961",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 200,
+        "name": "American League West",
+        "link": "/api/v1/divisions/200"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Texas",
+      "franchiseName": "Texas",
+      "clubName": "Rangers",
+      "active": true
     },
     "player": {
       "id": 493157,
@@ -502,9 +670,51 @@
       "sacFlies": 1
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 140,
       "name": "Texas Rangers",
-      "link": "/api/v1/teams/140"
+      "link": "/api/v1/teams/140",
+      "season": 2012,
+      "venue": {
+        "id": 13,
+        "name": "Rangers Ballpark in Arlington",
+        "link": "/api/v1/venues/13"
+      },
+      "springVenue": {
+        "id": 2603,
+        "link": "/api/v1/venues/2603"
+      },
+      "teamCode": "tex",
+      "fileCode": "tex",
+      "abbreviation": "TEX",
+      "teamName": "Rangers",
+      "locationName": "Arlington",
+      "firstYearOfPlay": "1961",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 200,
+        "name": "American League West",
+        "link": "/api/v1/divisions/200"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Texas",
+      "franchiseName": "Texas",
+      "clubName": "Rangers",
+      "active": true
     },
     "player": {
       "id": 493157,
@@ -590,9 +800,51 @@
       "sacFlies": 1
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 111,
       "name": "Boston Red Sox",
-      "link": "/api/v1/teams/111"
+      "link": "/api/v1/teams/111",
+      "season": 2013,
+      "venue": {
+        "id": 3,
+        "name": "Fenway Park",
+        "link": "/api/v1/venues/3"
+      },
+      "springVenue": {
+        "id": 4309,
+        "link": "/api/v1/venues/4309"
+      },
+      "teamCode": "bos",
+      "fileCode": "bos",
+      "abbreviation": "BOS",
+      "teamName": "Red Sox",
+      "locationName": "Boston",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Boston",
+      "franchiseName": "Boston",
+      "clubName": "Red Sox",
+      "active": true
     },
     "player": {
       "id": 493157,
@@ -678,9 +930,51 @@
       "sacFlies": 1
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 111,
       "name": "Boston Red Sox",
-      "link": "/api/v1/teams/111"
+      "link": "/api/v1/teams/111",
+      "season": 2014,
+      "venue": {
+        "id": 3,
+        "name": "Fenway Park",
+        "link": "/api/v1/venues/3"
+      },
+      "springVenue": {
+        "id": 4309,
+        "link": "/api/v1/venues/4309"
+      },
+      "teamCode": "bos",
+      "fileCode": "bos",
+      "abbreviation": "BOS",
+      "teamName": "Red Sox",
+      "locationName": "Boston",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Boston",
+      "franchiseName": "Boston",
+      "clubName": "Red Sox",
+      "active": true
     },
     "player": {
       "id": 493157,
@@ -766,9 +1060,51 @@
       "sacFlies": 1
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 111,
       "name": "Boston Red Sox",
-      "link": "/api/v1/teams/111"
+      "link": "/api/v1/teams/111",
+      "season": 2015,
+      "venue": {
+        "id": 3,
+        "name": "Fenway Park",
+        "link": "/api/v1/venues/3"
+      },
+      "springVenue": {
+        "id": 4309,
+        "link": "/api/v1/venues/4309"
+      },
+      "teamCode": "bos",
+      "fileCode": "bos",
+      "abbreviation": "BOS",
+      "teamName": "Red Sox",
+      "locationName": "Boston",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Boston",
+      "franchiseName": "Boston",
+      "clubName": "Red Sox",
+      "active": true
     },
     "player": {
       "id": 493157,
@@ -854,9 +1190,51 @@
       "sacFlies": 0
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 111,
       "name": "Boston Red Sox",
-      "link": "/api/v1/teams/111"
+      "link": "/api/v1/teams/111",
+      "season": 2016,
+      "venue": {
+        "id": 3,
+        "name": "Fenway Park",
+        "link": "/api/v1/venues/3"
+      },
+      "springVenue": {
+        "id": 4309,
+        "link": "/api/v1/venues/4309"
+      },
+      "teamCode": "bos",
+      "fileCode": "bos",
+      "abbreviation": "BOS",
+      "teamName": "Red Sox",
+      "locationName": "Boston",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Boston",
+      "franchiseName": "Boston",
+      "clubName": "Red Sox",
+      "active": true
     },
     "player": {
       "id": 493157,
@@ -942,9 +1320,51 @@
       "sacFlies": 1
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 112,
       "name": "Chicago Cubs",
-      "link": "/api/v1/teams/112"
+      "link": "/api/v1/teams/112",
+      "season": 2017,
+      "venue": {
+        "id": 17,
+        "name": "Wrigley Field",
+        "link": "/api/v1/venues/17"
+      },
+      "springVenue": {
+        "id": 4629,
+        "link": "/api/v1/venues/4629"
+      },
+      "teamCode": "chn",
+      "fileCode": "chc",
+      "abbreviation": "CHC",
+      "teamName": "Cubs",
+      "locationName": "Chicago",
+      "firstYearOfPlay": "1874",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 205,
+        "name": "National League Central",
+        "link": "/api/v1/divisions/205"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Chi Cubs",
+      "franchiseName": "Chicago",
+      "clubName": "Cubs",
+      "active": true
     },
     "player": {
       "id": 493157,

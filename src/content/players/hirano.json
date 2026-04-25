@@ -28,7 +28,7 @@
   "yearly": [
     {
       "year": 2018,
-      "team": "?",
+      "team": "AZ",
       "type": "pit",
       "w": 4,
       "l": 3,
@@ -41,7 +41,7 @@
     },
     {
       "year": 2019,
-      "team": "?",
+      "team": "AZ",
       "type": "pit",
       "w": 5,
       "l": 5,
@@ -54,7 +54,7 @@
     },
     {
       "year": 2020,
-      "team": "?",
+      "team": "SEA",
       "type": "pit",
       "w": 0,
       "l": 1,
@@ -66,5 +66,8 @@
       "hld": 1
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "basic_season": {
+    "pitching": "career"
+  }
 }

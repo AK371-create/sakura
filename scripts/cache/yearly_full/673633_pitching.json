@@ -66,9 +66,51 @@
       "sacFlies": 1
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 109,
       "name": "Arizona Diamondbacks",
-      "link": "/api/v1/teams/109"
+      "link": "/api/v1/teams/109",
+      "season": 2018,
+      "venue": {
+        "id": 15,
+        "name": "Chase Field",
+        "link": "/api/v1/venues/15"
+      },
+      "springVenue": {
+        "id": 4249,
+        "link": "/api/v1/venues/4249"
+      },
+      "teamCode": "ari",
+      "fileCode": "ari",
+      "abbreviation": "AZ",
+      "teamName": "D-backs",
+      "locationName": "Phoenix",
+      "firstYearOfPlay": "1996",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Arizona",
+      "franchiseName": "Arizona",
+      "clubName": "Diamondbacks",
+      "active": true
     },
     "player": {
       "id": 673633,
@@ -154,9 +196,51 @@
       "sacFlies": 2
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 109,
       "name": "Arizona Diamondbacks",
-      "link": "/api/v1/teams/109"
+      "link": "/api/v1/teams/109",
+      "season": 2019,
+      "venue": {
+        "id": 15,
+        "name": "Chase Field",
+        "link": "/api/v1/venues/15"
+      },
+      "springVenue": {
+        "id": 4249,
+        "link": "/api/v1/venues/4249"
+      },
+      "teamCode": "ari",
+      "fileCode": "ari",
+      "abbreviation": "AZ",
+      "teamName": "D-backs",
+      "locationName": "Phoenix",
+      "firstYearOfPlay": "1996",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Arizona",
+      "franchiseName": "Arizona",
+      "clubName": "Diamondbacks",
+      "active": true
     },
     "player": {
       "id": 673633,
@@ -242,9 +326,51 @@
       "sacFlies": 1
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 136,
       "name": "Seattle Mariners",
-      "link": "/api/v1/teams/136"
+      "link": "/api/v1/teams/136",
+      "season": 2020,
+      "venue": {
+        "id": 680,
+        "name": "T-Mobile Park",
+        "link": "/api/v1/venues/680"
+      },
+      "springVenue": {
+        "id": 2530,
+        "link": "/api/v1/venues/2530"
+      },
+      "teamCode": "sea",
+      "fileCode": "sea",
+      "abbreviation": "SEA",
+      "teamName": "Mariners",
+      "locationName": "Seattle",
+      "firstYearOfPlay": "1977",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 200,
+        "name": "American League West",
+        "link": "/api/v1/divisions/200"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Seattle",
+      "franchiseName": "Seattle",
+      "clubName": "Mariners",
+      "active": true
     },
     "player": {
       "id": 673633,

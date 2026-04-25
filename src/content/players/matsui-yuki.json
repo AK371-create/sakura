@@ -65,7 +65,7 @@
   "yearly": [
     {
       "year": 2024,
-      "team": "?",
+      "team": "SD",
       "type": "pit",
       "w": 4,
       "l": 2,
@@ -78,7 +78,7 @@
     },
     {
       "year": 2025,
-      "team": "?",
+      "team": "SD",
       "type": "pit",
       "w": 3,
       "l": 1,
@@ -90,5 +90,8 @@
       "hld": 3
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "basic_season": {
+    "pitching": 2025
+  }
 }

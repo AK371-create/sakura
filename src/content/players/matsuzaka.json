@@ -28,7 +28,7 @@
   "yearly": [
     {
       "year": 2007,
-      "team": "?",
+      "team": "BOS",
       "type": "pit",
       "w": 15,
       "l": 12,
@@ -44,7 +44,7 @@
     },
     {
       "year": 2008,
-      "team": "?",
+      "team": "BOS",
       "type": "pit",
       "w": 18,
       "l": 3,
@@ -61,7 +61,7 @@
     },
     {
       "year": 2009,
-      "team": "?",
+      "team": "BOS",
       "type": "pit",
       "w": 4,
       "l": 6,
@@ -74,7 +74,7 @@
     },
     {
       "year": 2010,
-      "team": "?",
+      "team": "BOS",
       "type": "pit",
       "w": 9,
       "l": 6,
@@ -87,7 +87,7 @@
     },
     {
       "year": 2011,
-      "team": "?",
+      "team": "BOS",
       "type": "pit",
       "w": 3,
       "l": 3,
@@ -100,7 +100,7 @@
     },
     {
       "year": 2012,
-      "team": "?",
+      "team": "BOS",
       "type": "pit",
       "w": 1,
       "l": 7,
@@ -113,7 +113,7 @@
     },
     {
       "year": 2013,
-      "team": "?",
+      "team": "NYM",
       "type": "pit",
       "w": 3,
       "l": 3,
@@ -126,7 +126,7 @@
     },
     {
       "year": 2014,
-      "team": "?",
+      "team": "NYM",
       "type": "pit",
       "w": 3,
       "l": 3,
@@ -138,5 +138,8 @@
       "hld": 3
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "basic_season": {
+    "pitching": "career"
+  }
 }

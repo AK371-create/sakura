@@ -66,9 +66,41 @@
       "sacFlies": 4
     },
     "team": {
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 1995,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LA",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Los Angeles",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 119827,
@@ -154,9 +186,41 @@
       "sacFlies": 6
     },
     "team": {
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 1996,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LA",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Los Angeles",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 119827,
@@ -242,9 +306,41 @@
       "sacFlies": 1
     },
     "team": {
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 1997,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LA",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Los Angeles",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 119827,
@@ -330,9 +426,41 @@
       "sacFlies": 2
     },
     "team": {
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 1998,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LA",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Los Angeles",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 119827,
@@ -418,9 +546,47 @@
       "sacFlies": 3
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 121,
       "name": "New York Mets",
-      "link": "/api/v1/teams/121"
+      "link": "/api/v1/teams/121",
+      "season": 1998,
+      "venue": {
+        "id": 25,
+        "name": "Shea Stadium",
+        "link": "/api/v1/venues/25"
+      },
+      "teamCode": "nyn",
+      "fileCode": "nym",
+      "abbreviation": "NYM",
+      "teamName": "Mets",
+      "locationName": "Flushing",
+      "firstYearOfPlay": "1962",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 204,
+        "name": "National League East",
+        "link": "/api/v1/divisions/204"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Mets",
+      "franchiseName": "New York",
+      "clubName": "Mets",
+      "active": true
     },
     "player": {
       "id": 119827,
@@ -590,9 +756,47 @@
       "sacFlies": 5
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 158,
       "name": "Milwaukee Brewers",
-      "link": "/api/v1/teams/158"
+      "link": "/api/v1/teams/158",
+      "season": 1999,
+      "venue": {
+        "id": 23,
+        "name": "Milwaukee County Stadium",
+        "link": "/api/v1/venues/23"
+      },
+      "teamCode": "mil",
+      "fileCode": "mil",
+      "abbreviation": "MIL",
+      "teamName": "Brewers",
+      "locationName": "Milwaukee",
+      "firstYearOfPlay": "1968",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 205,
+        "name": "National League Central",
+        "link": "/api/v1/divisions/205"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Milwaukee",
+      "franchiseName": "Milwaukee",
+      "clubName": "Brewers",
+      "active": true
     },
     "player": {
       "id": 119827,
@@ -678,9 +882,47 @@
       "sacFlies": 3
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 116,
       "name": "Detroit Tigers",
-      "link": "/api/v1/teams/116"
+      "link": "/api/v1/teams/116",
+      "season": 2000,
+      "venue": {
+        "id": 2394,
+        "name": "Comerica Park",
+        "link": "/api/v1/venues/2394"
+      },
+      "teamCode": "det",
+      "fileCode": "det",
+      "abbreviation": "DET",
+      "teamName": "Tigers",
+      "locationName": "Detroit",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 202,
+        "name": "American League Central",
+        "link": "/api/v1/divisions/202"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Detroit",
+      "franchiseName": "Detroit",
+      "clubName": "Tigers",
+      "active": true
     },
     "player": {
       "id": 119827,
@@ -766,9 +1008,47 @@
       "sacFlies": 7
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 111,
       "name": "Boston Red Sox",
-      "link": "/api/v1/teams/111"
+      "link": "/api/v1/teams/111",
+      "season": 2001,
+      "venue": {
+        "id": 3,
+        "name": "Fenway Park",
+        "link": "/api/v1/venues/3"
+      },
+      "teamCode": "bos",
+      "fileCode": "bos",
+      "abbreviation": "BOS",
+      "teamName": "Red Sox",
+      "locationName": "Boston",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Boston",
+      "franchiseName": "Boston",
+      "clubName": "Red Sox",
+      "active": true
     },
     "player": {
       "id": 119827,
@@ -854,9 +1134,45 @@
       "sacFlies": 4
     },
     "team": {
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 2002,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "springVenue": {
+        "id": 2517,
+        "link": "/api/v1/venues/2517"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LA",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Los Angeles",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 119827,
@@ -942,9 +1258,45 @@
       "sacFlies": 3
     },
     "team": {
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 2003,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "springVenue": {
+        "id": 2517,
+        "link": "/api/v1/venues/2517"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LA",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Los Angeles",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 119827,
@@ -1030,9 +1382,45 @@
       "sacFlies": 3
     },
     "team": {
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 2004,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "springVenue": {
+        "id": 2517,
+        "link": "/api/v1/venues/2517"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LA",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Los Angeles",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 119827,
@@ -1118,9 +1506,51 @@
       "sacFlies": 8
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 139,
       "name": "Tampa Bay Devil Rays",
-      "link": "/api/v1/teams/139"
+      "link": "/api/v1/teams/139",
+      "season": 2005,
+      "venue": {
+        "id": 12,
+        "name": "Tropicana Field",
+        "link": "/api/v1/venues/12"
+      },
+      "springVenue": {
+        "id": 2909,
+        "link": "/api/v1/venues/2909"
+      },
+      "teamCode": "tba",
+      "fileCode": "tb",
+      "abbreviation": "TB",
+      "teamName": "Devil Rays",
+      "locationName": "St. Petersburg",
+      "firstYearOfPlay": "1996",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Tampa Bay",
+      "franchiseName": "Tampa Bay",
+      "clubName": "Devil Rays",
+      "active": true
     },
     "player": {
       "id": 119827,
@@ -1206,9 +1636,51 @@
       "sacFlies": 1
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 118,
       "name": "Kansas City Royals",
-      "link": "/api/v1/teams/118"
+      "link": "/api/v1/teams/118",
+      "season": 2008,
+      "venue": {
+        "id": 7,
+        "name": "Kauffman Stadium",
+        "link": "/api/v1/venues/7"
+      },
+      "springVenue": {
+        "id": 2603,
+        "link": "/api/v1/venues/2603"
+      },
+      "teamCode": "kca",
+      "fileCode": "kc",
+      "abbreviation": "KC",
+      "teamName": "Royals",
+      "locationName": "Kansas City",
+      "firstYearOfPlay": "1968",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 202,
+        "name": "American League Central",
+        "link": "/api/v1/divisions/202"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Kansas City",
+      "franchiseName": "Kansas City",
+      "clubName": "Royals",
+      "active": true
     },
     "player": {
       "id": 119827,

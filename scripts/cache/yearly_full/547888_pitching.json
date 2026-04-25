@@ -66,9 +66,51 @@
       "sacFlies": 3
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2014,
+      "venue": {
+        "id": 3313,
+        "name": "Yankee Stadium",
+        "link": "/api/v1/venues/3313"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 547888,
@@ -154,9 +196,51 @@
       "sacFlies": 8
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2015,
+      "venue": {
+        "id": 3313,
+        "name": "Yankee Stadium",
+        "link": "/api/v1/venues/3313"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 547888,
@@ -242,9 +326,51 @@
       "sacFlies": 3
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2016,
+      "venue": {
+        "id": 3313,
+        "name": "Yankee Stadium",
+        "link": "/api/v1/venues/3313"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 547888,
@@ -330,9 +456,51 @@
       "sacFlies": 2
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2017,
+      "venue": {
+        "id": 3313,
+        "name": "Yankee Stadium",
+        "link": "/api/v1/venues/3313"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 547888,
@@ -418,9 +586,51 @@
       "sacFlies": 2
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2018,
+      "venue": {
+        "id": 3313,
+        "name": "Yankee Stadium",
+        "link": "/api/v1/venues/3313"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 547888,
@@ -506,9 +716,51 @@
       "sacFlies": 4
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2019,
+      "venue": {
+        "id": 3313,
+        "name": "Yankee Stadium",
+        "link": "/api/v1/venues/3313"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 547888,
@@ -594,9 +846,51 @@
       "sacFlies": 0
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2020,
+      "venue": {
+        "id": 3313,
+        "name": "Yankee Stadium",
+        "link": "/api/v1/venues/3313"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 547888,

@@ -28,7 +28,7 @@
   "yearly": [
     {
       "year": 2020,
-      "team": "?",
+      "team": "TB",
       "type": "hit",
       "avg": ".197",
       "h": 31,
@@ -41,7 +41,7 @@
     },
     {
       "year": 2021,
-      "team": "?",
+      "team": "TB/LAD/PIT",
       "type": "hit",
       "avg": ".217",
       "h": 50,
@@ -54,7 +54,7 @@
     },
     {
       "year": 2022,
-      "team": "?",
+      "team": "PIT",
       "type": "hit",
       "avg": ".171",
       "h": 29,
@@ -66,5 +66,8 @@
       "ops": ".478"
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "basic_season": {
+    "hitting": "career"
+  }
 }

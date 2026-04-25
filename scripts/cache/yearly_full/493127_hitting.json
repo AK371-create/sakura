@@ -38,9 +38,51 @@
       "atBatsPerHomeRun": "70.14"
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 139,
       "name": "Tampa Bay Devil Rays",
-      "link": "/api/v1/teams/139"
+      "link": "/api/v1/teams/139",
+      "season": 2007,
+      "venue": {
+        "id": 12,
+        "name": "Tropicana Field",
+        "link": "/api/v1/venues/12"
+      },
+      "springVenue": {
+        "id": 2909,
+        "link": "/api/v1/venues/2909"
+      },
+      "teamCode": "tba",
+      "fileCode": "tb",
+      "abbreviation": "TB",
+      "teamName": "Devil Rays",
+      "locationName": "St. Petersburg",
+      "firstYearOfPlay": "1996",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Tampa Bay",
+      "franchiseName": "Tampa Bay",
+      "clubName": "Devil Rays",
+      "active": true
     },
     "player": {
       "id": 493127,
@@ -98,9 +140,51 @@
       "atBatsPerHomeRun": "104.50"
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 139,
       "name": "Tampa Bay Rays",
-      "link": "/api/v1/teams/139"
+      "link": "/api/v1/teams/139",
+      "season": 2008,
+      "venue": {
+        "id": 12,
+        "name": "Tropicana Field",
+        "link": "/api/v1/venues/12"
+      },
+      "springVenue": {
+        "id": 2909,
+        "link": "/api/v1/venues/2909"
+      },
+      "teamCode": "tba",
+      "fileCode": "tb",
+      "abbreviation": "TB",
+      "teamName": "Rays",
+      "locationName": "St. Petersburg",
+      "firstYearOfPlay": "1996",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Tampa Bay",
+      "franchiseName": "Tampa Bay",
+      "clubName": "Rays",
+      "active": true
     },
     "player": {
       "id": 493127,
@@ -158,9 +242,51 @@
       "atBatsPerHomeRun": "231.00"
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 139,
       "name": "Tampa Bay Rays",
-      "link": "/api/v1/teams/139"
+      "link": "/api/v1/teams/139",
+      "season": 2009,
+      "venue": {
+        "id": 12,
+        "name": "Tropicana Field",
+        "link": "/api/v1/venues/12"
+      },
+      "springVenue": {
+        "id": 2534,
+        "link": "/api/v1/venues/2534"
+      },
+      "teamCode": "tba",
+      "fileCode": "tb",
+      "abbreviation": "TB",
+      "teamName": "Rays",
+      "locationName": "St. Petersburg",
+      "firstYearOfPlay": "1996",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Tampa Bay",
+      "franchiseName": "Tampa Bay",
+      "clubName": "Rays",
+      "active": true
     },
     "player": {
       "id": 493127,
@@ -218,9 +344,51 @@
       "atBatsPerHomeRun": "82.50"
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 134,
       "name": "Pittsburgh Pirates",
-      "link": "/api/v1/teams/134"
+      "link": "/api/v1/teams/134",
+      "season": 2010,
+      "venue": {
+        "id": 31,
+        "name": "PNC Park",
+        "link": "/api/v1/venues/31"
+      },
+      "springVenue": {
+        "id": 2526,
+        "link": "/api/v1/venues/2526"
+      },
+      "teamCode": "pit",
+      "fileCode": "pit",
+      "abbreviation": "PIT",
+      "teamName": "Pirates",
+      "locationName": "Pittsburgh",
+      "firstYearOfPlay": "1882",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 205,
+        "name": "National League Central",
+        "link": "/api/v1/divisions/205"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Pittsburgh",
+      "franchiseName": "Pittsburgh",
+      "clubName": "Pirates",
+      "active": true
     },
     "player": {
       "id": 493127,
@@ -278,9 +446,51 @@
       "atBatsPerHomeRun": "-.--"
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 133,
       "name": "Oakland Athletics",
-      "link": "/api/v1/teams/133"
+      "link": "/api/v1/teams/133",
+      "season": 2010,
+      "venue": {
+        "id": 10,
+        "name": "Oakland Coliseum",
+        "link": "/api/v1/venues/10"
+      },
+      "springVenue": {
+        "id": 2524,
+        "link": "/api/v1/venues/2524"
+      },
+      "teamCode": "oak",
+      "fileCode": "oak",
+      "abbreviation": "OAK",
+      "teamName": "Athletics",
+      "locationName": "Oakland",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 200,
+        "name": "American League West",
+        "link": "/api/v1/divisions/200"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Oakland",
+      "franchiseName": "Oakland",
+      "clubName": "Athletics",
+      "active": true
     },
     "player": {
       "id": 493127,

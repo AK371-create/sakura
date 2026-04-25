@@ -65,7 +65,7 @@
   "yearly": [
     {
       "year": 2025,
-      "team": "ROC (3A)",
+      "team": "WSH",
       "type": "pit",
       "w": 1,
       "l": 1,
@@ -77,5 +77,8 @@
       "hld": 1
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "basic_season": {
+    "pitching": 2025
+  }
 }

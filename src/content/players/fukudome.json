@@ -28,7 +28,7 @@
   "yearly": [
     {
       "year": 2008,
-      "team": "?",
+      "team": "CHC",
       "type": "hit",
       "avg": ".257",
       "h": 129,
@@ -41,7 +41,7 @@
     },
     {
       "year": 2009,
-      "team": "?",
+      "team": "CHC",
       "type": "hit",
       "avg": ".259",
       "h": 129,
@@ -54,7 +54,7 @@
     },
     {
       "year": 2010,
-      "team": "?",
+      "team": "CHC",
       "type": "hit",
       "avg": ".263",
       "h": 94,
@@ -67,7 +67,7 @@
     },
     {
       "year": 2011,
-      "team": "?",
+      "team": "CHC/CLE",
       "type": "hit",
       "avg": ".262",
       "h": 139,
@@ -80,7 +80,7 @@
     },
     {
       "year": 2012,
-      "team": "?",
+      "team": "CWS",
       "type": "hit",
       "avg": ".171",
       "h": 7,
@@ -100,5 +100,8 @@
       "cat": "as",
       "raw": "NL All-Star"
     }
-  ]
+  ],
+  "basic_season": {
+    "hitting": "career"
+  }
 }

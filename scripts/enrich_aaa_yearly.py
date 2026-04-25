@@ -26,7 +26,7 @@ def parse_ip(ip_str):
 
 def fetch_yearly(pid: int, group: str) -> list[dict]:
     """Fetch all splits regardless of MLB/MILB."""
-    url = f"https://statsapi.mlb.com/api/v1/people/{pid}/stats?stats=yearByYear&group={group}"
+    url = f"https://statsapi.mlb.com/api/v1/people/{pid}/stats?stats=yearByYear&group={group}&hydrate=team"
     try:
         with urllib.request.urlopen(url, timeout=20) as resp:
             data = json.loads(resp.read())

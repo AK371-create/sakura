@@ -18,6 +18,14 @@ const arsenal = player.savant?.pitch_arsenal;
 
 const typeCode = { two_way: "TWO-WAY", batter: "BATTER", pitcher: "PITCHER" }[player.type] ?? player.type;
 const isFormer = player.level === "FORMER";
+const basicSeason = player.basic_season ?? {};
+function fmtSeason(s: any): string {
+  if (s === "career") return "MLB Career";
+  if (typeof s === "number") return `${s} Season`;
+  return "";
+}
+const hitSeasonLabel = fmtSeason(basicSeason.hitting);
+const pitSeasonLabel = fmtSeason(basicSeason.pitching);
 let leagueLabel: string;
 if (player.level === "AAA") leagueLabel = "AAA";
 else if (isFormer) leagueLabel = "FORMER";
@@ -245,6 +253,9 @@ const playerJsonLd: object[] = [
   )}
 
   {hitting && (
+    <div class="basic-season-label mono">{hitSeasonLabel || "2026 Season"} <span class="basic-season-sub">(Hitting)</span></div>
+  )}
+  {hitting && (
     <section class="summary-row">
       <div class="summary-card primary"><div class="sc-label mono">AVG</div><div class="sc-value mono">{hitting.avg}</div></div>
       {hitting.h !== undefined && (
@@ -261,6 +272,9 @@ const playerJsonLd: object[] = [
     </section>
   )}
 
+  {pitching && (
+    <div class="basic-season-label mono">{pitSeasonLabel || "2026 Season"} <span class="basic-season-sub">(Pitching)</span></div>
+  )}
   {pitching && (
     <section class="summary-row">
       <div class="summary-card primary"><div class="sc-label mono">ERA</div><div class="sc-value mono">{pitching.era}</div></div>
@@ -618,6 +632,15 @@ const playerJsonLd: object[] = [
     font-size: 0.95rem; color: var(--text-muted);
   }
   .player-meta .sep { color: var(--text-dim); }
+
+  .basic-season-label {
+    display: inline-flex; align-items: baseline; gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem; font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+  }
+  .basic-season-sub { color: var(--text-dim); font-weight: 400; letter-spacing: 0.05em; }
 
   .summary-row {
     display: grid;

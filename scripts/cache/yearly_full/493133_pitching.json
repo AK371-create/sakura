@@ -66,9 +66,45 @@
       "sacFlies": 5
     },
     "team": {
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 2008,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "springVenue": {
+        "id": 2517,
+        "link": "/api/v1/venues/2517"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LAD",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "LA Dodgers",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 493133,
@@ -154,9 +190,51 @@
       "sacFlies": 1
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 2009,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "springVenue": {
+        "id": 3809,
+        "link": "/api/v1/venues/3809"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LAD",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "LA Dodgers",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 493133,
@@ -242,9 +320,51 @@
       "sacFlies": 7
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 2010,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "springVenue": {
+        "id": 3809,
+        "link": "/api/v1/venues/3809"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LAD",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "LA Dodgers",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 493133,
@@ -330,9 +450,51 @@
       "sacFlies": 5
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 2011,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "springVenue": {
+        "id": 3809,
+        "link": "/api/v1/venues/3809"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LAD",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "LA Dodgers",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 493133,
@@ -418,9 +580,51 @@
       "sacFlies": 3
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2012,
+      "venue": {
+        "id": 3313,
+        "name": "Yankee Stadium",
+        "link": "/api/v1/venues/3313"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 493133,
@@ -506,9 +710,51 @@
       "sacFlies": 7
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2013,
+      "venue": {
+        "id": 3313,
+        "name": "Yankee Stadium",
+        "link": "/api/v1/venues/3313"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 493133,
@@ -594,9 +840,51 @@
       "sacFlies": 6
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2014,
+      "venue": {
+        "id": 3313,
+        "name": "Yankee Stadium",
+        "link": "/api/v1/venues/3313"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 493133,

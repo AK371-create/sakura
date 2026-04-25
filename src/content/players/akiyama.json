@@ -28,7 +28,7 @@
   "yearly": [
     {
       "year": 2020,
-      "team": "?",
+      "team": "CIN",
       "type": "hit",
       "avg": ".245",
       "h": 38,
@@ -41,7 +41,7 @@
     },
     {
       "year": 2021,
-      "team": "?",
+      "team": "CIN",
       "type": "hit",
       "avg": ".204",
       "h": 33,
@@ -53,5 +53,8 @@
       "ops": ".535"
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "basic_season": {
+    "hitting": "career"
+  }
 }

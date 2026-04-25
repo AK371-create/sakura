@@ -86,7 +86,7 @@
   "yearly": [
     {
       "year": 2012,
-      "team": "?",
+      "team": "TEX",
       "type": "pit",
       "w": 16,
       "l": 9,
@@ -102,7 +102,7 @@
     },
     {
       "year": 2013,
-      "team": "?",
+      "team": "TEX",
       "type": "pit",
       "w": 13,
       "l": 9,
@@ -121,7 +121,7 @@
     },
     {
       "year": 2014,
-      "team": "?",
+      "team": "TEX",
       "type": "pit",
       "w": 10,
       "l": 7,
@@ -134,7 +134,7 @@
     },
     {
       "year": 2016,
-      "team": "?",
+      "team": "TEX",
       "type": "pit",
       "w": 7,
       "l": 5,
@@ -147,7 +147,7 @@
     },
     {
       "year": 2017,
-      "team": "?",
+      "team": "TEX/LAD",
       "type": "pit",
       "w": 10,
       "l": 12,
@@ -160,7 +160,7 @@
     },
     {
       "year": 2018,
-      "team": "?",
+      "team": "CHC",
       "type": "pit",
       "w": 1,
       "l": 3,
@@ -173,7 +173,7 @@
     },
     {
       "year": 2019,
-      "team": "?",
+      "team": "CHC",
       "type": "pit",
       "w": 6,
       "l": 8,
@@ -186,7 +186,7 @@
     },
     {
       "year": 2020,
-      "team": "?",
+      "team": "CHC",
       "type": "pit",
       "w": 8,
       "l": 3,
@@ -208,7 +208,7 @@
     },
     {
       "year": 2021,
-      "team": "?",
+      "team": "SD",
       "type": "pit",
       "w": 8,
       "l": 11,
@@ -221,7 +221,7 @@
     },
     {
       "year": 2022,
-      "team": "?",
+      "team": "SD",
       "type": "pit",
       "w": 16,
       "l": 8,
@@ -238,7 +238,7 @@
     },
     {
       "year": 2023,
-      "team": "?",
+      "team": "SD",
       "type": "pit",
       "w": 8,
       "l": 10,
@@ -251,7 +251,7 @@
     },
     {
       "year": 2024,
-      "team": "?",
+      "team": "SD",
       "type": "pit",
       "w": 7,
       "l": 3,
@@ -264,7 +264,7 @@
     },
     {
       "year": 2025,
-      "team": "?",
+      "team": "SD",
       "type": "pit",
       "w": 5,
       "l": 5,
@@ -308,5 +308,8 @@
       "cat": "as",
       "raw": "NL All-Star"
     }
-  ]
+  ],
+  "basic_season": {
+    "pitching": 2025
+  }
 }

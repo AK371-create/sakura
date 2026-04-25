@@ -28,7 +28,7 @@
   "yearly": [
     {
       "year": 2012,
-      "team": "?",
+      "team": "MIL",
       "type": "hit",
       "avg": ".288",
       "h": 150,
@@ -41,7 +41,7 @@
     },
     {
       "year": 2013,
-      "team": "?",
+      "team": "MIL",
       "type": "hit",
       "avg": ".286",
       "h": 171,
@@ -54,7 +54,7 @@
     },
     {
       "year": 2014,
-      "team": "?",
+      "team": "KC",
       "type": "hit",
       "avg": ".285",
       "h": 140,
@@ -67,7 +67,7 @@
     },
     {
       "year": 2015,
-      "team": "?",
+      "team": "SF",
       "type": "hit",
       "avg": ".287",
       "h": 102,
@@ -80,7 +80,7 @@
     },
     {
       "year": 2016,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".283",
       "h": 118,
@@ -93,7 +93,7 @@
     },
     {
       "year": 2017,
-      "team": "?",
+      "team": "HOU/TOR/NYM",
       "type": "hit",
       "avg": ".277",
       "h": 93,
@@ -105,5 +105,8 @@
       "ops": ".728"
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "basic_season": {
+    "hitting": "career"
+  }
 }

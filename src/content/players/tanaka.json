@@ -28,7 +28,7 @@
   "yearly": [
     {
       "year": 2014,
-      "team": "?",
+      "team": "NYY",
       "type": "pit",
       "w": 13,
       "l": 5,
@@ -41,7 +41,7 @@
     },
     {
       "year": 2015,
-      "team": "?",
+      "team": "NYY",
       "type": "pit",
       "w": 12,
       "l": 7,
@@ -54,7 +54,7 @@
     },
     {
       "year": 2016,
-      "team": "?",
+      "team": "NYY",
       "type": "pit",
       "w": 14,
       "l": 4,
@@ -67,7 +67,7 @@
     },
     {
       "year": 2017,
-      "team": "?",
+      "team": "NYY",
       "type": "pit",
       "w": 13,
       "l": 12,
@@ -80,7 +80,7 @@
     },
     {
       "year": 2018,
-      "team": "?",
+      "team": "NYY",
       "type": "pit",
       "w": 12,
       "l": 6,
@@ -93,7 +93,7 @@
     },
     {
       "year": 2019,
-      "team": "?",
+      "team": "NYY",
       "type": "pit",
       "w": 11,
       "l": 9,
@@ -106,7 +106,7 @@
     },
     {
       "year": 2020,
-      "team": "?",
+      "team": "NYY",
       "type": "pit",
       "w": 3,
       "l": 3,
@@ -132,5 +132,8 @@
       "cat": "as",
       "raw": "AL All-Star"
     }
-  ]
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
 }

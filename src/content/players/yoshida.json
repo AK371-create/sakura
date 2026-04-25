@@ -38,7 +38,7 @@
   "yearly": [
     {
       "year": 2023,
-      "team": "?",
+      "team": "BOS",
       "type": "hit",
       "avg": ".289",
       "h": 155,
@@ -51,7 +51,7 @@
     },
     {
       "year": 2024,
-      "team": "?",
+      "team": "BOS",
       "type": "hit",
       "avg": ".280",
       "h": 106,
@@ -64,7 +64,7 @@
     },
     {
       "year": 2025,
-      "team": "?",
+      "team": "BOS",
       "type": "hit",
       "avg": ".266",
       "h": 50,
@@ -77,7 +77,7 @@
     },
     {
       "year": 2026,
-      "team": "?",
+      "team": "BOS",
       "type": "hit",
       "avg": ".261",
       "h": 12,
@@ -89,5 +89,8 @@
       "ops": ".719"
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "basic_season": {
+    "hitting": 2026
+  }
 }

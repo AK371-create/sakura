@@ -65,7 +65,7 @@
   "yearly": [
     {
       "year": 2023,
-      "team": "?",
+      "team": "NYM",
       "type": "pit",
       "w": 12,
       "l": 7,
@@ -81,7 +81,7 @@
     },
     {
       "year": 2024,
-      "team": "?",
+      "team": "NYM",
       "type": "pit",
       "w": 1,
       "l": 0,
@@ -94,7 +94,7 @@
     },
     {
       "year": 2025,
-      "team": "?",
+      "team": "NYM",
       "type": "pit",
       "w": 7,
       "l": 6,
@@ -107,7 +107,7 @@
     },
     {
       "year": 2026,
-      "team": "?",
+      "team": "NYM",
       "type": "pit",
       "w": 0,
       "l": 3,
@@ -127,5 +127,8 @@
       "cat": "as",
       "raw": "NL All-Star"
     }
-  ]
+  ],
+  "basic_season": {
+    "pitching": 2026
+  }
 }

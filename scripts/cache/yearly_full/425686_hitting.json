@@ -38,9 +38,51 @@
       "atBatsPerHomeRun": "38.94"
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2003,
+      "venue": {
+        "id": 9,
+        "name": "Yankee Stadium I",
+        "link": "/api/v1/venues/9"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 425686,
@@ -98,9 +140,51 @@
       "atBatsPerHomeRun": "18.84"
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2004,
+      "venue": {
+        "id": 9,
+        "name": "Yankee Stadium I",
+        "link": "/api/v1/venues/9"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 425686,
@@ -158,9 +242,51 @@
       "atBatsPerHomeRun": "27.35"
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2005,
+      "venue": {
+        "id": 9,
+        "name": "Yankee Stadium I",
+        "link": "/api/v1/venues/9"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 425686,
@@ -218,9 +344,51 @@
       "atBatsPerHomeRun": "21.50"
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2006,
+      "venue": {
+        "id": 9,
+        "name": "Yankee Stadium I",
+        "link": "/api/v1/venues/9"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 425686,
@@ -278,9 +446,51 @@
       "atBatsPerHomeRun": "21.88"
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2007,
+      "venue": {
+        "id": 9,
+        "name": "Yankee Stadium I",
+        "link": "/api/v1/venues/9"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 425686,
@@ -338,9 +548,51 @@
       "atBatsPerHomeRun": "37.44"
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2008,
+      "venue": {
+        "id": 9,
+        "name": "Yankee Stadium I",
+        "link": "/api/v1/venues/9"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 425686,
@@ -398,9 +650,51 @@
       "atBatsPerHomeRun": "16.29"
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 147,
       "name": "New York Yankees",
-      "link": "/api/v1/teams/147"
+      "link": "/api/v1/teams/147",
+      "season": 2009,
+      "venue": {
+        "id": 3313,
+        "name": "Yankee Stadium",
+        "link": "/api/v1/venues/3313"
+      },
+      "springVenue": {
+        "id": 2523,
+        "link": "/api/v1/venues/2523"
+      },
+      "teamCode": "nya",
+      "fileCode": "nyy",
+      "abbreviation": "NYY",
+      "teamName": "Yankees",
+      "locationName": "Bronx",
+      "firstYearOfPlay": "1903",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "NY Yankees",
+      "franchiseName": "New York",
+      "clubName": "Yankees",
+      "active": true
     },
     "player": {
       "id": 425686,
@@ -458,9 +752,51 @@
       "atBatsPerHomeRun": "22.95"
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 108,
       "name": "Los Angeles Angels",
-      "link": "/api/v1/teams/108"
+      "link": "/api/v1/teams/108",
+      "season": 2010,
+      "venue": {
+        "id": 1,
+        "name": "Angel Stadium of Anaheim",
+        "link": "/api/v1/venues/1"
+      },
+      "springVenue": {
+        "id": 2500,
+        "link": "/api/v1/venues/2500"
+      },
+      "teamCode": "ana",
+      "fileCode": "ana",
+      "abbreviation": "LAA",
+      "teamName": "Angels",
+      "locationName": "Anaheim",
+      "firstYearOfPlay": "1961",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 200,
+        "name": "American League West",
+        "link": "/api/v1/divisions/200"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "LA Angels",
+      "franchiseName": "Los Angeles",
+      "clubName": "Angels",
+      "active": true
     },
     "player": {
       "id": 425686,
@@ -518,9 +854,51 @@
       "atBatsPerHomeRun": "43.08"
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 133,
       "name": "Oakland Athletics",
-      "link": "/api/v1/teams/133"
+      "link": "/api/v1/teams/133",
+      "season": 2011,
+      "venue": {
+        "id": 10,
+        "name": "Oakland Coliseum",
+        "link": "/api/v1/venues/10"
+      },
+      "springVenue": {
+        "id": 2524,
+        "link": "/api/v1/venues/2524"
+      },
+      "teamCode": "oak",
+      "fileCode": "oak",
+      "abbreviation": "OAK",
+      "teamName": "Athletics",
+      "locationName": "Oakland",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 200,
+        "name": "American League West",
+        "link": "/api/v1/divisions/200"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Oakland",
+      "franchiseName": "Oakland",
+      "clubName": "Athletics",
+      "active": true
     },
     "player": {
       "id": 425686,
@@ -578,9 +956,51 @@
       "atBatsPerHomeRun": "47.50"
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 139,
       "name": "Tampa Bay Rays",
-      "link": "/api/v1/teams/139"
+      "link": "/api/v1/teams/139",
+      "season": 2012,
+      "venue": {
+        "id": 12,
+        "name": "Tropicana Field",
+        "link": "/api/v1/venues/12"
+      },
+      "springVenue": {
+        "id": 2534,
+        "link": "/api/v1/venues/2534"
+      },
+      "teamCode": "tba",
+      "fileCode": "tb",
+      "abbreviation": "TB",
+      "teamName": "Rays",
+      "locationName": "St. Petersburg",
+      "firstYearOfPlay": "1996",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 201,
+        "name": "American League East",
+        "link": "/api/v1/divisions/201"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Tampa Bay",
+      "franchiseName": "Tampa Bay",
+      "clubName": "Rays",
+      "active": true
     },
     "player": {
       "id": 425686,

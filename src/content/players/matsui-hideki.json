@@ -28,7 +28,7 @@
   "yearly": [
     {
       "year": 2003,
-      "team": "?",
+      "team": "NYY",
       "type": "hit",
       "avg": ".287",
       "h": 179,
@@ -41,7 +41,7 @@
     },
     {
       "year": 2004,
-      "team": "?",
+      "team": "NYY",
       "type": "hit",
       "avg": ".298",
       "h": 174,
@@ -54,7 +54,7 @@
     },
     {
       "year": 2005,
-      "team": "?",
+      "team": "NYY",
       "type": "hit",
       "avg": ".305",
       "h": 192,
@@ -67,7 +67,7 @@
     },
     {
       "year": 2006,
-      "team": "?",
+      "team": "NYY",
       "type": "hit",
       "avg": ".302",
       "h": 52,
@@ -80,7 +80,7 @@
     },
     {
       "year": 2007,
-      "team": "?",
+      "team": "NYY",
       "type": "hit",
       "avg": ".285",
       "h": 156,
@@ -93,7 +93,7 @@
     },
     {
       "year": 2008,
-      "team": "?",
+      "team": "NYY",
       "type": "hit",
       "avg": ".294",
       "h": 99,
@@ -106,7 +106,7 @@
     },
     {
       "year": 2009,
-      "team": "?",
+      "team": "NYY",
       "type": "hit",
       "avg": ".274",
       "h": 125,
@@ -119,7 +119,7 @@
     },
     {
       "year": 2010,
-      "team": "?",
+      "team": "LAA",
       "type": "hit",
       "avg": ".274",
       "h": 132,
@@ -132,7 +132,7 @@
     },
     {
       "year": 2011,
-      "team": "?",
+      "team": "OAK",
       "type": "hit",
       "avg": ".251",
       "h": 130,
@@ -145,7 +145,7 @@
     },
     {
       "year": 2012,
-      "team": "?",
+      "team": "TB",
       "type": "hit",
       "avg": ".147",
       "h": 14,
@@ -177,5 +177,8 @@
       "cat": "ws-mvp",
       "raw": "Willie Mays World Series MVP"
     }
-  ]
+  ],
+  "basic_season": {
+    "hitting": "career"
+  }
 }

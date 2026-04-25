@@ -28,7 +28,7 @@
   "yearly": [
     {
       "year": 2007,
-      "team": "?",
+      "team": "TB",
       "type": "hit",
       "avg": ".285",
       "h": 140,
@@ -41,7 +41,7 @@
     },
     {
       "year": 2008,
-      "team": "?",
+      "team": "TB",
       "type": "hit",
       "avg": ".274",
       "h": 172,
@@ -54,7 +54,7 @@
     },
     {
       "year": 2009,
-      "team": "?",
+      "team": "TB",
       "type": "hit",
       "avg": ".290",
       "h": 67,
@@ -67,7 +67,7 @@
     },
     {
       "year": 2010,
-      "team": "?",
+      "team": "PIT/OAK",
       "type": "hit",
       "avg": ".173",
       "h": 34,
@@ -79,5 +79,8 @@
       "ops": ".535"
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "basic_season": {
+    "hitting": "career"
+  }
 }

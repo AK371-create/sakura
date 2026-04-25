@@ -28,7 +28,7 @@
   "yearly": [
     {
       "year": 2001,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".350",
       "h": 242,
@@ -46,7 +46,7 @@
     },
     {
       "year": 2002,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".321",
       "h": 208,
@@ -64,7 +64,7 @@
     },
     {
       "year": 2003,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".312",
       "h": 212,
@@ -81,7 +81,7 @@
     },
     {
       "year": 2004,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".372",
       "h": 262,
@@ -102,7 +102,7 @@
     },
     {
       "year": 2005,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".303",
       "h": 206,
@@ -118,7 +118,7 @@
     },
     {
       "year": 2006,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".322",
       "h": 224,
@@ -137,7 +137,7 @@
     },
     {
       "year": 2007,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".351",
       "h": 238,
@@ -157,7 +157,7 @@
     },
     {
       "year": 2008,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".310",
       "h": 213,
@@ -176,7 +176,7 @@
     },
     {
       "year": 2009,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".352",
       "h": 225,
@@ -195,7 +195,7 @@
     },
     {
       "year": 2010,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".315",
       "h": 214,
@@ -214,7 +214,7 @@
     },
     {
       "year": 2011,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".272",
       "h": 184,
@@ -230,7 +230,7 @@
     },
     {
       "year": 2012,
-      "team": "?",
+      "team": "SEA/NYY",
       "type": "hit",
       "avg": ".283",
       "h": 178,
@@ -243,7 +243,7 @@
     },
     {
       "year": 2013,
-      "team": "?",
+      "team": "NYY",
       "type": "hit",
       "avg": ".262",
       "h": 136,
@@ -256,7 +256,7 @@
     },
     {
       "year": 2014,
-      "team": "?",
+      "team": "NYY",
       "type": "hit",
       "avg": ".284",
       "h": 102,
@@ -269,7 +269,7 @@
     },
     {
       "year": 2015,
-      "team": "?",
+      "team": "MIA",
       "type": "hit",
       "avg": ".229",
       "h": 91,
@@ -282,7 +282,7 @@
     },
     {
       "year": 2016,
-      "team": "?",
+      "team": "MIA",
       "type": "hit",
       "avg": ".291",
       "h": 95,
@@ -295,7 +295,7 @@
     },
     {
       "year": 2017,
-      "team": "?",
+      "team": "MIA",
       "type": "hit",
       "avg": ".255",
       "h": 50,
@@ -308,7 +308,7 @@
     },
     {
       "year": 2018,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".205",
       "h": 9,
@@ -321,7 +321,7 @@
     },
     {
       "year": 2019,
-      "team": "?",
+      "team": "SEA",
       "type": "hit",
       "avg": ".000",
       "h": 0,
@@ -491,5 +491,8 @@
       "cat": "gold",
       "raw": "Rawlings AL Gold Glove"
     }
-  ]
+  ],
+  "basic_season": {
+    "hitting": "career"
+  }
 }

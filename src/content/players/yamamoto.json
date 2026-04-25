@@ -72,7 +72,7 @@
   "yearly": [
     {
       "year": 2024,
-      "team": "?",
+      "team": "LAD",
       "type": "pit",
       "w": 7,
       "l": 2,
@@ -85,7 +85,7 @@
     },
     {
       "year": 2025,
-      "team": "?",
+      "team": "LAD",
       "type": "pit",
       "w": 12,
       "l": 8,
@@ -102,7 +102,7 @@
     },
     {
       "year": 2026,
-      "team": "?",
+      "team": "LAD",
       "type": "pit",
       "w": 2,
       "l": 2,
@@ -128,5 +128,8 @@
       "cat": "ws-mvp",
       "raw": "Willie Mays World Series MVP"
     }
-  ]
+  ],
+  "basic_season": {
+    "pitching": 2026
+  }
 }

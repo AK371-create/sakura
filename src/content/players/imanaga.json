@@ -65,7 +65,7 @@
   "yearly": [
     {
       "year": 2024,
-      "team": "?",
+      "team": "CHC",
       "type": "pit",
       "w": 15,
       "l": 3,
@@ -83,7 +83,7 @@
     },
     {
       "year": 2025,
-      "team": "?",
+      "team": "CHC",
       "type": "pit",
       "w": 9,
       "l": 8,
@@ -96,7 +96,7 @@
     },
     {
       "year": 2026,
-      "team": "?",
+      "team": "CHC",
       "type": "pit",
       "w": 2,
       "l": 1,
@@ -119,5 +119,8 @@
       "cat": "as",
       "raw": "NL All-Star"
     }
-  ]
+  ],
+  "basic_season": {
+    "pitching": 2026
+  }
 }

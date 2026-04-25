@@ -93,7 +93,7 @@
   "yearly": [
     {
       "year": 2018,
-      "team": "?",
+      "team": "LAA",
       "type": "hit",
       "avg": ".285",
       "h": 93,
@@ -106,7 +106,7 @@
     },
     {
       "year": 2019,
-      "team": "?",
+      "team": "LAA",
       "type": "hit",
       "avg": ".286",
       "h": 110,
@@ -119,7 +119,7 @@
     },
     {
       "year": 2020,
-      "team": "?",
+      "team": "LAA",
       "type": "hit",
       "avg": ".190",
       "h": 29,
@@ -132,7 +132,7 @@
     },
     {
       "year": 2021,
-      "team": "?",
+      "team": "LAA",
       "type": "hit",
       "avg": ".257",
       "h": 138,
@@ -151,7 +151,7 @@
     },
     {
       "year": 2022,
-      "team": "?",
+      "team": "LAA",
       "type": "hit",
       "avg": ".273",
       "h": 160,
@@ -168,7 +168,7 @@
     },
     {
       "year": 2023,
-      "team": "?",
+      "team": "LAA",
       "type": "hit",
       "avg": ".304",
       "h": 151,
@@ -190,7 +190,7 @@
     },
     {
       "year": 2024,
-      "team": "?",
+      "team": "LAD",
       "type": "hit",
       "avg": ".310",
       "h": 197,
@@ -215,7 +215,7 @@
     },
     {
       "year": 2025,
-      "team": "?",
+      "team": "LAD",
       "type": "hit",
       "avg": ".282",
       "h": 172,
@@ -237,7 +237,7 @@
     },
     {
       "year": 2026,
-      "team": "?",
+      "team": "LAD",
       "type": "hit",
       "avg": ".237",
       "h": 23,
@@ -250,7 +250,7 @@
     },
     {
       "year": 2018,
-      "team": "?",
+      "team": "LAA",
       "type": "pit",
       "w": 4,
       "l": 2,
@@ -263,7 +263,7 @@
     },
     {
       "year": 2020,
-      "team": "?",
+      "team": "LAA",
       "type": "pit",
       "w": 0,
       "l": 1,
@@ -276,7 +276,7 @@
     },
     {
       "year": 2021,
-      "team": "?",
+      "team": "LAA",
       "type": "pit",
       "w": 9,
       "l": 2,
@@ -289,7 +289,7 @@
     },
     {
       "year": 2022,
-      "team": "?",
+      "team": "LAA",
       "type": "pit",
       "w": 15,
       "l": 9,
@@ -307,7 +307,7 @@
     },
     {
       "year": 2023,
-      "team": "?",
+      "team": "LAA",
       "type": "pit",
       "w": 10,
       "l": 5,
@@ -320,7 +320,7 @@
     },
     {
       "year": 2025,
-      "team": "?",
+      "team": "LAD",
       "type": "pit",
       "w": 1,
       "l": 1,
@@ -333,7 +333,7 @@
     },
     {
       "year": 2026,
-      "team": "?",
+      "team": "LAD",
       "type": "pit",
       "w": 2,
       "l": 0,
@@ -461,5 +461,9 @@
       "cat": "silver",
       "raw": "NL Silver Slugger"
     }
-  ]
+  ],
+  "basic_season": {
+    "hitting": 2026,
+    "pitching": 2026
+  }
 }

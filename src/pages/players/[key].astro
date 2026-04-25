@@ -23,9 +23,17 @@ else if (player.level === "FORMER") leagueLabel = "元MLB";
 else leagueLabel = (({ NL: "ナ・リーグ", AL: "ア・リーグ" } as Record<string, string>)[player.league] ?? player.league);
 
 const isFormer = player.level === "FORMER";
+const basicSeason = player.basic_season ?? {};
+function fmtSeason(s: any): string {
+  if (s === "career") return "MLB通算";
+  if (typeof s === "number") return `${s}年シーズン`;
+  return "";
+}
+const hitSeasonLabel = fmtSeason(basicSeason.hitting);
+const pitSeasonLabel = fmtSeason(basicSeason.pitching);
 const summarySubtitle = isFormer
   ? `MLB通算 · ${player.mlb_years ?? ""}`
-  : (hitting ? "打撃 · 2026" : "投手 · 2026");
+  : (hitting ? `打撃 · ${hitSeasonLabel || "2026"}` : `投手 · ${pitSeasonLabel || "2026"}`);
 
 // Build percentile rows from savant hitting data
 const percentileMetrics = savantHit ? [
@@ -252,6 +260,9 @@ const playerJsonLd: object[] = [
 
   <!-- SUMMARY ROW: Big primary stats -->
   {hitting && (
+    <div class="basic-season-label">{hitSeasonLabel || "2026年シーズン"}<span class="basic-season-sub">(打撃)</span></div>
+  )}
+  {hitting && (
     <section class="summary-row">
       <div class="summary-card primary">
         <div class="sc-label">打率</div>
@@ -292,6 +303,9 @@ const playerJsonLd: object[] = [
     </section>
   )}
 
+  {pitching && (
+    <div class="basic-season-label">{pitSeasonLabel || "2026年シーズン"}<span class="basic-season-sub">(投手)</span></div>
+  )}
   {pitching && (
     <section class="summary-row">
       <div class="summary-card primary">
@@ -691,6 +705,16 @@ const playerJsonLd: object[] = [
     color: var(--text-muted);
   }
   .player-meta .sep { color: var(--text-dim); }
+
+  .basic-season-label {
+    display: inline-flex; align-items: baseline; gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem; font-weight: 600;
+    color: var(--text-muted);
+  }
+  .basic-season-sub {
+    font-size: 0.75rem; color: var(--text-dim); font-weight: 400;
+  }
 
   /* Summary Row */
   .summary-row {

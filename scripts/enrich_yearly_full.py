@@ -53,7 +53,7 @@ def fetch_year_by_year(pid: int, group: str) -> list[dict]:
             return json.loads(cache_file.read_text())
         except Exception:
             pass
-    url = f"https://statsapi.mlb.com/api/v1/people/{pid}/stats?stats=yearByYear&group={group}"
+    url = f"https://statsapi.mlb.com/api/v1/people/{pid}/stats?stats=yearByYear&group={group}&hydrate=team"
     try:
         with urllib.request.urlopen(url, timeout=20) as resp:
             data = json.loads(resp.read())

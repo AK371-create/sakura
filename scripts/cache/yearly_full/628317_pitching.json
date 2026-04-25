@@ -66,9 +66,51 @@
       "sacFlies": 3
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 2016,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "springVenue": {
+        "id": 3809,
+        "link": "/api/v1/venues/3809"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LAD",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "LA Dodgers",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 628317,
@@ -154,9 +196,51 @@
       "sacFlies": 4
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 2017,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "springVenue": {
+        "id": 3809,
+        "link": "/api/v1/venues/3809"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LAD",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "LA Dodgers",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 628317,
@@ -242,9 +326,51 @@
       "sacFlies": 3
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 2018,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "springVenue": {
+        "id": 3809,
+        "link": "/api/v1/venues/3809"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LAD",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "LA Dodgers",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 628317,
@@ -330,9 +456,51 @@
       "sacFlies": 3
     },
     "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
       "id": 119,
       "name": "Los Angeles Dodgers",
-      "link": "/api/v1/teams/119"
+      "link": "/api/v1/teams/119",
+      "season": 2019,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "springVenue": {
+        "id": 3809,
+        "link": "/api/v1/venues/3809"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LAD",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "LA Dodgers",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
     },
     "player": {
       "id": 628317,
@@ -418,9 +586,51 @@
       "sacFlies": 0
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 142,
       "name": "Minnesota Twins",
-      "link": "/api/v1/teams/142"
+      "link": "/api/v1/teams/142",
+      "season": 2020,
+      "venue": {
+        "id": 3312,
+        "name": "Target Field",
+        "link": "/api/v1/venues/3312"
+      },
+      "springVenue": {
+        "id": 2862,
+        "link": "/api/v1/venues/2862"
+      },
+      "teamCode": "min",
+      "fileCode": "min",
+      "abbreviation": "MIN",
+      "teamName": "Twins",
+      "locationName": "Minneapolis",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 202,
+        "name": "American League Central",
+        "link": "/api/v1/divisions/202"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Minnesota",
+      "franchiseName": "Minnesota",
+      "clubName": "Twins",
+      "active": true
     },
     "player": {
       "id": 628317,
@@ -506,9 +716,51 @@
       "sacFlies": 1
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 142,
       "name": "Minnesota Twins",
-      "link": "/api/v1/teams/142"
+      "link": "/api/v1/teams/142",
+      "season": 2021,
+      "venue": {
+        "id": 3312,
+        "name": "Target Field",
+        "link": "/api/v1/venues/3312"
+      },
+      "springVenue": {
+        "id": 2862,
+        "link": "/api/v1/venues/2862"
+      },
+      "teamCode": "min",
+      "fileCode": "min",
+      "abbreviation": "MIN",
+      "teamName": "Twins",
+      "locationName": "Minneapolis",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 202,
+        "name": "American League Central",
+        "link": "/api/v1/divisions/202"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Minnesota",
+      "franchiseName": "Minnesota",
+      "clubName": "Twins",
+      "active": true
     },
     "player": {
       "id": 628317,
@@ -594,9 +846,51 @@
       "sacFlies": 3
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 142,
       "name": "Minnesota Twins",
-      "link": "/api/v1/teams/142"
+      "link": "/api/v1/teams/142",
+      "season": 2023,
+      "venue": {
+        "id": 3312,
+        "name": "Target Field",
+        "link": "/api/v1/venues/3312"
+      },
+      "springVenue": {
+        "id": 2862,
+        "link": "/api/v1/venues/2862"
+      },
+      "teamCode": "min",
+      "fileCode": "min",
+      "abbreviation": "MIN",
+      "teamName": "Twins",
+      "locationName": "Minneapolis",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 202,
+        "name": "American League Central",
+        "link": "/api/v1/divisions/202"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Minnesota",
+      "franchiseName": "Minnesota",
+      "clubName": "Twins",
+      "active": true
     },
     "player": {
       "id": 628317,
@@ -682,9 +976,51 @@
       "sacFlies": 6
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 116,
       "name": "Detroit Tigers",
-      "link": "/api/v1/teams/116"
+      "link": "/api/v1/teams/116",
+      "season": 2024,
+      "venue": {
+        "id": 2394,
+        "name": "Comerica Park",
+        "link": "/api/v1/venues/2394"
+      },
+      "springVenue": {
+        "id": 2511,
+        "link": "/api/v1/venues/2511"
+      },
+      "teamCode": "det",
+      "fileCode": "det",
+      "abbreviation": "DET",
+      "teamName": "Tigers",
+      "locationName": "Detroit",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 202,
+        "name": "American League Central",
+        "link": "/api/v1/divisions/202"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Detroit",
+      "franchiseName": "Detroit",
+      "clubName": "Tigers",
+      "active": true
     },
     "player": {
       "id": 628317,
@@ -770,9 +1106,51 @@
       "sacFlies": 0
     },
     "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
       "id": 116,
       "name": "Detroit Tigers",
-      "link": "/api/v1/teams/116"
+      "link": "/api/v1/teams/116",
+      "season": 2025,
+      "venue": {
+        "id": 2394,
+        "name": "Comerica Park",
+        "link": "/api/v1/venues/2394"
+      },
+      "springVenue": {
+        "id": 2511,
+        "link": "/api/v1/venues/2511"
+      },
+      "teamCode": "det",
+      "fileCode": "det",
+      "abbreviation": "DET",
+      "teamName": "Tigers",
+      "locationName": "Detroit",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 202,
+        "name": "American League Central",
+        "link": "/api/v1/divisions/202"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Detroit",
+      "franchiseName": "Detroit",
+      "clubName": "Tigers",
+      "active": true
     },
     "player": {
       "id": 628317,

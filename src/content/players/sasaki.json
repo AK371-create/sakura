@@ -51,7 +51,7 @@
   "yearly": [
     {
       "year": 2025,
-      "team": "?",
+      "team": "LAD",
       "type": "pit",
       "w": 1,
       "l": 1,
@@ -64,7 +64,7 @@
     },
     {
       "year": 2026,
-      "team": "?",
+      "team": "LAD",
       "type": "pit",
       "w": 0,
       "l": 2,
@@ -76,5 +76,8 @@
       "hld": 0
     }
   ],
-  "updated_at": "2026-04-25"
+  "updated_at": "2026-04-25",
+  "basic_season": {
+    "pitching": 2026
+  }
 }
