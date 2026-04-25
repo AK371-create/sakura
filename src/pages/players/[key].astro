@@ -17,6 +17,9 @@ const savantHit = player.savant?.hitting;
 const arsenal = player.savant?.pitch_arsenal;
 
 const typeCode = { two_way: "二刀流", batter: "野手", pitcher: "投手" }[player.type] ?? player.type;
+const leagueLabel = player.level === "AAA"
+  ? "3A"
+  : (({ NL: "ナ・リーグ", AL: "ア・リーグ" } as Record<string, string>)[player.league] ?? player.league);
 
 // Build percentile rows from savant hitting data
 const percentileMetrics = savantHit ? [
@@ -51,7 +54,7 @@ const pitchColors: Record<string, string> = {
   <header class="player-hero">
     <div class="hero-tags">
       <span class={`tag type type-${player.type}`}>{typeCode}</span>
-      <span class={`tag league league-${player.league.toLowerCase()}`}>{player.level === "AAA" ? "3A" : player.league}</span>
+      <span class={`tag league league-${player.league.toLowerCase()}`}>{leagueLabel}</span>
     </div>
     <h1 class="player-name">{player.name_jp}</h1>
     <div class="player-meta">

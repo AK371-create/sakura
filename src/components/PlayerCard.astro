@@ -15,12 +15,21 @@ const savantHit = player.savant?.hitting;
 const typeCode = lang === "ja"
   ? ({ two_way: "二刀流", batter: "野手", pitcher: "投手" }[player.type] ?? player.type)
   : ({ two_way: "TWO-WAY", batter: "BATTER", pitcher: "PITCHER" }[player.type] ?? player.type);
+
+let leagueLabel: string;
+if (player.level === "AAA") {
+  leagueLabel = lang === "ja" ? "3A" : "AAA";
+} else if (lang === "ja") {
+  leagueLabel = ({ NL: "ナ・リーグ", AL: "ア・リーグ" } as Record<string, string>)[player.league] ?? player.league;
+} else {
+  leagueLabel = player.league;
+}
 ---
 <a class="player-card" href={href}>
   <div class="card-head">
     <div class="head-tags">
       <span class={`tag type type-${player.type}`}>{typeCode}</span>
-      <span class={`tag league league-${player.league.toLowerCase()}`}>{player.level === "AAA" ? (lang === "ja" ? "3A" : "AAA") : player.league}</span>
+      <span class={`tag league league-${player.league.toLowerCase()}`}>{leagueLabel}</span>
     </div>
     <div class="go" aria-hidden="true">→</div>
   </div>
