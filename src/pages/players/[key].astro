@@ -54,40 +54,12 @@ const yearly = player.yearly ?? [];
 const hittingYearly = yearly.filter((y: any) => y.type === "hit");
 const pitchingYearly = yearly.filter((y: any) => y.type === "pit");
 
-// Compute career rank within each stat (1 = best)
-// higherBetter=true: larger value = better rank
-function rankYears(rows: any[], field: string, higherBetter: boolean) {
-  if (!rows.length) return [];
-  const values = rows.map((r, i) => ({ i, v: parseFloat(r[field]) || 0 }));
-  values.sort((a, b) => higherBetter ? b.v - a.v : a.v - b.v);
-  const ranks: number[] = new Array(rows.length).fill(0);
-  values.forEach((item, idx) => { ranks[item.i] = idx + 1; });
-  return ranks;
-}
-
-// For batters: avg, h, hr, rbi, sb, ops (all higher = better)
-const hitRanks = {
-  avg: rankYears(hittingYearly, "avg", true),
-  h: rankYears(hittingYearly, "h", true),
-  hr: rankYears(hittingYearly, "hr", true),
-  rbi: rankYears(hittingYearly, "rbi", true),
-  sb: rankYears(hittingYearly, "sb", true),
-  ops: rankYears(hittingYearly, "ops", true),
-};
-
-// For pitchers: w, so, ip higher better; era, whip lower better
-const pitRanks = {
-  w: rankYears(pitchingYearly, "w", true),
-  so: rankYears(pitchingYearly, "so", true),
-  ip: rankYears(pitchingYearly, "ip", true),
-  era: rankYears(pitchingYearly, "era", false),
-  whip: rankYears(pitchingYearly, "whip", false),
-  l: rankYears(pitchingYearly, "l", false), // fewer losses = better
-};
-
-function rankClass(rank: number): string {
-  if (rank === 1) return "rank-1";
-  if (rank > 0 && rank <= 10) return "rank-top";
+// Highlight class based on MLB league/league-wide rank
+// led: led MLB or AL/NL that year
+// top10: top 10 in MLB that year
+function statClass(row: any, field: string): string {
+  if (row.led && row.led.includes(field)) return "rank-1";
+  if (row.top10 && row.top10.includes(field)) return "rank-top";
   return "";
 }
 ---
@@ -217,20 +189,20 @@ function rankClass(rank: number): string {
               <tr>
                 <td class="num mono">{y.year}</td>
                 <td class="mono">{y.team}</td>
-                <td class:list={["num", "mono", rankClass(hitRanks.avg[i])]}>{y.avg}</td>
-                <td class:list={["num", "mono", rankClass(hitRanks.h[i])]}>{y.h}</td>
-                <td class:list={["num", "mono", rankClass(hitRanks.hr[i])]}>{y.hr}</td>
-                <td class:list={["num", "mono", rankClass(hitRanks.rbi[i])]}>{y.rbi}</td>
-                <td class:list={["num", "mono", rankClass(hitRanks.sb[i])]}>{y.sb}</td>
-                <td class:list={["num", "mono", rankClass(hitRanks.ops[i])]}>{y.ops}</td>
+                <td class:list={["num", "mono", statClass(y, "avg")]}>{y.avg}</td>
+                <td class:list={["num", "mono", statClass(y, "h")]}>{y.h}</td>
+                <td class:list={["num", "mono", statClass(y, "hr")]}>{y.hr}</td>
+                <td class:list={["num", "mono", statClass(y, "rbi")]}>{y.rbi}</td>
+                <td class:list={["num", "mono", statClass(y, "sb")]}>{y.sb}</td>
+                <td class:list={["num", "mono", statClass(y, "ops")]}>{y.ops}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
       <div class="rank-legend">
-        <span class="legend-item"><span class="legend-swatch rank-1"></span>キャリア1位</span>
-        <span class="legend-item"><span class="legend-swatch rank-top"></span>10位以内</span>
+        <span class="legend-item"><span class="legend-swatch rank-1"></span>MLB首位</span>
+        <span class="legend-item"><span class="legend-swatch rank-top"></span>MLBトップ10</span>
       </div>
     </section>
   )}
@@ -260,12 +232,12 @@ function rankClass(rank: number): string {
               <tr>
                 <td class="num mono">{y.year}</td>
                 <td class="mono">{y.team}</td>
-                <td class:list={["num", "mono", rankClass(pitRanks.w[i])]}>{y.w}</td>
-                <td class:list={["num", "mono", rankClass(pitRanks.l[i])]}>{y.l}</td>
-                <td class:list={["num", "mono", rankClass(pitRanks.era[i])]}>{y.era}</td>
-                <td class:list={["num", "mono", rankClass(pitRanks.so[i])]}>{y.so}</td>
-                <td class:list={["num", "mono", rankClass(pitRanks.ip[i])]}>{y.ip}</td>
-                <td class:list={["num", "mono", rankClass(pitRanks.whip[i])]}>{y.whip}</td>
+                <td class:list={["num", "mono", statClass(y, "w")]}>{y.w}</td>
+                <td class:list={["num", "mono", statClass(y, "l")]}>{y.l}</td>
+                <td class:list={["num", "mono", statClass(y, "era")]}>{y.era}</td>
+                <td class:list={["num", "mono", statClass(y, "so")]}>{y.so}</td>
+                <td class:list={["num", "mono", statClass(y, "ip")]}>{y.ip}</td>
+                <td class:list={["num", "mono", statClass(y, "whip")]}>{y.whip}</td>
               </tr>
             ))}
           </tbody>
