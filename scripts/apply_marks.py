@@ -15,7 +15,7 @@ PLAYERS_DIR = ROOT / "src" / "content" / "players"
 LEADERS_DIR = Path(__file__).parent / "cache" / "leaders"
 IDS_FILE = Path(__file__).parent / "cache" / "player_ids.json"
 
-HIT_KEYS = ["avg", "h", "hr", "rbi", "sb", "ops"]
+HIT_KEYS = ["avg", "h", "hr", "rbi", "sb", "obp", "slg", "ops"]
 PIT_KEYS = ["era", "w", "so", "ip", "whip"]
 
 

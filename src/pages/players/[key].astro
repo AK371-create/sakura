@@ -54,12 +54,50 @@ const yearly = player.yearly ?? [];
 const hittingYearly = yearly.filter((y: any) => y.type === "hit");
 const pitchingYearly = yearly.filter((y: any) => y.type === "pit");
 
+// Career-high ranks (rank 1 = career best)
+const hitCareerRanks = {
+  avg: rankYears(hittingYearly, "avg", true),
+  h: rankYears(hittingYearly, "h", true),
+  hr: rankYears(hittingYearly, "hr", true),
+  rbi: rankYears(hittingYearly, "rbi", true),
+  sb: rankYears(hittingYearly, "sb", true),
+  obp: rankYears(hittingYearly, "obp", true),
+  slg: rankYears(hittingYearly, "slg", true),
+  ops: rankYears(hittingYearly, "ops", true),
+};
+const pitCareerRanks = {
+  w: rankYears(pitchingYearly, "w", true),
+  l: rankYears(pitchingYearly, "l", false), // fewer losses = better
+  era: rankYears(pitchingYearly, "era", false),
+  so: rankYears(pitchingYearly, "so", true),
+  ip: rankYears(pitchingYearly, "ip", true),
+  whip: rankYears(pitchingYearly, "whip", false),
+  sv: rankYears(pitchingYearly, "sv", true),
+  hld: rankYears(pitchingYearly, "hld", true),
+};
+
 // Highlight class based on MLB league/league-wide rank
 // led: led MLB or AL/NL that year
 // top10: top 10 in MLB that year
-function statClass(row: any, field: string): string {
+// Career rank: lower number = better (rank 1 = career high)
+function rankYears(rows: any[], field: string, higherBetter: boolean) {
+  if (!rows.length) return [];
+  const values = rows.map((r, i) => ({ i, v: parseFloat(r[field]) }));
+  // Treat NaN/0 IP rows as worst
+  values.sort((a, b) => {
+    const av = isNaN(a.v) ? -Infinity : a.v;
+    const bv = isNaN(b.v) ? -Infinity : b.v;
+    return higherBetter ? bv - av : av - bv;
+  });
+  const ranks: number[] = new Array(rows.length).fill(0);
+  values.forEach((item, idx) => { ranks[item.i] = idx + 1; });
+  return ranks;
+}
+
+function statClass(row: any, field: string, careerRank?: number): string {
   if (row.led && row.led.includes(field)) return "rank-1";
   if (row.top10 && row.top10.includes(field)) return "rank-top";
+  if (careerRank === 1) return "career-high";
   return "";
 }
 
@@ -266,6 +304,8 @@ const groupedAwards = Array.from(awardsByCat.values())
               <th class="num">本塁打</th>
               <th class="num">打点</th>
               <th class="num">盗塁</th>
+              {hittingYearly.some((y: any) => y.obp) && <th class="num">出塁率</th>}
+              {hittingYearly.some((y: any) => y.slg) && <th class="num">長打率</th>}
               <th class="num">OPS</th>
             </tr>
           </thead>
@@ -274,20 +314,23 @@ const groupedAwards = Array.from(awardsByCat.values())
               <tr>
                 <td class="num mono">{y.year}</td>
                 <td class="mono">{y.team}</td>
-                <td class:list={["num", "mono", statClass(y, "avg")]}>{y.avg}</td>
-                <td class:list={["num", "mono", statClass(y, "h")]}>{y.h}</td>
-                <td class:list={["num", "mono", statClass(y, "hr")]}>{y.hr}</td>
-                <td class:list={["num", "mono", statClass(y, "rbi")]}>{y.rbi}</td>
-                <td class:list={["num", "mono", statClass(y, "sb")]}>{y.sb}</td>
-                <td class:list={["num", "mono", statClass(y, "ops")]}>{y.ops}</td>
+                <td class:list={["num", "mono", statClass(y, "avg", hitCareerRanks.avg[i])]}>{y.avg}</td>
+                <td class:list={["num", "mono", statClass(y, "h", hitCareerRanks.h[i])]}>{y.h}</td>
+                <td class:list={["num", "mono", statClass(y, "hr", hitCareerRanks.hr[i])]}>{y.hr}</td>
+                <td class:list={["num", "mono", statClass(y, "rbi", hitCareerRanks.rbi[i])]}>{y.rbi}</td>
+                <td class:list={["num", "mono", statClass(y, "sb", hitCareerRanks.sb[i])]}>{y.sb}</td>
+                {hittingYearly.some((r: any) => r.obp) && <td class:list={["num", "mono", statClass(y, "obp", hitCareerRanks.obp[i])]}>{y.obp ?? "—"}</td>}
+                {hittingYearly.some((r: any) => r.slg) && <td class:list={["num", "mono", statClass(y, "slg", hitCareerRanks.slg[i])]}>{y.slg ?? "—"}</td>}
+                <td class:list={["num", "mono", statClass(y, "ops", hitCareerRanks.ops[i])]}>{y.ops}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
       <div class="rank-legend">
-        <span class="legend-item"><span class="legend-swatch rank-1"></span><strong>MLB1位</strong></span>
+        <span class="legend-item"><span class="legend-swatch career-high"></span>キャリアハイ</span>
         <span class="legend-item"><span class="legend-swatch rank-top"></span>MLB10位以内</span>
+        <span class="legend-item"><span class="legend-swatch rank-1"></span><strong>MLB1位</strong></span>
       </div>
     </section>
   )}
@@ -319,14 +362,14 @@ const groupedAwards = Array.from(awardsByCat.values())
               <tr>
                 <td class="num mono">{y.year}</td>
                 <td class="mono">{y.team}</td>
-                <td class:list={["num", "mono", statClass(y, "w")]}>{y.w}</td>
-                <td class:list={["num", "mono", statClass(y, "l")]}>{y.l}</td>
-                <td class:list={["num", "mono", statClass(y, "era")]}>{y.era}</td>
-                <td class:list={["num", "mono", statClass(y, "so")]}>{y.so}</td>
-                <td class:list={["num", "mono", statClass(y, "ip")]}>{y.ip}</td>
-                <td class:list={["num", "mono", statClass(y, "whip")]}>{y.whip}</td>
-                {pitchingYearly.some((r: any) => r.sv !== undefined) && <td class="num mono">{y.sv ?? "—"}</td>}
-                {pitchingYearly.some((r: any) => r.hld !== undefined) && <td class="num mono">{y.hld ?? "—"}</td>}
+                <td class:list={["num", "mono", statClass(y, "w", pitCareerRanks.w[i])]}>{y.w}</td>
+                <td class:list={["num", "mono", statClass(y, "l", pitCareerRanks.l[i])]}>{y.l}</td>
+                <td class:list={["num", "mono", statClass(y, "era", pitCareerRanks.era[i])]}>{y.era}</td>
+                <td class:list={["num", "mono", statClass(y, "so", pitCareerRanks.so[i])]}>{y.so}</td>
+                <td class:list={["num", "mono", statClass(y, "ip", pitCareerRanks.ip[i])]}>{y.ip}</td>
+                <td class:list={["num", "mono", statClass(y, "whip", pitCareerRanks.whip[i])]}>{y.whip}</td>
+                {pitchingYearly.some((r: any) => r.sv !== undefined) && <td class:list={["num", "mono", statClass(y, "sv", pitCareerRanks.sv[i])]}>{y.sv ?? "—"}</td>}
+                {pitchingYearly.some((r: any) => r.hld !== undefined) && <td class:list={["num", "mono", statClass(y, "hld", pitCareerRanks.hld[i])]}>{y.hld ?? "—"}</td>}
               </tr>
             ))}
           </tbody>
@@ -834,6 +877,11 @@ const groupedAwards = Array.from(awardsByCat.values())
     font-weight: 600;
     background: rgba(214, 37, 56, 0.06);
   }
+  .yearly-table td.career-high {
+    color: var(--text);
+    font-weight: 700;
+    box-shadow: inset 0 -2px 0 rgba(20, 14, 12, 0.18);
+  }
   .yearly-table tr:hover td.rank-1 { background: var(--rose-700, #b81d2d); }
   .yearly-table tr:hover td.rank-top { background: rgba(214, 37, 56, 0.1); }
 
@@ -856,6 +904,11 @@ const groupedAwards = Array.from(awardsByCat.values())
   .legend-swatch.rank-top {
     background: rgba(214, 37, 56, 0.1);
     border: 1px solid var(--accent);
+  }
+  .legend-swatch.career-high {
+    background: white;
+    box-shadow: inset 0 -2px 0 rgba(20, 14, 12, 0.18);
+    border: 1px solid var(--border);
   }
   .rank-legend strong { color: var(--accent); font-weight: 700; }
 

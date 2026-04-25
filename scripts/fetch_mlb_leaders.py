@@ -20,6 +20,8 @@ HIT_STATS = {
     "hr":   "homeRuns",
     "rbi":  "runsBattedIn",
     "sb":   "stolenBases",
+    "obp":  "onBasePercentage",
+    "slg":  "sluggingPercentage",
     "ops":  "ops",
 }
 PIT_STATS = {
