@@ -87,7 +87,7 @@ for (const a of allAwards) {
   else { awardsByCat.set(key, { label: a.label, cat: a.cat, count: 1, years: [a.year] }); }
 }
 // Display order — top tier first
-const CAT_ORDER = ["ws-mvp", "mvp", "cy", "roy", "lcs-mvp", "silver", "gold", "aaron", "comeback", "historic", "as"];
+const CAT_ORDER = ["ws-mvp", "mvp", "cy", "roy", "alcs-mvp", "nlcs-mvp", "silver", "gold", "aaron", "comeback", "historic", "as"];
 const groupedAwards = Array.from(awardsByCat.values())
   .sort((a, b) => CAT_ORDER.indexOf(a.cat) - CAT_ORDER.indexOf(b.cat));
 ---
@@ -286,8 +286,8 @@ const groupedAwards = Array.from(awardsByCat.values())
         </table>
       </div>
       <div class="rank-legend">
-        <span class="legend-item"><span class="legend-swatch rank-1"></span>MLB首位</span>
-        <span class="legend-item"><span class="legend-swatch rank-top"></span>MLBトップ10</span>
+        <span class="legend-item"><span class="legend-swatch rank-1"></span><strong>MLB1位</strong></span>
+        <span class="legend-item"><span class="legend-swatch rank-top"></span>MLB10位以内</span>
       </div>
     </section>
   )}
@@ -816,16 +816,26 @@ const groupedAwards = Array.from(awardsByCat.values())
 
   /* Rank highlighting */
   .yearly-table td.rank-1 {
-    color: var(--accent);
-    font-weight: 700;
-    background: rgba(214, 37, 56, 0.08);
-    box-shadow: inset 0 0 0 1px rgba(214, 37, 56, 0.18);
+    color: white;
+    font-weight: 800;
+    background: var(--accent);
+    box-shadow: inset 0 0 0 1px rgba(214, 37, 56, 0.4);
+    position: relative;
+  }
+  .yearly-table td.rank-1::after {
+    content: "★";
+    position: absolute;
+    top: 1px; right: 3px;
+    font-size: 0.55rem;
+    color: rgba(255, 255, 255, 0.7);
   }
   .yearly-table td.rank-top {
     color: var(--accent);
     font-weight: 600;
+    background: rgba(214, 37, 56, 0.06);
   }
-  .yearly-table tr:hover td.rank-1 { background: rgba(214, 37, 56, 0.12); }
+  .yearly-table tr:hover td.rank-1 { background: var(--rose-700, #b81d2d); }
+  .yearly-table tr:hover td.rank-top { background: rgba(214, 37, 56, 0.1); }
 
   .rank-legend {
     display: flex; gap: 1.2rem;
@@ -840,13 +850,14 @@ const groupedAwards = Array.from(awardsByCat.values())
     border-radius: 3px;
   }
   .legend-swatch.rank-1 {
-    background: rgba(214, 37, 56, 0.15);
-    box-shadow: inset 0 0 0 1px rgba(214, 37, 56, 0.25);
+    background: var(--accent);
+    box-shadow: inset 0 0 0 1px rgba(214, 37, 56, 0.4);
   }
   .legend-swatch.rank-top {
-    background: transparent;
+    background: rgba(214, 37, 56, 0.1);
     border: 1px solid var(--accent);
   }
+  .rank-legend strong { color: var(--accent); font-weight: 700; }
 
   @media (max-width: 720px) {
     .pct-row { grid-template-columns: 90px 1fr 60px; gap: 0.6rem; }

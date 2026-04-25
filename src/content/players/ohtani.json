@@ -391,15 +391,15 @@
     },
     {
       "year": 2025,
-      "label": "NLCS MVP",
-      "cat": "lcs-mvp",
-      "raw": "NLCS MVP"
-    },
-    {
-      "year": 2025,
       "label": "リーグMVP",
       "cat": "mvp",
       "raw": "NL MVP"
+    },
+    {
+      "year": 2025,
+      "label": "ナ・リーグCS MVP",
+      "cat": "nlcs-mvp",
+      "raw": "NLCS MVP"
     },
     {
       "year": 2025,

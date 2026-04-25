@@ -23,8 +23,8 @@ MAJOR_AWARDS = [
     (r"Jackie Robinson (AL|NL) Rookie of the Year",  "新人王",          "roy"),
     (r"^(AL|NL) Rookie of the Year$",          "新人王",                "roy"),
     # High tier
-    (r"\bALCS MVP\b",                          "ALCS MVP",              "lcs-mvp"),
-    (r"\bNLCS MVP\b",                          "NLCS MVP",              "lcs-mvp"),
+    (r"\bALCS MVP\b",                          "ア・リーグCS MVP",      "alcs-mvp"),
+    (r"\bNLCS MVP\b",                          "ナ・リーグCS MVP",      "nlcs-mvp"),
     (r"(AL|NL) Silver Slugger",                "シルバースラッガー賞",  "silver"),
     (r"Rawlings (AL|NL) Gold Glove",           "ゴールドグラブ賞",      "gold"),
     (r"Hank Aaron",                            "ハンク・アーロン賞",    "aaron"),

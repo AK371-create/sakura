@@ -70,7 +70,8 @@ const AWARD_EN: Record<string, string> = {
   "mvp": "League MVP",
   "cy": "Cy Young Award",
   "roy": "Rookie of the Year",
-  "lcs-mvp": "LCS MVP",
+  "alcs-mvp": "ALCS MVP",
+  "nlcs-mvp": "NLCS MVP",
   "silver": "Silver Slugger",
   "gold": "Gold Glove",
   "aaron": "Hank Aaron Award",
@@ -86,7 +87,7 @@ for (const a of allAwards) {
   if (g) { g.count++; g.years.push(a.year); }
   else { awardsByCat.set(a.cat, { label: AWARD_EN[a.cat] ?? a.label, cat: a.cat, count: 1, years: [a.year] }); }
 }
-const CAT_ORDER = ["ws-mvp", "mvp", "cy", "roy", "lcs-mvp", "silver", "gold", "aaron", "comeback", "historic", "as"];
+const CAT_ORDER = ["ws-mvp", "mvp", "cy", "roy", "alcs-mvp", "nlcs-mvp", "silver", "gold", "aaron", "comeback", "historic", "as"];
 const groupedAwards = Array.from(awardsByCat.values())
   .sort((a, b) => CAT_ORDER.indexOf(a.cat) - CAT_ORDER.indexOf(b.cat));
 ---
@@ -242,7 +243,7 @@ const groupedAwards = Array.from(awardsByCat.values())
         </table>
       </div>
       <div class="rank-legend mono">
-        <span class="legend-item"><span class="legend-swatch rank-1"></span>MLB LEAD</span>
+        <span class="legend-item"><span class="legend-swatch rank-1"></span><strong>MLB #1</strong></span>
         <span class="legend-item"><span class="legend-swatch rank-top"></span>MLB TOP 10</span>
       </div>
     </section>
