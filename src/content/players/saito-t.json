@@ -1,0 +1,125 @@
+{
+  "key": "saito-t",
+  "name_jp": "斎藤隆",
+  "name_en": "Takashi Saito",
+  "team_jp": "",
+  "team_en": "AZ",
+  "team_short": "AZ",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2006-2012",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 21,
+      "l": 15,
+      "era": "2.34",
+      "so": 400,
+      "ip": "338.0",
+      "whip": "1.06",
+      "sv": 84,
+      "hld": 39
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2006,
+      "team": "LAD",
+      "type": "pit",
+      "w": 6,
+      "l": 2,
+      "era": "2.07",
+      "so": 107,
+      "ip": "78.1",
+      "whip": "0.91",
+      "sv": 24,
+      "hld": 7
+    },
+    {
+      "year": 2007,
+      "team": "LAD",
+      "type": "pit",
+      "w": 2,
+      "l": 1,
+      "era": "1.40",
+      "so": 78,
+      "ip": "64.1",
+      "whip": "0.72",
+      "sv": 39,
+      "hld": 1
+    },
+    {
+      "year": 2008,
+      "team": "LAD",
+      "type": "pit",
+      "w": 4,
+      "l": 4,
+      "era": "2.49",
+      "so": 60,
+      "ip": "47.0",
+      "whip": "1.19",
+      "sv": 18,
+      "hld": 0
+    },
+    {
+      "year": 2009,
+      "team": "BOS",
+      "type": "pit",
+      "w": 3,
+      "l": 3,
+      "era": "2.43",
+      "so": 52,
+      "ip": "55.2",
+      "whip": "1.35",
+      "sv": 2,
+      "hld": 2
+    },
+    {
+      "year": 2010,
+      "team": "ATL",
+      "type": "pit",
+      "w": 2,
+      "l": 3,
+      "era": "2.83",
+      "so": 69,
+      "ip": "54.0",
+      "whip": "1.07",
+      "sv": 1,
+      "hld": 17
+    },
+    {
+      "year": 2011,
+      "team": "MIL",
+      "type": "pit",
+      "w": 4,
+      "l": 2,
+      "era": "2.03",
+      "so": 23,
+      "ip": "26.2",
+      "whip": "1.13",
+      "sv": 0,
+      "hld": 10
+    },
+    {
+      "year": 2012,
+      "team": "AZ",
+      "type": "pit",
+      "w": 0,
+      "l": 0,
+      "era": "6.75",
+      "so": 11,
+      "ip": "12.0",
+      "whip": "1.83",
+      "sv": 0,
+      "hld": 2
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

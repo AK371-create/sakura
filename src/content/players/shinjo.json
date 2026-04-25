@@ -1,0 +1,73 @@
+{
+  "key": "shinjo",
+  "name_jp": "新庄剛志",
+  "name_en": "Tsuyoshi Shinjo",
+  "team_jp": "ニューヨーク・メッツ",
+  "team_en": "New York Mets",
+  "team_short": "NYM",
+  "league": "NL",
+  "level": "FORMER",
+  "type": "batter",
+  "position_jp": "中堅手",
+  "position_en": "CF",
+  "mlb_years": "2001-2003",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "hitting": {
+      "avg": ".245",
+      "h": 215,
+      "hr": 20,
+      "rbi": 100,
+      "sb": 9,
+      "obp": ".299",
+      "slg": ".370",
+      "ops": ".669"
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2001,
+      "team": "NYM",
+      "type": "hit",
+      "avg": ".268",
+      "h": 107,
+      "hr": 10,
+      "rbi": 56,
+      "sb": 4,
+      "obp": ".320",
+      "slg": ".405",
+      "ops": ".725"
+    },
+    {
+      "year": 2002,
+      "team": "SF",
+      "type": "hit",
+      "avg": ".238",
+      "h": 86,
+      "hr": 9,
+      "rbi": 37,
+      "sb": 5,
+      "obp": ".294",
+      "slg": ".370",
+      "ops": ".664"
+    },
+    {
+      "year": 2003,
+      "team": "NYM",
+      "type": "hit",
+      "avg": ".193",
+      "h": 22,
+      "hr": 1,
+      "rbi": 7,
+      "sb": 0,
+      "obp": ".238",
+      "slg": ".246",
+      "ops": ".484"
+    }
+  ],
+  "basic_season": {
+    "hitting": "career"
+  }
+}

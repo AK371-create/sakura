@@ -1,0 +1,47 @@
+{
+  "key": "fukumori",
+  "name_jp": "福盛和男",
+  "name_en": "Kazuo Fukumori",
+  "team_jp": "テキサス・レンジャーズ",
+  "team_en": "Texas Rangers",
+  "team_short": "TEX",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2008",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 0,
+      "l": 0,
+      "era": "20.25",
+      "so": 1,
+      "ip": "4.0",
+      "whip": "3.75",
+      "sv": 0,
+      "hld": 0
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2008,
+      "team": "TEX",
+      "type": "pit",
+      "w": 0,
+      "l": 0,
+      "era": "20.25",
+      "so": 1,
+      "ip": "4.0",
+      "whip": "3.75",
+      "sv": 0,
+      "hld": 0
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

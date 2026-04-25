@@ -1,0 +1,86 @@
+{
+  "key": "johjima",
+  "name_jp": "城島健司",
+  "name_en": "Kenji Johjima",
+  "team_jp": "シアトル・マリナーズ",
+  "team_en": "Seattle Mariners",
+  "team_short": "SEA",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "batter",
+  "position_jp": "捕手",
+  "position_en": "C",
+  "mlb_years": "2006-2009",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "hitting": {
+      "avg": ".268",
+      "h": 431,
+      "hr": 48,
+      "rbi": 198,
+      "sb": 7,
+      "obp": ".310",
+      "slg": ".411",
+      "ops": ".721"
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2006,
+      "team": "SEA",
+      "type": "hit",
+      "avg": ".291",
+      "h": 147,
+      "hr": 18,
+      "rbi": 76,
+      "sb": 3,
+      "obp": ".332",
+      "slg": ".451",
+      "ops": ".783"
+    },
+    {
+      "year": 2007,
+      "team": "SEA",
+      "type": "hit",
+      "avg": ".287",
+      "h": 139,
+      "hr": 14,
+      "rbi": 61,
+      "sb": 0,
+      "obp": ".322",
+      "slg": ".433",
+      "ops": ".755"
+    },
+    {
+      "year": 2008,
+      "team": "SEA",
+      "type": "hit",
+      "avg": ".227",
+      "h": 86,
+      "hr": 7,
+      "rbi": 39,
+      "sb": 2,
+      "obp": ".277",
+      "slg": ".332",
+      "ops": ".609"
+    },
+    {
+      "year": 2009,
+      "team": "SEA",
+      "type": "hit",
+      "avg": ".247",
+      "h": 59,
+      "hr": 9,
+      "rbi": 22,
+      "sb": 2,
+      "obp": ".296",
+      "slg": ".406",
+      "ops": ".702"
+    }
+  ],
+  "basic_season": {
+    "hitting": "career"
+  }
+}

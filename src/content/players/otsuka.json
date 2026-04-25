@@ -1,0 +1,86 @@
+{
+  "key": "otsuka",
+  "name_jp": "大塚晶則",
+  "name_en": "Akinori Otsuka",
+  "team_jp": "テキサス・レンジャーズ",
+  "team_en": "Texas Rangers",
+  "team_short": "TEX",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2004-2007",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 13,
+      "l": 15,
+      "era": "2.44",
+      "so": 217,
+      "ip": "232.0",
+      "whip": "1.16",
+      "sv": 39,
+      "hld": 74
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2004,
+      "team": "SD",
+      "type": "pit",
+      "w": 7,
+      "l": 2,
+      "era": "1.75",
+      "so": 87,
+      "ip": "77.1",
+      "whip": "1.06",
+      "sv": 2,
+      "hld": 34
+    },
+    {
+      "year": 2005,
+      "team": "SD",
+      "type": "pit",
+      "w": 2,
+      "l": 8,
+      "era": "3.59",
+      "so": 60,
+      "ip": "62.2",
+      "whip": "1.42",
+      "sv": 1,
+      "hld": 22
+    },
+    {
+      "year": 2006,
+      "team": "TEX",
+      "type": "pit",
+      "w": 2,
+      "l": 4,
+      "era": "2.11",
+      "so": 47,
+      "ip": "59.2",
+      "whip": "1.07",
+      "sv": 32,
+      "hld": 7
+    },
+    {
+      "year": 2007,
+      "team": "TEX",
+      "type": "pit",
+      "w": 2,
+      "l": 1,
+      "era": "2.51",
+      "so": 23,
+      "ip": "32.1",
+      "whip": "1.08",
+      "sv": 4,
+      "hld": 11
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "key": "kida",
+  "name_jp": "木田優夫",
+  "name_en": "Masao Kida",
+  "team_jp": "シアトル・マリナーズ",
+  "team_en": "Seattle Mariners",
+  "team_short": "SEA",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "1999-2005",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 1,
+      "l": 1,
+      "era": "5.83",
+      "so": 68,
+      "ip": "95.2",
+      "whip": "1.60",
+      "sv": 1,
+      "hld": 4
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 1999,
+      "team": "DET",
+      "type": "pit",
+      "w": 1,
+      "l": 0,
+      "era": "6.26",
+      "so": 50,
+      "ip": "64.2",
+      "whip": "1.59",
+      "sv": 1,
+      "hld": 4
+    },
+    {
+      "year": 2000,
+      "team": "DET",
+      "type": "pit",
+      "w": 0,
+      "l": 0,
+      "era": "10.13",
+      "so": 0,
+      "ip": "2.2",
+      "whip": "1.88",
+      "sv": 0,
+      "hld": 0
+    },
+    {
+      "year": 2003,
+      "team": "LA",
+      "type": "pit",
+      "w": 0,
+      "l": 1,
+      "era": "3.00",
+      "so": 8,
+      "ip": "12.0",
+      "whip": "1.50",
+      "sv": 0,
+      "hld": 0
+    },
+    {
+      "year": 2004,
+      "team": "LA/SEA",
+      "type": "pit",
+      "w": 0,
+      "l": 0,
+      "era": "5.65",
+      "so": 10,
+      "ip": "14.1",
+      "whip": "1.74",
+      "sv": 0,
+      "hld": 0
+    },
+    {
+      "year": 2005,
+      "team": "SEA",
+      "type": "pit",
+      "w": 0,
+      "l": 0,
+      "era": "4.50",
+      "so": 0,
+      "ip": "2.0",
+      "whip": "1.00",
+      "sv": 0,
+      "hld": 0
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

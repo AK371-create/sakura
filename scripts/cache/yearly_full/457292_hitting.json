@@ -1,0 +1,206 @@
+[
+  {
+    "season": "2011",
+    "stat": {
+      "age": 26,
+      "gamesPlayed": 68,
+      "groundOuts": 83,
+      "airOuts": 48,
+      "runs": 14,
+      "doubles": 5,
+      "triples": 0,
+      "homeRuns": 0,
+      "strikeOuts": 43,
+      "baseOnBalls": 15,
+      "intentionalWalks": 1,
+      "hits": 50,
+      "hitByPitch": 1,
+      "avg": ".226",
+      "atBats": 221,
+      "obp": ".278",
+      "slg": ".249",
+      "ops": ".527",
+      "caughtStealing": 4,
+      "stolenBases": 2,
+      "stolenBasePercentage": ".333",
+      "caughtStealingPercentage": ".667",
+      "groundIntoDoublePlay": 1,
+      "numberOfPitches": 955,
+      "plateAppearances": 240,
+      "totalBases": 55,
+      "rbi": 19,
+      "leftOnBase": 94,
+      "sacBunts": 3,
+      "sacFlies": 0,
+      "babip": ".281",
+      "groundOutsToAirouts": "1.73",
+      "catchersInterference": 0,
+      "atBatsPerHomeRun": "-.--"
+    },
+    "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
+      "id": 142,
+      "name": "Minnesota Twins",
+      "link": "/api/v1/teams/142",
+      "season": 2011,
+      "venue": {
+        "id": 3312,
+        "name": "Target Field",
+        "link": "/api/v1/venues/3312"
+      },
+      "springVenue": {
+        "id": 2862,
+        "link": "/api/v1/venues/2862"
+      },
+      "teamCode": "min",
+      "fileCode": "min",
+      "abbreviation": "MIN",
+      "teamName": "Twins",
+      "locationName": "Minneapolis",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 202,
+        "name": "American League Central",
+        "link": "/api/v1/divisions/202"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Minnesota",
+      "franchiseName": "Minnesota",
+      "clubName": "Twins",
+      "active": true
+    },
+    "player": {
+      "id": 457292,
+      "fullName": "Tsuyoshi Nishioka",
+      "link": "/api/v1/people/457292"
+    },
+    "league": {
+      "id": 103,
+      "name": "American League",
+      "link": "/api/v1/league/103"
+    },
+    "sport": {
+      "id": 1,
+      "link": "/api/v1/sports/1",
+      "abbreviation": "MLB"
+    },
+    "gameType": "R"
+  },
+  {
+    "season": "2012",
+    "stat": {
+      "age": 27,
+      "gamesPlayed": 3,
+      "groundOuts": 7,
+      "airOuts": 5,
+      "runs": 0,
+      "doubles": 0,
+      "triples": 0,
+      "homeRuns": 0,
+      "strikeOuts": 1,
+      "baseOnBalls": 1,
+      "intentionalWalks": 0,
+      "hits": 0,
+      "hitByPitch": 0,
+      "avg": ".000",
+      "atBats": 12,
+      "obp": ".071",
+      "slg": ".000",
+      "ops": ".071",
+      "caughtStealing": 0,
+      "stolenBases": 0,
+      "stolenBasePercentage": ".---",
+      "caughtStealingPercentage": ".---",
+      "groundIntoDoublePlay": 0,
+      "numberOfPitches": 53,
+      "plateAppearances": 14,
+      "totalBases": 0,
+      "rbi": 1,
+      "leftOnBase": 5,
+      "sacBunts": 0,
+      "sacFlies": 1,
+      "babip": ".000",
+      "groundOutsToAirouts": "1.40",
+      "catchersInterference": 0,
+      "atBatsPerHomeRun": "-.--"
+    },
+    "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
+      "id": 142,
+      "name": "Minnesota Twins",
+      "link": "/api/v1/teams/142",
+      "season": 2012,
+      "venue": {
+        "id": 3312,
+        "name": "Target Field",
+        "link": "/api/v1/venues/3312"
+      },
+      "springVenue": {
+        "id": 2862,
+        "link": "/api/v1/venues/2862"
+      },
+      "teamCode": "min",
+      "fileCode": "min",
+      "abbreviation": "MIN",
+      "teamName": "Twins",
+      "locationName": "Minneapolis",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 202,
+        "name": "American League Central",
+        "link": "/api/v1/divisions/202"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Minnesota",
+      "franchiseName": "Minnesota",
+      "clubName": "Twins",
+      "active": true
+    },
+    "player": {
+      "id": 457292,
+      "fullName": "Tsuyoshi Nishioka",
+      "link": "/api/v1/people/457292"
+    },
+    "league": {
+      "id": 103,
+      "name": "American League",
+      "link": "/api/v1/league/103"
+    },
+    "sport": {
+      "id": 1,
+      "link": "/api/v1/sports/1",
+      "abbreviation": "MLB"
+    },
+    "gameType": "R"
+  }
+]

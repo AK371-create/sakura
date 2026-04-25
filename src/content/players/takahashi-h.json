@@ -1,0 +1,86 @@
+{
+  "key": "takahashi-h",
+  "name_jp": "高橋尚成",
+  "name_en": "Hisanori Takahashi",
+  "team_jp": "シカゴ・カブス",
+  "team_en": "Chicago Cubs",
+  "team_short": "CHC",
+  "league": "NL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2010-2013",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 14,
+      "l": 12,
+      "era": "3.99",
+      "so": 221,
+      "ip": "243.1",
+      "whip": "1.27",
+      "sv": 10,
+      "hld": 14
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2010,
+      "team": "NYM",
+      "type": "pit",
+      "w": 10,
+      "l": 6,
+      "era": "3.61",
+      "so": 114,
+      "ip": "122.0",
+      "whip": "1.30",
+      "sv": 8,
+      "hld": 3
+    },
+    {
+      "year": 2011,
+      "team": "LAA",
+      "type": "pit",
+      "w": 4,
+      "l": 3,
+      "era": "3.44",
+      "so": 52,
+      "ip": "68.0",
+      "whip": "1.22",
+      "sv": 2,
+      "hld": 7
+    },
+    {
+      "year": 2012,
+      "team": "LAA/PIT",
+      "type": "pit",
+      "w": 0,
+      "l": 3,
+      "era": "5.54",
+      "so": 52,
+      "ip": "50.1",
+      "whip": "1.25",
+      "sv": 0,
+      "hld": 4
+    },
+    {
+      "year": 2013,
+      "team": "CHC",
+      "type": "pit",
+      "w": 0,
+      "l": 0,
+      "era": "6.00",
+      "so": 3,
+      "ip": "3.0",
+      "whip": "1.67",
+      "sv": 0,
+      "hld": 0
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

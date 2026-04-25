@@ -1,0 +1,138 @@
+{
+  "key": "taguchi",
+  "name_jp": "田口壮",
+  "name_en": "So Taguchi",
+  "team_jp": "シカゴ・カブス",
+  "team_en": "Chicago Cubs",
+  "team_short": "CHC",
+  "league": "NL",
+  "level": "FORMER",
+  "type": "batter",
+  "position_jp": "左翼手",
+  "position_en": "LF",
+  "mlb_years": "2002-2009",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "hitting": {
+      "avg": ".279",
+      "h": 382,
+      "hr": 19,
+      "rbi": 163,
+      "sb": 39,
+      "obp": ".332",
+      "slg": ".385",
+      "ops": ".717"
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2002,
+      "team": "STL",
+      "type": "hit",
+      "avg": ".400",
+      "h": 6,
+      "hr": 0,
+      "rbi": 2,
+      "sb": 1,
+      "obp": ".471",
+      "slg": ".400",
+      "ops": ".871"
+    },
+    {
+      "year": 2003,
+      "team": "STL",
+      "type": "hit",
+      "avg": ".259",
+      "h": 14,
+      "hr": 3,
+      "rbi": 13,
+      "sb": 0,
+      "obp": ".310",
+      "slg": ".519",
+      "ops": ".829"
+    },
+    {
+      "year": 2004,
+      "team": "STL",
+      "type": "hit",
+      "avg": ".291",
+      "h": 52,
+      "hr": 3,
+      "rbi": 25,
+      "sb": 6,
+      "obp": ".337",
+      "slg": ".419",
+      "ops": ".756"
+    },
+    {
+      "year": 2005,
+      "team": "STL",
+      "type": "hit",
+      "avg": ".288",
+      "h": 114,
+      "hr": 8,
+      "rbi": 53,
+      "sb": 11,
+      "obp": ".322",
+      "slg": ".412",
+      "ops": ".734"
+    },
+    {
+      "year": 2006,
+      "team": "STL",
+      "type": "hit",
+      "avg": ".266",
+      "h": 84,
+      "hr": 2,
+      "rbi": 31,
+      "sb": 11,
+      "obp": ".335",
+      "slg": ".351",
+      "ops": ".686"
+    },
+    {
+      "year": 2007,
+      "team": "STL",
+      "type": "hit",
+      "avg": ".290",
+      "h": 89,
+      "hr": 3,
+      "rbi": 30,
+      "sb": 7,
+      "obp": ".350",
+      "slg": ".368",
+      "ops": ".718"
+    },
+    {
+      "year": 2008,
+      "team": "PHI",
+      "type": "hit",
+      "avg": ".220",
+      "h": 20,
+      "hr": 0,
+      "rbi": 9,
+      "sb": 3,
+      "obp": ".283",
+      "slg": ".297",
+      "ops": ".580"
+    },
+    {
+      "year": 2009,
+      "team": "CHC",
+      "type": "hit",
+      "avg": ".273",
+      "h": 3,
+      "hr": 0,
+      "rbi": 0,
+      "sb": 0,
+      "obp": ".333",
+      "slg": ".364",
+      "ops": ".697"
+    }
+  ],
+  "basic_season": {
+    "hitting": "career"
+  }
+}

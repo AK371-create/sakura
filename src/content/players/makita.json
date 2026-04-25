@@ -1,0 +1,47 @@
+{
+  "key": "makita",
+  "name_jp": "牧田和久",
+  "name_en": "Kazuhisa Makita",
+  "team_jp": "サンディエゴ・パドレス",
+  "team_en": "San Diego Padres",
+  "team_short": "SD",
+  "league": "NL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2018",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 0,
+      "l": 1,
+      "era": "5.40",
+      "so": 37,
+      "ip": "35.0",
+      "whip": "1.26",
+      "sv": 0,
+      "hld": 2
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2018,
+      "team": "SD",
+      "type": "pit",
+      "w": 0,
+      "l": 1,
+      "era": "5.40",
+      "so": 37,
+      "ip": "35.0",
+      "whip": "1.26",
+      "sv": 0,
+      "hld": 2
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

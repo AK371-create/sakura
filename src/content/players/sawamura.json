@@ -1,0 +1,60 @@
+{
+  "key": "sawamura",
+  "name_jp": "澤村拓一",
+  "name_en": "Hirokazu Sawamura",
+  "team_jp": "ボストン・レッドソックス",
+  "team_en": "Boston Red Sox",
+  "team_short": "BOS",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2021-2022",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 6,
+      "l": 2,
+      "era": "3.39",
+      "so": 101,
+      "ip": "103.2",
+      "whip": "1.44",
+      "sv": 0,
+      "hld": 13
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2021,
+      "team": "BOS",
+      "type": "pit",
+      "w": 5,
+      "l": 1,
+      "era": "3.06",
+      "so": 61,
+      "ip": "53.0",
+      "whip": "1.45",
+      "sv": 0,
+      "hld": 10
+    },
+    {
+      "year": 2022,
+      "team": "BOS",
+      "type": "pit",
+      "w": 1,
+      "l": 1,
+      "era": "3.73",
+      "so": 40,
+      "ip": "50.2",
+      "whip": "1.42",
+      "sv": 0,
+      "hld": 3
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

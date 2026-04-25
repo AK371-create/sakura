@@ -1,0 +1,60 @@
+{
+  "key": "wada",
+  "name_jp": "和田毅",
+  "name_en": "Tsuyoshi Wada",
+  "team_jp": "シカゴ・カブス",
+  "team_en": "Chicago Cubs",
+  "team_short": "CHC",
+  "league": "NL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2014-2015",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 5,
+      "l": 5,
+      "era": "3.36",
+      "so": 88,
+      "ip": "101.2",
+      "whip": "1.25",
+      "sv": 0,
+      "hld": 0
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2014,
+      "team": "CHC",
+      "type": "pit",
+      "w": 4,
+      "l": 4,
+      "era": "3.25",
+      "so": 57,
+      "ip": "69.1",
+      "whip": "1.24",
+      "sv": 0,
+      "hld": 0
+    },
+    {
+      "year": 2015,
+      "team": "CHC",
+      "type": "pit",
+      "w": 1,
+      "l": 1,
+      "era": "3.62",
+      "so": 31,
+      "ip": "32.1",
+      "whip": "1.27",
+      "sv": 0,
+      "hld": 0
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

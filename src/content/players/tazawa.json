@@ -1,0 +1,151 @@
+{
+  "key": "tazawa",
+  "name_jp": "田澤純一",
+  "name_en": "Junichi Tazawa",
+  "team_jp": "ロサンゼルス・エンゼルス",
+  "team_en": "Los Angeles Angels",
+  "team_short": "LAA",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2009-2018",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 21,
+      "l": 26,
+      "era": "4.12",
+      "so": 374,
+      "ip": "395.1",
+      "whip": "1.32",
+      "sv": 4,
+      "hld": 89
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2009,
+      "team": "BOS",
+      "type": "pit",
+      "w": 2,
+      "l": 3,
+      "era": "7.46",
+      "so": 13,
+      "ip": "25.1",
+      "whip": "2.05",
+      "sv": 0,
+      "hld": 0
+    },
+    {
+      "year": 2011,
+      "team": "BOS",
+      "type": "pit",
+      "w": 0,
+      "l": 0,
+      "era": "6.00",
+      "so": 4,
+      "ip": "3.0",
+      "whip": "1.33",
+      "sv": 0,
+      "hld": 0
+    },
+    {
+      "year": 2012,
+      "team": "BOS",
+      "type": "pit",
+      "w": 1,
+      "l": 1,
+      "era": "1.43",
+      "so": 45,
+      "ip": "44.0",
+      "whip": "0.95",
+      "sv": 1,
+      "hld": 5
+    },
+    {
+      "year": 2013,
+      "team": "BOS",
+      "type": "pit",
+      "w": 5,
+      "l": 4,
+      "era": "3.16",
+      "so": 72,
+      "ip": "68.1",
+      "whip": "1.20",
+      "sv": 0,
+      "hld": 25
+    },
+    {
+      "year": 2014,
+      "team": "BOS",
+      "type": "pit",
+      "w": 4,
+      "l": 3,
+      "era": "2.86",
+      "so": 64,
+      "ip": "63.0",
+      "whip": "1.19",
+      "sv": 0,
+      "hld": 16
+    },
+    {
+      "year": 2015,
+      "team": "BOS",
+      "type": "pit",
+      "w": 2,
+      "l": 7,
+      "era": "4.14",
+      "so": 56,
+      "ip": "58.2",
+      "whip": "1.33",
+      "sv": 3,
+      "hld": 16
+    },
+    {
+      "year": 2016,
+      "team": "BOS",
+      "type": "pit",
+      "w": 3,
+      "l": 2,
+      "era": "4.17",
+      "so": 54,
+      "ip": "49.2",
+      "whip": "1.23",
+      "sv": 0,
+      "hld": 16
+    },
+    {
+      "year": 2017,
+      "team": "MIA",
+      "type": "pit",
+      "w": 3,
+      "l": 5,
+      "era": "5.69",
+      "so": 38,
+      "ip": "55.1",
+      "whip": "1.39",
+      "sv": 0,
+      "hld": 9
+    },
+    {
+      "year": 2018,
+      "team": "MIA/LAA",
+      "type": "pit",
+      "w": 1,
+      "l": 1,
+      "era": "7.07",
+      "so": 28,
+      "ip": "28.0",
+      "whip": "1.82",
+      "sv": 0,
+      "hld": 2
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

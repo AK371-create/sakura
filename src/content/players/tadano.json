@@ -1,0 +1,60 @@
+{
+  "key": "tadano",
+  "name_jp": "多田野数人",
+  "name_en": "Kazuhito Tadano",
+  "team_jp": "クリーブランド・ガーディアンズ",
+  "team_en": "Cleveland Guardians",
+  "team_short": "CLE",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2004-2005",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 1,
+      "l": 1,
+      "era": "4.47",
+      "so": 40,
+      "ip": "54.1",
+      "whip": "1.42",
+      "sv": 0,
+      "hld": 0
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2004,
+      "team": "CLE",
+      "type": "pit",
+      "w": 1,
+      "l": 1,
+      "era": "4.65",
+      "so": 39,
+      "ip": "50.1",
+      "whip": "1.45",
+      "sv": 0,
+      "hld": 0
+    },
+    {
+      "year": 2005,
+      "team": "CLE",
+      "type": "pit",
+      "w": 0,
+      "l": 0,
+      "era": "2.25",
+      "so": 1,
+      "ip": "4.0",
+      "whip": "1.00",
+      "sv": 0,
+      "hld": 0
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

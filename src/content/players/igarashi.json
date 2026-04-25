@@ -1,0 +1,73 @@
+{
+  "key": "igarashi",
+  "name_jp": "五十嵐亮太",
+  "name_en": "Ryota Igarashi",
+  "team_jp": "ニューヨーク・ヤンキース",
+  "team_en": "New York Yankees",
+  "team_short": "NYY",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2010-2012",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 5,
+      "l": 2,
+      "era": "6.41",
+      "so": 72,
+      "ip": "73.0",
+      "whip": "1.81",
+      "sv": 0,
+      "hld": 4
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2010,
+      "team": "NYM",
+      "type": "pit",
+      "w": 1,
+      "l": 1,
+      "era": "7.12",
+      "so": 25,
+      "ip": "30.1",
+      "whip": "1.55",
+      "sv": 0,
+      "hld": 2
+    },
+    {
+      "year": 2011,
+      "team": "NYM",
+      "type": "pit",
+      "w": 4,
+      "l": 1,
+      "era": "4.66",
+      "so": 42,
+      "ip": "38.2",
+      "whip": "1.84",
+      "sv": 0,
+      "hld": 2
+    },
+    {
+      "year": 2012,
+      "team": "TOR/NYY",
+      "type": "pit",
+      "w": 0,
+      "l": 0,
+      "era": "18.00",
+      "so": 5,
+      "ip": "4.0",
+      "whip": "3.50",
+      "sv": 0,
+      "hld": 0
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

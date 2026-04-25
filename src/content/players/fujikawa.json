@@ -1,0 +1,73 @@
+{
+  "key": "fujikawa",
+  "name_jp": "藤川球児",
+  "name_en": "Kyuji Fujikawa",
+  "team_jp": "テキサス・レンジャーズ",
+  "team_en": "Texas Rangers",
+  "team_short": "TEX",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2013-2015",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 1,
+      "l": 1,
+      "era": "5.74",
+      "so": 32,
+      "ip": "26.2",
+      "whip": "1.46",
+      "sv": 2,
+      "hld": 1
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2013,
+      "team": "CHC",
+      "type": "pit",
+      "w": 1,
+      "l": 1,
+      "era": "5.25",
+      "so": 14,
+      "ip": "12.0",
+      "whip": "1.08",
+      "sv": 2,
+      "hld": 1
+    },
+    {
+      "year": 2014,
+      "team": "CHC",
+      "type": "pit",
+      "w": 0,
+      "l": 0,
+      "era": "4.85",
+      "so": 17,
+      "ip": "13.0",
+      "whip": "1.85",
+      "sv": 0,
+      "hld": 0
+    },
+    {
+      "year": 2015,
+      "team": "TEX",
+      "type": "pit",
+      "w": 0,
+      "l": 0,
+      "era": "16.20",
+      "so": 1,
+      "ip": "1.2",
+      "whip": "1.20",
+      "sv": 0,
+      "hld": 0
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

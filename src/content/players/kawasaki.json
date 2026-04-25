@@ -1,0 +1,99 @@
+{
+  "key": "kawasaki",
+  "name_jp": "川崎宗則",
+  "name_en": "Munenori Kawasaki",
+  "team_jp": "シカゴ・カブス",
+  "team_en": "Chicago Cubs",
+  "team_short": "CHC",
+  "league": "NL",
+  "level": "FORMER",
+  "type": "batter",
+  "position_jp": "二塁手",
+  "position_en": "2B",
+  "mlb_years": "2012-2016",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "hitting": {
+      "avg": ".237",
+      "h": 150,
+      "hr": 1,
+      "rbi": 51,
+      "sb": 12,
+      "obp": ".320",
+      "slg": ".289",
+      "ops": ".609"
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2012,
+      "team": "SEA",
+      "type": "hit",
+      "avg": ".192",
+      "h": 20,
+      "hr": 0,
+      "rbi": 7,
+      "sb": 2,
+      "obp": ".257",
+      "slg": ".202",
+      "ops": ".459"
+    },
+    {
+      "year": 2013,
+      "team": "TOR",
+      "type": "hit",
+      "avg": ".229",
+      "h": 55,
+      "hr": 1,
+      "rbi": 24,
+      "sb": 7,
+      "obp": ".326",
+      "slg": ".308",
+      "ops": ".634"
+    },
+    {
+      "year": 2014,
+      "team": "TOR",
+      "type": "hit",
+      "avg": ".258",
+      "h": 62,
+      "hr": 0,
+      "rbi": 17,
+      "sb": 1,
+      "obp": ".327",
+      "slg": ".296",
+      "ops": ".623"
+    },
+    {
+      "year": 2015,
+      "team": "TOR",
+      "type": "hit",
+      "avg": ".214",
+      "h": 6,
+      "hr": 0,
+      "rbi": 2,
+      "sb": 0,
+      "obp": ".313",
+      "slg": ".286",
+      "ops": ".599"
+    },
+    {
+      "year": 2016,
+      "team": "CHC",
+      "type": "hit",
+      "avg": ".333",
+      "h": 7,
+      "hr": 0,
+      "rbi": 1,
+      "sb": 2,
+      "obp": ".462",
+      "slg": ".429",
+      "ops": ".891"
+    }
+  ],
+  "basic_season": {
+    "hitting": "career"
+  }
+}

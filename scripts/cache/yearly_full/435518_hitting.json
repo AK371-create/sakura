@@ -1,0 +1,98 @@
+[
+  {
+    "season": "2005",
+    "stat": {
+      "age": 31,
+      "gamesPlayed": 17,
+      "groundOuts": 16,
+      "airOuts": 11,
+      "runs": 1,
+      "doubles": 2,
+      "triples": 0,
+      "homeRuns": 0,
+      "strikeOuts": 7,
+      "baseOnBalls": 2,
+      "intentionalWalks": 0,
+      "hits": 5,
+      "hitByPitch": 0,
+      "avg": ".128",
+      "atBats": 39,
+      "obp": ".171",
+      "slg": ".179",
+      "ops": ".350",
+      "caughtStealing": 0,
+      "stolenBases": 0,
+      "stolenBasePercentage": ".---",
+      "caughtStealingPercentage": ".---",
+      "groundIntoDoublePlay": 3,
+      "numberOfPitches": 156,
+      "plateAppearances": 41,
+      "totalBases": 7,
+      "rbi": 3,
+      "leftOnBase": 25,
+      "sacBunts": 0,
+      "sacFlies": 0,
+      "babip": ".156",
+      "groundOutsToAirouts": "1.45",
+      "catchersInterference": 0,
+      "atBatsPerHomeRun": "-.--"
+    },
+    "team": {
+      "allStarStatus": "N",
+      "id": 119,
+      "name": "Los Angeles Dodgers",
+      "link": "/api/v1/teams/119",
+      "season": 2005,
+      "venue": {
+        "id": 22,
+        "name": "Dodger Stadium",
+        "link": "/api/v1/venues/22"
+      },
+      "springVenue": {
+        "id": 2517,
+        "link": "/api/v1/venues/2517"
+      },
+      "teamCode": "lan",
+      "fileCode": "la",
+      "abbreviation": "LAD",
+      "teamName": "Dodgers",
+      "locationName": "Los Angeles",
+      "firstYearOfPlay": "1884",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 203,
+        "name": "National League West",
+        "link": "/api/v1/divisions/203"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "LA Dodgers",
+      "franchiseName": "Los Angeles",
+      "clubName": "Dodgers",
+      "active": true
+    },
+    "player": {
+      "id": 435518,
+      "fullName": "Norihiro Nakamura",
+      "link": "/api/v1/people/435518"
+    },
+    "league": {
+      "id": 104,
+      "name": "National League",
+      "link": "/api/v1/league/104"
+    },
+    "sport": {
+      "id": 1,
+      "link": "/api/v1/sports/1",
+      "abbreviation": "MLB"
+    },
+    "gameType": "R"
+  }
+]

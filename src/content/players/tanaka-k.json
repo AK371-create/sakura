@@ -1,0 +1,47 @@
+{
+  "key": "tanaka-k",
+  "name_jp": "田中賢介",
+  "name_en": "Kensuke Tanaka",
+  "team_jp": "サンフランシスコ・ジャイアンツ",
+  "team_en": "San Francisco Giants",
+  "team_short": "SF",
+  "league": "NL",
+  "level": "FORMER",
+  "type": "batter",
+  "position_jp": "左翼手",
+  "position_en": "LF",
+  "mlb_years": "2013",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "hitting": {
+      "avg": ".267",
+      "h": 8,
+      "hr": 0,
+      "rbi": 2,
+      "sb": 2,
+      "obp": ".353",
+      "slg": ".267",
+      "ops": ".620"
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2013,
+      "team": "SF",
+      "type": "hit",
+      "avg": ".267",
+      "h": 8,
+      "hr": 0,
+      "rbi": 2,
+      "sb": 2,
+      "obp": ".353",
+      "slg": ".267",
+      "ops": ".620"
+    }
+  ],
+  "basic_season": {
+    "hitting": "career"
+  }
+}

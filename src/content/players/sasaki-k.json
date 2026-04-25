@@ -1,0 +1,86 @@
+{
+  "key": "sasaki-k",
+  "name_jp": "佐々木主浩",
+  "name_en": "Kazuhiro Sasaki",
+  "team_jp": "シアトル・マリナーズ",
+  "team_en": "Seattle Mariners",
+  "team_short": "SEA",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2000-2003",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 7,
+      "l": 16,
+      "era": "3.14",
+      "so": 242,
+      "ip": "223.1",
+      "whip": "1.08",
+      "sv": 129,
+      "hld": 0
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2000,
+      "team": "SEA",
+      "type": "pit",
+      "w": 2,
+      "l": 5,
+      "era": "3.16",
+      "so": 78,
+      "ip": "62.2",
+      "whip": "1.16",
+      "sv": 37,
+      "hld": 0
+    },
+    {
+      "year": 2001,
+      "team": "SEA",
+      "type": "pit",
+      "w": 0,
+      "l": 4,
+      "era": "3.24",
+      "so": 62,
+      "ip": "66.2",
+      "whip": "0.89",
+      "sv": 45,
+      "hld": 0
+    },
+    {
+      "year": 2002,
+      "team": "SEA",
+      "type": "pit",
+      "w": 4,
+      "l": 5,
+      "era": "2.52",
+      "so": 73,
+      "ip": "60.2",
+      "whip": "1.05",
+      "sv": 37,
+      "hld": 0
+    },
+    {
+      "year": 2003,
+      "team": "SEA",
+      "type": "pit",
+      "w": 1,
+      "l": 2,
+      "era": "4.05",
+      "so": 29,
+      "ip": "33.1",
+      "whip": "1.38",
+      "sv": 10,
+      "hld": 0
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

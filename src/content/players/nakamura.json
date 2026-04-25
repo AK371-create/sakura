@@ -1,0 +1,47 @@
+{
+  "key": "nakamura",
+  "name_jp": "中村紀洋",
+  "name_en": "Norihiro Nakamura",
+  "team_jp": "ロサンゼルス・ドジャース",
+  "team_en": "Los Angeles Dodgers",
+  "team_short": "LAD",
+  "league": "NL",
+  "level": "FORMER",
+  "type": "batter",
+  "position_jp": "三塁手",
+  "position_en": "3B",
+  "mlb_years": "2005",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "hitting": {
+      "avg": ".128",
+      "h": 5,
+      "hr": 0,
+      "rbi": 3,
+      "sb": 0,
+      "obp": ".171",
+      "slg": ".179",
+      "ops": ".350"
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2005,
+      "team": "LAD",
+      "type": "hit",
+      "avg": ".128",
+      "h": 5,
+      "hr": 0,
+      "rbi": 3,
+      "sb": 0,
+      "obp": ".171",
+      "slg": ".179",
+      "ops": ".350"
+    }
+  ],
+  "basic_season": {
+    "hitting": "career"
+  }
+}

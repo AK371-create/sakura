@@ -1,0 +1,123 @@
+{
+  "key": "iwakuma",
+  "name_jp": "岩隈久志",
+  "name_en": "Hisashi Iwakuma",
+  "team_jp": "シアトル・マリナーズ",
+  "team_en": "Seattle Mariners",
+  "team_short": "SEA",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2012-2017",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 63,
+      "l": 39,
+      "era": "3.42",
+      "so": 714,
+      "ip": "883.2",
+      "whip": "1.14",
+      "sv": 2,
+      "hld": 0
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2012,
+      "team": "SEA",
+      "type": "pit",
+      "w": 9,
+      "l": 5,
+      "era": "3.16",
+      "so": 101,
+      "ip": "125.1",
+      "whip": "1.28",
+      "sv": 2,
+      "hld": 0
+    },
+    {
+      "year": 2013,
+      "team": "SEA",
+      "type": "pit",
+      "w": 14,
+      "l": 6,
+      "era": "2.66",
+      "so": 185,
+      "ip": "219.2",
+      "whip": "1.01",
+      "sv": 0,
+      "hld": 0,
+      "top10": [
+        "era",
+        "ip",
+        "whip"
+      ]
+    },
+    {
+      "year": 2014,
+      "team": "SEA",
+      "type": "pit",
+      "w": 15,
+      "l": 9,
+      "era": "3.52",
+      "so": 154,
+      "ip": "179.0",
+      "whip": "1.05",
+      "sv": 0,
+      "hld": 0,
+      "top10": [
+        "whip"
+      ]
+    },
+    {
+      "year": 2015,
+      "team": "SEA",
+      "type": "pit",
+      "w": 9,
+      "l": 5,
+      "era": "3.54",
+      "so": 111,
+      "ip": "129.2",
+      "whip": "1.06",
+      "sv": 0,
+      "hld": 0
+    },
+    {
+      "year": 2016,
+      "team": "SEA",
+      "type": "pit",
+      "w": 16,
+      "l": 12,
+      "era": "4.12",
+      "so": 147,
+      "ip": "199.0",
+      "whip": "1.33",
+      "sv": 0,
+      "hld": 0,
+      "top10": [
+        "w"
+      ]
+    },
+    {
+      "year": 2017,
+      "team": "SEA",
+      "type": "pit",
+      "w": 0,
+      "l": 2,
+      "era": "4.35",
+      "so": 16,
+      "ip": "31.0",
+      "whip": "1.26",
+      "sv": 0,
+      "hld": 0
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

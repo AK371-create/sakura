@@ -1,0 +1,262 @@
+[
+  {
+    "season": "2009",
+    "stat": {
+      "age": 34,
+      "gamesPlayed": 32,
+      "gamesStarted": 25,
+      "groundOuts": 176,
+      "airOuts": 172,
+      "runs": 73,
+      "doubles": 40,
+      "triples": 10,
+      "homeRuns": 15,
+      "strikeOuts": 105,
+      "baseOnBalls": 57,
+      "intentionalWalks": 6,
+      "hits": 153,
+      "hitByPitch": 6,
+      "avg": ".260",
+      "atBats": 589,
+      "obp": ".328",
+      "slg": ".438",
+      "ops": ".766",
+      "caughtStealing": 5,
+      "stolenBases": 6,
+      "stolenBasePercentage": ".545",
+      "caughtStealingPercentage": ".455",
+      "groundIntoDoublePlay": 12,
+      "numberOfPitches": 2471,
+      "era": "3.86",
+      "inningsPitched": "156.1",
+      "wins": 7,
+      "losses": 12,
+      "saves": 1,
+      "saveOpportunities": 2,
+      "holds": 0,
+      "blownSaves": 1,
+      "earnedRuns": 67,
+      "whip": "1.34",
+      "battersFaced": 669,
+      "outs": 469,
+      "gamesPitched": 32,
+      "completeGames": 0,
+      "shutouts": 0,
+      "strikes": 1553,
+      "strikePercentage": ".630",
+      "hitBatsmen": 6,
+      "balks": 1,
+      "wildPitches": 8,
+      "pickoffs": 0,
+      "totalBases": 258,
+      "groundOutsToAirouts": "1.02",
+      "winPercentage": ".368",
+      "pitchesPerInning": "15.81",
+      "gamesFinished": 3,
+      "strikeoutWalkRatio": "1.84",
+      "strikeoutsPer9Inn": "6.04",
+      "walksPer9Inn": "3.28",
+      "hitsPer9Inn": "8.81",
+      "runsScoredPer9": "4.20",
+      "homeRunsPer9": "0.86",
+      "inheritedRunners": 0,
+      "inheritedRunnersScored": 0,
+      "catchersInterference": 0,
+      "sacBunts": 10,
+      "sacFlies": 7
+    },
+    "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
+      "id": 144,
+      "name": "Atlanta Braves",
+      "link": "/api/v1/teams/144",
+      "season": 2009,
+      "venue": {
+        "id": 16,
+        "name": "Turner Field",
+        "link": "/api/v1/venues/16"
+      },
+      "springVenue": {
+        "id": 2504,
+        "link": "/api/v1/venues/2504"
+      },
+      "teamCode": "atl",
+      "fileCode": "atl",
+      "abbreviation": "ATL",
+      "teamName": "Braves",
+      "locationName": "Atlanta",
+      "firstYearOfPlay": "1871",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 204,
+        "name": "National League East",
+        "link": "/api/v1/divisions/204"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Atlanta",
+      "franchiseName": "Atlanta",
+      "clubName": "Braves",
+      "active": true
+    },
+    "player": {
+      "id": 499877,
+      "fullName": "Kenshin Kawakami",
+      "link": "/api/v1/people/499877"
+    },
+    "league": {
+      "id": 104,
+      "name": "National League",
+      "link": "/api/v1/league/104"
+    },
+    "sport": {
+      "id": 1,
+      "link": "/api/v1/sports/1",
+      "abbreviation": "MLB"
+    },
+    "gameType": "R"
+  },
+  {
+    "season": "2010",
+    "stat": {
+      "age": 35,
+      "gamesPlayed": 18,
+      "gamesStarted": 16,
+      "groundOuts": 100,
+      "airOuts": 101,
+      "runs": 57,
+      "doubles": 29,
+      "triples": 6,
+      "homeRuns": 10,
+      "strikeOuts": 59,
+      "baseOnBalls": 32,
+      "intentionalWalks": 10,
+      "hits": 98,
+      "hitByPitch": 1,
+      "avg": ".284",
+      "atBats": 345,
+      "obp": ".340",
+      "slg": ".490",
+      "ops": ".830",
+      "caughtStealing": 2,
+      "stolenBases": 7,
+      "stolenBasePercentage": ".778",
+      "caughtStealingPercentage": ".222",
+      "groundIntoDoublePlay": 5,
+      "numberOfPitches": 1458,
+      "era": "5.15",
+      "inningsPitched": "87.1",
+      "wins": 1,
+      "losses": 10,
+      "saves": 0,
+      "saveOpportunities": 0,
+      "holds": 0,
+      "blownSaves": 0,
+      "earnedRuns": 50,
+      "whip": "1.49",
+      "battersFaced": 391,
+      "outs": 262,
+      "gamesPitched": 18,
+      "completeGames": 0,
+      "shutouts": 0,
+      "strikes": 896,
+      "strikePercentage": ".610",
+      "hitBatsmen": 1,
+      "balks": 0,
+      "wildPitches": 4,
+      "pickoffs": 0,
+      "totalBases": 169,
+      "groundOutsToAirouts": "0.99",
+      "winPercentage": ".091",
+      "pitchesPerInning": "16.69",
+      "gamesFinished": 1,
+      "strikeoutWalkRatio": "1.84",
+      "strikeoutsPer9Inn": "6.08",
+      "walksPer9Inn": "3.30",
+      "hitsPer9Inn": "10.10",
+      "runsScoredPer9": "5.87",
+      "homeRunsPer9": "1.03",
+      "inheritedRunners": 0,
+      "inheritedRunnersScored": 0,
+      "catchersInterference": 0,
+      "sacBunts": 6,
+      "sacFlies": 7
+    },
+    "team": {
+      "springLeague": {
+        "id": 115,
+        "name": "Grapefruit League",
+        "link": "/api/v1/league/115",
+        "abbreviation": "GL"
+      },
+      "allStarStatus": "N",
+      "id": 144,
+      "name": "Atlanta Braves",
+      "link": "/api/v1/teams/144",
+      "season": 2010,
+      "venue": {
+        "id": 16,
+        "name": "Turner Field",
+        "link": "/api/v1/venues/16"
+      },
+      "springVenue": {
+        "id": 2504,
+        "link": "/api/v1/venues/2504"
+      },
+      "teamCode": "atl",
+      "fileCode": "atl",
+      "abbreviation": "ATL",
+      "teamName": "Braves",
+      "locationName": "Atlanta",
+      "firstYearOfPlay": "1871",
+      "league": {
+        "id": 104,
+        "name": "National League",
+        "link": "/api/v1/league/104"
+      },
+      "division": {
+        "id": 204,
+        "name": "National League East",
+        "link": "/api/v1/divisions/204"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Atlanta",
+      "franchiseName": "Atlanta",
+      "clubName": "Braves",
+      "active": true
+    },
+    "player": {
+      "id": 499877,
+      "fullName": "Kenshin Kawakami",
+      "link": "/api/v1/people/499877"
+    },
+    "league": {
+      "id": 104,
+      "name": "National League",
+      "link": "/api/v1/league/104"
+    },
+    "sport": {
+      "id": 1,
+      "link": "/api/v1/sports/1",
+      "abbreviation": "MLB"
+    },
+    "gameType": "R"
+  }
+]

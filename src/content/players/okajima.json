@@ -1,0 +1,112 @@
+{
+  "key": "okajima",
+  "name_jp": "岡島秀樹",
+  "name_en": "Hideki Okajima",
+  "team_jp": "オークランド・アスレチックス",
+  "team_en": "Oakland Athletics",
+  "team_short": "OAK",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "投手",
+  "position_en": "Pitcher",
+  "mlb_years": "2007-2013",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "pitching": {
+      "w": 17,
+      "l": 8,
+      "era": "3.09",
+      "so": 216,
+      "ip": "250.1",
+      "whip": "1.26",
+      "sv": 6,
+      "hld": 84
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2007,
+      "team": "BOS",
+      "type": "pit",
+      "w": 3,
+      "l": 2,
+      "era": "2.22",
+      "so": 63,
+      "ip": "69.0",
+      "whip": "0.97",
+      "sv": 5,
+      "hld": 27
+    },
+    {
+      "year": 2008,
+      "team": "BOS",
+      "type": "pit",
+      "w": 3,
+      "l": 2,
+      "era": "2.61",
+      "so": 60,
+      "ip": "62.0",
+      "whip": "1.16",
+      "sv": 1,
+      "hld": 23
+    },
+    {
+      "year": 2009,
+      "team": "BOS",
+      "type": "pit",
+      "w": 6,
+      "l": 0,
+      "era": "3.39",
+      "so": 53,
+      "ip": "61.0",
+      "whip": "1.26",
+      "sv": 0,
+      "hld": 23
+    },
+    {
+      "year": 2010,
+      "team": "BOS",
+      "type": "pit",
+      "w": 4,
+      "l": 4,
+      "era": "4.50",
+      "so": 33,
+      "ip": "46.0",
+      "whip": "1.72",
+      "sv": 0,
+      "hld": 11
+    },
+    {
+      "year": 2011,
+      "team": "BOS",
+      "type": "pit",
+      "w": 1,
+      "l": 0,
+      "era": "4.32",
+      "so": 6,
+      "ip": "8.1",
+      "whip": "1.44",
+      "sv": 0,
+      "hld": 0
+    },
+    {
+      "year": 2013,
+      "team": "OAK",
+      "type": "pit",
+      "w": 0,
+      "l": 0,
+      "era": "2.25",
+      "so": 1,
+      "ip": "4.0",
+      "whip": "2.25",
+      "sv": 0,
+      "hld": 0
+    }
+  ],
+  "basic_season": {
+    "pitching": "career"
+  }
+}

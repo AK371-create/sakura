@@ -1,0 +1,60 @@
+{
+  "key": "nishioka",
+  "name_jp": "西岡剛",
+  "name_en": "Tsuyoshi Nishioka",
+  "team_jp": "ミネソタ・ツインズ",
+  "team_en": "Minnesota Twins",
+  "team_short": "MIN",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "batter",
+  "position_jp": "遊撃手",
+  "position_en": "SS",
+  "mlb_years": "2011-2012",
+  "current_status_jp": "MLB引退/NPB復帰",
+  "current_status_en": "Retired or returned to NPB",
+  "basic": {
+    "hitting": {
+      "avg": ".215",
+      "h": 50,
+      "hr": 0,
+      "rbi": 20,
+      "sb": 2,
+      "obp": ".267",
+      "slg": ".236",
+      "ops": ".503"
+    }
+  },
+  "updated_at": "2026-04-25",
+  "yearly": [
+    {
+      "year": 2011,
+      "team": "MIN",
+      "type": "hit",
+      "avg": ".226",
+      "h": 50,
+      "hr": 0,
+      "rbi": 19,
+      "sb": 2,
+      "obp": ".278",
+      "slg": ".249",
+      "ops": ".527"
+    },
+    {
+      "year": 2012,
+      "team": "MIN",
+      "type": "hit",
+      "avg": ".000",
+      "h": 0,
+      "hr": 0,
+      "rbi": 1,
+      "sb": 0,
+      "obp": ".071",
+      "slg": ".000",
+      "ops": ".071"
+    }
+  ],
+  "basic_season": {
+    "hitting": "career"
+  }
+}
