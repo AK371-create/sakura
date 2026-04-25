@@ -115,6 +115,15 @@ const allJsonLd = [...baseLd, ...(Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jso
     <meta name="theme-color" content="#faf8f7" />
     <meta name="color-scheme" content="light" />
 
+    {/* Google Search Console verification.
+        Set PUBLIC_GOOGLE_SITE_VERIFICATION in Cloudflare Pages env vars after registering at https://search.google.com/search-console */}
+    {import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION && (
+      <meta name="google-site-verification" content={import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION} />
+    )}
+    {import.meta.env.PUBLIC_BING_SITE_VERIFICATION && (
+      <meta name="msvalidate.01" content={import.meta.env.PUBLIC_BING_SITE_VERIFICATION} />
+    )}
+
     <!-- JSON-LD -->
     {allJsonLd.map((ld) => (
       <script type="application/ld+json" set:html={JSON.stringify(ld)} />
