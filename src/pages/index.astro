@@ -11,26 +11,49 @@ const articleModules = import.meta.glob("../content/articles/*.json", { eager: t
 const articles = Object.values(articleModules)
   .map((m: any) => m.default)
   .sort((a: any, b: any) => (a.date < b.date ? 1 : -1));
-const featured = articles.slice(0, 4);
+const featured = articles.slice(0, 6);
+
+const categoryLabels: Record<string, string> = {
+  player: "SELECT", statcast: "STATCAST", history: "HISTORY", rivalry: "MATCHUP",
+  rules: "RULES", team: "TEAM", prospects: "PROSPECT", culture: "CULTURE", market: "MARKET",
+};
+
+const stats = {
+  players: players.length,
+  articles: articles.length,
+  lastUpdate: articles[0]?.date ?? "",
+};
 ---
-<Layout title="SakuraBall" description="日本人メジャーリーガーのシーズン成績、Statcast指標、最新分析記事を掲載" lang="ja" currentPath="/">
+<Layout title="SakuraBall" description="日本人メジャーリーガーのシーズン成績、Statcast指標、分析記事" lang="ja" currentPath="/">
   <section class="hero">
-    <div class="hero-eyebrow">2026 SEASON</div>
-    <h1 class="hero-title">日本人メジャーリーガーを<br />データで読む。</h1>
+    <div class="hero-eyebrow mono">JAPANESE MLB // 2026 SEASON</div>
+    <h1 class="hero-title">Japanese MLB,<br /><span class="accent">read as data.</span></h1>
     <p class="hero-lede">
-      シーズン成績・Statcast 指標・球種別分析を一箇所に。
-      大谷翔平の二刀流から、村上宗隆の MLB 適応、今永昇太の球種戦略まで。
+      Statcast指標、球種別成績、パーセンタイルで日本人メジャーリーガーを解剖する。
     </p>
-    <div class="hero-cta">
-      <a class="btn btn-primary" href="#players">選手を見る</a>
-      <a class="btn btn-ghost" href="/articles/">記事を読む</a>
+    <div class="hero-stats">
+      <div class="hstat">
+        <div class="hstat-val mono">{stats.players}</div>
+        <div class="hstat-lbl mono">PLAYERS</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-val mono">{stats.articles}</div>
+        <div class="hstat-lbl mono">ARTICLES</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-val mono">{stats.lastUpdate}</div>
+        <div class="hstat-lbl mono">LAST UPDATE</div>
+      </div>
     </div>
   </section>
 
-  <section id="players" class="section">
-    <div class="section-header">
-      <h2>注目の選手</h2>
-      <span class="section-count">{players.length}名</span>
+  <section class="section">
+    <div class="section-head">
+      <div class="section-head-main">
+        <span class="section-num mono">01</span>
+        <h2>Players</h2>
+      </div>
+      <span class="mono section-count">N={players.length}</span>
     </div>
     <div class="player-grid">
       {players.map((p) => (
@@ -40,16 +63,19 @@ const featured = articles.slice(0, 4);
   </section>
 
   <section class="section">
-    <div class="section-header">
-      <h2>最新の記事</h2>
-      <a class="section-more" href="/articles/">すべて見る →</a>
+    <div class="section-head">
+      <div class="section-head-main">
+        <span class="section-num mono">02</span>
+        <h2>Analysis</h2>
+      </div>
+      <a class="section-link mono" href="/articles/">VIEW ALL →</a>
     </div>
     <div class="article-grid">
       {featured.map((a: any) => (
         <a class="article-tile" href={`/articles/${a.slug}/`}>
-          <div class="tile-meta">
+          <div class="tile-meta mono">
+            <span class="tile-cat">{categoryLabels[a.category] ?? a.category.toUpperCase()}</span>
             <span class="tile-date">{a.date}</span>
-            <span class="tile-cat">{a.category}</span>
           </div>
           <div class="tile-title">{a.title_jp}</div>
           <div class="tile-summary">{a.summary_jp}</div>
@@ -63,127 +89,119 @@ const featured = articles.slice(0, 4);
   /* Hero */
   .hero {
     padding: 3rem 0 2.5rem;
-    text-align: center;
+    margin-bottom: 1rem;
   }
   .hero-eyebrow {
-    display: inline-block;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 600;
-    letter-spacing: 0.2em;
     color: var(--accent);
-    background: var(--rose-100);
-    padding: 0.3rem 0.9rem;
-    border-radius: 100px;
-    margin-bottom: 1.4rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 1.2rem;
   }
   .hero-title {
-    font-family: var(--font-display);
-    font-size: clamp(1.9rem, 4.5vw, 2.8rem);
-    font-weight: 700;
-    line-height: 1.3;
+    font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
     margin: 0 0 1.2rem;
-    color: var(--text);
-    letter-spacing: -0.02em;
   }
+  .hero-title .accent { color: var(--accent); }
   .hero-lede {
-    max-width: 580px;
-    margin: 0 auto 2rem;
+    max-width: 560px;
     font-size: 1.02rem;
     color: var(--text-muted);
-    line-height: 1.85;
+    line-height: 1.7;
+    margin: 0 0 2rem;
   }
-  .hero-cta {
-    display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap;
-  }
-  .btn {
-    display: inline-flex; align-items: center; justify-content: center;
-    padding: 0.75rem 1.6rem;
-    font-size: 0.95rem;
-    font-weight: 600;
-    border-radius: 100px;
-    transition: all 0.18s ease;
-  }
-  .btn-primary {
-    background: var(--accent);
-    color: white;
-    box-shadow: 0 4px 14px rgba(200, 81, 110, 0.3);
-  }
-  .btn-primary:hover {
-    background: var(--rose-600); color: white; text-decoration: none;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(200, 81, 110, 0.4);
-  }
-  .btn-ghost {
-    color: var(--text);
-    border: 1px solid var(--rose-200);
-    background: rgba(255, 255, 255, 0.5);
-  }
-  .btn-ghost:hover { background: var(--rose-100); text-decoration: none; }
-
-  /* Section */
-  .section { margin-top: 3.5rem; }
-  .section-header {
-    display: flex; align-items: baseline; justify-content: space-between;
-    margin-bottom: 1.4rem;
-    padding-bottom: 0.6rem;
+  .hero-stats {
+    display: flex; gap: 2rem; flex-wrap: wrap;
+    padding: 1.2rem 0;
+    border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
   }
-  .section-header h2 {
-    font-size: 1.4rem; font-weight: 700; margin: 0;
+  .hstat { display: flex; flex-direction: column; gap: 0.25rem; }
+  .hstat-val {
+    font-size: 1.5rem; font-weight: 700;
     color: var(--text);
+    line-height: 1;
+    font-feature-settings: "tnum" 1;
   }
-  .section-count {
-    font-size: 0.85rem; color: var(--text-muted);
-  }
-  .section-more {
-    font-size: 0.9rem;
-    font-weight: 500;
+  .hstat-lbl {
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    letter-spacing: 0.15em;
   }
 
-  .player-grid { display: grid; gap: 0.85rem; }
+  /* Section */
+  .section { margin-top: 3rem; }
+  .section-head {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-head-main { display: flex; align-items: baseline; gap: 0.7rem; }
+  .section-num {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    letter-spacing: 0.08em;
+  }
+  .section-head h2 {
+    font-size: 1.3rem; font-weight: 700; margin: 0;
+    letter-spacing: -0.01em;
+  }
+  .section-count { font-size: 0.7rem; color: var(--text-dim); letter-spacing: 0.08em; }
+  .section-link {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+  }
+  .section-link:hover { color: var(--accent); text-decoration: none; }
+
+  .player-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 0.8rem;
+  }
 
   .article-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 0.85rem;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 0.8rem;
   }
   .article-tile {
-    display: flex; flex-direction: column; gap: 0.5rem;
+    display: flex; flex-direction: column; gap: 0.55rem;
     padding: 1.1rem 1.2rem;
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-md);
     color: var(--text);
-    box-shadow: var(--shadow-sm);
-    transition: all 0.18s ease;
+    transition: border-color 0.2s ease, background 0.2s ease;
   }
   .article-tile:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--rose-200);
+    border-color: var(--border-strong);
+    background: var(--surface-2);
     text-decoration: none;
   }
   .tile-meta {
-    display: flex; gap: 0.5rem; align-items: center;
-    font-size: 0.75rem;
-  }
-  .tile-date { color: var(--text-muted); font-variant-numeric: tabular-nums; }
-  .tile-cat {
-    background: var(--rose-100); color: var(--rose-700);
-    padding: 0.1rem 0.55rem; border-radius: 100px;
-    font-weight: 600; letter-spacing: 0.04em;
-    text-transform: uppercase;
+    display: flex; gap: 0.8rem; align-items: center;
     font-size: 0.65rem;
+    letter-spacing: 0.08em;
   }
+  .tile-cat {
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .tile-date { color: var(--text-dim); }
   .tile-title {
-    font-family: var(--font-display);
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.45;
     color: var(--text);
   }
   .tile-summary {
-    font-size: 0.85rem;
+    font-size: 0.83rem;
     color: var(--text-muted);
     line-height: 1.6;
     display: -webkit-box;

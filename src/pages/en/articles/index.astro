@@ -7,157 +7,195 @@ const articles = Object.values(modules)
   .sort((a: any, b: any) => (a.date < b.date ? 1 : -1));
 
 const categoryLabels: Record<string, string> = {
-  player: "Player", statcast: "Statcast", history: "History", rivalry: "Rivalry",
-  rules: "Rules", team: "Team", prospects: "Prospects", culture: "Culture", market: "Market",
+  player: "PLAYER", statcast: "STATCAST", history: "HISTORY", rivalry: "MATCHUP",
+  rules: "RULES", team: "TEAM", prospects: "PROSPECT", culture: "CULTURE", market: "MARKET",
 };
 const categories = ["all", ...Array.from(new Set(articles.map((a: any) => a.category)))];
 ---
-<Layout title="Articles" description="Analysis and news on Japanese MLB players" lang="en" currentPath="/articles/">
-  <header class="page-header">
-    <h1>Articles</h1>
-    <p class="page-lede">Analysis, history, and outlooks on Japanese MLB players.</p>
+<Layout title="Analysis" description="Analysis and news on Japanese MLB players" lang="en" currentPath="/articles/">
+  <nav class="breadcrumb mono"><a href="/en/">← HOME</a> <span class="sep">/</span> <span class="current">ANALYSIS</span></nav>
+
+  <header class="page-hero">
+    <div class="hero-eyebrow mono">ANALYSIS // {articles.length} ENTRIES</div>
+    <h1>Analysis</h1>
+    <p>Data-driven analysis on Japanese MLB players, history, and outlooks.</p>
   </header>
 
-  <div class="filter-bar" role="tablist" aria-label="Category filter">
-    {categories.map((c) => (
-      <button class="filter-chip" data-cat={c} role="tab" aria-selected={c === "all"}>
-        {c === "all" ? "All" : (categoryLabels[c] ?? c)}
-      </button>
-    ))}
+  <div class="toolbar">
+    <div class="filter-bar" role="tablist" aria-label="Category filter">
+      {categories.map((c) => (
+        <button class="filter-chip mono" data-cat={c} role="tab" aria-selected={c === "all"}>
+          {c === "all" ? "ALL" : (categoryLabels[c] ?? c.toUpperCase())}
+        </button>
+      ))}
+    </div>
   </div>
 
-  <div class="article-list">
-    {articles.map((a: any, i: number) => (
-      <a class="article-card" href={`/en/articles/${a.slug}/`} data-cat={a.category} style={`--idx: ${i}`}>
-        <div class="card-side">
-          <span class="card-date">{a.date}</span>
-          <span class="card-cat">{categoryLabels[a.category] ?? a.category}</span>
-        </div>
-        <div class="card-main">
-          <h2 class="card-title">{a.title_en}</h2>
-          <p class="card-summary">{a.summary_en}</p>
-          <div class="card-tags">
-            {a.tags.map((t: string) => <span class="tag">#{t}</span>)}
-          </div>
-        </div>
-      </a>
-    ))}
+  <div class="article-table">
+    <div class="table-head mono">
+      <span class="col-date">DATE</span>
+      <span class="col-cat">CAT</span>
+      <span class="col-title">TITLE</span>
+    </div>
+    <div class="table-body">
+      {articles.map((a: any) => (
+        <a class="row" href={`/en/articles/${a.slug}/`} data-cat={a.category}>
+          <span class="col-date mono">{a.date}</span>
+          <span class="col-cat mono">{categoryLabels[a.category] ?? a.category.toUpperCase()}</span>
+          <span class="col-title">
+            <span class="title">{a.title_en}</span>
+            <span class="summary">{a.summary_en}</span>
+            <span class="tags">
+              {a.tags.map((t: string) => <span class="tag mono">#{t}</span>)}
+            </span>
+          </span>
+        </a>
+      ))}
+    </div>
   </div>
 </Layout>
 
 <script>
   const chips = document.querySelectorAll<HTMLButtonElement>(".filter-chip");
-  const cards = document.querySelectorAll<HTMLAnchorElement>(".article-card");
+  const rows = document.querySelectorAll<HTMLAnchorElement>(".article-table .row");
   chips.forEach((chip) => {
     chip.addEventListener("click", () => {
       const cat = chip.dataset.cat;
       chips.forEach((c) => c.setAttribute("aria-selected", c === chip ? "true" : "false"));
-      cards.forEach((card) => {
-        const show = cat === "all" || card.dataset.cat === cat;
-        (card as HTMLElement).style.display = show ? "" : "none";
+      rows.forEach((row) => {
+        const show = cat === "all" || row.dataset.cat === cat;
+        (row as HTMLElement).style.display = show ? "" : "none";
       });
     });
   });
 </script>
 
 <style>
-  .page-header { margin-bottom: 1.8rem; }
-  .page-header h1 {
-    font-family: var(--font-display);
-    font-size: 2.2rem; font-weight: 700; margin: 0 0 0.4rem;
-    letter-spacing: -0.02em;
+  .breadcrumb {
+    font-size: 0.7rem; letter-spacing: 0.08em;
+    color: var(--text-dim); margin-bottom: 1.5rem;
+    display: flex; gap: 0.5rem; align-items: center;
   }
-  .page-lede { color: var(--text-muted); margin: 0; font-size: 1rem; }
+  .breadcrumb a { color: var(--text-muted); }
+  .breadcrumb a:hover { color: var(--accent); }
+  .breadcrumb .sep { color: var(--text-dim); }
+  .breadcrumb .current { color: var(--text); font-weight: 600; }
 
-  .filter-bar {
-    display: flex; gap: 0.5rem; flex-wrap: wrap;
-    margin-bottom: 1.8rem;
-    padding-bottom: 1.2rem;
+  .page-hero { padding: 2rem 0; }
+  .hero-eyebrow {
+    font-size: 0.72rem; font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    margin-bottom: 0.8rem;
+  }
+  .page-hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800; letter-spacing: -0.025em;
+    margin: 0 0 0.6rem; line-height: 1;
+  }
+  .page-hero p {
+    color: var(--text-muted);
+    font-size: 1rem; margin: 0;
+    max-width: 560px;
+  }
+
+  .toolbar {
+    margin: 2rem 0 1.2rem;
+    padding: 0.8rem 0;
+    border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
   }
+  .filter-bar { display: flex; gap: 0.4rem; flex-wrap: wrap; }
   .filter-chip {
     appearance: none; cursor: pointer;
-    background: transparent; border: 1px solid var(--border);
-    padding: 0.4rem 0.95rem;
-    border-radius: 100px;
-    font-size: 0.8rem; font-weight: 500;
+    background: transparent;
+    border: 1px solid var(--border);
+    padding: 0.35rem 0.8rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.68rem; font-weight: 600;
     color: var(--text-muted);
-    font-family: inherit;
+    letter-spacing: 0.1em;
     transition: all 0.15s ease;
   }
-  .filter-chip:hover { background: var(--rose-100); color: var(--rose-700); }
+  .filter-chip:hover { border-color: var(--border-strong); color: var(--text); }
   .filter-chip[aria-selected="true"] {
-    background: var(--accent); color: white; border-color: var(--accent);
+    background: rgba(239, 62, 62, 0.12);
+    color: var(--accent);
+    border-color: var(--accent);
   }
 
-  .article-list { display: flex; flex-direction: column; gap: 0.7rem; }
-  .article-card {
-    display: grid;
-    grid-template-columns: 110px 1fr;
-    gap: 1.4rem;
-    padding: 1.3rem 1.4rem;
+  .article-table {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-    color: var(--text);
-    box-shadow: var(--shadow-sm);
-    transition: all 0.18s ease;
-    position: relative;
+    border-radius: var(--radius-md);
     overflow: hidden;
   }
-  .article-card::after {
-    content: "→";
-    position: absolute;
-    right: 1.2rem; bottom: 1.2rem;
-    color: var(--text-muted);
-    font-size: 1rem;
-    transition: transform 0.2s ease, color 0.2s ease;
+  .table-head {
+    display: grid;
+    grid-template-columns: 100px 110px 1fr;
+    padding: 0.7rem 1.3rem;
+    background: var(--bg-elev);
+    border-bottom: 1px solid var(--border);
+    font-size: 0.65rem; font-weight: 600;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
   }
-  .article-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--rose-200);
+  .table-body { display: flex; flex-direction: column; }
+  .row {
+    display: grid;
+    grid-template-columns: 100px 110px 1fr;
+    padding: 1rem 1.3rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    transition: background 0.15s ease;
+    gap: 0.6rem;
+    align-items: flex-start;
+  }
+  .row:last-child { border-bottom: none; }
+  .row:hover {
+    background: var(--surface-2);
     text-decoration: none;
   }
-  .article-card:hover::after { transform: translateX(4px); color: var(--accent); }
+  .row:hover .title { color: var(--accent); }
 
-  .card-side { display: flex; flex-direction: column; gap: 0.4rem; padding-top: 0.1rem; }
-  .card-date {
+  .col-date {
     font-size: 0.78rem;
     color: var(--text-muted);
-    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+    padding-top: 0.15rem;
   }
-  .card-cat {
-    align-self: flex-start;
-    background: var(--rose-100); color: var(--rose-700);
-    padding: 0.18rem 0.6rem;
-    border-radius: 100px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
+  .col-cat {
+    font-size: 0.65rem; font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    padding-top: 0.2rem;
   }
-
-  .card-main { display: flex; flex-direction: column; gap: 0.4rem; min-width: 0; }
-  .card-title {
-    font-family: var(--font-display);
-    font-size: 1.18rem; font-weight: 700;
-    line-height: 1.4; margin: 0;
+  .col-title { display: flex; flex-direction: column; gap: 0.3rem; min-width: 0; }
+  .title {
+    font-size: 1rem; font-weight: 600;
+    line-height: 1.4; color: var(--text);
+    transition: color 0.15s ease;
   }
-  .card-summary {
-    font-size: 0.9rem; color: var(--text-muted);
-    line-height: 1.65; margin: 0;
-  }
-  .card-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.2rem; }
+  .summary { font-size: 0.85rem; color: var(--text-muted); line-height: 1.55; }
+  .tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.15rem; }
   .tag {
-    font-size: 0.7rem; color: var(--text-muted);
-    background: var(--rose-50);
-    padding: 0.12rem 0.5rem; border-radius: 4px;
+    font-size: 0.6rem; font-weight: 500;
+    color: var(--text-dim);
+    background: var(--bg-elev);
+    padding: 0.15rem 0.45rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    letter-spacing: 0.05em;
   }
 
   @media (max-width: 640px) {
-    .article-card { grid-template-columns: 1fr; gap: 0.7rem; padding: 1.1rem 1.2rem; }
-    .card-side { flex-direction: row; align-items: center; }
-    .article-card::after { display: none; }
-    .card-title { font-size: 1.05rem; }
+    .table-head, .row {
+      grid-template-columns: 1fr;
+      gap: 0.4rem;
+      padding: 0.9rem 1rem;
+    }
+    .table-head .col-cat, .table-head .col-title { display: none; }
+    .col-date { padding: 0; font-size: 0.7rem; }
+    .col-cat { padding: 0; }
   }
 </style>

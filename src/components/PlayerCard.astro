@@ -10,152 +10,181 @@ const team = lang === "ja" ? player.team_jp : player.team_en;
 const pos = lang === "ja" ? player.position_jp : player.position_en;
 const hitting = player.basic?.hitting;
 const pitching = player.basic?.pitching;
+const savantHit = player.savant?.hitting;
 
-const typeBadge = lang === "ja"
-  ? { two_way: "二刀流", batter: "野手", pitcher: "投手" }[player.type] ?? player.type
-  : { two_way: "Two-Way", batter: "Batter", pitcher: "Pitcher" }[player.type] ?? player.type;
-
-const leagueBadge = player.league;
+const typeCode = { two_way: "TWO-WAY", batter: "BAT", pitcher: "PIT" }[player.type] ?? player.type;
 ---
 <a class="player-card" href={href}>
-  <div class="card-top">
-    <div class="card-badges">
-      <span class={`badge type type-${player.type}`}>{typeBadge}</span>
-      <span class={`badge league league-${player.league.toLowerCase()}`}>{leagueBadge}</span>
+  <div class="card-head">
+    <div class="head-tags">
+      <span class={`tag type type-${player.type}`}>{typeCode}</span>
+      <span class={`tag league league-${player.league.toLowerCase()}`}>{player.league}</span>
     </div>
-    <div class="card-name-block">
-      <h3 class="player-name">{name}</h3>
-      <div class="player-meta">
-        <span class="team">{team}</span>
-        <span class="dot">·</span>
-        <span class="pos">{pos}</span>
-      </div>
-    </div>
+    <div class="go" aria-hidden="true">→</div>
+  </div>
+  <div class="card-name">{name}</div>
+  <div class="card-meta">
+    <span>{team}</span>
+    <span class="sep">·</span>
+    <span>{pos}</span>
   </div>
   <div class="card-stats">
     {hitting && (
       <>
-        <div class="stat"><span class="lbl">AVG</span><span class="val">{hitting.avg}</span></div>
-        <div class="stat"><span class="lbl">HR</span><span class="val">{hitting.hr}</span></div>
-        <div class="stat"><span class="lbl">OPS</span><span class="val">{hitting.ops}</span></div>
+        <div class="stat"><div class="stat-label">AVG</div><div class="stat-value">{hitting.avg}</div></div>
+        <div class="stat"><div class="stat-label">HR</div><div class="stat-value">{hitting.hr}</div></div>
+        <div class="stat"><div class="stat-label">OPS</div><div class="stat-value">{hitting.ops}</div></div>
       </>
     )}
     {pitching && !hitting && (
       <>
-        <div class="stat"><span class="lbl">ERA</span><span class="val">{pitching.era}</span></div>
-        <div class="stat"><span class="lbl">SO</span><span class="val">{pitching.so}</span></div>
-        <div class="stat"><span class="lbl">WHIP</span><span class="val">{pitching.whip}</span></div>
+        <div class="stat"><div class="stat-label">ERA</div><div class="stat-value">{pitching.era}</div></div>
+        <div class="stat"><div class="stat-label">SO</div><div class="stat-value">{pitching.so}</div></div>
+        <div class="stat"><div class="stat-label">WHIP</div><div class="stat-value">{pitching.whip}</div></div>
       </>
     )}
     {pitching && hitting && (
-      <div class="stat secondary"><span class="lbl">ERA</span><span class="val">{pitching.era}</span></div>
+      <div class="stat"><div class="stat-label">ERA</div><div class="stat-value">{pitching.era}</div></div>
     )}
   </div>
-  <div class="card-arrow" aria-hidden="true">→</div>
+  {savantHit && (
+    <div class="card-spark">
+      <div class="spark-item">
+        <span class="spark-lbl">EV</span>
+        <span class="spark-val">{savantHit.exit_velocity_avg}</span>
+      </div>
+      <div class="spark-item">
+        <span class="spark-lbl">BRL%</span>
+        <span class="spark-val">{savantHit.barrel_batted_rate}</span>
+      </div>
+      <div class="spark-item">
+        <span class="spark-lbl">HH%</span>
+        <span class="spark-val">{savantHit.hard_hit_percent}</span>
+      </div>
+      <div class="spark-item">
+        <span class="spark-lbl">xwOBA</span>
+        <span class="spark-val">{savantHit.xwoba}</span>
+      </div>
+    </div>
+  )}
 </a>
 
 <style>
   .player-card {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-areas: "top stats" "top arrow";
-    gap: 0.8rem 1rem;
-    padding: 1.25rem 1.4rem;
+    display: flex; flex-direction: column;
+    padding: 1.2rem 1.3rem;
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-md);
     color: var(--text);
     box-shadow: var(--shadow-sm);
-    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     overflow: hidden;
   }
   .player-card::before {
     content: "";
     position: absolute; left: 0; top: 0; bottom: 0;
-    width: 4px;
-    background: linear-gradient(180deg, var(--rose-300), var(--rose-500));
+    width: 3px; background: var(--accent);
     opacity: 0;
     transition: opacity 0.2s ease;
   }
   .player-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
+    border-color: var(--border-strong);
     box-shadow: var(--shadow-md);
-    border-color: var(--rose-200);
     text-decoration: none;
   }
   .player-card:hover::before { opacity: 1; }
-  .player-card:hover .card-arrow { transform: translateX(4px); color: var(--accent); }
+  .player-card:hover .go { color: var(--accent); transform: translateX(3px); }
 
-  .card-top { grid-area: top; display: flex; flex-direction: column; gap: 0.5rem; }
-  .card-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; }
-  .badge {
-    font-size: 0.68rem; font-weight: 600;
-    padding: 0.2rem 0.55rem;
-    border-radius: 100px;
-    letter-spacing: 0.04em;
+  .card-head {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 0.7rem;
   }
-  .badge.type { background: var(--rose-100); color: var(--rose-700); }
-  .badge.type.type-two_way { background: linear-gradient(90deg, var(--rose-200), #f7d8a8); color: var(--rose-700); }
-  .badge.league { background: var(--ink-100); color: var(--ink-700); }
-  .badge.league.league-nl { background: #e8f0fc; color: #1a4a8a; }
-  .badge.league.league-al { background: #fde8e8; color: #8a1a1a; }
+  .head-tags { display: flex; gap: 0.35rem; }
+  .tag {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm);
+  }
+  .tag.type { background: rgba(239, 62, 62, 0.12); color: var(--sv-red); border: 1px solid rgba(239, 62, 62, 0.25); }
+  .tag.type.type-two_way { background: linear-gradient(90deg, rgba(239, 62, 62, 0.15), rgba(245, 129, 66, 0.15)); color: var(--sv-orange); border-color: rgba(245, 129, 66, 0.3); }
+  .tag.league { background: var(--surface-3); color: var(--text-muted); border: 1px solid var(--border); }
+  .tag.league.league-nl { color: var(--sv-blue); border-color: rgba(66, 112, 228, 0.3); background: rgba(66, 112, 228, 0.08); }
+  .tag.league.league-al { color: var(--sv-red); border-color: rgba(239, 62, 62, 0.3); background: rgba(239, 62, 62, 0.08); }
 
-  .card-name-block { display: flex; flex-direction: column; gap: 0.15rem; }
-  .player-name {
-    font-family: var(--font-display);
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text);
-    margin: 0;
-    line-height: 1.2;
+  .go {
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    transition: color 0.2s ease, transform 0.2s ease;
   }
-  .player-meta {
+
+  .card-name {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+    margin-bottom: 0.35rem;
+  }
+  .card-meta {
     display: flex; gap: 0.4rem; align-items: center;
+    font-size: 0.82rem;
     color: var(--text-muted);
-    font-size: 0.85rem;
+    margin-bottom: 1.1rem;
   }
-  .dot { opacity: 0.5; }
+  .sep { color: var(--text-dim); }
 
   .card-stats {
-    grid-area: stats;
-    display: flex;
-    gap: 1rem;
-    align-self: start;
-    padding-top: 0.2rem;
+    display: flex; gap: 1.2rem;
+    padding: 0.8rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
-  .stat {
-    display: flex; flex-direction: column; gap: 0.1rem;
-    align-items: center;
-    min-width: 48px;
-  }
-  .stat .lbl {
-    font-size: 0.65rem;
-    font-weight: 600;
+  .stat { display: flex; flex-direction: column; gap: 0.15rem; }
+  .stat-label {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
     color: var(--text-muted);
-    letter-spacing: 0.06em;
+    letter-spacing: 0.1em;
   }
-  .stat .val {
-    font-family: var(--font-display);
-    font-size: 1.2rem;
+  .stat-value {
+    font-family: var(--font-mono);
+    font-size: 1.35rem;
     font-weight: 700;
-    color: var(--accent);
-    line-height: 1.1;
+    color: var(--text);
+    line-height: 1;
+    font-feature-settings: "tnum" 1;
   }
-  .stat.secondary .val { color: var(--text); font-size: 1rem; }
 
-  .card-arrow {
-    grid-area: arrow;
-    align-self: end; justify-self: end;
-    color: var(--text-muted);
-    font-size: 1.1rem;
-    transition: transform 0.2s ease, color 0.2s ease;
+  .card-spark {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    padding-top: 0.75rem;
+  }
+  .spark-item {
+    display: flex; flex-direction: column; gap: 0.1rem;
+    align-items: flex-start;
+  }
+  .spark-lbl {
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+  }
+  .spark-val {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
   }
 
   @media (max-width: 640px) {
-    .player-card { grid-template-columns: 1fr; grid-template-areas: "top" "stats" "arrow"; padding: 1rem 1.1rem; }
-    .card-arrow { justify-self: start; }
-    .card-stats { padding-top: 0; }
-    .player-name { font-size: 1.3rem; }
+    .card-name { font-size: 1.35rem; }
+    .card-stats { gap: 0.9rem; }
   }
 </style>

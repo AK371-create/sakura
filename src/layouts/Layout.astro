@@ -6,8 +6,8 @@ export interface Props {
   currentPath?: string;
 }
 const { title, description = "", lang = "ja", currentPath = "/" } = Astro.props;
-const siteName = lang === "ja" ? "SakuraBall" : "SakuraBall";
-const siteTagline = lang === "ja" ? "日本人メジャーリーガー分析" : "Japanese MLB Analytics";
+const siteName = "SakuraBall";
+const siteTagline = lang === "ja" ? "日本人MLBデータ分析" : "Japanese MLB Analytics";
 
 let otherLangUrl: string;
 if (lang === "ja") {
@@ -19,15 +19,15 @@ const otherLangLabel = lang === "ja" ? "EN" : "JA";
 
 const navLinks = lang === "ja"
   ? [
-      { href: "/", label: "ホーム" },
-      { href: "/articles/", label: "記事" },
+      { href: "/", label: "Home" },
+      { href: "/articles/", label: "Analysis" },
     ]
   : [
       { href: "/en/", label: "Home" },
-      { href: "/en/articles/", label: "Articles" },
+      { href: "/en/articles/", label: "Analysis" },
     ];
 
-const fullTitle = title === siteName ? `${siteName} — ${siteTagline}` : `${title} | ${siteName}`;
+const fullTitle = title === siteName ? `${siteName} · ${siteTagline}` : `${title} · ${siteName}`;
 ---
 <!doctype html>
 <html lang={lang}>
@@ -41,34 +41,25 @@ const fullTitle = title === siteName ? `${siteName} — ${siteTagline}` : `${tit
     <meta property="og:title" content={fullTitle} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:type" content="website" />
-    <meta name="theme-color" content="#fbeef1" />
+    <meta name="theme-color" content="#0c0f14" />
+    <meta name="color-scheme" content="dark" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+JP:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;800&display=swap"
     />
   </head>
   <body>
-    <div class="petals" aria-hidden="true">
-      <span></span><span></span><span></span><span></span><span></span>
-    </div>
+    <div class="grid-bg" aria-hidden="true"></div>
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href={lang === "ja" ? "/" : "/en/"}>
           <span class="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 32 32" width="28" height="28">
-              <g fill="currentColor">
-                <circle cx="16" cy="16" r="2.4" />
-                <path d="M16 4 c1.5 3 1.5 6 0 8 c-1.5-2-1.5-5 0-8z" />
-                <path d="M16 28 c1.5-3 1.5-6 0-8 c-1.5 2-1.5 5 0 8z" />
-                <path d="M4 16 c3-1.5 6-1.5 8 0 c-2 1.5-5 1.5-8 0z" />
-                <path d="M28 16 c-3-1.5-6-1.5-8 0 c2 1.5 5 1.5 8 0z" />
-                <path d="M7.5 7.5 c2.6.4 5 1.7 6.5 3.6 c-2.4-.5-4.7-1.7-6.5-3.6z" />
-                <path d="M24.5 24.5 c-2.6-.4-5-1.7-6.5-3.6 c2.4.5 4.7 1.7 6.5 3.6z" />
-                <path d="M24.5 7.5 c-.4 2.6-1.7 5-3.6 6.5 c.5-2.4 1.7-4.7 3.6-6.5z" />
-                <path d="M7.5 24.5 c.4-2.6 1.7-5 3.6-6.5 c-.5 2.4-1.7 4.7-3.6 6.5z" />
-              </g>
+            <svg viewBox="0 0 32 32" width="22" height="22">
+              <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="1.5" />
+              <path d="M16 2 C 12 8, 12 14, 16 16 C 20 14, 20 8, 16 2 Z" fill="currentColor" />
+              <path d="M16 30 C 20 24, 20 18, 16 16 C 12 18, 12 24, 16 30 Z" fill="currentColor" opacity="0.6" />
             </svg>
           </span>
           <span class="brand-text">
@@ -80,9 +71,7 @@ const fullTitle = title === siteName ? `${siteName} — ${siteTagline}` : `${tit
           {navLinks.map((l) => (
             <a href={l.href} class:list={["nav-link", { active: l.href === currentPath }]}>{l.label}</a>
           ))}
-          <a href={otherLangUrl} class="lang-switch" aria-label={lang === "ja" ? "Switch to English" : "日本語に切り替え"}>
-            {otherLangLabel}
-          </a>
+          <a href={otherLangUrl} class="lang-switch">{otherLangLabel}</a>
         </nav>
       </div>
     </header>
@@ -91,227 +80,237 @@ const fullTitle = title === siteName ? `${siteName} — ${siteTagline}` : `${tit
     </main>
     <footer class="site-footer">
       <div class="footer-inner">
-        <div class="footer-brand">SakuraBall</div>
-        <div class="footer-meta">© 2026 SakuraBall. {lang === "ja" ? "日本人MLB選手の分析・記事" : "Japanese MLB analysis & articles"}.</div>
+        <div class="footer-cols">
+          <div>
+            <div class="footer-brand">SakuraBall</div>
+            <div class="footer-meta">{lang === "ja" ? "日本人MLB選手の統計・分析" : "Japanese MLB stats & analysis"}</div>
+          </div>
+          <div class="footer-links">
+            <a href={lang === "ja" ? "/" : "/en/"}>Home</a>
+            <a href={lang === "ja" ? "/articles/" : "/en/articles/"}>Analysis</a>
+            <a href={otherLangUrl}>{otherLangLabel === "EN" ? "English" : "日本語"}</a>
+          </div>
+        </div>
+        <div class="footer-legal">© 2026 SakuraBall · {lang === "ja" ? "データは当該選手の公開統計を基に推定表示" : "Stats derived from publicly available sources"}</div>
       </div>
     </footer>
+
+    <style is:global>
+      :root {
+        /* Savant-inspired dark palette */
+        --bg: #0a0d12;
+        --bg-elev: #11151d;
+        --surface: #161b25;
+        --surface-2: #1d2432;
+        --surface-3: #252d3d;
+        --border: #2a3345;
+        --border-strong: #3a455d;
+
+        --text: #f1f3f8;
+        --text-muted: #8892a4;
+        --text-dim: #5a6378;
+
+        /* Savant percentile palette: blue = poor, red = elite */
+        --sv-red: #ef3e3e;
+        --sv-orange: #f58142;
+        --sv-yellow: #f5c542;
+        --sv-neutral: #9aa0a6;
+        --sv-cyan: #42b0d6;
+        --sv-blue: #4270e4;
+
+        /* Semantic accent: elite MLB red */
+        --accent: #ef3e3e;
+        --accent-hover: #ff5555;
+
+        /* Pitch type colors (MLB savant convention) */
+        --pitch-ff: #ee4040; /* 4-seam */
+        --pitch-ft: #e27000;
+        --pitch-fs: #c1b700; /* splitter */
+        --pitch-fc: #d22222; /* cutter */
+        --pitch-si: #ff7700;
+        --pitch-sl: #ddd800; /* slider */
+        --pitch-cu: #00d1d1; /* curve */
+        --pitch-ch: #20b040; /* change */
+        --pitch-kc: #5a60e0;
+        --pitch-default: #6686c0;
+
+        --font-sans: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+        --font-mono: "JetBrains Mono", "SF Mono", Consolas, Monaco, monospace;
+
+        --radius-sm: 4px;
+        --radius-md: 8px;
+        --radius-lg: 12px;
+
+        --content-width: 1120px;
+        --reading-width: 720px;
+
+        --shadow-sm: 0 1px 2px rgba(0,0,0,0.4);
+        --shadow-md: 0 8px 24px rgba(0,0,0,0.35);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: var(--font-sans);
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        min-height: 100vh;
+        position: relative;
+      }
+
+      /* Subtle grid background */
+      .grid-bg {
+        position: fixed; inset: 0; z-index: -1;
+        background-image:
+          linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+        background-size: 40px 40px;
+        background-position: center;
+        mask-image: radial-gradient(ellipse at center, black 0%, transparent 75%);
+        -webkit-mask-image: radial-gradient(ellipse at center, black 0%, transparent 75%);
+        pointer-events: none;
+      }
+      body::before {
+        content: ""; position: fixed; inset: 0; z-index: -2;
+        background:
+          radial-gradient(circle at 15% 0%, rgba(239, 62, 62, 0.05), transparent 40%),
+          radial-gradient(circle at 85% 100%, rgba(66, 112, 228, 0.04), transparent 45%);
+      }
+
+      a { color: var(--accent); text-decoration: none; transition: color 0.15s ease; }
+      a:hover { color: var(--accent-hover); }
+
+      h1, h2, h3, h4 {
+        color: var(--text);
+        letter-spacing: -0.01em;
+        line-height: 1.25;
+        margin-top: 0;
+        font-weight: 700;
+      }
+
+      code, .mono { font-family: var(--font-mono); font-feature-settings: "tnum" 1, "ss01" 1; }
+
+      ::selection { background: rgba(239, 62, 62, 0.4); color: white; }
+
+      /* === Header === */
+      .site-header {
+        position: sticky; top: 0; z-index: 50;
+        backdrop-filter: saturate(180%) blur(12px);
+        -webkit-backdrop-filter: saturate(180%) blur(12px);
+        background: rgba(10, 13, 18, 0.82);
+        border-bottom: 1px solid var(--border);
+      }
+      .header-inner {
+        max-width: var(--content-width); margin: 0 auto;
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 0.85rem 1.5rem;
+        gap: 1rem;
+      }
+      .brand {
+        display: flex; align-items: center; gap: 0.6rem;
+        color: var(--text);
+      }
+      .brand:hover { color: var(--accent); text-decoration: none; }
+      .brand-mark { color: var(--accent); display: inline-flex; }
+      .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
+      .brand-name {
+        font-weight: 800;
+        font-size: 1rem;
+        letter-spacing: 0.01em;
+      }
+      .brand-tagline {
+        font-family: var(--font-mono);
+        font-size: 0.65rem;
+        color: var(--text-muted);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .primary-nav { display: flex; align-items: center; gap: 0.3rem; }
+      .nav-link {
+        padding: 0.5rem 0.9rem;
+        color: var(--text-muted);
+        font-size: 0.85rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        border-radius: var(--radius-sm);
+        transition: all 0.15s ease;
+      }
+      .nav-link:hover { color: var(--text); background: var(--surface); text-decoration: none; }
+      .nav-link.active { color: var(--accent); }
+      .lang-switch {
+        margin-left: 0.3rem;
+        padding: 0.35rem 0.7rem;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        color: var(--text-muted);
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        transition: all 0.15s ease;
+      }
+      .lang-switch:hover {
+        color: var(--text);
+        border-color: var(--accent);
+        background: rgba(239, 62, 62, 0.1);
+        text-decoration: none;
+      }
+
+      main {
+        max-width: var(--content-width);
+        margin: 0 auto;
+        padding: 2rem 1.5rem 4rem;
+      }
+
+      /* === Footer === */
+      .site-footer {
+        border-top: 1px solid var(--border);
+        margin-top: 4rem;
+        background: var(--bg-elev);
+      }
+      .footer-inner {
+        max-width: var(--content-width);
+        margin: 0 auto;
+        padding: 2rem 1.5rem 1.5rem;
+      }
+      .footer-cols {
+        display: flex; justify-content: space-between; align-items: flex-start;
+        gap: 2rem; flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+      }
+      .footer-brand { font-weight: 800; color: var(--accent); letter-spacing: 0.02em; }
+      .footer-meta {
+        font-family: var(--font-mono);
+        color: var(--text-muted); font-size: 0.75rem;
+        letter-spacing: 0.04em;
+        margin-top: 0.2rem;
+      }
+      .footer-links { display: flex; gap: 1.2rem; }
+      .footer-links a { color: var(--text-muted); font-size: 0.85rem; }
+      .footer-links a:hover { color: var(--text); }
+      .footer-legal {
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+        font-family: var(--font-mono);
+        color: var(--text-dim); font-size: 0.72rem;
+        letter-spacing: 0.03em;
+      }
+
+      @media (max-width: 640px) {
+        .brand-tagline { display: none; }
+        .header-inner { padding: 0.7rem 1rem; }
+        main { padding: 1.2rem 1rem 3rem; }
+        .nav-link { padding: 0.4rem 0.6rem; font-size: 0.8rem; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        * { transition-duration: 0.01ms !important; }
+      }
+    </style>
   </body>
 </html>
-
-<style is:global>
-  :root {
-    --rose-50: #fdf5f7;
-    --rose-100: #fbeef1;
-    --rose-200: #f5d8df;
-    --rose-300: #ecb6c2;
-    --rose-400: #d88296;
-    --rose-500: #c8516e;
-    --rose-600: #a73a55;
-    --rose-700: #7d2840;
-
-    --ink-900: #1d1419;
-    --ink-700: #3d2c33;
-    --ink-500: #6b5a61;
-    --ink-300: #a89aa0;
-    --ink-100: #ead8de;
-
-    --cream: #fffbfb;
-    --paper: #ffffff;
-
-    --gold: #c89b3c;
-
-    --bg: var(--rose-50);
-    --surface: var(--paper);
-    --surface-2: var(--cream);
-    --text: var(--ink-900);
-    --text-muted: var(--ink-500);
-    --border: var(--ink-100);
-    --accent: var(--rose-500);
-    --accent-soft: var(--rose-200);
-
-    --font-sans: "Inter", "Noto Sans JP", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-    --font-serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", Georgia, serif;
-    --font-display: var(--font-serif);
-
-    --shadow-sm: 0 1px 2px rgba(125, 40, 64, 0.04), 0 1px 3px rgba(125, 40, 64, 0.06);
-    --shadow-md: 0 4px 12px rgba(125, 40, 64, 0.08), 0 2px 4px rgba(125, 40, 64, 0.04);
-    --shadow-lg: 0 12px 32px rgba(125, 40, 64, 0.12), 0 4px 8px rgba(125, 40, 64, 0.06);
-
-    --radius-sm: 6px;
-    --radius-md: 10px;
-    --radius-lg: 16px;
-    --radius-xl: 24px;
-
-    --content-width: 880px;
-    --reading-width: 680px;
-  }
-
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  html, body { margin: 0; padding: 0; }
-  body {
-    font-family: var(--font-sans);
-    background:
-      radial-gradient(circle at 0% 0%, rgba(236, 182, 194, 0.18), transparent 40%),
-      radial-gradient(circle at 100% 100%, rgba(245, 216, 223, 0.25), transparent 50%),
-      var(--bg);
-    color: var(--text);
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    min-height: 100vh;
-    position: relative;
-  }
-  body::before {
-    content: "";
-    position: fixed; inset: 0; z-index: -1;
-    background-image:
-      linear-gradient(180deg, transparent 0%, rgba(253, 245, 247, 0.4) 100%);
-    pointer-events: none;
-  }
-
-  a { color: var(--accent); text-decoration: none; transition: color 0.2s ease; }
-  a:hover { color: var(--rose-700); }
-
-  h1, h2, h3, h4 {
-    font-family: var(--font-display);
-    color: var(--text);
-    letter-spacing: -0.01em;
-    line-height: 1.3;
-    margin-top: 0;
-  }
-
-  /* === Header === */
-  .site-header {
-    position: sticky; top: 0; z-index: 50;
-    backdrop-filter: saturate(150%) blur(14px);
-    -webkit-backdrop-filter: saturate(150%) blur(14px);
-    background: rgba(255, 251, 251, 0.78);
-    border-bottom: 1px solid rgba(234, 216, 222, 0.6);
-  }
-  .header-inner {
-    max-width: var(--content-width); margin: 0 auto;
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 0.85rem 1.5rem;
-    gap: 1rem;
-  }
-  .brand {
-    display: flex; align-items: center; gap: 0.7rem;
-    color: var(--text);
-  }
-  .brand:hover { color: var(--accent); text-decoration: none; }
-  .brand-mark {
-    color: var(--accent);
-    display: inline-flex;
-  }
-  .brand-text { display: flex; flex-direction: column; line-height: 1.15; }
-  .brand-name {
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 1.15rem;
-    letter-spacing: -0.01em;
-  }
-  .brand-tagline {
-    font-size: 0.7rem;
-    color: var(--text-muted);
-    letter-spacing: 0.04em;
-  }
-  .primary-nav {
-    display: flex; align-items: center; gap: 0.4rem;
-  }
-  .nav-link {
-    padding: 0.45rem 0.85rem;
-    color: var(--text);
-    font-size: 0.9rem;
-    font-weight: 500;
-    border-radius: var(--radius-sm);
-    transition: background 0.15s ease, color 0.15s ease;
-  }
-  .nav-link:hover { background: var(--rose-100); text-decoration: none; }
-  .nav-link.active { color: var(--accent); }
-  .lang-switch {
-    margin-left: 0.4rem;
-    padding: 0.4rem 0.7rem;
-    border: 1px solid var(--rose-200);
-    border-radius: var(--radius-sm);
-    color: var(--text-muted);
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    transition: all 0.15s ease;
-  }
-  .lang-switch:hover {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: white;
-    text-decoration: none;
-  }
-
-  main {
-    max-width: var(--content-width);
-    margin: 0 auto;
-    padding: 2.5rem 1.5rem 4rem;
-  }
-
-  /* === Footer === */
-  .site-footer {
-    border-top: 1px solid var(--border);
-    margin-top: 4rem;
-    background: rgba(255, 251, 251, 0.5);
-  }
-  .footer-inner {
-    max-width: var(--content-width);
-    margin: 0 auto;
-    padding: 2.5rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.4rem;
-  }
-  .footer-brand {
-    font-family: var(--font-display);
-    font-weight: 700;
-    color: var(--accent);
-    letter-spacing: 0.02em;
-  }
-  .footer-meta { color: var(--text-muted); font-size: 0.85rem; }
-
-  /* === Decorative petals === */
-  .petals {
-    position: fixed; inset: 0;
-    pointer-events: none;
-    z-index: -1;
-    overflow: hidden;
-  }
-  .petals span {
-    position: absolute;
-    display: block;
-    width: 14px; height: 14px;
-    background: radial-gradient(ellipse at center, var(--rose-300), var(--rose-200));
-    border-radius: 50% 0 50% 0;
-    opacity: 0.35;
-    animation: drift 22s linear infinite;
-  }
-  .petals span:nth-child(1) { left: 10%; top: -5%; animation-delay: 0s; }
-  .petals span:nth-child(2) { left: 30%; top: -10%; animation-delay: -6s; transform: scale(0.7); }
-  .petals span:nth-child(3) { left: 55%; top: -8%; animation-delay: -12s; transform: scale(1.2); }
-  .petals span:nth-child(4) { left: 78%; top: -6%; animation-delay: -3s; transform: scale(0.9); }
-  .petals span:nth-child(5) { left: 92%; top: -12%; animation-delay: -16s; transform: scale(0.6); }
-  @keyframes drift {
-    0%   { transform: translateY(0) rotate(0deg); opacity: 0; }
-    10%  { opacity: 0.35; }
-    100% { transform: translateY(110vh) rotate(420deg); opacity: 0; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .petals span { animation: none; opacity: 0.15; }
-    html { scroll-behavior: auto; }
-  }
-
-  /* === Mobile === */
-  @media (max-width: 640px) {
-    .brand-tagline { display: none; }
-    .header-inner { padding: 0.7rem 1rem; }
-    main { padding: 1.5rem 1rem 3rem; }
-    .nav-link { padding: 0.4rem 0.6rem; font-size: 0.85rem; }
-  }
-</style>

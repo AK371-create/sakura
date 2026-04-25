@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { BATTING_SPECS, percentile, percentileColor } from "../../lib/percentiles";
 
 export async function getStaticPaths() {
   const ohtani = (await import("../../content/players/ohtani.json")).default;
@@ -15,11 +16,29 @@ const pitching = player.basic?.pitching;
 const savantHit = player.savant?.hitting;
 const arsenal = player.savant?.pitch_arsenal;
 
-const typeLabel = { two_way: "二刀流", batter: "野手", pitcher: "投手" }[player.type] ?? player.type;
+const typeCode = { two_way: "TWO-WAY", batter: "BATTER", pitcher: "PITCHER" }[player.type] ?? player.type;
 
-function formatPercent(n: number): string {
-  return `${n}%`;
-}
+// Build percentile rows from savant hitting data
+const percentileMetrics = savantHit ? [
+  { key: "exit_velocity_avg", label: "打球速度", labelEn: "Exit Velocity", value: savantHit.exit_velocity_avg, fmt: (v: number) => `${v} mph` },
+  { key: "barrel_batted_rate", label: "Barrel率", labelEn: "Barrel %", value: savantHit.barrel_batted_rate, fmt: (v: number) => `${v}%` },
+  { key: "hard_hit_percent", label: "Hard-Hit率", labelEn: "Hard-Hit %", value: savantHit.hard_hit_percent, fmt: (v: number) => `${v}%` },
+  { key: "xba", label: "xBA", labelEn: "xBA", value: savantHit.xba, fmt: (v: string) => v },
+  { key: "xslg", label: "xSLG", labelEn: "xSLG", value: savantHit.xslg, fmt: (v: string) => v },
+  { key: "xwoba", label: "xwOBA", labelEn: "xwOBA", value: savantHit.xwoba, fmt: (v: string) => v },
+  { key: "k_percent", label: "K率", labelEn: "K %", value: savantHit.k_percent, fmt: (v: number) => `${v}%` },
+  { key: "bb_percent", label: "BB率", labelEn: "BB %", value: savantHit.bb_percent, fmt: (v: number) => `${v}%` },
+].map((m) => {
+  const spec = BATTING_SPECS[m.key];
+  const pct = spec ? percentile(m.value, spec) : 50;
+  return { ...m, pct };
+}) : [];
+
+// Pitch colors by code
+const pitchColors: Record<string, string> = {
+  FF: "var(--pitch-ff)", FT: "var(--pitch-ft)", FS: "var(--pitch-fs)", FC: "var(--pitch-fc)",
+  SI: "var(--pitch-si)", SL: "var(--pitch-sl)", CU: "var(--pitch-cu)", CH: "var(--pitch-ch)", KC: "var(--pitch-kc)",
+};
 ---
 <Layout
   title={player.name_jp}
@@ -27,287 +46,400 @@ function formatPercent(n: number): string {
   lang="ja"
   currentPath={`/players/${player.key}/`}
 >
-  <nav class="breadcrumb">
-    <a href="/">← トップ</a>
-  </nav>
+  <nav class="breadcrumb mono"><a href="/">← HOME</a> <span class="sep">/</span> <span>PLAYERS</span> <span class="sep">/</span> <span class="current">{player.key.toUpperCase()}</span></nav>
 
   <header class="player-hero">
-    <div class="hero-badges">
-      <span class={`badge type type-${player.type}`}>{typeLabel}</span>
-      <span class={`badge league league-${player.league.toLowerCase()}`}>{player.league}</span>
+    <div class="hero-tags">
+      <span class={`tag type type-${player.type}`}>{typeCode}</span>
+      <span class={`tag league league-${player.league.toLowerCase()}`}>{player.league}</span>
     </div>
     <h1 class="player-name">{player.name_jp}</h1>
-    <div class="player-team">{player.team_jp}</div>
-    <div class="player-pos">{player.position_jp}</div>
+    <div class="player-meta">
+      <span class="team">{player.team_jp}</span>
+      <span class="sep">·</span>
+      <span class="pos">{player.position_jp}</span>
+    </div>
   </header>
 
+  <!-- SUMMARY ROW: Big primary stats -->
   {hitting && (
-    <section class="stat-section">
-      <div class="section-title">
-        <span class="title-icon" aria-hidden="true">⚾</span>
-        <h2>打撃成績（基本）</h2>
+    <section class="summary-row">
+      <div class="summary-card primary">
+        <div class="sc-label mono">AVG</div>
+        <div class="sc-value mono">{hitting.avg}</div>
       </div>
-      <div class="stat-grid hero-grid">
-        <div class="stat-box accent"><span class="label">打率</span><span class="value">{hitting.avg}</span></div>
-        <div class="stat-box accent"><span class="label">本塁打</span><span class="value">{hitting.hr}</span></div>
-        <div class="stat-box accent"><span class="label">OPS</span><span class="value">{hitting.ops}</span></div>
-        <div class="stat-box"><span class="label">打点</span><span class="value">{hitting.rbi}</span></div>
-        <div class="stat-box"><span class="label">出塁率</span><span class="value">{hitting.obp}</span></div>
-        <div class="stat-box"><span class="label">盗塁</span><span class="value">{hitting.sb}</span></div>
+      <div class="summary-card">
+        <div class="sc-label mono">HR</div>
+        <div class="sc-value mono">{hitting.hr}</div>
+      </div>
+      <div class="summary-card">
+        <div class="sc-label mono">RBI</div>
+        <div class="sc-value mono">{hitting.rbi}</div>
+      </div>
+      <div class="summary-card">
+        <div class="sc-label mono">OBP</div>
+        <div class="sc-value mono">{hitting.obp}</div>
+      </div>
+      <div class="summary-card primary">
+        <div class="sc-label mono">OPS</div>
+        <div class="sc-value mono">{hitting.ops}</div>
+      </div>
+      <div class="summary-card">
+        <div class="sc-label mono">SB</div>
+        <div class="sc-value mono">{hitting.sb}</div>
       </div>
     </section>
   )}
 
   {pitching && (
-    <section class="stat-section">
-      <div class="section-title">
-        <span class="title-icon" aria-hidden="true">🥎</span>
-        <h2>投手成績（基本）</h2>
+    <section class="summary-row">
+      <div class="summary-card primary">
+        <div class="sc-label mono">ERA</div>
+        <div class="sc-value mono">{pitching.era}</div>
       </div>
-      <div class="stat-grid hero-grid">
-        <div class="stat-box accent"><span class="label">防御率</span><span class="value">{pitching.era}</span></div>
-        <div class="stat-box accent"><span class="label">奪三振</span><span class="value">{pitching.so}</span></div>
-        <div class="stat-box accent"><span class="label">WHIP</span><span class="value">{pitching.whip}</span></div>
-        <div class="stat-box"><span class="label">勝</span><span class="value">{pitching.w}</span></div>
-        <div class="stat-box"><span class="label">敗</span><span class="value">{pitching.l}</span></div>
-        <div class="stat-box"><span class="label">投球回</span><span class="value">{pitching.ip}</span></div>
+      <div class="summary-card">
+        <div class="sc-label mono">W-L</div>
+        <div class="sc-value mono">{pitching.w}-{pitching.l}</div>
       </div>
-    </section>
-  )}
-
-  {savantHit && (
-    <section class="stat-section">
-      <div class="section-title">
-        <span class="title-icon" aria-hidden="true">📊</span>
-        <h2>打撃 Statcast 指標</h2>
+      <div class="summary-card primary">
+        <div class="sc-label mono">SO</div>
+        <div class="sc-value mono">{pitching.so}</div>
       </div>
-      <div class="stat-grid">
-        <div class="stat-box"><span class="label">平均打球速度 (mph)</span><span class="value">{savantHit.exit_velocity_avg}</span></div>
-        <div class="stat-box"><span class="label">平均打球角度 (°)</span><span class="value">{savantHit.launch_angle_avg}</span></div>
-        <div class="stat-box"><span class="label">Barrel率</span><span class="value">{formatPercent(savantHit.barrel_batted_rate)}</span></div>
-        <div class="stat-box"><span class="label">Hard-Hit率</span><span class="value">{formatPercent(savantHit.hard_hit_percent)}</span></div>
-        <div class="stat-box"><span class="label">xBA</span><span class="value">{savantHit.xba}</span></div>
-        <div class="stat-box"><span class="label">xSLG</span><span class="value">{savantHit.xslg}</span></div>
-        <div class="stat-box"><span class="label">xwOBA</span><span class="value">{savantHit.xwoba}</span></div>
-        <div class="stat-box"><span class="label">K%</span><span class="value">{formatPercent(savantHit.k_percent)}</span></div>
-        <div class="stat-box"><span class="label">BB%</span><span class="value">{formatPercent(savantHit.bb_percent)}</span></div>
+      <div class="summary-card">
+        <div class="sc-label mono">WHIP</div>
+        <div class="sc-value mono">{pitching.whip}</div>
+      </div>
+      <div class="summary-card">
+        <div class="sc-label mono">IP</div>
+        <div class="sc-value mono">{pitching.ip}</div>
       </div>
     </section>
   )}
 
-  {arsenal && arsenal.length > 0 && (
-    <section class="stat-section">
-      <div class="section-title">
-        <span class="title-icon" aria-hidden="true">🎯</span>
-        <h2>球種別成績</h2>
+  <!-- PERCENTILE RANKINGS: Savant hallmark -->
+  {percentileMetrics.length > 0 && (
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Percentile Rankings</h2>
+        <span class="panel-sub mono">BATTING · 2026</span>
       </div>
-      <div class="arsenal-list">
-        {arsenal.map((a: any) => (
-          <div class="pitch-row">
-            <div class="pitch-name">
-              <div class="pitch-name-jp">{a.jp}</div>
-              <div class="pitch-name-en">{a.en}</div>
-            </div>
-            <div class="pitch-bars">
-              <div class="bar-row">
-                <span class="bar-label">使用率</span>
-                <div class="bar-track"><div class="bar-fill usage" style={`width: ${Math.min(a.usage, 100)}%`}></div></div>
-                <span class="bar-value">{formatPercent(a.usage)}</span>
+      <div class="pct-list">
+        {percentileMetrics.map((m) => (
+          <div class="pct-row">
+            <div class="pct-label">{m.label}</div>
+            <div class="pct-track">
+              <div class="pct-grid">
+                <span class="pct-tick" style="left: 25%"></span>
+                <span class="pct-tick" style="left: 50%"></span>
+                <span class="pct-tick" style="left: 75%"></span>
               </div>
-              <div class="bar-row">
-                <span class="bar-label">空振り率</span>
-                <div class="bar-track"><div class="bar-fill whiff" style={`width: ${Math.min(a.whiff, 100)}%`}></div></div>
-                <span class="bar-value">{formatPercent(a.whiff)}</span>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">Hard-Hit率</span>
-                <div class="bar-track"><div class="bar-fill hardhit" style={`width: ${Math.min(a.hard_hit, 100)}%`}></div></div>
-                <span class="bar-value">{formatPercent(a.hard_hit)}</span>
-              </div>
-              <div class="bar-row">
-                <span class="bar-label">被打率</span>
-                <div class="bar-value-only">{a.ba}</div>
+              <div class="pct-bar" style={`width: ${m.pct}%; background: ${percentileColor(m.pct)};`}></div>
+              <div class="pct-dot" style={`left: calc(${m.pct}% - 8px); background: ${percentileColor(m.pct)};`}>
+                <span class="pct-num mono">{m.pct}</span>
               </div>
             </div>
+            <div class="pct-value mono">{m.fmt(m.value as any)}</div>
           </div>
         ))}
       </div>
+      <div class="pct-legend mono">
+        <span>←</span>
+        <span class="leg-bar"></span>
+        <span>POOR</span>
+        <span class="leg-mid">AVG</span>
+        <span>ELITE</span>
+        <span>→</span>
+      </div>
     </section>
   )}
 
-  <p class="updated">最終更新: {player.updated_at}</p>
+  <!-- PITCH ARSENAL -->
+  {arsenal && arsenal.length > 0 && (
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Pitch Arsenal</h2>
+        <span class="panel-sub mono">USAGE · WHIFF · HARD-HIT</span>
+      </div>
+      <table class="arsenal-table">
+        <thead>
+          <tr>
+            <th>Pitch</th>
+            <th class="num">Usage</th>
+            <th class="num">BAA</th>
+            <th class="num">Whiff</th>
+            <th class="num">Hard-Hit</th>
+            <th class="dist">Distribution</th>
+          </tr>
+        </thead>
+        <tbody>
+          {arsenal.map((a: any) => (
+            <tr>
+              <td>
+                <div class="pitch-cell">
+                  <span class="pitch-dot" style={`background: ${pitchColors[a.pitch] ?? "var(--pitch-default)"}`}></span>
+                  <div>
+                    <div class="pitch-name">{a.jp}</div>
+                    <div class="pitch-sub mono">{a.pitch}</div>
+                  </div>
+                </div>
+              </td>
+              <td class="num mono">{a.usage}%</td>
+              <td class="num mono">{a.ba}</td>
+              <td class="num mono">{a.whiff}%</td>
+              <td class="num mono">{a.hard_hit}%</td>
+              <td class="dist">
+                <div class="dist-bars">
+                  <div class="dist-bar" style={`--w: ${a.usage}%; --c: ${pitchColors[a.pitch] ?? "var(--pitch-default)"}`} title={`Usage ${a.usage}%`}></div>
+                  <div class="dist-bar whiff-bar" style={`--w: ${a.whiff}%;`} title={`Whiff ${a.whiff}%`}></div>
+                  <div class="dist-bar hh-bar" style={`--w: ${a.hard_hit}%;`} title={`Hard-Hit ${a.hard_hit}%`}></div>
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div class="arsenal-legend mono">
+        <span><span class="leg-dot" style="background: var(--pitch-default)"></span>USAGE</span>
+        <span><span class="leg-dot" style="background: var(--sv-cyan)"></span>WHIFF</span>
+        <span><span class="leg-dot" style="background: var(--sv-orange)"></span>HARD-HIT</span>
+      </div>
+    </section>
+  )}
+
+  <div class="footer-meta mono">LAST UPDATED · {player.updated_at}</div>
 </Layout>
 
 <style>
-  .breadcrumb { margin-bottom: 1.5rem; font-size: 0.88rem; }
+  .breadcrumb {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    margin-bottom: 1.5rem;
+    display: flex; gap: 0.5rem; align-items: center;
+  }
   .breadcrumb a { color: var(--text-muted); }
   .breadcrumb a:hover { color: var(--accent); }
+  .breadcrumb .sep { color: var(--text-dim); }
+  .breadcrumb .current { color: var(--text); font-weight: 600; }
 
+  /* Hero */
   .player-hero {
-    text-align: center;
-    padding: 2.4rem 1.5rem;
-    background: linear-gradient(135deg, var(--rose-50), var(--cream));
-    border: 1px solid var(--border);
-    border-radius: var(--radius-xl);
-    margin-bottom: 2.5rem;
-    box-shadow: var(--shadow-sm);
+    padding: 2rem 0 2rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
   }
-  .hero-badges {
-    display: flex; gap: 0.5rem; justify-content: center;
-    margin-bottom: 1rem;
+  .hero-tags { display: flex; gap: 0.4rem; margin-bottom: 0.8rem; }
+  .tag {
+    font-family: var(--font-mono);
+    font-size: 0.65rem; font-weight: 600;
+    letter-spacing: 0.1em;
+    padding: 0.22rem 0.55rem;
+    border-radius: var(--radius-sm);
   }
-  .badge {
-    font-size: 0.7rem; font-weight: 600;
-    padding: 0.22rem 0.7rem;
-    border-radius: 100px;
-    letter-spacing: 0.06em;
-  }
-  .badge.type { background: var(--rose-100); color: var(--rose-700); }
-  .badge.type.type-two_way { background: linear-gradient(90deg, var(--rose-200), #f7d8a8); color: var(--rose-700); }
-  .badge.league.league-nl { background: #e8f0fc; color: #1a4a8a; }
-  .badge.league.league-al { background: #fde8e8; color: #8a1a1a; }
+  .tag.type { background: rgba(239, 62, 62, 0.12); color: var(--sv-red); border: 1px solid rgba(239, 62, 62, 0.25); }
+  .tag.type.type-two_way { background: linear-gradient(90deg, rgba(239, 62, 62, 0.15), rgba(245, 129, 66, 0.15)); color: var(--sv-orange); border-color: rgba(245, 129, 66, 0.3); }
+  .tag.league { background: var(--surface-3); color: var(--text-muted); border: 1px solid var(--border); }
+  .tag.league.league-nl { color: var(--sv-blue); border-color: rgba(66, 112, 228, 0.3); background: rgba(66, 112, 228, 0.08); }
+  .tag.league.league-al { color: var(--sv-red); border-color: rgba(239, 62, 62, 0.3); background: rgba(239, 62, 62, 0.08); }
 
   .player-name {
-    font-family: var(--font-display);
-    font-size: clamp(2rem, 5vw, 2.8rem);
-    font-weight: 700;
-    margin: 0 0 0.5rem;
-    color: var(--text);
-    letter-spacing: -0.01em;
+    font-size: clamp(2.4rem, 6vw, 3.6rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    margin: 0 0 0.6rem;
   }
-  .player-team {
-    font-size: 1.05rem; color: var(--text); margin-bottom: 0.2rem;
+  .player-meta {
+    display: flex; gap: 0.5rem; align-items: center;
+    font-size: 0.95rem;
+    color: var(--text-muted);
   }
-  .player-pos {
-    font-size: 0.85rem; color: var(--text-muted);
-  }
+  .player-meta .sep { color: var(--text-dim); }
 
-  .stat-section { margin-bottom: 2.4rem; }
-  .section-title {
-    display: flex; align-items: center; gap: 0.6rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.6rem;
-    border-bottom: 1px solid var(--border);
-  }
-  .title-icon { font-size: 1.1rem; }
-  .section-title h2 {
-    font-size: 1.15rem;
-    font-weight: 700;
-    margin: 0;
-  }
-
-  .stat-grid {
+  /* Summary Row */
+  .summary-row {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    gap: 0.6rem;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: 2rem;
   }
-  .hero-grid {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  .summary-card {
+    display: flex; flex-direction: column; gap: 0.3rem;
+    padding: 1.1rem 1.2rem;
+    background: var(--surface);
   }
-  .stat-box {
+  .summary-card.primary { background: var(--surface-2); }
+  .sc-label { font-size: 0.68rem; color: var(--text-muted); letter-spacing: 0.1em; }
+  .sc-value {
+    font-size: 1.6rem; font-weight: 700;
+    color: var(--text); line-height: 1;
+    font-feature-settings: "tnum" 1;
+  }
+  .summary-card.primary .sc-value { color: var(--accent); }
+
+  /* Panel */
+  .panel {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
-    padding: 0.85rem 0.95rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    transition: all 0.18s ease;
-  }
-  .stat-box:hover {
-    border-color: var(--rose-200);
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-sm);
-  }
-  .stat-box.accent {
-    background: linear-gradient(135deg, var(--rose-50), var(--surface));
-    border-color: var(--rose-200);
-  }
-  .stat-box .label {
-    font-size: 0.72rem;
-    color: var(--text-muted);
-    font-weight: 500;
-    letter-spacing: 0.04em;
-  }
-  .stat-box .value {
-    font-family: var(--font-display);
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text);
-    line-height: 1.1;
-    font-variant-numeric: tabular-nums;
-  }
-  .stat-box.accent .value { color: var(--accent); }
-
-  /* Arsenal */
-  .arsenal-list { display: flex; flex-direction: column; gap: 0.7rem; }
-  .pitch-row {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: 1.2rem;
-    padding: 1.1rem 1.3rem;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-md);
-    align-items: center;
-  }
-  .pitch-name-jp {
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--text);
-  }
-  .pitch-name-en {
-    font-size: 0.78rem;
-    color: var(--text-muted);
-  }
-  .pitch-bars { display: flex; flex-direction: column; gap: 0.5rem; }
-  .bar-row {
-    display: grid;
-    grid-template-columns: 78px 1fr 56px;
-    align-items: center;
-    gap: 0.7rem;
-    font-size: 0.82rem;
-  }
-  .bar-label { color: var(--text-muted); }
-  .bar-track {
-    height: 7px;
-    background: var(--rose-50);
-    border-radius: 100px;
+    margin-bottom: 2rem;
     overflow: hidden;
   }
-  .bar-fill {
-    height: 100%;
+  .panel-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    padding: 1rem 1.3rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-elev);
+  }
+  .panel-head h2 { font-size: 1.05rem; font-weight: 700; margin: 0; }
+  .panel-sub { font-size: 0.68rem; color: var(--text-dim); letter-spacing: 0.1em; }
+
+  /* Percentile */
+  .pct-list {
+    padding: 0.5rem 1.3rem;
+  }
+  .pct-row {
+    display: grid;
+    grid-template-columns: 130px 1fr 80px;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .pct-row:last-child { border-bottom: none; }
+  .pct-label {
+    font-size: 0.82rem;
+    color: var(--text);
+    font-weight: 500;
+  }
+  .pct-track {
+    position: relative;
+    height: 22px;
+    background: var(--surface-3);
     border-radius: 100px;
-    background: var(--rose-300);
-    transition: width 0.4s ease;
+    overflow: visible;
   }
-  .bar-fill.usage { background: linear-gradient(90deg, var(--rose-300), var(--rose-500)); }
-  .bar-fill.whiff { background: linear-gradient(90deg, #4a90e2, #2a6cb8); }
-  .bar-fill.hardhit { background: linear-gradient(90deg, #e2a04a, #b87a2a); }
-  .bar-value {
+  .pct-grid { position: absolute; inset: 0; pointer-events: none; }
+  .pct-tick {
+    position: absolute;
+    top: 0; bottom: 0; width: 1px;
+    background: rgba(255,255,255,0.08);
+  }
+  .pct-bar {
+    position: absolute; left: 0; top: 0; bottom: 0;
+    border-radius: 100px;
+    transition: width 0.5s ease;
+    opacity: 0.35;
+  }
+  .pct-dot {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 0 3px var(--surface), 0 4px 12px rgba(0,0,0,0.4);
+    transition: left 0.5s ease, background 0.3s ease;
+  }
+  .pct-num {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: white;
+    font-feature-settings: "tnum" 1;
+  }
+  .pct-value {
     text-align: right;
-    font-variant-numeric: tabular-nums;
+    font-size: 0.88rem;
     font-weight: 600;
     color: var(--text);
   }
-  .bar-value-only {
-    grid-column: 2 / 4;
-    text-align: right;
-    font-variant-numeric: tabular-nums;
+  .pct-legend {
+    display: flex; justify-content: center; gap: 1rem; align-items: center;
+    padding: 0.8rem 1.3rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.65rem; color: var(--text-dim);
+    letter-spacing: 0.1em;
+  }
+  .leg-bar {
+    width: 200px; height: 6px; border-radius: 100px;
+    background: linear-gradient(90deg, var(--sv-blue), var(--sv-cyan), var(--sv-neutral), var(--sv-yellow), var(--sv-orange), var(--sv-red));
+  }
+  .leg-mid { color: var(--text-muted); }
+
+  /* Arsenal table */
+  .arsenal-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+  .arsenal-table th {
+    text-align: left;
+    padding: 0.7rem 1.3rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
     font-weight: 600;
-    color: var(--text);
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-elev);
+  }
+  .arsenal-table th.num, .arsenal-table td.num { text-align: right; }
+  .arsenal-table th.dist, .arsenal-table td.dist { width: 180px; }
+  .arsenal-table td {
+    padding: 0.85rem 1.3rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+  }
+  .arsenal-table tr:last-child td { border-bottom: none; }
+  .arsenal-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+  .pitch-cell { display: flex; align-items: center; gap: 0.7rem; }
+  .pitch-dot {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.08);
+  }
+  .pitch-name { font-weight: 600; color: var(--text); }
+  .pitch-sub { font-size: 0.65rem; color: var(--text-dim); letter-spacing: 0.1em; }
+
+  .dist-bars { display: flex; flex-direction: column; gap: 3px; }
+  .dist-bar {
+    height: 5px;
+    width: var(--w);
+    background: var(--c, var(--pitch-default));
+    border-radius: 100px;
+    max-width: 100%;
+  }
+  .dist-bar.whiff-bar { background: var(--sv-cyan); opacity: 0.85; }
+  .dist-bar.hh-bar { background: var(--sv-orange); opacity: 0.85; }
+
+  .arsenal-legend {
+    display: flex; gap: 1.5rem; padding: 0.8rem 1.3rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.65rem; color: var(--text-dim);
+    letter-spacing: 0.1em;
+  }
+  .arsenal-legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
+  .leg-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    display: inline-block;
   }
 
-  .updated {
+  .footer-meta {
     text-align: right;
-    color: var(--text-muted);
-    font-size: 0.78rem;
-    margin-top: 2rem;
+    font-size: 0.65rem;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+    margin-top: 1.5rem;
   }
 
-  @media (max-width: 640px) {
-    .pitch-row { grid-template-columns: 1fr; gap: 0.8rem; }
-    .player-hero { padding: 1.8rem 1.2rem; }
+  @media (max-width: 720px) {
+    .pct-row { grid-template-columns: 90px 1fr 60px; gap: 0.6rem; }
+    .pct-label { font-size: 0.75rem; }
+    .arsenal-table th, .arsenal-table td { padding: 0.6rem 0.8rem; }
+    .arsenal-table th.dist, .arsenal-table td.dist { display: none; }
   }
 </style>
