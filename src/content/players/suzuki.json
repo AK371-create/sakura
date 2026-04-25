@@ -106,7 +106,7 @@
   "basic_season": {
     "hitting": 2026
   },
-  "splits_lr": {
+  "splits_lr_current": {
     "hitting": {
       "vs_left": {
         "ab": 19,
@@ -132,5 +132,31 @@
       }
     }
   },
-  "splits_lr_season": 2026
+  "splits_lr_current_season": 2026,
+  "splits_lr_career": {
+    "hitting": {
+      "vs_left": {
+        "ab": 536,
+        "h": 148,
+        "hr": 22,
+        "rbi": 78,
+        "sb": null,
+        "avg": ".276",
+        "obp": ".375",
+        "slg": ".478",
+        "ops": ".853"
+      },
+      "vs_right": {
+        "ab": 1510,
+        "h": 403,
+        "hr": 68,
+        "rbi": 225,
+        "sb": null,
+        "avg": ".267",
+        "obp": ".338",
+        "slg": ".471",
+        "ops": ".809"
+      }
+    }
+  }
 }

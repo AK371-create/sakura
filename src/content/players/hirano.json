@@ -70,29 +70,28 @@
   "basic_season": {
     "pitching": "career"
   },
-  "splits_lr": {
+  "splits_lr_career": {
     "pitching": {
       "vs_left": {
-        "ab": 30,
-        "ba": ".300",
-        "hr": 2,
-        "k": 5,
-        "bb": 3,
-        "ops": ".897",
-        "obp": ".364",
-        "slg": ".533"
+        "ab": 211,
+        "ba": ".242",
+        "hr": 7,
+        "k": 55,
+        "bb": 23,
+        "ops": ".694",
+        "obp": ".315",
+        "slg": ".379"
       },
       "vs_right": {
-        "ab": 23,
-        "ba": ".391",
-        "hr": 0,
-        "k": 6,
-        "bb": 5,
-        "ops": ".978",
-        "obp": ".500",
-        "slg": ".478"
+        "ab": 282,
+        "ba": ".238",
+        "hr": 8,
+        "k": 76,
+        "bb": 30,
+        "ops": ".697",
+        "obp": ".321",
+        "slg": ".376"
       }
     }
-  },
-  "splits_lr_season": 2020
+  }
 }

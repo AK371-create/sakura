@@ -205,29 +205,28 @@
   "mlb_years": "2016-2025",
   "current_status_jp": "東北楽天ゴールデンイーグルス所属",
   "current_status_en": "Now with Rakuten (NPB)",
-  "splits_lr": {
+  "splits_lr_career": {
     "pitching": {
       "vs_left": {
-        "ab": 14,
-        "ba": ".286",
-        "hr": 1,
-        "k": 4,
-        "bb": 2,
-        "ops": ".946",
-        "obp": ".375",
-        "slg": ".571"
+        "ab": 1805,
+        "ba": ".252",
+        "hr": 69,
+        "k": 443,
+        "bb": 171,
+        "ops": ".748",
+        "obp": ".321",
+        "slg": ".427"
       },
       "vs_right": {
-        "ab": 19,
-        "ba": ".263",
-        "hr": 0,
-        "k": 4,
-        "bb": 4,
-        "ops": ".830",
-        "obp": ".462",
-        "slg": ".368"
+        "ab": 1919,
+        "ba": ".218",
+        "hr": 73,
+        "k": 612,
+        "bb": 114,
+        "ops": ".649",
+        "obp": ".268",
+        "slg": ".381"
       }
     }
-  },
-  "splits_lr_season": 2025
+  }
 }

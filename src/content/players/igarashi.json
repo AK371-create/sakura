@@ -70,29 +70,28 @@
   "basic_season": {
     "pitching": "career"
   },
-  "splits_lr": {
+  "splits_lr_career": {
     "pitching": {
       "vs_left": {
-        "ab": 7,
-        "ba": ".286",
-        "hr": 0,
-        "k": 4,
-        "bb": 3,
-        "ops": ".929",
-        "obp": ".500",
-        "slg": ".429"
+        "ab": 98,
+        "ba": ".245",
+        "hr": 1,
+        "k": 33,
+        "bb": 26,
+        "ops": ".786",
+        "obp": ".408",
+        "slg": ".378"
       },
       "vs_right": {
-        "ab": 14,
-        "ba": ".500",
-        "hr": 0,
-        "k": 1,
-        "bb": 2,
-        "ops": "1.206",
-        "obp": ".563",
-        "slg": ".643"
+        "ab": 193,
+        "ba": ".295",
+        "hr": 5,
+        "k": 39,
+        "bb": 25,
+        "ops": ".835",
+        "obp": ".379",
+        "slg": ".456"
       }
     }
-  },
-  "splits_lr_season": 2012
+  }
 }

@@ -44,7 +44,7 @@
   "basic_season": {
     "pitching": "career"
   },
-  "splits_lr": {
+  "splits_lr_career": {
     "pitching": {
       "vs_left": {
         "ab": 123,
@@ -67,6 +67,5 @@
         "slg": ".413"
       }
     }
-  },
-  "splits_lr_season": 2023
+  }
 }

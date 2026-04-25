@@ -57,29 +57,28 @@
   "basic_season": {
     "pitching": "career"
   },
-  "splits_lr": {
+  "splits_lr_career": {
     "pitching": {
       "vs_left": {
-        "ab": 8,
-        "ba": ".250",
-        "hr": 0,
-        "k": 1,
-        "bb": 0,
-        "ops": ".625",
-        "obp": ".250",
-        "slg": ".375"
+        "ab": 98,
+        "ba": ".224",
+        "hr": 3,
+        "k": 21,
+        "bb": 6,
+        "ops": ".674",
+        "obp": ".276",
+        "slg": ".398"
       },
       "vs_right": {
-        "ab": 8,
-        "ba": ".250",
-        "hr": 0,
-        "k": 0,
-        "bb": 0,
-        "ops": ".625",
-        "obp": ".250",
-        "slg": ".375"
+        "ab": 120,
+        "ba": ".308",
+        "hr": 3,
+        "k": 19,
+        "bb": 12,
+        "ops": ".831",
+        "obp": ".381",
+        "slg": ".450"
       }
     }
-  },
-  "splits_lr_season": 2005
+  }
 }

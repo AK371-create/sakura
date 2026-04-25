@@ -291,6 +291,49 @@ const playerJsonLd: object[] = [
     </section>
   )}
 
+  {player.splits_lr_current && (
+    <section class="panel">
+      <div class="panel-head">
+        <h2>vs LHP / vs RHP (Current)</h2>
+        <span class="panel-sub mono">{player.splits_lr_current_season} SEASON</span>
+      </div>
+      <div class="splits-wrap">
+        {player.splits_lr_current.hitting && (
+          <div class="splits-block">
+            <div class="splits-block-title">Hitting</div>
+            <table class="splits-table">
+              <thead><tr><th>Split</th><th class="num">AB</th><th class="num">H</th><th class="num">HR</th><th class="num">AVG</th><th class="num">OBP</th><th class="num">SLG</th><th class="num">OPS</th></tr></thead>
+              <tbody>
+                {player.splits_lr_current.hitting.vs_left && (
+                  <tr><td class="splits-side">vs LHP</td><td class="num mono">{player.splits_lr_current.hitting.vs_left.ab ?? "—"}</td><td class="num mono">{player.splits_lr_current.hitting.vs_left.h ?? "—"}</td><td class="num mono">{player.splits_lr_current.hitting.vs_left.hr ?? "—"}</td><td class="num mono">{player.splits_lr_current.hitting.vs_left.avg ?? "—"}</td><td class="num mono">{player.splits_lr_current.hitting.vs_left.obp ?? "—"}</td><td class="num mono">{player.splits_lr_current.hitting.vs_left.slg ?? "—"}</td><td class="num mono">{player.splits_lr_current.hitting.vs_left.ops ?? "—"}</td></tr>
+                )}
+                {player.splits_lr_current.hitting.vs_right && (
+                  <tr><td class="splits-side">vs RHP</td><td class="num mono">{player.splits_lr_current.hitting.vs_right.ab ?? "—"}</td><td class="num mono">{player.splits_lr_current.hitting.vs_right.h ?? "—"}</td><td class="num mono">{player.splits_lr_current.hitting.vs_right.hr ?? "—"}</td><td class="num mono">{player.splits_lr_current.hitting.vs_right.avg ?? "—"}</td><td class="num mono">{player.splits_lr_current.hitting.vs_right.obp ?? "—"}</td><td class="num mono">{player.splits_lr_current.hitting.vs_right.slg ?? "—"}</td><td class="num mono">{player.splits_lr_current.hitting.vs_right.ops ?? "—"}</td></tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        )}
+        {player.splits_lr_current.pitching && (
+          <div class="splits-block">
+            <div class="splits-block-title">Pitching</div>
+            <table class="splits-table">
+              <thead><tr><th>Split</th><th class="num">AB</th><th class="num">BAA</th><th class="num">HR</th><th class="num">SO</th><th class="num">BB</th><th class="num">OPS</th></tr></thead>
+              <tbody>
+                {player.splits_lr_current.pitching.vs_left && (
+                  <tr><td class="splits-side">vs LHB</td><td class="num mono">{player.splits_lr_current.pitching.vs_left.ab ?? "—"}</td><td class="num mono">{player.splits_lr_current.pitching.vs_left.ba ?? "—"}</td><td class="num mono">{player.splits_lr_current.pitching.vs_left.hr ?? "—"}</td><td class="num mono">{player.splits_lr_current.pitching.vs_left.k ?? "—"}</td><td class="num mono">{player.splits_lr_current.pitching.vs_left.bb ?? "—"}</td><td class="num mono">{player.splits_lr_current.pitching.vs_left.ops ?? "—"}</td></tr>
+                )}
+                {player.splits_lr_current.pitching.vs_right && (
+                  <tr><td class="splits-side">vs RHB</td><td class="num mono">{player.splits_lr_current.pitching.vs_right.ab ?? "—"}</td><td class="num mono">{player.splits_lr_current.pitching.vs_right.ba ?? "—"}</td><td class="num mono">{player.splits_lr_current.pitching.vs_right.hr ?? "—"}</td><td class="num mono">{player.splits_lr_current.pitching.vs_right.k ?? "—"}</td><td class="num mono">{player.splits_lr_current.pitching.vs_right.bb ?? "—"}</td><td class="num mono">{player.splits_lr_current.pitching.vs_right.ops ?? "—"}</td></tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
   {hittingYearly.length > 0 && (
     <section class="panel">
       <div class="panel-head">
@@ -399,40 +442,40 @@ const playerJsonLd: object[] = [
     </section>
   )}
 
-  {player.splits_lr && (
+  {player.splits_lr_career && (
     <section class="panel">
       <div class="panel-head">
-        <h2>vs LHP / vs RHP Splits</h2>
-        <span class="panel-sub mono">{player.splits_lr_season === "career" ? "MLB CAREER" : `${player.splits_lr_season} SEASON`}</span>
+        <h2>vs LHP / vs RHP (Career)</h2>
+        <span class="panel-sub mono">MLB CAREER</span>
       </div>
       <div class="splits-wrap">
-        {player.splits_lr.hitting && (
+        {player.splits_lr_career.hitting && (
           <div class="splits-block">
             <div class="splits-block-title">Hitting</div>
             <table class="splits-table">
               <thead><tr><th>Split</th><th class="num">AB</th><th class="num">H</th><th class="num">HR</th><th class="num">AVG</th><th class="num">OBP</th><th class="num">SLG</th><th class="num">OPS</th></tr></thead>
               <tbody>
-                {player.splits_lr.hitting.vs_left && (
-                  <tr><td class="splits-side">vs LHP</td><td class="num mono">{player.splits_lr.hitting.vs_left.ab ?? "—"}</td><td class="num mono">{player.splits_lr.hitting.vs_left.h ?? "—"}</td><td class="num mono">{player.splits_lr.hitting.vs_left.hr ?? "—"}</td><td class="num mono">{player.splits_lr.hitting.vs_left.avg ?? "—"}</td><td class="num mono">{player.splits_lr.hitting.vs_left.obp ?? "—"}</td><td class="num mono">{player.splits_lr.hitting.vs_left.slg ?? "—"}</td><td class="num mono">{player.splits_lr.hitting.vs_left.ops ?? "—"}</td></tr>
+                {player.splits_lr_career.hitting.vs_left && (
+                  <tr><td class="splits-side">vs LHP</td><td class="num mono">{player.splits_lr_career.hitting.vs_left.ab ?? "—"}</td><td class="num mono">{player.splits_lr_career.hitting.vs_left.h ?? "—"}</td><td class="num mono">{player.splits_lr_career.hitting.vs_left.hr ?? "—"}</td><td class="num mono">{player.splits_lr_career.hitting.vs_left.avg ?? "—"}</td><td class="num mono">{player.splits_lr_career.hitting.vs_left.obp ?? "—"}</td><td class="num mono">{player.splits_lr_career.hitting.vs_left.slg ?? "—"}</td><td class="num mono">{player.splits_lr_career.hitting.vs_left.ops ?? "—"}</td></tr>
                 )}
-                {player.splits_lr.hitting.vs_right && (
-                  <tr><td class="splits-side">vs RHP</td><td class="num mono">{player.splits_lr.hitting.vs_right.ab ?? "—"}</td><td class="num mono">{player.splits_lr.hitting.vs_right.h ?? "—"}</td><td class="num mono">{player.splits_lr.hitting.vs_right.hr ?? "—"}</td><td class="num mono">{player.splits_lr.hitting.vs_right.avg ?? "—"}</td><td class="num mono">{player.splits_lr.hitting.vs_right.obp ?? "—"}</td><td class="num mono">{player.splits_lr.hitting.vs_right.slg ?? "—"}</td><td class="num mono">{player.splits_lr.hitting.vs_right.ops ?? "—"}</td></tr>
+                {player.splits_lr_career.hitting.vs_right && (
+                  <tr><td class="splits-side">vs RHP</td><td class="num mono">{player.splits_lr_career.hitting.vs_right.ab ?? "—"}</td><td class="num mono">{player.splits_lr_career.hitting.vs_right.h ?? "—"}</td><td class="num mono">{player.splits_lr_career.hitting.vs_right.hr ?? "—"}</td><td class="num mono">{player.splits_lr_career.hitting.vs_right.avg ?? "—"}</td><td class="num mono">{player.splits_lr_career.hitting.vs_right.obp ?? "—"}</td><td class="num mono">{player.splits_lr_career.hitting.vs_right.slg ?? "—"}</td><td class="num mono">{player.splits_lr_career.hitting.vs_right.ops ?? "—"}</td></tr>
                 )}
               </tbody>
             </table>
           </div>
         )}
-        {player.splits_lr.pitching && (
+        {player.splits_lr_career.pitching && (
           <div class="splits-block">
             <div class="splits-block-title">Pitching</div>
             <table class="splits-table">
               <thead><tr><th>Split</th><th class="num">AB</th><th class="num">BAA</th><th class="num">HR</th><th class="num">SO</th><th class="num">BB</th><th class="num">OPS</th></tr></thead>
               <tbody>
-                {player.splits_lr.pitching.vs_left && (
-                  <tr><td class="splits-side">vs LHB</td><td class="num mono">{player.splits_lr.pitching.vs_left.ab ?? "—"}</td><td class="num mono">{player.splits_lr.pitching.vs_left.ba ?? "—"}</td><td class="num mono">{player.splits_lr.pitching.vs_left.hr ?? "—"}</td><td class="num mono">{player.splits_lr.pitching.vs_left.k ?? "—"}</td><td class="num mono">{player.splits_lr.pitching.vs_left.bb ?? "—"}</td><td class="num mono">{player.splits_lr.pitching.vs_left.ops ?? "—"}</td></tr>
+                {player.splits_lr_career.pitching.vs_left && (
+                  <tr><td class="splits-side">vs LHB</td><td class="num mono">{player.splits_lr_career.pitching.vs_left.ab ?? "—"}</td><td class="num mono">{player.splits_lr_career.pitching.vs_left.ba ?? "—"}</td><td class="num mono">{player.splits_lr_career.pitching.vs_left.hr ?? "—"}</td><td class="num mono">{player.splits_lr_career.pitching.vs_left.k ?? "—"}</td><td class="num mono">{player.splits_lr_career.pitching.vs_left.bb ?? "—"}</td><td class="num mono">{player.splits_lr_career.pitching.vs_left.ops ?? "—"}</td></tr>
                 )}
-                {player.splits_lr.pitching.vs_right && (
-                  <tr><td class="splits-side">vs RHB</td><td class="num mono">{player.splits_lr.pitching.vs_right.ab ?? "—"}</td><td class="num mono">{player.splits_lr.pitching.vs_right.ba ?? "—"}</td><td class="num mono">{player.splits_lr.pitching.vs_right.hr ?? "—"}</td><td class="num mono">{player.splits_lr.pitching.vs_right.k ?? "—"}</td><td class="num mono">{player.splits_lr.pitching.vs_right.bb ?? "—"}</td><td class="num mono">{player.splits_lr.pitching.vs_right.ops ?? "—"}</td></tr>
+                {player.splits_lr_career.pitching.vs_right && (
+                  <tr><td class="splits-side">vs RHB</td><td class="num mono">{player.splits_lr_career.pitching.vs_right.ab ?? "—"}</td><td class="num mono">{player.splits_lr_career.pitching.vs_right.ba ?? "—"}</td><td class="num mono">{player.splits_lr_career.pitching.vs_right.hr ?? "—"}</td><td class="num mono">{player.splits_lr_career.pitching.vs_right.k ?? "—"}</td><td class="num mono">{player.splits_lr_career.pitching.vs_right.bb ?? "—"}</td><td class="num mono">{player.splits_lr_career.pitching.vs_right.ops ?? "—"}</td></tr>
                 )}
               </tbody>
             </table>

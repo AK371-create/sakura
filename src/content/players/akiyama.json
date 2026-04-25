@@ -57,31 +57,30 @@
   "basic_season": {
     "hitting": "career"
   },
-  "splits_lr": {
+  "splits_lr_career": {
     "hitting": {
       "vs_left": {
-        "ab": 25,
-        "h": 6,
+        "ab": 46,
+        "h": 10,
         "hr": 0,
         "rbi": 1,
         "sb": null,
-        "avg": ".240",
-        "obp": ".387",
-        "slg": ".280",
-        "ops": ".667"
+        "avg": ".217",
+        "obp": ".333",
+        "slg": ".261",
+        "ops": ".594"
       },
       "vs_right": {
-        "ab": 137,
-        "h": 27,
+        "ab": 271,
+        "h": 61,
         "hr": 0,
-        "rbi": 11,
+        "rbi": 20,
         "sb": null,
-        "avg": ".197",
-        "obp": ".260",
-        "slg": ".248",
-        "ops": ".508"
+        "avg": ".225",
+        "obp": ".317",
+        "slg": ".277",
+        "ops": ".594"
       }
     }
-  },
-  "splits_lr_season": 2021
+  }
 }

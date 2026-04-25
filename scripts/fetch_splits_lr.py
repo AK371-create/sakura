@@ -21,7 +21,7 @@ def fetch(pid: int, group: str, season: int | str) -> dict:
         except Exception:
             pass
     if season == "career":
-        url = f"https://statsapi.mlb.com/api/v1/people/{pid}/stats?stats=statSplits&group={group}&sitCodes=vl,vr&sportId=1"
+        url = f"https://statsapi.mlb.com/api/v1/people/{pid}/stats?stats=careerStatSplits&group={group}&sitCodes=vl,vr&sportId=1"
     else:
         url = f"https://statsapi.mlb.com/api/v1/people/{pid}/stats?stats=statSplits&group={group}&sitCodes=vl,vr&season={season}&sportId=1"
     try:
@@ -99,47 +99,67 @@ def main():
         else:
             continue
 
-        # Determine which season to fetch
-        if is_former:
-            # Use last MLB year for FORMER players (career splits not supported by API)
-            yrs = [int(y["year"]) for y in (data.get("yearly") or []) if isinstance(y.get("year"), int)]
-            season_arg = max(yrs) if yrs else 2024
-        else:
-            # use basic_season if available, else 2026
-            bs = data.get("basic_season", {})
-            season_arg = None
-            for g in groups:
-                v = bs.get(g)
-                if v == "career":
-                    season_arg = "career"
-                    break
-                if isinstance(v, int):
-                    season_arg = v
-            if season_arg is None:
-                season_arg = 2026
-
-        splits_out = {}
+        # Determine current-season target
+        bs = data.get("basic_season", {})
+        season_arg = None
         for g in groups:
-            res = fetch(pid, g, season_arg)
-            time.sleep(0.15)
-            if not res:
-                continue
-            summarize = hit_summary if g == "hitting" else pit_summary
-            packaged = {}
-            if "vs_left" in res:
-                packaged["vs_left"] = summarize(res["vs_left"])
-            if "vs_right" in res:
-                packaged["vs_right"] = summarize(res["vs_right"])
-            if packaged:
-                splits_out[g] = packaged
+            v = bs.get(g)
+            if isinstance(v, int):
+                season_arg = v
+                break
 
-        if splits_out:
-            data["splits_lr"] = splits_out
-            data["splits_lr_season"] = season_arg
+        splits_current = {}
+        splits_career = {}
+        for g in groups:
+            summarize = hit_summary if g == "hitting" else pit_summary
+
+            # Career splits (always for both active and FORMER)
+            res_career = fetch(pid, g, "career")
+            time.sleep(0.15)
+            if res_career:
+                packaged = {}
+                if "vs_left" in res_career: packaged["vs_left"] = summarize(res_career["vs_left"])
+                if "vs_right" in res_career: packaged["vs_right"] = summarize(res_career["vs_right"])
+                if packaged: splits_career[g] = packaged
+
+            # Current-season splits (active only)
+            if not is_former and season_arg:
+                res_cur = fetch(pid, g, season_arg)
+                time.sleep(0.15)
+                if res_cur:
+                    packaged = {}
+                    if "vs_left" in res_cur: packaged["vs_left"] = summarize(res_cur["vs_left"])
+                    if "vs_right" in res_cur: packaged["vs_right"] = summarize(res_cur["vs_right"])
+                    if packaged: splits_current[g] = packaged
+
+        changed = False
+        if splits_current:
+            data["splits_lr_current"] = splits_current
+            if season_arg:
+                data["splits_lr_current_season"] = season_arg
+            changed = True
+        elif "splits_lr_current" in data:
+            del data["splits_lr_current"]
+            data.pop("splits_lr_current_season", None)
+            changed = True
+        if splits_career:
+            data["splits_lr_career"] = splits_career
+            changed = True
+        elif "splits_lr_career" in data:
+            del data["splits_lr_career"]
+            changed = True
+        # Remove old single-splits field
+        if "splits_lr" in data:
+            del data["splits_lr"]
+            data.pop("splits_lr_season", None)
+            changed = True
+        if changed:
             f.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
             updated += 1
-            parts = list(splits_out.keys())
-            print(f"  {key}: {','.join(parts)} ({season_arg})")
+            parts = []
+            if splits_current: parts.append(f"current({','.join(splits_current.keys())})")
+            if splits_career: parts.append(f"career({','.join(splits_career.keys())})")
+            print(f"  {key}: {' + '.join(parts) or '(no splits)'}")
 
     print(f"Updated {updated} players' L/R splits")
 

@@ -57,20 +57,30 @@
   "basic_season": {
     "hitting": "career"
   },
-  "splits_lr": {
+  "splits_lr_career": {
     "hitting": {
-      "vs_right": {
-        "ab": 12,
-        "h": 0,
+      "vs_left": {
+        "ab": 79,
+        "h": 16,
         "hr": 0,
-        "rbi": 1,
+        "rbi": 5,
         "sb": null,
-        "avg": ".000",
-        "obp": ".071",
-        "slg": ".000",
-        "ops": ".071"
+        "avg": ".203",
+        "obp": ".222",
+        "slg": ".241",
+        "ops": ".463"
+      },
+      "vs_right": {
+        "ab": 154,
+        "h": 34,
+        "hr": 0,
+        "rbi": 15,
+        "sb": null,
+        "avg": ".221",
+        "obp": ".288",
+        "slg": ".234",
+        "ops": ".522"
       }
     }
-  },
-  "splits_lr_season": 2012
+  }
 }

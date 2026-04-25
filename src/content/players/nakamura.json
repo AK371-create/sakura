@@ -44,7 +44,7 @@
   "basic_season": {
     "hitting": "career"
   },
-  "splits_lr": {
+  "splits_lr_career": {
     "hitting": {
       "vs_left": {
         "ab": 17,
@@ -69,6 +69,5 @@
         "ops": ".356"
       }
     }
-  },
-  "splits_lr_season": 2005
+  }
 }

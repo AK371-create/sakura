@@ -182,31 +182,30 @@
     "hitting": "career"
   },
   "legend": true,
-  "splits_lr": {
+  "splits_lr_career": {
     "hitting": {
       "vs_left": {
-        "ab": 36,
-        "h": 8,
-        "hr": 1,
-        "rbi": 3,
+        "ab": 1379,
+        "h": 391,
+        "hr": 56,
+        "rbi": 250,
         "sb": null,
-        "avg": ".222",
-        "obp": ".282",
-        "slg": ".306",
-        "ops": ".588"
+        "avg": ".284",
+        "obp": ".345",
+        "slg": ".457",
+        "ops": ".802"
       },
       "vs_right": {
-        "ab": 59,
-        "h": 6,
-        "hr": 1,
-        "rbi": 4,
+        "ab": 3063,
+        "h": 862,
+        "hr": 119,
+        "rbi": 510,
         "sb": null,
-        "avg": ".102",
-        "obp": ".172",
-        "slg": ".169",
-        "ops": ".341"
+        "avg": ".281",
+        "obp": ".367",
+        "slg": ".464",
+        "ops": ".831"
       }
     }
-  },
-  "splits_lr_season": 2012
+  }
 }

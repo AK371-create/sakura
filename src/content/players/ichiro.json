@@ -496,20 +496,30 @@
     "hitting": "career"
   },
   "legend": true,
-  "splits_lr": {
+  "splits_lr_career": {
     "hitting": {
-      "vs_right": {
-        "ab": 5,
-        "h": 0,
-        "hr": 0,
-        "rbi": 0,
+      "vs_left": {
+        "ab": 2842,
+        "h": 935,
+        "hr": 29,
+        "rbi": 238,
         "sb": null,
-        "avg": ".000",
-        "obp": ".167",
-        "slg": ".000",
-        "ops": ".167"
+        "avg": ".329",
+        "obp": ".368",
+        "slg": ".418",
+        "ops": ".786"
+      },
+      "vs_right": {
+        "ab": 7092,
+        "h": 2154,
+        "hr": 88,
+        "rbi": 542,
+        "sb": null,
+        "avg": ".304",
+        "obp": ".350",
+        "slg": ".396",
+        "ops": ".746"
       }
     }
-  },
-  "splits_lr_season": 2019
+  }
 }

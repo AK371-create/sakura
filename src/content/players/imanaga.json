@@ -123,7 +123,7 @@
   "basic_season": {
     "pitching": 2026
   },
-  "splits_lr": {
+  "splits_lr_current": {
     "pitching": {
       "vs_left": {
         "ab": 31,
@@ -147,5 +147,29 @@
       }
     }
   },
-  "splits_lr_season": 2026
+  "splits_lr_current_season": 2026,
+  "splits_lr_career": {
+    "pitching": {
+      "vs_left": {
+        "ab": 301,
+        "ba": ".206",
+        "hr": 10,
+        "k": 89,
+        "bb": 17,
+        "ops": ".589",
+        "obp": ".250",
+        "slg": ".339"
+      },
+      "vs_right": {
+        "ab": 1000,
+        "ba": ".219",
+        "hr": 51,
+        "k": 234,
+        "bb": 43,
+        "ops": ".668",
+        "obp": ".253",
+        "slg": ".415"
+      }
+    }
+  }
 }

@@ -466,7 +466,7 @@
     "hitting": 2026,
     "pitching": 2026
   },
-  "splits_lr": {
+  "splits_lr_current": {
     "hitting": {
       "vs_left": {
         "ab": 27,
@@ -514,5 +514,53 @@
       }
     }
   },
-  "splits_lr_season": 2026
+  "splits_lr_current_season": 2026,
+  "splits_lr_career": {
+    "hitting": {
+      "vs_left": {
+        "ab": 1263,
+        "h": 334,
+        "hr": 73,
+        "rbi": 189,
+        "sb": null,
+        "avg": ".264",
+        "obp": ".343",
+        "slg": ".509",
+        "ops": ".852"
+      },
+      "vs_right": {
+        "ab": 2564,
+        "h": 739,
+        "hr": 212,
+        "rbi": 491,
+        "sb": null,
+        "avg": ".288",
+        "obp": ".389",
+        "slg": ".613",
+        "ops": "1.002"
+      }
+    },
+    "pitching": {
+      "vs_left": {
+        "ab": 967,
+        "ba": ".209",
+        "hr": 32,
+        "k": 314,
+        "bb": 95,
+        "ops": ".631",
+        "obp": ".282",
+        "slg": ".349"
+      },
+      "vs_right": {
+        "ab": 1035,
+        "ba": ".191",
+        "hr": 24,
+        "k": 381,
+        "bb": 93,
+        "ops": ".572",
+        "obp": ".269",
+        "slg": ".303"
+      }
+    }
+  }
 }

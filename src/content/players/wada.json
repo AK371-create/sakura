@@ -57,29 +57,28 @@
   "basic_season": {
     "pitching": "career"
   },
-  "splits_lr": {
+  "splits_lr_career": {
     "pitching": {
       "vs_left": {
-        "ab": 26,
-        "ba": ".308",
+        "ab": 75,
+        "ba": ".227",
         "hr": 1,
-        "k": 5,
-        "bb": 3,
-        "ops": ".956",
-        "obp": ".379",
-        "slg": ".577"
+        "k": 17,
+        "bb": 6,
+        "ops": ".613",
+        "obp": ".293",
+        "slg": ".320"
       },
       "vs_right": {
-        "ab": 96,
-        "ba": ".229",
-        "hr": 4,
-        "k": 26,
-        "bb": 8,
-        "ops": ".719",
-        "obp": ".292",
-        "slg": ".427"
+        "ab": 311,
+        "ba": ".257",
+        "hr": 11,
+        "k": 71,
+        "bb": 24,
+        "ops": ".775",
+        "obp": ".315",
+        "slg": ".460"
       }
     }
-  },
-  "splits_lr_season": 2015
+  }
 }

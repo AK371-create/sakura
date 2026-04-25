@@ -148,29 +148,28 @@
   "basic_season": {
     "pitching": "career"
   },
-  "splits_lr": {
+  "splits_lr_career": {
     "pitching": {
       "vs_left": {
-        "ab": 44,
-        "ba": ".250",
-        "hr": 0,
-        "k": 11,
-        "bb": 10,
+        "ab": 698,
+        "ba": ".259",
+        "hr": 17,
+        "k": 153,
+        "bb": 52,
         "ops": ".707",
-        "obp": ".389",
-        "slg": ".318"
+        "obp": ".310",
+        "slg": ".397"
       },
       "vs_right": {
-        "ab": 72,
-        "ba": ".333",
-        "hr": 7,
-        "k": 17,
-        "bb": 6,
-        "ops": "1.130",
-        "obp": ".380",
-        "slg": ".750"
+        "ab": 849,
+        "ba": ".273",
+        "hr": 32,
+        "k": 221,
+        "bb": 57,
+        "ops": ".788",
+        "obp": ".322",
+        "slg": ".466"
       }
     }
-  },
-  "splits_lr_season": 2018
+  }
 }

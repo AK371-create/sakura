@@ -70,31 +70,30 @@
   "basic_season": {
     "hitting": "career"
   },
-  "splits_lr": {
+  "splits_lr_career": {
     "hitting": {
       "vs_left": {
-        "ab": 57,
-        "h": 10,
-        "hr": 1,
-        "rbi": 8,
+        "ab": 160,
+        "h": 36,
+        "hr": 5,
+        "rbi": 21,
         "sb": null,
-        "avg": ".175",
-        "obp": ".234",
-        "slg": ".246",
-        "ops": ".480"
+        "avg": ".225",
+        "obp": ".282",
+        "slg": ".363",
+        "ops": ".645"
       },
       "vs_right": {
-        "ab": 113,
-        "h": 19,
-        "hr": 1,
-        "rbi": 11,
+        "ab": 397,
+        "h": 74,
+        "hr": 13,
+        "rbi": 54,
         "sb": null,
-        "avg": ".168",
-        "obp": ".256",
-        "slg": ".221",
-        "ops": ".477"
+        "avg": ".186",
+        "obp": ".294",
+        "slg": ".330",
+        "ops": ".624"
       }
     }
-  },
-  "splits_lr_season": 2022
+  }
 }
