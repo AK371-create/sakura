@@ -108,5 +108,32 @@
   "updated_at": "2026-04-25",
   "basic_season": {
     "hitting": "career"
-  }
+  },
+  "splits_lr": {
+    "hitting": {
+      "vs_left": {
+        "ab": 55,
+        "h": 12,
+        "hr": 0,
+        "rbi": 6,
+        "sb": null,
+        "avg": ".218",
+        "obp": ".313",
+        "slg": ".273",
+        "ops": ".586"
+      },
+      "vs_right": {
+        "ab": 281,
+        "h": 81,
+        "hr": 5,
+        "rbi": 29,
+        "sb": null,
+        "avg": ".288",
+        "obp": ".340",
+        "slg": ".416",
+        "ops": ".756"
+      }
+    }
+  },
+  "splits_lr_season": 2017
 }

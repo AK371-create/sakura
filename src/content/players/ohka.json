@@ -160,5 +160,30 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 133,
+        "ba": ".256",
+        "hr": 9,
+        "k": 16,
+        "bb": 13,
+        "ops": ".863",
+        "obp": ".322",
+        "slg": ".541"
+      },
+      "vs_right": {
+        "ab": 144,
+        "ba": ".299",
+        "hr": 9,
+        "k": 15,
+        "bb": 6,
+        "ops": ".866",
+        "obp": ".338",
+        "slg": ".528"
+      }
+    }
+  },
+  "splits_lr_season": 2009
 }

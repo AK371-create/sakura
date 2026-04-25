@@ -454,6 +454,105 @@ const playerJsonLd: object[] = [
       which is not freely available via API. Re-enable once a verified data source
       is configured. */}
 
+  <!-- vs L / vs R Splits -->
+  {player.splits_lr && (
+    <section class="panel">
+      <div class="panel-head">
+        <h2>対左 / 対右 split</h2>
+        <span class="panel-sub">{player.splits_lr_season === "career" ? "MLB通算" : `${player.splits_lr_season}年シーズン`}</span>
+      </div>
+      <div class="splits-wrap">
+        {player.splits_lr.hitting && (
+          <div class="splits-block">
+            <div class="splits-block-title">打撃</div>
+            <table class="splits-table">
+              <thead>
+                <tr>
+                  <th>対戦</th>
+                  <th class="num">打数</th>
+                  <th class="num">安打</th>
+                  <th class="num">本塁打</th>
+                  <th class="num">打率</th>
+                  <th class="num">出塁率</th>
+                  <th class="num">長打率</th>
+                  <th class="num">OPS</th>
+                </tr>
+              </thead>
+              <tbody>
+                {player.splits_lr.hitting.vs_left && (
+                  <tr>
+                    <td class="splits-side">対左投手</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_left.ab ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_left.h ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_left.hr ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_left.avg ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_left.obp ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_left.slg ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_left.ops ?? "—"}</td>
+                  </tr>
+                )}
+                {player.splits_lr.hitting.vs_right && (
+                  <tr>
+                    <td class="splits-side">対右投手</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_right.ab ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_right.h ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_right.hr ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_right.avg ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_right.obp ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_right.slg ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.hitting.vs_right.ops ?? "—"}</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        )}
+        {player.splits_lr.pitching && (
+          <div class="splits-block">
+            <div class="splits-block-title">投手</div>
+            <table class="splits-table">
+              <thead>
+                <tr>
+                  <th>対戦</th>
+                  <th class="num">打席</th>
+                  <th class="num">被打率</th>
+                  <th class="num">被本塁打</th>
+                  <th class="num">奪三振</th>
+                  <th class="num">与四球</th>
+                  <th class="num">被OPS</th>
+                </tr>
+              </thead>
+              <tbody>
+                {player.splits_lr.pitching.vs_left && (
+                  <tr>
+                    <td class="splits-side">対左打者</td>
+                    <td class="num mono">{player.splits_lr.pitching.vs_left.ab ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.pitching.vs_left.ba ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.pitching.vs_left.hr ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.pitching.vs_left.k ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.pitching.vs_left.bb ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.pitching.vs_left.ops ?? "—"}</td>
+                  </tr>
+                )}
+                {player.splits_lr.pitching.vs_right && (
+                  <tr>
+                    <td class="splits-side">対右打者</td>
+                    <td class="num mono">{player.splits_lr.pitching.vs_right.ab ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.pitching.vs_right.ba ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.pitching.vs_right.hr ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.pitching.vs_right.k ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.pitching.vs_right.bb ?? "—"}</td>
+                    <td class="num mono">{player.splits_lr.pitching.vs_right.ops ?? "—"}</td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
   <!-- PITCH ARSENAL -->
   {arsenal && arsenal.length > 0 && (
     <section class="panel">
@@ -858,6 +957,36 @@ const playerJsonLd: object[] = [
     width: 240px; height: 6px; border-radius: 100px;
     background: linear-gradient(90deg, var(--sv-blue), var(--sv-cyan), var(--sv-neutral), var(--sv-yellow), var(--sv-orange), var(--sv-red));
   }
+
+  /* Splits table */
+  .splits-wrap { display: flex; flex-direction: column; gap: 1.2rem; padding: 1rem 1.3rem 0.5rem; }
+  .splits-block-title {
+    font-size: 0.85rem; font-weight: 700;
+    color: var(--text); margin-bottom: 0.5rem;
+    padding-left: 0.4rem;
+    border-left: 3px solid var(--accent);
+  }
+  .splits-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+  .splits-table th {
+    text-align: left;
+    padding: 0.55rem 0.85rem;
+    font-size: 0.74rem; font-weight: 600;
+    color: var(--text-muted);
+    background: var(--bg-elev);
+    border-bottom: 1px solid var(--border);
+  }
+  .splits-table th.num, .splits-table td.num { text-align: right; }
+  .splits-table td {
+    padding: 0.6rem 0.85rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .splits-table tr:last-child td { border-bottom: none; }
+  .splits-table tr:hover td { background: var(--surface-2); }
+  .splits-side { font-weight: 600; color: var(--text); }
 
   /* Arsenal table */
   .arsenal-table {

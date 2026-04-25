@@ -68,10 +68,16 @@ const noCurrentLabel = lang === "ja" ? "今季出場なし" : "Not played";
           <div class="stat"><div class="stat-label">{lang === "ja" ? "勝利" : "W"}</div><div class="stat-value">{pitching.w ?? 0}</div></div>
           <div class="stat"><div class="stat-label">{lang === "ja" ? "敗戦" : "L"}</div><div class="stat-value">{pitching.l ?? 0}</div></div>
           <div class="stat"><div class="stat-label">{lang === "ja" ? "セーブ" : "SV"}</div><div class="stat-value">{pitching.sv ?? 0}</div></div>
+          <div class="stat"><div class="stat-label">{lang === "ja" ? "防御率" : "ERA"}</div><div class="stat-value">{pitching.era}</div></div>
+          <div class="stat"><div class="stat-label">{lang === "ja" ? "奪三振" : "SO"}</div><div class="stat-value">{pitching.so}</div></div>
+          <div class="stat"><div class="stat-label">WHIP</div><div class="stat-value">{pitching.whip}</div></div>
         </>
       )}
       {pitching && hitting && (
-        <div class="stat"><div class="stat-label">{lang === "ja" ? "勝利" : "W"}</div><div class="stat-value">{pitching.w ?? 0}</div></div>
+        <>
+          <div class="stat"><div class="stat-label">{lang === "ja" ? "勝利" : "W"}</div><div class="stat-value">{pitching.w ?? 0}</div></div>
+          <div class="stat"><div class="stat-label">{lang === "ja" ? "防御率" : "ERA"}</div><div class="stat-value">{pitching.era}</div></div>
+        </>
       )}
     </div>
   )}
@@ -155,7 +161,7 @@ const noCurrentLabel = lang === "ja" ? "今季出場なし" : "Not played";
   .sep { color: var(--text-dim); }
 
   .card-stats {
-    display: flex; gap: 1.2rem;
+    display: flex; gap: 0.9rem; flex-wrap: wrap;
     padding: 0.8rem 0;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);

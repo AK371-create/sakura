@@ -43,5 +43,32 @@
   ],
   "basic_season": {
     "hitting": "career"
-  }
+  },
+  "splits_lr": {
+    "hitting": {
+      "vs_left": {
+        "ab": 2,
+        "h": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": null,
+        "avg": ".000",
+        "obp": ".000",
+        "slg": ".000",
+        "ops": ".000"
+      },
+      "vs_right": {
+        "ab": 28,
+        "h": 8,
+        "hr": 0,
+        "rbi": 2,
+        "sb": null,
+        "avg": ".286",
+        "obp": ".375",
+        "slg": ".286",
+        "ops": ".661"
+      }
+    }
+  },
+  "splits_lr_season": 2013
 }

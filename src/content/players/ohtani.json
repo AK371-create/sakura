@@ -465,5 +465,54 @@
   "basic_season": {
     "hitting": 2026,
     "pitching": 2026
-  }
+  },
+  "splits_lr": {
+    "hitting": {
+      "vs_left": {
+        "ab": 27,
+        "h": 8,
+        "hr": 2,
+        "rbi": 2,
+        "sb": null,
+        "avg": ".296",
+        "obp": ".406",
+        "slg": ".556",
+        "ops": ".962"
+      },
+      "vs_right": {
+        "ab": 70,
+        "h": 15,
+        "hr": 3,
+        "rbi": 9,
+        "sb": null,
+        "avg": ".214",
+        "obp": ".345",
+        "slg": ".386",
+        "ops": ".731"
+      }
+    },
+    "pitching": {
+      "vs_left": {
+        "ab": 48,
+        "ba": ".125",
+        "hr": 0,
+        "k": 10,
+        "bb": 3,
+        "ops": ".400",
+        "obp": ".192",
+        "slg": ".208"
+      },
+      "vs_right": {
+        "ab": 37,
+        "ba": ".162",
+        "hr": 0,
+        "k": 15,
+        "bb": 3,
+        "ops": ".441",
+        "obp": ".225",
+        "slg": ".216"
+      }
+    }
+  },
+  "splits_lr_season": 2026
 }

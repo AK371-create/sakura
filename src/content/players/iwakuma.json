@@ -119,5 +119,30 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 50,
+        "ba": ".340",
+        "hr": 4,
+        "k": 5,
+        "bb": 6,
+        "ops": "1.111",
+        "obp": ".411",
+        "slg": ".700"
+      },
+      "vs_right": {
+        "ab": 64,
+        "ba": ".156",
+        "hr": 3,
+        "k": 11,
+        "bb": 6,
+        "ops": ".563",
+        "obp": ".250",
+        "slg": ".313"
+      }
+    }
+  },
+  "splits_lr_season": 2017
 }

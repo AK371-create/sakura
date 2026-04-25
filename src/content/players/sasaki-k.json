@@ -82,5 +82,30 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 68,
+        "ba": ".235",
+        "hr": 1,
+        "k": 19,
+        "bb": 10,
+        "ops": ".663",
+        "obp": ".325",
+        "slg": ".338"
+      },
+      "vs_right": {
+        "ab": 62,
+        "ba": ".242",
+        "hr": 1,
+        "k": 10,
+        "bb": 5,
+        "ops": ".632",
+        "obp": ".309",
+        "slg": ".323"
+      }
+    }
+  },
+  "splits_lr_season": 2003
 }

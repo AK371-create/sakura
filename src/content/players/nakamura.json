@@ -43,5 +43,32 @@
   ],
   "basic_season": {
     "hitting": "career"
-  }
+  },
+  "splits_lr": {
+    "hitting": {
+      "vs_left": {
+        "ab": 17,
+        "h": 2,
+        "hr": 0,
+        "rbi": 0,
+        "sb": null,
+        "avg": ".118",
+        "obp": ".167",
+        "slg": ".176",
+        "ops": ".343"
+      },
+      "vs_right": {
+        "ab": 22,
+        "h": 3,
+        "hr": 0,
+        "rbi": 3,
+        "sb": null,
+        "avg": ".136",
+        "obp": ".174",
+        "slg": ".182",
+        "ops": ".356"
+      }
+    }
+  },
+  "splits_lr_season": 2005
 }

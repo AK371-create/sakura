@@ -82,5 +82,30 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 58,
+        "ba": ".172",
+        "hr": 0,
+        "k": 14,
+        "bb": 6,
+        "ops": ".436",
+        "obp": ".246",
+        "slg": ".190"
+      },
+      "vs_right": {
+        "ab": 61,
+        "ba": ".262",
+        "hr": 0,
+        "k": 9,
+        "bb": 3,
+        "ops": ".653",
+        "obp": ".292",
+        "slg": ".361"
+      }
+    }
+  },
+  "splits_lr_season": 2007
 }

@@ -80,5 +80,30 @@
   "updated_at": "2026-04-25",
   "basic_season": {
     "pitching": 2025
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 62,
+        "ba": ".258",
+        "hr": 4,
+        "k": 14,
+        "bb": 8,
+        "ops": ".822",
+        "obp": ".338",
+        "slg": ".484"
+      },
+      "vs_right": {
+        "ab": 87,
+        "ba": ".310",
+        "hr": 5,
+        "k": 16,
+        "bb": 9,
+        "ops": ".936",
+        "obp": ".384",
+        "slg": ".552"
+      }
+    }
+  },
+  "splits_lr_season": 2025
 }

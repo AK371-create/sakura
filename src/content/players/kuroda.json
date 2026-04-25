@@ -124,5 +124,30 @@
   "updated_at": "2026-04-25",
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 412,
+        "ba": ".262",
+        "hr": 12,
+        "k": 69,
+        "bb": 26,
+        "ops": ".707",
+        "obp": ".304",
+        "slg": ".403"
+      },
+      "vs_right": {
+        "ab": 355,
+        "ba": ".234",
+        "hr": 8,
+        "k": 77,
+        "bb": 9,
+        "ops": ".622",
+        "obp": ".264",
+        "slg": ".358"
+      }
+    }
+  },
+  "splits_lr_season": 2014
 }

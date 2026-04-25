@@ -311,5 +311,30 @@
   ],
   "basic_season": {
     "pitching": 2025
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 136,
+        "ba": ".265",
+        "hr": 8,
+        "k": 28,
+        "bb": 15,
+        "ops": ".880",
+        "obp": ".351",
+        "slg": ".529"
+      },
+      "vs_right": {
+        "ab": 133,
+        "ba": ".226",
+        "hr": 6,
+        "k": 40,
+        "bb": 4,
+        "ops": ".662",
+        "obp": ".264",
+        "slg": ".398"
+      }
+    }
+  },
+  "splits_lr_season": 2025
 }

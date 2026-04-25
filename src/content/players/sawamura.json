@@ -56,5 +56,30 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 69,
+        "ba": ".188",
+        "hr": 2,
+        "k": 17,
+        "bb": 12,
+        "ops": ".620",
+        "obp": ".301",
+        "slg": ".319"
+      },
+      "vs_right": {
+        "ab": 120,
+        "ba": ".267",
+        "hr": 2,
+        "k": 23,
+        "bb": 15,
+        "ops": ".691",
+        "obp": ".341",
+        "slg": ".350"
+      }
+    }
+  },
+  "splits_lr_season": 2022
 }

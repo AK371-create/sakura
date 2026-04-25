@@ -56,5 +56,30 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 157,
+        "ba": ".299",
+        "hr": 4,
+        "k": 23,
+        "bb": 16,
+        "ops": ".880",
+        "obp": ".358",
+        "slg": ".522"
+      },
+      "vs_right": {
+        "ab": 188,
+        "ba": ".271",
+        "hr": 6,
+        "k": 36,
+        "bb": 16,
+        "ops": ".788",
+        "obp": ".325",
+        "slg": ".463"
+      }
+    }
+  },
+  "splits_lr_season": 2010
 }

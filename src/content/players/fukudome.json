@@ -103,5 +103,32 @@
   ],
   "basic_season": {
     "hitting": "career"
-  }
+  },
+  "splits_lr": {
+    "hitting": {
+      "vs_left": {
+        "ab": 4,
+        "h": 1,
+        "hr": 0,
+        "rbi": 1,
+        "sb": null,
+        "avg": ".250",
+        "obp": ".333",
+        "slg": ".250",
+        "ops": ".583"
+      },
+      "vs_right": {
+        "ab": 37,
+        "h": 6,
+        "hr": 0,
+        "rbi": 3,
+        "sb": null,
+        "avg": ".162",
+        "obp": ".289",
+        "slg": ".189",
+        "ops": ".478"
+      }
+    }
+  },
+  "splits_lr_season": 2012
 }

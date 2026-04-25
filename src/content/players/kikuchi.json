@@ -188,5 +188,30 @@
   ],
   "basic_season": {
     "pitching": 2026
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 26,
+        "ba": ".308",
+        "hr": 1,
+        "k": 8,
+        "bb": 3,
+        "ops": ".900",
+        "obp": ".400",
+        "slg": ".500"
+      },
+      "vs_right": {
+        "ab": 91,
+        "ba": ".275",
+        "hr": 2,
+        "k": 24,
+        "bb": 10,
+        "ops": ".780",
+        "obp": ".340",
+        "slg": ".440"
+      }
+    }
+  },
+  "splits_lr_season": 2026
 }

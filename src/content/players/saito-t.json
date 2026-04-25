@@ -121,5 +121,30 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 23,
+        "ba": ".261",
+        "hr": 2,
+        "k": 6,
+        "bb": 1,
+        "ops": ".972",
+        "obp": ".320",
+        "slg": ".652"
+      },
+      "vs_right": {
+        "ab": 30,
+        "ba": ".367",
+        "hr": 2,
+        "k": 5,
+        "bb": 4,
+        "ops": "1.174",
+        "obp": ".441",
+        "slg": ".733"
+      }
+    }
+  },
+  "splits_lr_season": 2012
 }

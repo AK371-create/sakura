@@ -92,5 +92,32 @@
   "updated_at": "2026-04-25",
   "basic_season": {
     "hitting": 2026
-  }
+  },
+  "splits_lr": {
+    "hitting": {
+      "vs_left": {
+        "ab": 12,
+        "h": 3,
+        "hr": 0,
+        "rbi": 3,
+        "sb": null,
+        "avg": ".250",
+        "obp": ".308",
+        "slg": ".417",
+        "ops": ".725"
+      },
+      "vs_right": {
+        "ab": 34,
+        "h": 9,
+        "hr": 0,
+        "rbi": 2,
+        "sb": null,
+        "avg": ".265",
+        "obp": ".419",
+        "slg": ".294",
+        "ops": ".713"
+      }
+    }
+  },
+  "splits_lr_season": 2026
 }

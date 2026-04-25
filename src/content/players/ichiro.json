@@ -495,5 +495,21 @@
   "basic_season": {
     "hitting": "career"
   },
-  "legend": true
+  "legend": true,
+  "splits_lr": {
+    "hitting": {
+      "vs_right": {
+        "ab": 5,
+        "h": 0,
+        "hr": 0,
+        "rbi": 0,
+        "sb": null,
+        "avg": ".000",
+        "obp": ".167",
+        "slg": ".000",
+        "ops": ".167"
+      }
+    }
+  },
+  "splits_lr_season": 2019
 }

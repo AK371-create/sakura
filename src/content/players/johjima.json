@@ -82,5 +82,32 @@
   ],
   "basic_season": {
     "hitting": "career"
-  }
+  },
+  "splits_lr": {
+    "hitting": {
+      "vs_left": {
+        "ab": 78,
+        "h": 19,
+        "hr": 3,
+        "rbi": 5,
+        "sb": null,
+        "avg": ".244",
+        "obp": ".280",
+        "slg": ".359",
+        "ops": ".639"
+      },
+      "vs_right": {
+        "ab": 161,
+        "h": 40,
+        "hr": 6,
+        "rbi": 17,
+        "sb": null,
+        "avg": ".248",
+        "obp": ".303",
+        "slg": ".429",
+        "ops": ".732"
+      }
+    }
+  },
+  "splits_lr_season": 2009
 }

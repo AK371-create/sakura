@@ -56,5 +56,30 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 59,
+        "ba": ".254",
+        "hr": 6,
+        "k": 18,
+        "bb": 11,
+        "ops": ".981",
+        "obp": ".371",
+        "slg": ".610"
+      },
+      "vs_right": {
+        "ab": 87,
+        "ba": ".299",
+        "hr": 5,
+        "k": 20,
+        "bb": 8,
+        "ops": ".894",
+        "obp": ".354",
+        "slg": ".540"
+      }
+    }
+  },
+  "splits_lr_season": 2005
 }

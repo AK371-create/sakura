@@ -135,5 +135,30 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 96,
+        "ba": ".188",
+        "hr": 6,
+        "k": 24,
+        "bb": 4,
+        "ops": ".655",
+        "obp": ".228",
+        "slg": ".427"
+      },
+      "vs_right": {
+        "ab": 91,
+        "ba": ".330",
+        "hr": 3,
+        "k": 20,
+        "bb": 4,
+        "ops": ".849",
+        "obp": ".365",
+        "slg": ".484"
+      }
+    }
+  },
+  "splits_lr_season": 2020
 }

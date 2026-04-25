@@ -95,5 +95,30 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 224,
+        "ba": ".250",
+        "hr": 5,
+        "k": 32,
+        "bb": 22,
+        "ops": ".656",
+        "obp": ".317",
+        "slg": ".339"
+      },
+      "vs_right": {
+        "ab": 283,
+        "ba": ".307",
+        "hr": 10,
+        "k": 42,
+        "bb": 10,
+        "ops": ".832",
+        "obp": ".334",
+        "slg": ".498"
+      }
+    }
+  },
+  "splits_lr_season": 2002
 }

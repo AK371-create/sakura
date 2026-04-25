@@ -69,5 +69,30 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 4,
+        "ba": ".250",
+        "hr": 0,
+        "k": 1,
+        "bb": 0,
+        "ops": ".650",
+        "obp": ".400",
+        "slg": ".250"
+      },
+      "vs_right": {
+        "ab": 3,
+        "ba": ".333",
+        "hr": 1,
+        "k": 0,
+        "bb": 0,
+        "ops": "1.666",
+        "obp": ".333",
+        "slg": "1.333"
+      }
+    }
+  },
+  "splits_lr_season": 2015
 }

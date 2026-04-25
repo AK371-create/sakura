@@ -82,5 +82,30 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 5,
+        "ba": ".400",
+        "hr": 0,
+        "k": 1,
+        "bb": 0,
+        "ops": ".800",
+        "obp": ".400",
+        "slg": ".400"
+      },
+      "vs_right": {
+        "ab": 6,
+        "ba": ".167",
+        "hr": 1,
+        "k": 2,
+        "bb": 2,
+        "ops": "1.000",
+        "obp": ".333",
+        "slg": ".667"
+      }
+    }
+  },
+  "splits_lr_season": 2013
 }

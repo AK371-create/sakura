@@ -56,5 +56,30 @@
   ],
   "basic_season": {
     "pitching": "career"
-  }
+  },
+  "splits_lr": {
+    "pitching": {
+      "vs_left": {
+        "ab": 93,
+        "ba": ".355",
+        "hr": 1,
+        "k": 13,
+        "bb": 15,
+        "ops": ".902",
+        "obp": ".450",
+        "slg": ".452"
+      },
+      "vs_right": {
+        "ab": 166,
+        "ba": ".181",
+        "hr": 2,
+        "k": 35,
+        "bb": 17,
+        "ops": ".549",
+        "obp": ".284",
+        "slg": ".265"
+      }
+    }
+  },
+  "splits_lr_season": 2008
 }
