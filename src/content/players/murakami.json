@@ -34,5 +34,18 @@
       "bb_percent": 19.3
     }
   },
+  "yearly": [
+    {
+      "year": 2026,
+      "team": "CWS",
+      "type": "hit",
+      "avg": ".253",
+      "h": 22,
+      "hr": 10,
+      "rbi": 19,
+      "sb": 0,
+      "ops": ".992"
+    }
+  ],
   "updated_at": "2026-04-25"
 }

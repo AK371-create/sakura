@@ -48,6 +48,48 @@ const pitchColors: Record<string, string> = {
   FF: "var(--pitch-ff)", FT: "var(--pitch-ft)", FS: "var(--pitch-fs)", FC: "var(--pitch-fc)",
   SI: "var(--pitch-si)", SL: "var(--pitch-sl)", CU: "var(--pitch-cu)", CH: "var(--pitch-ch)", KC: "var(--pitch-kc)",
 };
+
+// Yearly stats split by type (handles two_way correctly)
+const yearly = player.yearly ?? [];
+const hittingYearly = yearly.filter((y: any) => y.type === "hit");
+const pitchingYearly = yearly.filter((y: any) => y.type === "pit");
+
+// Compute career rank within each stat (1 = best)
+// higherBetter=true: larger value = better rank
+function rankYears(rows: any[], field: string, higherBetter: boolean) {
+  if (!rows.length) return [];
+  const values = rows.map((r, i) => ({ i, v: parseFloat(r[field]) || 0 }));
+  values.sort((a, b) => higherBetter ? b.v - a.v : a.v - b.v);
+  const ranks: number[] = new Array(rows.length).fill(0);
+  values.forEach((item, idx) => { ranks[item.i] = idx + 1; });
+  return ranks;
+}
+
+// For batters: avg, h, hr, rbi, sb, ops (all higher = better)
+const hitRanks = {
+  avg: rankYears(hittingYearly, "avg", true),
+  h: rankYears(hittingYearly, "h", true),
+  hr: rankYears(hittingYearly, "hr", true),
+  rbi: rankYears(hittingYearly, "rbi", true),
+  sb: rankYears(hittingYearly, "sb", true),
+  ops: rankYears(hittingYearly, "ops", true),
+};
+
+// For pitchers: w, so, ip higher better; era, whip lower better
+const pitRanks = {
+  w: rankYears(pitchingYearly, "w", true),
+  so: rankYears(pitchingYearly, "so", true),
+  ip: rankYears(pitchingYearly, "ip", true),
+  era: rankYears(pitchingYearly, "era", false),
+  whip: rankYears(pitchingYearly, "whip", false),
+  l: rankYears(pitchingYearly, "l", false), // fewer losses = better
+};
+
+function rankClass(rank: number): string {
+  if (rank === 1) return "rank-1";
+  if (rank > 0 && rank <= 10) return "rank-top";
+  return "";
+}
 ---
 <Layout
   title={player.name_jp}
@@ -150,73 +192,89 @@ const pitchColors: Record<string, string> = {
     </section>
   )}
 
-  {player.yearly && player.yearly.length > 0 && (
+  {hittingYearly.length > 0 && (
     <section class="panel">
       <div class="panel-head">
-        <h2>年度別成績</h2>
+        <h2>年度別成績{pitchingYearly.length > 0 ? "(打撃)" : ""}</h2>
         <span class="panel-sub">{player.mlb_years ?? ""}</span>
       </div>
-      {player.yearly[0].type === "hit" ? (
-        <div class="yearly-wrap">
-          <table class="yearly-table">
-            <thead>
+      <div class="yearly-wrap">
+        <table class="yearly-table">
+          <thead>
+            <tr>
+              <th class="num">年</th>
+              <th>チーム</th>
+              <th class="num">打率</th>
+              <th class="num">安打</th>
+              <th class="num">本塁打</th>
+              <th class="num">打点</th>
+              <th class="num">盗塁</th>
+              <th class="num">OPS</th>
+            </tr>
+          </thead>
+          <tbody>
+            {hittingYearly.map((y: any, i: number) => (
               <tr>
-                <th class="num">年</th>
-                <th>チーム</th>
-                <th class="num">打率</th>
-                <th class="num">安打</th>
-                <th class="num">本塁打</th>
-                <th class="num">打点</th>
-                <th class="num">盗塁</th>
-                <th class="num">OPS</th>
+                <td class="num mono">{y.year}</td>
+                <td class="mono">{y.team}</td>
+                <td class:list={["num", "mono", rankClass(hitRanks.avg[i])]}>{y.avg}</td>
+                <td class:list={["num", "mono", rankClass(hitRanks.h[i])]}>{y.h}</td>
+                <td class:list={["num", "mono", rankClass(hitRanks.hr[i])]}>{y.hr}</td>
+                <td class:list={["num", "mono", rankClass(hitRanks.rbi[i])]}>{y.rbi}</td>
+                <td class:list={["num", "mono", rankClass(hitRanks.sb[i])]}>{y.sb}</td>
+                <td class:list={["num", "mono", rankClass(hitRanks.ops[i])]}>{y.ops}</td>
               </tr>
-            </thead>
-            <tbody>
-              {player.yearly.map((y: any) => (
-                <tr>
-                  <td class="num mono">{y.year}</td>
-                  <td class="mono">{y.team}</td>
-                  <td class="num mono">{y.avg}</td>
-                  <td class="num mono">{y.h}</td>
-                  <td class="num mono">{y.hr}</td>
-                  <td class="num mono">{y.rbi}</td>
-                  <td class="num mono">{y.sb}</td>
-                  <td class="num mono">{y.ops}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      ) : (
-        <div class="yearly-wrap">
-          <table class="yearly-table">
-            <thead>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div class="rank-legend">
+        <span class="legend-item"><span class="legend-swatch rank-1"></span>キャリア1位</span>
+        <span class="legend-item"><span class="legend-swatch rank-top"></span>10位以内</span>
+      </div>
+    </section>
+  )}
+
+  {pitchingYearly.length > 0 && (
+    <section class="panel">
+      <div class="panel-head">
+        <h2>年度別成績{hittingYearly.length > 0 ? "(投手)" : ""}</h2>
+        <span class="panel-sub">{player.mlb_years ?? ""}</span>
+      </div>
+      <div class="yearly-wrap">
+        <table class="yearly-table">
+          <thead>
+            <tr>
+              <th class="num">年</th>
+              <th>チーム</th>
+              <th class="num">勝</th>
+              <th class="num">敗</th>
+              <th class="num">防御率</th>
+              <th class="num">奪三振</th>
+              <th class="num">投球回</th>
+              <th class="num">WHIP</th>
+            </tr>
+          </thead>
+          <tbody>
+            {pitchingYearly.map((y: any, i: number) => (
               <tr>
-                <th class="num">年</th>
-                <th>チーム</th>
-                <th class="num">勝</th>
-                <th class="num">敗</th>
-                <th class="num">防御率</th>
-                <th class="num">奪三振</th>
-                <th class="num">投球回</th>
-                <th class="num">WHIP</th>
+                <td class="num mono">{y.year}</td>
+                <td class="mono">{y.team}</td>
+                <td class:list={["num", "mono", rankClass(pitRanks.w[i])]}>{y.w}</td>
+                <td class:list={["num", "mono", rankClass(pitRanks.l[i])]}>{y.l}</td>
+                <td class:list={["num", "mono", rankClass(pitRanks.era[i])]}>{y.era}</td>
+                <td class:list={["num", "mono", rankClass(pitRanks.so[i])]}>{y.so}</td>
+                <td class:list={["num", "mono", rankClass(pitRanks.ip[i])]}>{y.ip}</td>
+                <td class:list={["num", "mono", rankClass(pitRanks.whip[i])]}>{y.whip}</td>
               </tr>
-            </thead>
-            <tbody>
-              {player.yearly.map((y: any) => (
-                <tr>
-                  <td class="num mono">{y.year}</td>
-                  <td class="mono">{y.team}</td>
-                  <td class="num mono">{y.w}</td>
-                  <td class="num mono">{y.l}</td>
-                  <td class="num mono">{y.era}</td>
-                  <td class="num mono">{y.so}</td>
-                  <td class="num mono">{y.ip}</td>
-                  <td class="num mono">{y.whip}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {!hittingYearly.length && (
+        <div class="rank-legend">
+          <span class="legend-item"><span class="legend-swatch rank-1"></span>キャリア1位</span>
+          <span class="legend-item"><span class="legend-swatch rank-top"></span>10位以内</span>
         </div>
       )}
     </section>
@@ -584,6 +642,40 @@ const pitchColors: Record<string, string> = {
   .yearly-table th.num, .yearly-table td.num { text-align: right; }
   .yearly-table tr:last-child td { border-bottom: none; }
   .yearly-table tr:hover td { background: var(--surface-2); }
+
+  /* Rank highlighting */
+  .yearly-table td.rank-1 {
+    color: var(--accent);
+    font-weight: 700;
+    background: rgba(214, 37, 56, 0.08);
+    box-shadow: inset 0 0 0 1px rgba(214, 37, 56, 0.18);
+  }
+  .yearly-table td.rank-top {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .yearly-table tr:hover td.rank-1 { background: rgba(214, 37, 56, 0.12); }
+
+  .rank-legend {
+    display: flex; gap: 1.2rem;
+    padding: 0.7rem 1.3rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.78rem; color: var(--text-muted);
+  }
+  .legend-item { display: inline-flex; align-items: center; gap: 0.4rem; }
+  .legend-swatch {
+    display: inline-block;
+    width: 14px; height: 14px;
+    border-radius: 3px;
+  }
+  .legend-swatch.rank-1 {
+    background: rgba(214, 37, 56, 0.15);
+    box-shadow: inset 0 0 0 1px rgba(214, 37, 56, 0.25);
+  }
+  .legend-swatch.rank-top {
+    background: transparent;
+    border: 1px solid var(--accent);
+  }
 
   @media (max-width: 720px) {
     .pct-row { grid-template-columns: 90px 1fr 60px; gap: 0.6rem; }

@@ -24,5 +24,40 @@
       "sb": 0
     }
   },
+  "yearly": [
+    {
+      "year": 2020,
+      "team": "TB",
+      "type": "hit",
+      "avg": ".197",
+      "h": 40,
+      "hr": 8,
+      "rbi": 24,
+      "sb": 0,
+      "ops": ".708"
+    },
+    {
+      "year": 2021,
+      "team": "LAD/PIT",
+      "type": "hit",
+      "avg": ".220",
+      "h": 53,
+      "hr": 8,
+      "rbi": 29,
+      "sb": 0,
+      "ops": ".679"
+    },
+    {
+      "year": 2022,
+      "team": "PIT/TOR",
+      "type": "hit",
+      "avg": ".172",
+      "h": 17,
+      "hr": 2,
+      "rbi": 13,
+      "sb": 0,
+      "ops": ".564"
+    }
+  ],
   "updated_at": "2026-04-25"
 }
