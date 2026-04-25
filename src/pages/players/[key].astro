@@ -239,6 +239,12 @@ const groupedAwards = Array.from(awardsByCat.values())
         <div class="sc-label">出塁率</div>
         <div class="sc-value mono">{hitting.obp}</div>
       </div>
+      {hitting.slg !== undefined && (
+        <div class="summary-card">
+          <div class="sc-label">長打率</div>
+          <div class="sc-value mono">{hitting.slg}</div>
+        </div>
+      )}
       <div class="summary-card primary">
         <div class="sc-label">OPS</div>
         <div class="sc-value mono">{hitting.ops}</div>

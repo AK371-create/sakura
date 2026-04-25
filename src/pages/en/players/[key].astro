@@ -218,6 +218,9 @@ const groupedAwards = Array.from(awardsByCat.values())
       <div class="summary-card"><div class="sc-label mono">HR</div><div class="sc-value mono">{hitting.hr}</div></div>
       <div class="summary-card"><div class="sc-label mono">RBI</div><div class="sc-value mono">{hitting.rbi}</div></div>
       <div class="summary-card"><div class="sc-label mono">OBP</div><div class="sc-value mono">{hitting.obp}</div></div>
+      {hitting.slg !== undefined && (
+        <div class="summary-card"><div class="sc-label mono">SLG</div><div class="sc-value mono">{hitting.slg}</div></div>
+      )}
       <div class="summary-card primary"><div class="sc-label mono">OPS</div><div class="sc-value mono">{hitting.ops}</div></div>
       <div class="summary-card"><div class="sc-label mono">SB</div><div class="sc-value mono">{hitting.sb}</div></div>
     </section>
