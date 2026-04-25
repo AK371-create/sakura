@@ -17,6 +17,13 @@ function sortPlayers(arr: any[]) {
 }
 const mlbPlayers = sortPlayers(allPlayers.filter((p) => p.level === "MLB"));
 const aaaPlayers = sortPlayers(allPlayers.filter((p) => p.level === "AAA"));
+const formerPlayers = [...allPlayers.filter((p) => p.level === "FORMER")]
+  .sort((a, b) => {
+    // sort by MLB start year descending
+    const ya = parseInt((a.mlb_years ?? "0").split("-")[0]) || 0;
+    const yb = parseInt((b.mlb_years ?? "0").split("-")[0]) || 0;
+    return yb - ya;
+  });
 
 const articleModules = import.meta.glob("../content/articles/*.json", { eager: true });
 const articles = Object.values(articleModules)
@@ -33,6 +40,7 @@ const stats = {
   players: allPlayers.length,
   mlb: mlbPlayers.length,
   aaa: aaaPlayers.length,
+  former: formerPlayers.length,
   articles: articles.length,
   lastUpdate: articles[0]?.date ?? "",
 };
@@ -54,12 +62,12 @@ const stats = {
         <div class="hstat-lbl">3A所属</div>
       </div>
       <div class="hstat">
-        <div class="hstat-val mono">{stats.articles}</div>
-        <div class="hstat-lbl">記事</div>
+        <div class="hstat-val mono">{stats.former}</div>
+        <div class="hstat-lbl">元MLB</div>
       </div>
       <div class="hstat">
-        <div class="hstat-val mono">{stats.lastUpdate}</div>
-        <div class="hstat-lbl">最終更新</div>
+        <div class="hstat-val mono">{stats.articles}</div>
+        <div class="hstat-lbl">記事</div>
       </div>
     </div>
   </section>
@@ -96,10 +104,27 @@ const stats = {
     </section>
   )}
 
+  {formerPlayers.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <div class="section-head-main">
+          <span class="section-num mono">03</span>
+          <h2>過去のMLB所属</h2>
+        </div>
+        <span class="mono section-count">{formerPlayers.length}名</span>
+      </div>
+      <div class="player-grid">
+        {formerPlayers.map((p) => (
+          <PlayerCard player={p} lang="ja" href={`/players/${p.key}/`} />
+        ))}
+      </div>
+    </section>
+  )}
+
   <section class="section">
     <div class="section-head">
       <div class="section-head-main">
-        <span class="section-num mono">03</span>
+        <span class="section-num mono">04</span>
         <h2>記事</h2>
       </div>
       <a class="section-link" href="/articles/">すべて見る →</a>

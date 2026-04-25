@@ -17,9 +17,15 @@ const savantHit = player.savant?.hitting;
 const arsenal = player.savant?.pitch_arsenal;
 
 const typeCode = { two_way: "二刀流", batter: "野手", pitcher: "投手" }[player.type] ?? player.type;
-const leagueLabel = player.level === "AAA"
-  ? "3A"
-  : (({ NL: "ナ・リーグ", AL: "ア・リーグ" } as Record<string, string>)[player.league] ?? player.league);
+let leagueLabel: string;
+if (player.level === "AAA") leagueLabel = "3A";
+else if (player.level === "FORMER") leagueLabel = "元MLB";
+else leagueLabel = (({ NL: "ナ・リーグ", AL: "ア・リーグ" } as Record<string, string>)[player.league] ?? player.league);
+
+const isFormer = player.level === "FORMER";
+const summarySubtitle = isFormer
+  ? `MLB通算 · ${player.mlb_years ?? ""}`
+  : (hitting ? "打撃 · 2026" : "投手 · 2026");
 
 // Build percentile rows from savant hitting data
 const percentileMetrics = savantHit ? [
@@ -54,15 +60,28 @@ const pitchColors: Record<string, string> = {
   <header class="player-hero">
     <div class="hero-tags">
       <span class={`tag type type-${player.type}`}>{typeCode}</span>
-      <span class={`tag league league-${player.league.toLowerCase()}`}>{leagueLabel}</span>
+      <span class:list={["tag league", `league-${player.league.toLowerCase()}`, { former: isFormer }]}>{leagueLabel}</span>
     </div>
     <h1 class="player-name">{player.name_jp}</h1>
     <div class="player-meta">
-      <span class="team">{player.team_jp}</span>
+      <span class="team">{isFormer ? `${player.team_jp} (元所属)` : player.team_jp}</span>
       <span class="sep">·</span>
       <span class="pos">{player.position_jp}</span>
     </div>
+    {isFormer && (
+      <div class="former-info">
+        <div class="former-row"><span class="former-lbl">MLB在籍</span><span class="former-val mono">{player.mlb_years}</span></div>
+        <div class="former-row"><span class="former-lbl">現状</span><span class="former-val">{player.current_status_jp}</span></div>
+      </div>
+    )}
   </header>
+
+  {isFormer && (
+    <div class="career-banner">
+      <span class="banner-label">MLB通算成績</span>
+      <span class="banner-years mono">{player.mlb_years}</span>
+    </div>
+  )}
 
   <!-- SUMMARY ROW: Big primary stats -->
   {hitting && (
@@ -206,7 +225,7 @@ const pitchColors: Record<string, string> = {
     </section>
   )}
 
-  <div class="footer-meta">最終更新 · <span class="mono">{player.updated_at}</span></div>
+  <div class="footer-meta">最終更新 · <span class="mono">{player.updated_at}</span>{isFormer && <span class="mono"> · MLB career stats</span>}</div>
 </Layout>
 
 <style>
@@ -242,6 +261,34 @@ const pitchColors: Record<string, string> = {
   .tag.league.league-nl { color: var(--sv-blue); border-color: rgba(44, 93, 209, 0.25); background: rgba(44, 93, 209, 0.06); }
   .tag.league.league-al { color: var(--sv-red); border-color: rgba(214, 37, 56, 0.25); background: rgba(214, 37, 56, 0.06); }
   .tag.league.league-aaa { color: var(--sv-orange); border-color: rgba(237, 124, 44, 0.3); background: rgba(237, 124, 44, 0.08); }
+  .tag.league.former { color: var(--text-muted); background: var(--surface-3); border-color: var(--border-strong); }
+
+  .former-info {
+    display: flex; flex-direction: column; gap: 0.3rem;
+    margin-top: 0.9rem;
+    padding: 0.8rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    max-width: 380px;
+  }
+  .former-row { display: flex; gap: 0.7rem; font-size: 0.88rem; }
+  .former-lbl {
+    color: var(--text-muted); min-width: 70px;
+    font-weight: 500;
+  }
+  .former-val { color: var(--text); font-weight: 600; }
+
+  .career-banner {
+    display: inline-flex; align-items: center; gap: 0.7rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(90deg, rgba(214, 37, 56, 0.08), transparent);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin-bottom: 1.2rem;
+  }
+  .banner-label { font-weight: 700; color: var(--text); font-size: 0.92rem; }
+  .banner-years { color: var(--text-muted); font-size: 0.85rem; }
 
   .player-name {
     font-size: clamp(2.4rem, 6vw, 3.6rem);

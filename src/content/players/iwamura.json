@@ -1,0 +1,27 @@
+{
+  "key": "iwamura",
+  "name_jp": "岩村明憲",
+  "name_en": "Akinori Iwamura",
+  "team_jp": "タンパベイ・レイズ",
+  "team_en": "Tampa Bay Rays",
+  "team_short": "TB",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "batter",
+  "position_jp": "二塁手 / 三塁手",
+  "position_en": "2B / 3B",
+  "mlb_years": "2007-2010",
+  "current_status_jp": "2017年引退",
+  "current_status_en": "Retired (2017)",
+  "basic": {
+    "hitting": {
+      "avg": ".267",
+      "hr": 16,
+      "rbi": 145,
+      "obp": ".346",
+      "ops": ".710",
+      "sb": 21
+    }
+  },
+  "updated_at": "2026-04-25"
+}

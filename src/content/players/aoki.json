@@ -1,0 +1,27 @@
+{
+  "key": "aoki",
+  "name_jp": "青木宣親",
+  "name_en": "Norichika Aoki",
+  "team_jp": "ミルウォーキー・ブルワーズ",
+  "team_en": "Milwaukee Brewers",
+  "team_short": "MIL",
+  "league": "NL",
+  "level": "FORMER",
+  "type": "batter",
+  "position_jp": "外野手",
+  "position_en": "Outfielder",
+  "mlb_years": "2012-2017",
+  "current_status_jp": "2024年引退",
+  "current_status_en": "Retired (2024)",
+  "basic": {
+    "hitting": {
+      "avg": ".285",
+      "hr": 35,
+      "rbi": 192,
+      "obp": ".350",
+      "ops": ".743",
+      "sb": 79
+    }
+  },
+  "updated_at": "2026-04-25"
+}

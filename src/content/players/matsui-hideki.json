@@ -1,0 +1,27 @@
+{
+  "key": "matsui-hideki",
+  "name_jp": "松井秀喜",
+  "name_en": "Hideki Matsui",
+  "team_jp": "ニューヨーク・ヤンキース",
+  "team_en": "New York Yankees",
+  "team_short": "NYY",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "batter",
+  "position_jp": "外野手 / 指名打者",
+  "position_en": "OF / DH",
+  "mlb_years": "2003-2012",
+  "current_status_jp": "2012年引退",
+  "current_status_en": "Retired (2012)",
+  "basic": {
+    "hitting": {
+      "avg": ".282",
+      "hr": 175,
+      "rbi": 760,
+      "obp": ".360",
+      "ops": ".822",
+      "sb": 7
+    }
+  },
+  "updated_at": "2026-04-25"
+}

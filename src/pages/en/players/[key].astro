@@ -17,6 +17,11 @@ const savantHit = player.savant?.hitting;
 const arsenal = player.savant?.pitch_arsenal;
 
 const typeCode = { two_way: "TWO-WAY", batter: "BATTER", pitcher: "PITCHER" }[player.type] ?? player.type;
+const isFormer = player.level === "FORMER";
+let leagueLabel: string;
+if (player.level === "AAA") leagueLabel = "AAA";
+else if (isFormer) leagueLabel = "FORMER";
+else leagueLabel = player.league;
 
 const percentileMetrics = savantHit ? [
   { key: "exit_velocity_avg", label: "Exit Velocity", value: savantHit.exit_velocity_avg, fmt: (v: number) => `${v} mph` },
@@ -49,15 +54,28 @@ const pitchColors: Record<string, string> = {
   <header class="player-hero">
     <div class="hero-tags">
       <span class={`tag type type-${player.type}`}>{typeCode}</span>
-      <span class={`tag league league-${player.league.toLowerCase()}`}>{player.level === "AAA" ? "AAA" : player.league}</span>
+      <span class:list={["tag league", `league-${player.league.toLowerCase()}`, { former: isFormer }]}>{leagueLabel}</span>
     </div>
     <h1 class="player-name">{player.name_en}</h1>
     <div class="player-meta">
-      <span class="team">{player.team_en}</span>
+      <span class="team">{isFormer ? `${player.team_en} (last MLB team)` : player.team_en}</span>
       <span class="sep">·</span>
       <span class="pos">{player.position_en}</span>
     </div>
+    {isFormer && (
+      <div class="former-info">
+        <div class="former-row"><span class="former-lbl">MLB years</span><span class="former-val mono">{player.mlb_years}</span></div>
+        <div class="former-row"><span class="former-lbl">Status</span><span class="former-val">{player.current_status_en}</span></div>
+      </div>
+    )}
   </header>
+
+  {isFormer && (
+    <div class="career-banner">
+      <span class="banner-label">MLB Career Totals</span>
+      <span class="banner-years mono">{player.mlb_years}</span>
+    </div>
+  )}
 
   {hitting && (
     <section class="summary-row">
@@ -201,6 +219,31 @@ const pitchColors: Record<string, string> = {
   .tag.league.league-nl { color: var(--sv-blue); border-color: rgba(44, 93, 209, 0.25); background: rgba(44, 93, 209, 0.06); }
   .tag.league.league-al { color: var(--sv-red); border-color: rgba(214, 37, 56, 0.25); background: rgba(214, 37, 56, 0.06); }
   .tag.league.league-aaa { color: var(--sv-orange); border-color: rgba(237, 124, 44, 0.3); background: rgba(237, 124, 44, 0.08); }
+  .tag.league.former { color: var(--text-muted); background: var(--surface-3); border-color: var(--border-strong); }
+
+  .former-info {
+    display: flex; flex-direction: column; gap: 0.3rem;
+    margin-top: 0.9rem;
+    padding: 0.8rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    max-width: 380px;
+  }
+  .former-row { display: flex; gap: 0.7rem; font-size: 0.88rem; }
+  .former-lbl { color: var(--text-muted); min-width: 90px; font-weight: 500; }
+  .former-val { color: var(--text); font-weight: 600; }
+
+  .career-banner {
+    display: inline-flex; align-items: center; gap: 0.7rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(90deg, rgba(214, 37, 56, 0.08), transparent);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin-bottom: 1.2rem;
+  }
+  .banner-label { font-weight: 700; color: var(--text); font-size: 0.92rem; }
+  .banner-years { color: var(--text-muted); font-size: 0.85rem; }
 
   .player-name {
     font-size: clamp(2.4rem, 6vw, 3.6rem);

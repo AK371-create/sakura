@@ -1,0 +1,27 @@
+{
+  "key": "matsuzaka",
+  "name_jp": "松坂大輔",
+  "name_en": "Daisuke Matsuzaka",
+  "team_jp": "ボストン・レッドソックス",
+  "team_en": "Boston Red Sox",
+  "team_short": "BOS",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "先発投手",
+  "position_en": "Starting Pitcher",
+  "mlb_years": "2007-2014",
+  "current_status_jp": "2021年引退",
+  "current_status_en": "Retired (2021)",
+  "basic": {
+    "pitching": {
+      "era": "4.45",
+      "w": 56,
+      "l": 43,
+      "so": 720,
+      "whip": "1.41",
+      "ip": "790.2"
+    }
+  },
+  "updated_at": "2026-04-25"
+}

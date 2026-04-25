@@ -16,6 +16,12 @@ function sortPlayers(arr: any[]) {
 }
 const mlbPlayers = sortPlayers(allPlayers.filter((p) => p.level === "MLB"));
 const aaaPlayers = sortPlayers(allPlayers.filter((p) => p.level === "AAA"));
+const formerPlayers = [...allPlayers.filter((p) => p.level === "FORMER")]
+  .sort((a, b) => {
+    const ya = parseInt((a.mlb_years ?? "0").split("-")[0]) || 0;
+    const yb = parseInt((b.mlb_years ?? "0").split("-")[0]) || 0;
+    return yb - ya;
+  });
 
 const articleModules = import.meta.glob("../../content/articles/*.json", { eager: true });
 const articles = Object.values(articleModules)
@@ -31,6 +37,7 @@ const categoryLabels: Record<string, string> = {
 const stats = {
   mlb: mlbPlayers.length,
   aaa: aaaPlayers.length,
+  former: formerPlayers.length,
   articles: articles.length,
   lastUpdate: articles[0]?.date ?? "",
 };
@@ -52,12 +59,12 @@ const stats = {
         <div class="hstat-lbl">AAA ROSTER</div>
       </div>
       <div class="hstat">
-        <div class="hstat-val mono">{stats.articles}</div>
-        <div class="hstat-lbl">ARTICLES</div>
+        <div class="hstat-val mono">{stats.former}</div>
+        <div class="hstat-lbl">FORMER MLB</div>
       </div>
       <div class="hstat">
-        <div class="hstat-val mono">{stats.lastUpdate}</div>
-        <div class="hstat-lbl">LAST UPDATE</div>
+        <div class="hstat-val mono">{stats.articles}</div>
+        <div class="hstat-lbl">ARTICLES</div>
       </div>
     </div>
   </section>
@@ -94,10 +101,27 @@ const stats = {
     </section>
   )}
 
+  {formerPlayers.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <div class="section-head-main">
+          <span class="section-num mono">03</span>
+          <h2>Former MLB</h2>
+        </div>
+        <span class="mono section-count">{formerPlayers.length} players</span>
+      </div>
+      <div class="player-grid">
+        {formerPlayers.map((p) => (
+          <PlayerCard player={p} lang="en" href={`/en/players/${p.key}/`} />
+        ))}
+      </div>
+    </section>
+  )}
+
   <section class="section">
     <div class="section-head">
       <div class="section-head-main">
-        <span class="section-num mono">03</span>
+        <span class="section-num mono">04</span>
         <h2>Analysis</h2>
       </div>
       <a class="section-link mono" href="/en/articles/">VIEW ALL →</a>

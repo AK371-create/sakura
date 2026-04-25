@@ -1,0 +1,27 @@
+{
+  "key": "tsutsugo",
+  "name_jp": "筒香嘉智",
+  "name_en": "Yoshitomo Tsutsugo",
+  "team_jp": "タンパベイ・レイズ",
+  "team_en": "Tampa Bay Rays",
+  "team_short": "TB",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "batter",
+  "position_jp": "外野手 / 一塁手",
+  "position_en": "OF / 1B",
+  "mlb_years": "2020-2022",
+  "current_status_jp": "横浜DeNAベイスターズ所属",
+  "current_status_en": "Now with Yokohama DeNA (NPB)",
+  "basic": {
+    "hitting": {
+      "avg": ".211",
+      "hr": 14,
+      "rbi": 53,
+      "obp": ".311",
+      "ops": ".677",
+      "sb": 0
+    }
+  },
+  "updated_at": "2026-04-25"
+}

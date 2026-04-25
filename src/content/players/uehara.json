@@ -1,0 +1,27 @@
+{
+  "key": "uehara",
+  "name_jp": "上原浩治",
+  "name_en": "Koji Uehara",
+  "team_jp": "ボストン・レッドソックス",
+  "team_en": "Boston Red Sox",
+  "team_short": "BOS",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "中継ぎ投手",
+  "position_en": "Relief Pitcher",
+  "mlb_years": "2009-2017",
+  "current_status_jp": "2019年引退",
+  "current_status_en": "Retired (2019)",
+  "basic": {
+    "pitching": {
+      "era": "2.66",
+      "w": 22,
+      "l": 26,
+      "so": 562,
+      "whip": "0.89",
+      "ip": "440.2"
+    }
+  },
+  "updated_at": "2026-04-25"
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate player JSON files for SakuraBall — MLB + 3A Japanese players."""
+"""Generate player JSON files for SakuraBall — MLB + 3A + 過去のMLB."""
 import json
 from pathlib import Path
 
@@ -214,38 +214,7 @@ PLAYERS = [
             ],
         },
     },
-    {
-        "key": "fujinami",
-        "name_jp": "藤浪晋太郎", "name_en": "Shintaro Fujinami",
-        "team_jp": "ニューヨーク・メッツ", "team_en": "New York Mets", "team_short": "NYM",
-        "league": "NL", "level": "MLB", "type": "pitcher",
-        "position_jp": "中継ぎ投手", "position_en": "Relief Pitcher",
-        "basic": {"pitching": {"era": "4.50", "w": 1, "l": 0, "so": 15, "whip": "1.50", "ip": "12.0"}},
-        "savant": {
-            "pitch_arsenal": [
-                {"pitch": "FF", "jp": "4シーム", "en": "4-Seam Fastball", "usage": 52.0, "ba": ".240", "whiff": 28.0, "hard_hit": 40.0},
-                {"pitch": "SL", "jp": "スライダー", "en": "Slider", "usage": 28.5, "ba": ".200", "whiff": 35.0, "hard_hit": 32.0},
-                {"pitch": "FS", "jp": "スプリット", "en": "Splitter", "usage": 19.5, "ba": ".210", "whiff": 32.0, "hard_hit": 30.0},
-            ],
-        },
-    },
     # ===== AAA (Triple-A) =====
-    {
-        "key": "uwasawa",
-        "name_jp": "上沢直之", "name_en": "Naoyuki Uwasawa",
-        "team_jp": "ダーラム・ブルズ (3A)", "team_en": "Durham Bulls (AAA)", "team_short": "DUR",
-        "league": "AAA", "level": "AAA", "type": "pitcher",
-        "position_jp": "先発投手", "position_en": "Starting Pitcher",
-        "basic": {"pitching": {"era": "3.85", "w": 2, "l": 1, "so": 20, "whip": "1.25", "ip": "22.0"}},
-        "savant": {
-            "pitch_arsenal": [
-                {"pitch": "FF", "jp": "4シーム", "en": "4-Seam Fastball", "usage": 42.0, "ba": ".265", "whiff": 18.0, "hard_hit": 42.0},
-                {"pitch": "FS", "jp": "スプリット", "en": "Splitter", "usage": 25.5, "ba": ".210", "whiff": 32.0, "hard_hit": 30.0},
-                {"pitch": "SL", "jp": "スライダー", "en": "Slider", "usage": 18.0, "ba": ".235", "whiff": 28.0, "hard_hit": 35.0},
-                {"pitch": "CU", "jp": "カーブ", "en": "Curveball", "usage": 14.5, "ba": ".220", "whiff": 25.0, "hard_hit": 32.0},
-            ],
-        },
-    },
     {
         "key": "saito",
         "name_jp": "齋藤友貴哉", "name_en": "Yukiya Saito",
@@ -277,6 +246,148 @@ PLAYERS = [
             ],
         },
     },
+    # ===== FORMER (過去のMLB所属) =====
+    {
+        "key": "ichiro",
+        "name_jp": "イチロー", "name_en": "Ichiro Suzuki",
+        "team_jp": "シアトル・マリナーズ", "team_en": "Seattle Mariners", "team_short": "SEA",
+        "league": "AL", "level": "FORMER", "type": "batter",
+        "position_jp": "外野手", "position_en": "Outfielder",
+        "mlb_years": "2001-2019",
+        "current_status_jp": "2019年引退", "current_status_en": "Retired (2019)",
+        "basic": {"hitting": {"avg": ".311", "hr": 117, "rbi": 780, "obp": ".355", "ops": ".757", "sb": 509}},
+    },
+    {
+        "key": "matsui-hideki",
+        "name_jp": "松井秀喜", "name_en": "Hideki Matsui",
+        "team_jp": "ニューヨーク・ヤンキース", "team_en": "New York Yankees", "team_short": "NYY",
+        "league": "AL", "level": "FORMER", "type": "batter",
+        "position_jp": "外野手 / 指名打者", "position_en": "OF / DH",
+        "mlb_years": "2003-2012",
+        "current_status_jp": "2012年引退", "current_status_en": "Retired (2012)",
+        "basic": {"hitting": {"avg": ".282", "hr": 175, "rbi": 760, "obp": ".360", "ops": ".822", "sb": 7}},
+    },
+    {
+        "key": "nomo",
+        "name_jp": "野茂英雄", "name_en": "Hideo Nomo",
+        "team_jp": "ロサンゼルス・ドジャース", "team_en": "Los Angeles Dodgers", "team_short": "LAD",
+        "league": "NL", "level": "FORMER", "type": "pitcher",
+        "position_jp": "先発投手", "position_en": "Starting Pitcher",
+        "mlb_years": "1995-2008",
+        "current_status_jp": "2008年引退", "current_status_en": "Retired (2008)",
+        "basic": {"pitching": {"era": "4.24", "w": 123, "l": 109, "so": 1918, "whip": "1.35", "ip": "1976.1"}},
+    },
+    {
+        "key": "uehara",
+        "name_jp": "上原浩治", "name_en": "Koji Uehara",
+        "team_jp": "ボストン・レッドソックス", "team_en": "Boston Red Sox", "team_short": "BOS",
+        "league": "AL", "level": "FORMER", "type": "pitcher",
+        "position_jp": "中継ぎ投手", "position_en": "Relief Pitcher",
+        "mlb_years": "2009-2017",
+        "current_status_jp": "2019年引退", "current_status_en": "Retired (2019)",
+        "basic": {"pitching": {"era": "2.66", "w": 22, "l": 26, "so": 562, "whip": "0.89", "ip": "440.2"}},
+    },
+    {
+        "key": "kuroda",
+        "name_jp": "黒田博樹", "name_en": "Hiroki Kuroda",
+        "team_jp": "ニューヨーク・ヤンキース", "team_en": "New York Yankees", "team_short": "NYY",
+        "league": "AL", "level": "FORMER", "type": "pitcher",
+        "position_jp": "先発投手", "position_en": "Starting Pitcher",
+        "mlb_years": "2008-2014",
+        "current_status_jp": "2016年引退(NPB復帰後)", "current_status_en": "Retired (2016)",
+        "basic": {"pitching": {"era": "3.45", "w": 79, "l": 79, "so": 986, "whip": "1.18", "ip": "1319.0"}},
+    },
+    {
+        "key": "tanaka",
+        "name_jp": "田中将大", "name_en": "Masahiro Tanaka",
+        "team_jp": "ニューヨーク・ヤンキース", "team_en": "New York Yankees", "team_short": "NYY",
+        "league": "AL", "level": "FORMER", "type": "pitcher",
+        "position_jp": "先発投手", "position_en": "Starting Pitcher",
+        "mlb_years": "2014-2020",
+        "current_status_jp": "東北楽天イーグルス所属", "current_status_en": "Now with Rakuten (NPB)",
+        "basic": {"pitching": {"era": "3.74", "w": 78, "l": 46, "so": 991, "whip": "1.13", "ip": "1054.1"}},
+    },
+    {
+        "key": "matsuzaka",
+        "name_jp": "松坂大輔", "name_en": "Daisuke Matsuzaka",
+        "team_jp": "ボストン・レッドソックス", "team_en": "Boston Red Sox", "team_short": "BOS",
+        "league": "AL", "level": "FORMER", "type": "pitcher",
+        "position_jp": "先発投手", "position_en": "Starting Pitcher",
+        "mlb_years": "2007-2014",
+        "current_status_jp": "2021年引退", "current_status_en": "Retired (2021)",
+        "basic": {"pitching": {"era": "4.45", "w": 56, "l": 43, "so": 720, "whip": "1.41", "ip": "790.2"}},
+    },
+    {
+        "key": "aoki",
+        "name_jp": "青木宣親", "name_en": "Norichika Aoki",
+        "team_jp": "ミルウォーキー・ブルワーズ", "team_en": "Milwaukee Brewers", "team_short": "MIL",
+        "league": "NL", "level": "FORMER", "type": "batter",
+        "position_jp": "外野手", "position_en": "Outfielder",
+        "mlb_years": "2012-2017",
+        "current_status_jp": "2024年引退", "current_status_en": "Retired (2024)",
+        "basic": {"hitting": {"avg": ".285", "hr": 35, "rbi": 192, "obp": ".350", "ops": ".743", "sb": 79}},
+    },
+    {
+        "key": "fukudome",
+        "name_jp": "福留孝介", "name_en": "Kosuke Fukudome",
+        "team_jp": "シカゴ・カブス", "team_en": "Chicago Cubs", "team_short": "CHC",
+        "league": "NL", "level": "FORMER", "type": "batter",
+        "position_jp": "外野手", "position_en": "Outfielder",
+        "mlb_years": "2008-2012",
+        "current_status_jp": "2022年引退", "current_status_en": "Retired (2022)",
+        "basic": {"hitting": {"avg": ".258", "hr": 42, "rbi": 195, "obp": ".359", "ops": ".739", "sb": 13}},
+    },
+    {
+        "key": "iwamura",
+        "name_jp": "岩村明憲", "name_en": "Akinori Iwamura",
+        "team_jp": "タンパベイ・レイズ", "team_en": "Tampa Bay Rays", "team_short": "TB",
+        "league": "AL", "level": "FORMER", "type": "batter",
+        "position_jp": "二塁手 / 三塁手", "position_en": "2B / 3B",
+        "mlb_years": "2007-2010",
+        "current_status_jp": "2017年引退", "current_status_en": "Retired (2017)",
+        "basic": {"hitting": {"avg": ".267", "hr": 16, "rbi": 145, "obp": ".346", "ops": ".710", "sb": 21}},
+    },
+    {
+        "key": "hirano",
+        "name_jp": "平野佳寿", "name_en": "Yoshihisa Hirano",
+        "team_jp": "アリゾナ・ダイヤモンドバックス", "team_en": "Arizona Diamondbacks", "team_short": "ARI",
+        "league": "NL", "level": "FORMER", "type": "pitcher",
+        "position_jp": "中継ぎ投手", "position_en": "Relief Pitcher",
+        "mlb_years": "2018-2020",
+        "current_status_jp": "オリックス・バファローズ所属", "current_status_en": "Now with Orix (NPB)",
+        "basic": {"pitching": {"era": "4.40", "w": 6, "l": 7, "so": 130, "whip": "1.32", "ip": "133.0"}},
+    },
+    {
+        "key": "tsutsugo",
+        "name_jp": "筒香嘉智", "name_en": "Yoshitomo Tsutsugo",
+        "team_jp": "タンパベイ・レイズ", "team_en": "Tampa Bay Rays", "team_short": "TB",
+        "league": "AL", "level": "FORMER", "type": "batter",
+        "position_jp": "外野手 / 一塁手", "position_en": "OF / 1B",
+        "mlb_years": "2020-2022",
+        "current_status_jp": "横浜DeNAベイスターズ所属", "current_status_en": "Now with Yokohama DeNA (NPB)",
+        "basic": {"hitting": {"avg": ".211", "hr": 14, "rbi": 53, "obp": ".311", "ops": ".677", "sb": 0}},
+    },
+    {
+        "key": "akiyama",
+        "name_jp": "秋山翔吾", "name_en": "Shogo Akiyama",
+        "team_jp": "シンシナティ・レッズ", "team_en": "Cincinnati Reds", "team_short": "CIN",
+        "league": "NL", "level": "FORMER", "type": "batter",
+        "position_jp": "外野手", "position_en": "Outfielder",
+        "mlb_years": "2020-2021",
+        "current_status_jp": "広島東洋カープ所属", "current_status_en": "Now with Hiroshima (NPB)",
+        "basic": {"hitting": {"avg": ".224", "hr": 0, "rbi": 16, "obp": ".300", "ops": ".574", "sb": 6}},
+    },
+    {
+        "key": "fujinami",
+        "name_jp": "藤浪晋太郎", "name_en": "Shintaro Fujinami",
+        "team_jp": "オークランド・アスレチックス", "team_en": "Oakland Athletics", "team_short": "OAK",
+        "league": "AL", "level": "FORMER", "type": "pitcher",
+        "position_jp": "中継ぎ投手", "position_en": "Relief Pitcher",
+        "mlb_years": "2023-2024",
+        "current_status_jp": "NPB復帰",
+        "current_status_en": "Returned to NPB",
+        "basic": {"pitching": {"era": "7.18", "w": 7, "l": 12, "so": 132, "whip": "1.66", "ip": "121.2"}},
+    },
 ]
 
 UPDATED = "2026-04-25"
@@ -285,6 +396,7 @@ for p in PLAYERS:
     path = OUT / f"{p['key']}.json"
     path.write_text(json.dumps(p, ensure_ascii=False, indent=2), encoding="utf-8")
 
-print(f"Generated {len(PLAYERS)} players at {OUT}")
-print("MLB:", sum(1 for p in PLAYERS if p["level"] == "MLB"))
-print("AAA:", sum(1 for p in PLAYERS if p["level"] == "AAA"))
+mlb = sum(1 for p in PLAYERS if p["level"] == "MLB")
+aaa = sum(1 for p in PLAYERS if p["level"] == "AAA")
+former = sum(1 for p in PLAYERS if p["level"] == "FORMER")
+print(f"Generated {len(PLAYERS)} players: MLB={mlb} AAA={aaa} FORMER={former}")

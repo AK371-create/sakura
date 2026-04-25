@@ -1,0 +1,27 @@
+{
+  "key": "fukudome",
+  "name_jp": "福留孝介",
+  "name_en": "Kosuke Fukudome",
+  "team_jp": "シカゴ・カブス",
+  "team_en": "Chicago Cubs",
+  "team_short": "CHC",
+  "league": "NL",
+  "level": "FORMER",
+  "type": "batter",
+  "position_jp": "外野手",
+  "position_en": "Outfielder",
+  "mlb_years": "2008-2012",
+  "current_status_jp": "2022年引退",
+  "current_status_en": "Retired (2022)",
+  "basic": {
+    "hitting": {
+      "avg": ".258",
+      "hr": 42,
+      "rbi": 195,
+      "obp": ".359",
+      "ops": ".739",
+      "sb": 13
+    }
+  },
+  "updated_at": "2026-04-25"
+}

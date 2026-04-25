@@ -1,0 +1,27 @@
+{
+  "key": "tanaka",
+  "name_jp": "田中将大",
+  "name_en": "Masahiro Tanaka",
+  "team_jp": "ニューヨーク・ヤンキース",
+  "team_en": "New York Yankees",
+  "team_short": "NYY",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "先発投手",
+  "position_en": "Starting Pitcher",
+  "mlb_years": "2014-2020",
+  "current_status_jp": "東北楽天イーグルス所属",
+  "current_status_en": "Now with Rakuten (NPB)",
+  "basic": {
+    "pitching": {
+      "era": "3.74",
+      "w": 78,
+      "l": 46,
+      "so": 991,
+      "whip": "1.13",
+      "ip": "1054.1"
+    }
+  },
+  "updated_at": "2026-04-25"
+}

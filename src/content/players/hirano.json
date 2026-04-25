@@ -1,0 +1,27 @@
+{
+  "key": "hirano",
+  "name_jp": "平野佳寿",
+  "name_en": "Yoshihisa Hirano",
+  "team_jp": "アリゾナ・ダイヤモンドバックス",
+  "team_en": "Arizona Diamondbacks",
+  "team_short": "ARI",
+  "league": "NL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "中継ぎ投手",
+  "position_en": "Relief Pitcher",
+  "mlb_years": "2018-2020",
+  "current_status_jp": "オリックス・バファローズ所属",
+  "current_status_en": "Now with Orix (NPB)",
+  "basic": {
+    "pitching": {
+      "era": "4.40",
+      "w": 6,
+      "l": 7,
+      "so": 130,
+      "whip": "1.32",
+      "ip": "133.0"
+    }
+  },
+  "updated_at": "2026-04-25"
+}

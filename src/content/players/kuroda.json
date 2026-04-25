@@ -1,0 +1,27 @@
+{
+  "key": "kuroda",
+  "name_jp": "黒田博樹",
+  "name_en": "Hiroki Kuroda",
+  "team_jp": "ニューヨーク・ヤンキース",
+  "team_en": "New York Yankees",
+  "team_short": "NYY",
+  "league": "AL",
+  "level": "FORMER",
+  "type": "pitcher",
+  "position_jp": "先発投手",
+  "position_en": "Starting Pitcher",
+  "mlb_years": "2008-2014",
+  "current_status_jp": "2016年引退(NPB復帰後)",
+  "current_status_en": "Retired (2016)",
+  "basic": {
+    "pitching": {
+      "era": "3.45",
+      "w": 79,
+      "l": 79,
+      "so": 986,
+      "whip": "1.18",
+      "ip": "1319.0"
+    }
+  },
+  "updated_at": "2026-04-25"
+}

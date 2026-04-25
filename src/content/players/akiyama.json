@@ -1,0 +1,27 @@
+{
+  "key": "akiyama",
+  "name_jp": "秋山翔吾",
+  "name_en": "Shogo Akiyama",
+  "team_jp": "シンシナティ・レッズ",
+  "team_en": "Cincinnati Reds",
+  "team_short": "CIN",
+  "league": "NL",
+  "level": "FORMER",
+  "type": "batter",
+  "position_jp": "外野手",
+  "position_en": "Outfielder",
+  "mlb_years": "2020-2021",
+  "current_status_jp": "広島東洋カープ所属",
+  "current_status_en": "Now with Hiroshima (NPB)",
+  "basic": {
+    "hitting": {
+      "avg": ".224",
+      "hr": 0,
+      "rbi": 16,
+      "obp": ".300",
+      "ops": ".574",
+      "sb": 6
+    }
+  },
+  "updated_at": "2026-04-25"
+}
