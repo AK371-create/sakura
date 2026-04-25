@@ -4,12 +4,21 @@
   "name_en": "Munetaka Murakami",
   "team_jp": "シカゴ・ホワイトソックス",
   "team_en": "Chicago White Sox",
+  "team_short": "CWS",
   "league": "AL",
+  "level": "MLB",
   "type": "batter",
   "position_jp": "三塁手",
   "position_en": "Third Baseman",
   "basic": {
-    "hitting": { "avg": ".253", "hr": 10, "rbi": 19, "obp": ".420", "ops": ".992", "sb": 0 }
+    "hitting": {
+      "avg": ".253",
+      "hr": 10,
+      "rbi": 19,
+      "obp": ".420",
+      "ops": ".992",
+      "sb": 0
+    }
   },
   "savant": {
     "hitting": {

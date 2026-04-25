@@ -1,11 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import PlayerCard from "../components/PlayerCard.astro";
-import ohtani from "../content/players/ohtani.json";
-import imanaga from "../content/players/imanaga.json";
-import murakami from "../content/players/murakami.json";
 
-const players = [ohtani, imanaga, murakami];
+const playerModules = import.meta.glob("../content/players/*.json", { eager: true });
+const allPlayers = Object.values(playerModules).map((m: any) => m.default);
+
+// Order: MLB first (NL→AL, then by name), then AAA
+const typeRank = { two_way: 0, batter: 1, pitcher: 2 } as Record<string, number>;
+function sortPlayers(arr: any[]) {
+  return [...arr].sort((a, b) => {
+    const ta = typeRank[a.type] ?? 9;
+    const tb = typeRank[b.type] ?? 9;
+    if (ta !== tb) return ta - tb;
+    return a.key.localeCompare(b.key);
+  });
+}
+const mlbPlayers = sortPlayers(allPlayers.filter((p) => p.level === "MLB"));
+const aaaPlayers = sortPlayers(allPlayers.filter((p) => p.level === "AAA"));
 
 const articleModules = import.meta.glob("../content/articles/*.json", { eager: true });
 const articles = Object.values(articleModules)
@@ -19,7 +30,9 @@ const categoryLabels: Record<string, string> = {
 };
 
 const stats = {
-  players: players.length,
+  players: allPlayers.length,
+  mlb: mlbPlayers.length,
+  aaa: aaaPlayers.length,
   articles: articles.length,
   lastUpdate: articles[0]?.date ?? "",
 };
@@ -33,8 +46,12 @@ const stats = {
     </p>
     <div class="hero-stats">
       <div class="hstat">
-        <div class="hstat-val mono">{stats.players}</div>
-        <div class="hstat-lbl">選手</div>
+        <div class="hstat-val mono">{stats.mlb}</div>
+        <div class="hstat-lbl">MLB所属</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-val mono">{stats.aaa}</div>
+        <div class="hstat-lbl">3A所属</div>
       </div>
       <div class="hstat">
         <div class="hstat-val mono">{stats.articles}</div>
@@ -51,21 +68,38 @@ const stats = {
     <div class="section-head">
       <div class="section-head-main">
         <span class="section-num mono">01</span>
-        <h2>選手</h2>
+        <h2>MLB所属</h2>
       </div>
-      <span class="mono section-count">{players.length}名</span>
+      <span class="mono section-count">{mlbPlayers.length}名</span>
     </div>
     <div class="player-grid">
-      {players.map((p) => (
+      {mlbPlayers.map((p) => (
         <PlayerCard player={p} lang="ja" href={`/players/${p.key}/`} />
       ))}
     </div>
   </section>
 
+  {aaaPlayers.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <div class="section-head-main">
+          <span class="section-num mono">02</span>
+          <h2>3A所属</h2>
+        </div>
+        <span class="mono section-count">{aaaPlayers.length}名</span>
+      </div>
+      <div class="player-grid">
+        {aaaPlayers.map((p) => (
+          <PlayerCard player={p} lang="ja" href={`/players/${p.key}/`} />
+        ))}
+      </div>
+    </section>
+  )}
+
   <section class="section">
     <div class="section-head">
       <div class="section-head-main">
-        <span class="section-num mono">02</span>
+        <span class="section-num mono">03</span>
         <h2>記事</h2>
       </div>
       <a class="section-link" href="/articles/">すべて見る →</a>
@@ -86,35 +120,29 @@ const stats = {
 </Layout>
 
 <style>
-  /* Hero */
-  .hero {
-    padding: 3rem 0 2.5rem;
-    margin-bottom: 1rem;
-  }
+  .hero { padding: 3rem 0 2.5rem; margin-bottom: 1rem; }
   .hero-eyebrow {
-    font-size: 0.72rem;
-    font-weight: 600;
+    font-size: 0.72rem; font-weight: 600;
     color: var(--accent);
     letter-spacing: 0.2em;
     margin-bottom: 1.2rem;
   }
   .hero-title {
     font-size: clamp(2.2rem, 5.5vw, 3.8rem);
-    font-weight: 800;
-    line-height: 1.05;
+    font-weight: 800; line-height: 1.05;
     letter-spacing: -0.03em;
     margin: 0 0 1.2rem;
   }
   .hero-title .accent { color: var(--accent); }
   .hero-lede {
     max-width: 560px;
-    font-size: 1.02rem;
-    color: var(--text-muted);
-    line-height: 1.7;
-    margin: 0 0 2rem;
+    font-size: 1.02rem; color: var(--text-muted);
+    line-height: 1.7; margin: 0 0 2rem;
   }
   .hero-stats {
-    display: flex; gap: 2rem; flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
     padding: 1.2rem 0;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
@@ -122,18 +150,13 @@ const stats = {
   .hstat { display: flex; flex-direction: column; gap: 0.25rem; }
   .hstat-val {
     font-size: 1.5rem; font-weight: 700;
-    color: var(--text);
-    line-height: 1;
-    font-feature-settings: "tnum" 1;
+    color: var(--text); line-height: 1;
   }
   .hstat-lbl {
-    font-size: 0.72rem;
-    color: var(--text-muted);
-    letter-spacing: 0.06em;
+    font-size: 0.78rem; color: var(--text-muted);
     font-weight: 500;
   }
 
-  /* Section */
   .section { margin-top: 3rem; }
   .section-head {
     display: flex; align-items: flex-end; justify-content: space-between;
@@ -143,17 +166,16 @@ const stats = {
   }
   .section-head-main { display: flex; align-items: baseline; gap: 0.7rem; }
   .section-num {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--text-dim);
-    letter-spacing: 0.08em;
   }
   .section-head h2 {
     font-size: 1.3rem; font-weight: 700; margin: 0;
     letter-spacing: -0.01em;
   }
-  .section-count { font-size: 0.7rem; color: var(--text-dim); letter-spacing: 0.08em; }
+  .section-count { font-size: 0.85rem; color: var(--text-dim); }
   .section-link {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: var(--text-muted);
   }
@@ -180,31 +202,28 @@ const stats = {
     transition: border-color 0.2s ease, background 0.2s ease;
   }
   .article-tile:hover {
-    border-color: var(--border-strong);
+    border-color: var(--accent);
     background: var(--surface-2);
     text-decoration: none;
   }
   .tile-meta {
     display: flex; gap: 0.6rem; align-items: center;
-    font-size: 0.75rem;
+    font-size: 0.78rem;
   }
   .tile-cat {
     color: var(--accent);
     font-weight: 600;
     background: rgba(214, 37, 56, 0.08);
-    padding: 0.1rem 0.5rem;
+    padding: 0.12rem 0.55rem;
     border-radius: 100px;
   }
-  .tile-date { color: var(--text-dim); font-size: 0.72rem; }
+  .tile-date { color: var(--text-dim); font-size: 0.75rem; }
   .tile-title {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.45;
-    color: var(--text);
+    font-size: 1rem; font-weight: 700;
+    line-height: 1.45; color: var(--text);
   }
   .tile-summary {
-    font-size: 0.83rem;
-    color: var(--text-muted);
+    font-size: 0.85rem; color: var(--text-muted);
     line-height: 1.6;
     display: -webkit-box;
     -webkit-line-clamp: 3;

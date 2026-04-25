@@ -1,0 +1,64 @@
+{
+  "key": "maeda",
+  "name_jp": "前田健太",
+  "name_en": "Kenta Maeda",
+  "team_jp": "デトロイト・タイガース",
+  "team_en": "Detroit Tigers",
+  "team_short": "DET",
+  "league": "AL",
+  "level": "MLB",
+  "type": "pitcher",
+  "position_jp": "先発投手",
+  "position_en": "Starting Pitcher",
+  "basic": {
+    "pitching": {
+      "era": "4.10",
+      "w": 1,
+      "l": 2,
+      "so": 22,
+      "whip": "1.30",
+      "ip": "24.0"
+    }
+  },
+  "savant": {
+    "pitch_arsenal": [
+      {
+        "pitch": "SL",
+        "jp": "スライダー",
+        "en": "Slider",
+        "usage": 38.2,
+        "ba": ".200",
+        "whiff": 36.0,
+        "hard_hit": 30.0
+      },
+      {
+        "pitch": "FF",
+        "jp": "4シーム",
+        "en": "4-Seam Fastball",
+        "usage": 30.5,
+        "ba": ".265",
+        "whiff": 18.0,
+        "hard_hit": 45.0
+      },
+      {
+        "pitch": "CH",
+        "jp": "チェンジアップ",
+        "en": "Changeup",
+        "usage": 18.4,
+        "ba": ".220",
+        "whiff": 30.0,
+        "hard_hit": 35.0
+      },
+      {
+        "pitch": "FS",
+        "jp": "スプリット",
+        "en": "Splitter",
+        "usage": 12.9,
+        "ba": ".180",
+        "whiff": 38.0,
+        "hard_hit": 28.0
+      }
+    ]
+  },
+  "updated_at": "2026-04-25"
+}

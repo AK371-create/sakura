@@ -1,0 +1,64 @@
+{
+  "key": "kikuchi",
+  "name_jp": "菊池雄星",
+  "name_en": "Yusei Kikuchi",
+  "team_jp": "ロサンゼルス・エンゼルス",
+  "team_en": "Los Angeles Angels",
+  "team_short": "LAA",
+  "league": "AL",
+  "level": "MLB",
+  "type": "pitcher",
+  "position_jp": "先発投手",
+  "position_en": "Starting Pitcher",
+  "basic": {
+    "pitching": {
+      "era": "3.45",
+      "w": 2,
+      "l": 1,
+      "so": 25,
+      "whip": "1.20",
+      "ip": "26.0"
+    }
+  },
+  "savant": {
+    "pitch_arsenal": [
+      {
+        "pitch": "FF",
+        "jp": "4シーム",
+        "en": "4-Seam Fastball",
+        "usage": 38.4,
+        "ba": ".235",
+        "whiff": 22.0,
+        "hard_hit": 42.0
+      },
+      {
+        "pitch": "SL",
+        "jp": "スライダー",
+        "en": "Slider",
+        "usage": 28.6,
+        "ba": ".185",
+        "whiff": 38.0,
+        "hard_hit": 28.0
+      },
+      {
+        "pitch": "CU",
+        "jp": "カーブ",
+        "en": "Curveball",
+        "usage": 18.5,
+        "ba": ".210",
+        "whiff": 28.0,
+        "hard_hit": 32.0
+      },
+      {
+        "pitch": "CH",
+        "jp": "チェンジアップ",
+        "en": "Changeup",
+        "usage": 14.5,
+        "ba": ".200",
+        "whiff": 35.0,
+        "hard_hit": 30.0
+      }
+    ]
+  },
+  "updated_at": "2026-04-25"
+}

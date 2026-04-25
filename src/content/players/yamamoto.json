@@ -1,0 +1,73 @@
+{
+  "key": "yamamoto",
+  "name_jp": "山本由伸",
+  "name_en": "Yoshinobu Yamamoto",
+  "team_jp": "ロサンゼルス・ドジャース",
+  "team_en": "Los Angeles Dodgers",
+  "team_short": "LAD",
+  "league": "NL",
+  "level": "MLB",
+  "type": "pitcher",
+  "position_jp": "先発投手",
+  "position_en": "Starting Pitcher",
+  "basic": {
+    "pitching": {
+      "era": "2.50",
+      "w": 3,
+      "l": 1,
+      "so": 28,
+      "whip": "1.05",
+      "ip": "28.2"
+    }
+  },
+  "savant": {
+    "pitch_arsenal": [
+      {
+        "pitch": "FF",
+        "jp": "4シーム",
+        "en": "4-Seam Fastball",
+        "usage": 38.2,
+        "ba": ".210",
+        "whiff": 23.5,
+        "hard_hit": 38.0
+      },
+      {
+        "pitch": "FS",
+        "jp": "スプリット",
+        "en": "Splitter",
+        "usage": 24.4,
+        "ba": ".145",
+        "whiff": 45.2,
+        "hard_hit": 25.0
+      },
+      {
+        "pitch": "CU",
+        "jp": "カーブ",
+        "en": "Curveball",
+        "usage": 18.6,
+        "ba": ".165",
+        "whiff": 38.0,
+        "hard_hit": 28.0
+      },
+      {
+        "pitch": "FC",
+        "jp": "カッター",
+        "en": "Cutter",
+        "usage": 11.5,
+        "ba": ".220",
+        "whiff": 21.0,
+        "hard_hit": 36.0
+      },
+      {
+        "pitch": "SL",
+        "jp": "スライダー",
+        "en": "Slider",
+        "usage": 7.3,
+        "ba": ".180",
+        "whiff": 36.0,
+        "hard_hit": 30.0
+      }
+    ]
+  },
+  "updated_at": "2026-04-25"
+}

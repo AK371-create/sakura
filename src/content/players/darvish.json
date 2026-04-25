@@ -1,0 +1,82 @@
+{
+  "key": "darvish",
+  "name_jp": "ダルビッシュ有",
+  "name_en": "Yu Darvish",
+  "team_jp": "サンディエゴ・パドレス",
+  "team_en": "San Diego Padres",
+  "team_short": "SD",
+  "league": "NL",
+  "level": "MLB",
+  "type": "pitcher",
+  "position_jp": "先発投手",
+  "position_en": "Starting Pitcher",
+  "basic": {
+    "pitching": {
+      "era": "3.25",
+      "w": 2,
+      "l": 2,
+      "so": 32,
+      "whip": "1.15",
+      "ip": "27.2"
+    }
+  },
+  "savant": {
+    "pitch_arsenal": [
+      {
+        "pitch": "FC",
+        "jp": "カッター",
+        "en": "Cutter",
+        "usage": 22.3,
+        "ba": ".225",
+        "whiff": 26.0,
+        "hard_hit": 37.0
+      },
+      {
+        "pitch": "SL",
+        "jp": "スライダー",
+        "en": "Slider",
+        "usage": 20.8,
+        "ba": ".180",
+        "whiff": 36.5,
+        "hard_hit": 28.0
+      },
+      {
+        "pitch": "FF",
+        "jp": "4シーム",
+        "en": "4-Seam Fastball",
+        "usage": 18.2,
+        "ba": ".240",
+        "whiff": 21.0,
+        "hard_hit": 41.0
+      },
+      {
+        "pitch": "FS",
+        "jp": "スプリット",
+        "en": "Splitter",
+        "usage": 14.5,
+        "ba": ".165",
+        "whiff": 42.0,
+        "hard_hit": 22.0
+      },
+      {
+        "pitch": "SI",
+        "jp": "シンカー",
+        "en": "Sinker",
+        "usage": 12.0,
+        "ba": ".265",
+        "whiff": 12.0,
+        "hard_hit": 45.0
+      },
+      {
+        "pitch": "CU",
+        "jp": "カーブ",
+        "en": "Curveball",
+        "usage": 12.2,
+        "ba": ".200",
+        "whiff": 30.0,
+        "hard_hit": 30.0
+      }
+    ]
+  },
+  "updated_at": "2026-04-25"
+}

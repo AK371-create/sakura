@@ -4,13 +4,29 @@
   "name_en": "Shohei Ohtani",
   "team_jp": "ロサンゼルス・ドジャース",
   "team_en": "Los Angeles Dodgers",
+  "team_short": "LAD",
   "league": "NL",
+  "level": "MLB",
   "type": "two_way",
   "position_jp": "指名打者 / 投手",
   "position_en": "DH / Pitcher",
   "basic": {
-    "hitting": { "avg": ".245", "hr": 5, "rbi": 12, "obp": ".380", "ops": ".900", "sb": 3 },
-    "pitching": { "era": "0.38", "w": 2, "l": 0, "so": 15, "whip": "0.85", "ip": "11.2" }
+    "hitting": {
+      "avg": ".245",
+      "hr": 5,
+      "rbi": 12,
+      "obp": ".380",
+      "ops": ".900",
+      "sb": 3
+    },
+    "pitching": {
+      "era": "0.38",
+      "w": 2,
+      "l": 0,
+      "so": 15,
+      "whip": "0.85",
+      "ip": "11.2"
+    }
   },
   "savant": {
     "hitting": {
@@ -25,7 +41,51 @@
       "bb_percent": 13.8
     },
     "pitch_arsenal": [
-      { "pitch": "FF", "jp": "4シーム", "en": "4-Seam Fastball", "usage": 44.4, "ba": ".105", "whiff": 27.0, "hard_hit": 40.7 }
+      {
+        "pitch": "FF",
+        "jp": "4シーム",
+        "en": "4-Seam Fastball",
+        "usage": 44.4,
+        "ba": ".105",
+        "whiff": 27.0,
+        "hard_hit": 40.7
+      },
+      {
+        "pitch": "SL",
+        "jp": "スイーパー",
+        "en": "Sweeper",
+        "usage": 28.2,
+        "ba": ".150",
+        "whiff": 38.5,
+        "hard_hit": 30.0
+      },
+      {
+        "pitch": "FS",
+        "jp": "スプリット",
+        "en": "Splitter",
+        "usage": 14.6,
+        "ba": ".080",
+        "whiff": 50.0,
+        "hard_hit": 22.0
+      },
+      {
+        "pitch": "FC",
+        "jp": "カッター",
+        "en": "Cutter",
+        "usage": 8.4,
+        "ba": ".180",
+        "whiff": 22.0,
+        "hard_hit": 35.0
+      },
+      {
+        "pitch": "CU",
+        "jp": "カーブ",
+        "en": "Curveball",
+        "usage": 4.4,
+        "ba": ".200",
+        "whiff": 28.0,
+        "hard_hit": 33.0
+      }
     ]
   },
   "updated_at": "2026-04-25"

@@ -1,0 +1,55 @@
+{
+  "key": "saito",
+  "name_jp": "齋藤友貴哉",
+  "name_en": "Yukiya Saito",
+  "team_jp": "サクラメント・リバーキャッツ (3A)",
+  "team_en": "Sacramento River Cats (AAA)",
+  "team_short": "SAC",
+  "league": "AAA",
+  "level": "AAA",
+  "type": "pitcher",
+  "position_jp": "中継ぎ投手",
+  "position_en": "Relief Pitcher",
+  "basic": {
+    "pitching": {
+      "era": "3.20",
+      "w": 1,
+      "l": 0,
+      "so": 14,
+      "whip": "1.20",
+      "ip": "11.0"
+    }
+  },
+  "savant": {
+    "pitch_arsenal": [
+      {
+        "pitch": "FF",
+        "jp": "4シーム",
+        "en": "4-Seam Fastball",
+        "usage": 58.0,
+        "ba": ".250",
+        "whiff": 22.0,
+        "hard_hit": 38.0
+      },
+      {
+        "pitch": "FS",
+        "jp": "フォーク",
+        "en": "Forkball",
+        "usage": 28.0,
+        "ba": ".180",
+        "whiff": 38.0,
+        "hard_hit": 28.0
+      },
+      {
+        "pitch": "SL",
+        "jp": "スライダー",
+        "en": "Slider",
+        "usage": 14.0,
+        "ba": ".220",
+        "whiff": 30.0,
+        "hard_hit": 32.0
+      }
+    ]
+  },
+  "updated_at": "2026-04-25"
+}

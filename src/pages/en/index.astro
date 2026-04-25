@@ -1,11 +1,21 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import PlayerCard from "../../components/PlayerCard.astro";
-import ohtani from "../../content/players/ohtani.json";
-import imanaga from "../../content/players/imanaga.json";
-import murakami from "../../content/players/murakami.json";
 
-const players = [ohtani, imanaga, murakami];
+const playerModules = import.meta.glob("../../content/players/*.json", { eager: true });
+const allPlayers = Object.values(playerModules).map((m: any) => m.default);
+
+const typeRank = { two_way: 0, batter: 1, pitcher: 2 } as Record<string, number>;
+function sortPlayers(arr: any[]) {
+  return [...arr].sort((a, b) => {
+    const ta = typeRank[a.type] ?? 9;
+    const tb = typeRank[b.type] ?? 9;
+    if (ta !== tb) return ta - tb;
+    return a.key.localeCompare(b.key);
+  });
+}
+const mlbPlayers = sortPlayers(allPlayers.filter((p) => p.level === "MLB"));
+const aaaPlayers = sortPlayers(allPlayers.filter((p) => p.level === "AAA"));
 
 const articleModules = import.meta.glob("../../content/articles/*.json", { eager: true });
 const articles = Object.values(articleModules)
@@ -19,30 +29,35 @@ const categoryLabels: Record<string, string> = {
 };
 
 const stats = {
-  players: players.length,
+  mlb: mlbPlayers.length,
+  aaa: aaaPlayers.length,
   articles: articles.length,
   lastUpdate: articles[0]?.date ?? "",
 };
 ---
 <Layout title="SakuraBall" description="Season stats, Statcast metrics, and analysis for Japanese MLB players" lang="en" currentPath="/">
   <section class="hero">
-    <div class="hero-eyebrow mono">JAPANESE MLB // 2026 SEASON</div>
+    <div class="hero-eyebrow mono">JAPANESE MLB / 2026 SEASON</div>
     <h1 class="hero-title">Japanese MLB,<br /><span class="accent">read as data.</span></h1>
     <p class="hero-lede">
       Statcast metrics, pitch arsenals, and percentile breakdowns for Japanese major leaguers.
     </p>
     <div class="hero-stats">
       <div class="hstat">
-        <div class="hstat-val mono">{stats.players}</div>
-        <div class="hstat-lbl mono">PLAYERS</div>
+        <div class="hstat-val mono">{stats.mlb}</div>
+        <div class="hstat-lbl">MLB ROSTER</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-val mono">{stats.aaa}</div>
+        <div class="hstat-lbl">AAA ROSTER</div>
       </div>
       <div class="hstat">
         <div class="hstat-val mono">{stats.articles}</div>
-        <div class="hstat-lbl mono">ARTICLES</div>
+        <div class="hstat-lbl">ARTICLES</div>
       </div>
       <div class="hstat">
         <div class="hstat-val mono">{stats.lastUpdate}</div>
-        <div class="hstat-lbl mono">LAST UPDATE</div>
+        <div class="hstat-lbl">LAST UPDATE</div>
       </div>
     </div>
   </section>
@@ -51,21 +66,38 @@ const stats = {
     <div class="section-head">
       <div class="section-head-main">
         <span class="section-num mono">01</span>
-        <h2>Players</h2>
+        <h2>MLB</h2>
       </div>
-      <span class="mono section-count">N={players.length}</span>
+      <span class="mono section-count">{mlbPlayers.length} players</span>
     </div>
     <div class="player-grid">
-      {players.map((p) => (
+      {mlbPlayers.map((p) => (
         <PlayerCard player={p} lang="en" href={`/en/players/${p.key}/`} />
       ))}
     </div>
   </section>
 
+  {aaaPlayers.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <div class="section-head-main">
+          <span class="section-num mono">02</span>
+          <h2>Triple-A</h2>
+        </div>
+        <span class="mono section-count">{aaaPlayers.length} players</span>
+      </div>
+      <div class="player-grid">
+        {aaaPlayers.map((p) => (
+          <PlayerCard player={p} lang="en" href={`/en/players/${p.key}/`} />
+        ))}
+      </div>
+    </section>
+  )}
+
   <section class="section">
     <div class="section-head">
       <div class="section-head-main">
-        <span class="section-num mono">02</span>
+        <span class="section-num mono">03</span>
         <h2>Analysis</h2>
       </div>
       <a class="section-link mono" href="/en/articles/">VIEW ALL →</a>
@@ -89,7 +121,8 @@ const stats = {
   .hero { padding: 3rem 0 2.5rem; margin-bottom: 1rem; }
   .hero-eyebrow {
     font-size: 0.72rem; font-weight: 600;
-    color: var(--accent); letter-spacing: 0.2em;
+    color: var(--accent);
+    letter-spacing: 0.2em;
     margin-bottom: 1.2rem;
   }
   .hero-title {
@@ -105,7 +138,9 @@ const stats = {
     line-height: 1.7; margin: 0 0 2rem;
   }
   .hero-stats {
-    display: flex; gap: 2rem; flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
     padding: 1.2rem 0;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
@@ -118,18 +153,20 @@ const stats = {
   .hstat-lbl {
     font-size: 0.65rem; color: var(--text-dim);
     letter-spacing: 0.15em;
+    font-weight: 600;
   }
 
   .section { margin-top: 3rem; }
   .section-head {
     display: flex; align-items: flex-end; justify-content: space-between;
-    margin-bottom: 1.2rem; padding-bottom: 0.8rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
     border-bottom: 1px solid var(--border);
   }
   .section-head-main { display: flex; align-items: baseline; gap: 0.7rem; }
-  .section-num { font-size: 0.8rem; color: var(--text-dim); letter-spacing: 0.08em; }
+  .section-num { font-size: 0.85rem; color: var(--text-dim); }
   .section-head h2 { font-size: 1.3rem; font-weight: 700; margin: 0; letter-spacing: -0.01em; }
-  .section-count { font-size: 0.7rem; color: var(--text-dim); letter-spacing: 0.08em; }
+  .section-count { font-size: 0.78rem; color: var(--text-dim); letter-spacing: 0.05em; }
   .section-link {
     font-size: 0.72rem; font-weight: 600;
     color: var(--text-muted); letter-spacing: 0.1em;
@@ -157,7 +194,7 @@ const stats = {
     transition: border-color 0.2s ease, background 0.2s ease;
   }
   .article-tile:hover {
-    border-color: var(--border-strong);
+    border-color: var(--accent);
     background: var(--surface-2);
     text-decoration: none;
   }

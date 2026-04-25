@@ -20,7 +20,7 @@ const typeCode = lang === "ja"
   <div class="card-head">
     <div class="head-tags">
       <span class={`tag type type-${player.type}`}>{typeCode}</span>
-      <span class={`tag league league-${player.league.toLowerCase()}`}>{player.league}</span>
+      <span class={`tag league league-${player.league.toLowerCase()}`}>{player.level === "AAA" ? (lang === "ja" ? "3A" : "AAA") : player.league}</span>
     </div>
     <div class="go" aria-hidden="true">→</div>
   </div>
@@ -118,6 +118,7 @@ const typeCode = lang === "ja"
   .tag.league { background: var(--surface-3); color: var(--text-muted); border: 1px solid var(--border); }
   .tag.league.league-nl { color: var(--sv-blue); border-color: rgba(44, 93, 209, 0.25); background: rgba(44, 93, 209, 0.06); }
   .tag.league.league-al { color: var(--sv-red); border-color: rgba(214, 37, 56, 0.25); background: rgba(214, 37, 56, 0.06); }
+  .tag.league.league-aaa { color: var(--sv-orange); border-color: rgba(237, 124, 44, 0.3); background: rgba(237, 124, 44, 0.08); }
 
   .go {
     color: var(--text-dim);

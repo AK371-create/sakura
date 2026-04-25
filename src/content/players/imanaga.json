@@ -4,17 +4,60 @@
   "name_en": "Shota Imanaga",
   "team_jp": "シカゴ・カブス",
   "team_en": "Chicago Cubs",
+  "team_short": "CHC",
   "league": "NL",
+  "level": "MLB",
   "type": "pitcher",
   "position_jp": "先発投手",
   "position_en": "Starting Pitcher",
   "basic": {
-    "pitching": { "era": "2.15", "w": 2, "l": 1, "so": 22, "whip": "1.05", "ip": "25.0" }
+    "pitching": {
+      "era": "2.15",
+      "w": 2,
+      "l": 1,
+      "so": 22,
+      "whip": "1.05",
+      "ip": "25.0"
+    }
   },
   "savant": {
     "pitch_arsenal": [
-      { "pitch": "FF", "jp": "4シーム", "en": "4-Seam Fastball", "usage": 44.5, "ba": ".163", "whiff": 17.7, "hard_hit": 63.3 },
-      { "pitch": "FS", "jp": "スプリット", "en": "Split-Finger", "usage": 33.4, "ba": ".175", "whiff": 41.9, "hard_hit": 20.0 }
+      {
+        "pitch": "FF",
+        "jp": "4シーム",
+        "en": "4-Seam Fastball",
+        "usage": 44.5,
+        "ba": ".163",
+        "whiff": 17.7,
+        "hard_hit": 63.3
+      },
+      {
+        "pitch": "FS",
+        "jp": "スプリット",
+        "en": "Split-Finger",
+        "usage": 33.4,
+        "ba": ".175",
+        "whiff": 41.9,
+        "hard_hit": 20.0
+      },
+      {
+        "pitch": "SL",
+        "jp": "スライダー",
+        "en": "Slider",
+        "usage": 14.2,
+        "ba": ".210",
+        "whiff": 32.0,
+        "hard_hit": 35.0
+      },
+      {
+        "pitch": "CU",
+        "jp": "カーブ",
+        "en": "Curveball",
+        "usage": 7.9,
+        "ba": ".185",
+        "whiff": 28.0,
+        "hard_hit": 25.0
+      }
     ]
   },
   "updated_at": "2026-04-25"

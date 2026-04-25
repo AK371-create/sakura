@@ -1,0 +1,55 @@
+{
+  "key": "sasaki",
+  "name_jp": "佐々木朗希",
+  "name_en": "Roki Sasaki",
+  "team_jp": "ロサンゼルス・ドジャース",
+  "team_en": "Los Angeles Dodgers",
+  "team_short": "LAD",
+  "league": "NL",
+  "level": "MLB",
+  "type": "pitcher",
+  "position_jp": "先発投手",
+  "position_en": "Starting Pitcher",
+  "basic": {
+    "pitching": {
+      "era": "2.80",
+      "w": 2,
+      "l": 0,
+      "so": 35,
+      "whip": "1.00",
+      "ip": "25.0"
+    }
+  },
+  "savant": {
+    "pitch_arsenal": [
+      {
+        "pitch": "FF",
+        "jp": "4シーム",
+        "en": "4-Seam Fastball",
+        "usage": 48.5,
+        "ba": ".180",
+        "whiff": 28.0,
+        "hard_hit": 35.0
+      },
+      {
+        "pitch": "FS",
+        "jp": "フォーク",
+        "en": "Forkball",
+        "usage": 36.2,
+        "ba": ".120",
+        "whiff": 52.0,
+        "hard_hit": 20.0
+      },
+      {
+        "pitch": "SL",
+        "jp": "スライダー",
+        "en": "Slider",
+        "usage": 15.3,
+        "ba": ".195",
+        "whiff": 35.0,
+        "hard_hit": 28.0
+      }
+    ]
+  },
+  "updated_at": "2026-04-25"
+}

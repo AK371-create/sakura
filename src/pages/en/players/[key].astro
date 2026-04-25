@@ -3,11 +3,11 @@ import Layout from "../../../layouts/Layout.astro";
 import { BATTING_SPECS, percentile, percentileColor } from "../../../lib/percentiles";
 
 export async function getStaticPaths() {
-  const ohtani = (await import("../../../content/players/ohtani.json")).default;
-  const imanaga = (await import("../../../content/players/imanaga.json")).default;
-  const murakami = (await import("../../../content/players/murakami.json")).default;
-  const all = [ohtani, imanaga, murakami];
-  return all.map((p) => ({ params: { key: p.key }, props: { player: p } }));
+  const modules = import.meta.glob("../../../content/players/*.json", { eager: true });
+  return Object.values(modules).map((m: any) => ({
+    params: { key: m.default.key },
+    props: { player: m.default },
+  }));
 }
 
 const { player } = Astro.props;
@@ -49,7 +49,7 @@ const pitchColors: Record<string, string> = {
   <header class="player-hero">
     <div class="hero-tags">
       <span class={`tag type type-${player.type}`}>{typeCode}</span>
-      <span class={`tag league league-${player.league.toLowerCase()}`}>{player.league}</span>
+      <span class={`tag league league-${player.league.toLowerCase()}`}>{player.level === "AAA" ? "AAA" : player.league}</span>
     </div>
     <h1 class="player-name">{player.name_en}</h1>
     <div class="player-meta">
@@ -200,6 +200,7 @@ const pitchColors: Record<string, string> = {
   .tag.league { background: var(--surface-3); color: var(--text-muted); border: 1px solid var(--border); }
   .tag.league.league-nl { color: var(--sv-blue); border-color: rgba(44, 93, 209, 0.25); background: rgba(44, 93, 209, 0.06); }
   .tag.league.league-al { color: var(--sv-red); border-color: rgba(214, 37, 56, 0.25); background: rgba(214, 37, 56, 0.06); }
+  .tag.league.league-aaa { color: var(--sv-orange); border-color: rgba(237, 124, 44, 0.3); background: rgba(237, 124, 44, 0.08); }
 
   .player-name {
     font-size: clamp(2.4rem, 6vw, 3.6rem);

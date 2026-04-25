@@ -1,0 +1,55 @@
+{
+  "key": "fujinami",
+  "name_jp": "藤浪晋太郎",
+  "name_en": "Shintaro Fujinami",
+  "team_jp": "ニューヨーク・メッツ",
+  "team_en": "New York Mets",
+  "team_short": "NYM",
+  "league": "NL",
+  "level": "MLB",
+  "type": "pitcher",
+  "position_jp": "中継ぎ投手",
+  "position_en": "Relief Pitcher",
+  "basic": {
+    "pitching": {
+      "era": "4.50",
+      "w": 1,
+      "l": 0,
+      "so": 15,
+      "whip": "1.50",
+      "ip": "12.0"
+    }
+  },
+  "savant": {
+    "pitch_arsenal": [
+      {
+        "pitch": "FF",
+        "jp": "4シーム",
+        "en": "4-Seam Fastball",
+        "usage": 52.0,
+        "ba": ".240",
+        "whiff": 28.0,
+        "hard_hit": 40.0
+      },
+      {
+        "pitch": "SL",
+        "jp": "スライダー",
+        "en": "Slider",
+        "usage": 28.5,
+        "ba": ".200",
+        "whiff": 35.0,
+        "hard_hit": 32.0
+      },
+      {
+        "pitch": "FS",
+        "jp": "スプリット",
+        "en": "Splitter",
+        "usage": 19.5,
+        "ba": ".210",
+        "whiff": 32.0,
+        "hard_hit": 30.0
+      }
+    ]
+  },
+  "updated_at": "2026-04-25"
+}

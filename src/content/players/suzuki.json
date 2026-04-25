@@ -1,0 +1,37 @@
+{
+  "key": "suzuki",
+  "name_jp": "鈴木誠也",
+  "name_en": "Seiya Suzuki",
+  "team_jp": "シカゴ・カブス",
+  "team_en": "Chicago Cubs",
+  "team_short": "CHC",
+  "league": "NL",
+  "level": "MLB",
+  "type": "batter",
+  "position_jp": "右翼手",
+  "position_en": "Right Fielder",
+  "basic": {
+    "hitting": {
+      "avg": ".276",
+      "hr": 4,
+      "rbi": 11,
+      "obp": ".355",
+      "ops": ".830",
+      "sb": 1
+    }
+  },
+  "savant": {
+    "hitting": {
+      "exit_velocity_avg": 90.5,
+      "launch_angle_avg": 13.2,
+      "barrel_batted_rate": 11.8,
+      "hard_hit_percent": 47.3,
+      "xba": ".270",
+      "xslg": ".470",
+      "xwoba": ".355",
+      "k_percent": 22.1,
+      "bb_percent": 9.2
+    }
+  },
+  "updated_at": "2026-04-25"
+}

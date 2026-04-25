@@ -1,0 +1,64 @@
+{
+  "key": "ogasawara",
+  "name_jp": "小笠原慎之介",
+  "name_en": "Shinnosuke Ogasawara",
+  "team_jp": "ロチェスター・レッドウィングス (3A)",
+  "team_en": "Rochester Red Wings (AAA)",
+  "team_short": "ROC",
+  "league": "AAA",
+  "level": "AAA",
+  "type": "pitcher",
+  "position_jp": "先発投手",
+  "position_en": "Starting Pitcher",
+  "basic": {
+    "pitching": {
+      "era": "4.20",
+      "w": 1,
+      "l": 2,
+      "so": 18,
+      "whip": "1.35",
+      "ip": "20.0"
+    }
+  },
+  "savant": {
+    "pitch_arsenal": [
+      {
+        "pitch": "FF",
+        "jp": "4シーム",
+        "en": "4-Seam Fastball",
+        "usage": 40.0,
+        "ba": ".275",
+        "whiff": 16.0,
+        "hard_hit": 44.0
+      },
+      {
+        "pitch": "CH",
+        "jp": "チェンジアップ",
+        "en": "Changeup",
+        "usage": 25.0,
+        "ba": ".220",
+        "whiff": 30.0,
+        "hard_hit": 32.0
+      },
+      {
+        "pitch": "SL",
+        "jp": "スライダー",
+        "en": "Slider",
+        "usage": 20.0,
+        "ba": ".240",
+        "whiff": 26.0,
+        "hard_hit": 35.0
+      },
+      {
+        "pitch": "CU",
+        "jp": "カーブ",
+        "en": "Curveball",
+        "usage": 15.0,
+        "ba": ".200",
+        "whiff": 28.0,
+        "hard_hit": 30.0
+      }
+    ]
+  },
+  "updated_at": "2026-04-25"
+}
