@@ -10,53 +10,152 @@ const team = lang === "ja" ? player.team_jp : player.team_en;
 const pos = lang === "ja" ? player.position_jp : player.position_en;
 const hitting = player.basic?.hitting;
 const pitching = player.basic?.pitching;
+
+const typeBadge = lang === "ja"
+  ? { two_way: "二刀流", batter: "野手", pitcher: "投手" }[player.type] ?? player.type
+  : { two_way: "Two-Way", batter: "Batter", pitcher: "Pitcher" }[player.type] ?? player.type;
+
+const leagueBadge = player.league;
 ---
 <a class="player-card" href={href}>
-  <div class="player-name">{name}</div>
-  <div class="player-team">{team}</div>
-  <div class="player-pos">{pos}</div>
-  <div class="player-stats">
+  <div class="card-top">
+    <div class="card-badges">
+      <span class={`badge type type-${player.type}`}>{typeBadge}</span>
+      <span class={`badge league league-${player.league.toLowerCase()}`}>{leagueBadge}</span>
+    </div>
+    <div class="card-name-block">
+      <h3 class="player-name">{name}</h3>
+      <div class="player-meta">
+        <span class="team">{team}</span>
+        <span class="dot">·</span>
+        <span class="pos">{pos}</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-stats">
     {hitting && (
-      <span class="stat-line">
-        <span class="stat-label">AVG</span> {hitting.avg}
-        <span class="stat-label">HR</span> {hitting.hr}
-        <span class="stat-label">OPS</span> {hitting.ops}
-      </span>
+      <>
+        <div class="stat"><span class="lbl">AVG</span><span class="val">{hitting.avg}</span></div>
+        <div class="stat"><span class="lbl">HR</span><span class="val">{hitting.hr}</span></div>
+        <div class="stat"><span class="lbl">OPS</span><span class="val">{hitting.ops}</span></div>
+      </>
     )}
-    {pitching && (
-      <span class="stat-line">
-        <span class="stat-label">ERA</span> {pitching.era}
-        <span class="stat-label">{lang === "ja" ? "勝敗" : "W-L"}</span> {pitching.w}-{pitching.l}
-        <span class="stat-label">{lang === "ja" ? "奪三振" : "SO"}</span> {pitching.so}
-      </span>
+    {pitching && !hitting && (
+      <>
+        <div class="stat"><span class="lbl">ERA</span><span class="val">{pitching.era}</span></div>
+        <div class="stat"><span class="lbl">SO</span><span class="val">{pitching.so}</span></div>
+        <div class="stat"><span class="lbl">WHIP</span><span class="val">{pitching.whip}</span></div>
+      </>
+    )}
+    {pitching && hitting && (
+      <div class="stat secondary"><span class="lbl">ERA</span><span class="val">{pitching.era}</span></div>
     )}
   </div>
+  <div class="card-arrow" aria-hidden="true">→</div>
 </a>
 
 <style>
   .player-card {
-    display: block;
-    padding: 1.2rem;
-    background: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "top stats" "top arrow";
+    gap: 0.8rem 1rem;
+    padding: 1.25rem 1.4rem;
+    background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 8px;
-    margin-bottom: 1rem;
+    border-radius: var(--radius-lg);
     color: var(--text);
-    transition: transform 0.15s, box-shadow 0.15s;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    overflow: hidden;
+  }
+  .player-card::before {
+    content: "";
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--rose-300), var(--rose-500));
+    opacity: 0;
+    transition: opacity 0.2s ease;
   }
   .player-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(216, 130, 150, 0.2);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--rose-200);
     text-decoration: none;
   }
-  .player-name { font-size: 1.4rem; font-weight: bold; color: var(--pink-dark); }
-  .player-team { color: var(--muted); font-size: 0.9rem; }
-  .player-pos { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.6rem; }
-  .player-stats { margin-top: 0.6rem; }
-  .stat-line { display: inline-flex; gap: 0.3rem; flex-wrap: wrap; }
-  .stat-label {
-    font-size: 0.75rem; color: var(--muted);
-    margin-right: 0.2rem; margin-left: 0.6rem;
+  .player-card:hover::before { opacity: 1; }
+  .player-card:hover .card-arrow { transform: translateX(4px); color: var(--accent); }
+
+  .card-top { grid-area: top; display: flex; flex-direction: column; gap: 0.5rem; }
+  .card-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  .badge {
+    font-size: 0.68rem; font-weight: 600;
+    padding: 0.2rem 0.55rem;
+    border-radius: 100px;
+    letter-spacing: 0.04em;
   }
-  .stat-label:first-child { margin-left: 0; }
+  .badge.type { background: var(--rose-100); color: var(--rose-700); }
+  .badge.type.type-two_way { background: linear-gradient(90deg, var(--rose-200), #f7d8a8); color: var(--rose-700); }
+  .badge.league { background: var(--ink-100); color: var(--ink-700); }
+  .badge.league.league-nl { background: #e8f0fc; color: #1a4a8a; }
+  .badge.league.league-al { background: #fde8e8; color: #8a1a1a; }
+
+  .card-name-block { display: flex; flex-direction: column; gap: 0.15rem; }
+  .player-name {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.2;
+  }
+  .player-meta {
+    display: flex; gap: 0.4rem; align-items: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+  .dot { opacity: 0.5; }
+
+  .card-stats {
+    grid-area: stats;
+    display: flex;
+    gap: 1rem;
+    align-self: start;
+    padding-top: 0.2rem;
+  }
+  .stat {
+    display: flex; flex-direction: column; gap: 0.1rem;
+    align-items: center;
+    min-width: 48px;
+  }
+  .stat .lbl {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+  }
+  .stat .val {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1.1;
+  }
+  .stat.secondary .val { color: var(--text); font-size: 1rem; }
+
+  .card-arrow {
+    grid-area: arrow;
+    align-self: end; justify-self: end;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  @media (max-width: 640px) {
+    .player-card { grid-template-columns: 1fr; grid-template-areas: "top" "stats" "arrow"; padding: 1rem 1.1rem; }
+    .card-arrow { justify-self: start; }
+    .card-stats { padding-top: 0; }
+    .player-name { font-size: 1.3rem; }
+  }
 </style>

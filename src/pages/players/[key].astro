@@ -14,6 +14,12 @@ const hitting = player.basic?.hitting;
 const pitching = player.basic?.pitching;
 const savantHit = player.savant?.hitting;
 const arsenal = player.savant?.pitch_arsenal;
+
+const typeLabel = { two_way: "二刀流", batter: "野手", pitcher: "投手" }[player.type] ?? player.type;
+
+function formatPercent(n: number): string {
+  return `${n}%`;
+}
 ---
 <Layout
   title={player.name_jp}
@@ -22,23 +28,31 @@ const arsenal = player.savant?.pitch_arsenal;
   currentPath={`/players/${player.key}/`}
 >
   <nav class="breadcrumb">
-    <a href="/">← 一覧に戻る</a>
+    <a href="/">← トップ</a>
   </nav>
-  <header class="player-header">
-    <h1>{player.name_jp}</h1>
-    <div class="team">{player.team_jp}</div>
-    <div class="pos">{player.position_jp}</div>
+
+  <header class="player-hero">
+    <div class="hero-badges">
+      <span class={`badge type type-${player.type}`}>{typeLabel}</span>
+      <span class={`badge league league-${player.league.toLowerCase()}`}>{player.league}</span>
+    </div>
+    <h1 class="player-name">{player.name_jp}</h1>
+    <div class="player-team">{player.team_jp}</div>
+    <div class="player-pos">{player.position_jp}</div>
   </header>
 
   {hitting && (
     <section class="stat-section">
-      <h2>打撃成績（基本）</h2>
-      <div class="stat-grid">
-        <div class="stat-box"><span class="label">打率</span><span class="value">{hitting.avg}</span></div>
-        <div class="stat-box"><span class="label">本塁打</span><span class="value">{hitting.hr}</span></div>
+      <div class="section-title">
+        <span class="title-icon" aria-hidden="true">⚾</span>
+        <h2>打撃成績（基本）</h2>
+      </div>
+      <div class="stat-grid hero-grid">
+        <div class="stat-box accent"><span class="label">打率</span><span class="value">{hitting.avg}</span></div>
+        <div class="stat-box accent"><span class="label">本塁打</span><span class="value">{hitting.hr}</span></div>
+        <div class="stat-box accent"><span class="label">OPS</span><span class="value">{hitting.ops}</span></div>
         <div class="stat-box"><span class="label">打点</span><span class="value">{hitting.rbi}</span></div>
         <div class="stat-box"><span class="label">出塁率</span><span class="value">{hitting.obp}</span></div>
-        <div class="stat-box"><span class="label">OPS</span><span class="value">{hitting.ops}</span></div>
         <div class="stat-box"><span class="label">盗塁</span><span class="value">{hitting.sb}</span></div>
       </div>
     </section>
@@ -46,13 +60,16 @@ const arsenal = player.savant?.pitch_arsenal;
 
   {pitching && (
     <section class="stat-section">
-      <h2>投手成績（基本）</h2>
-      <div class="stat-grid">
-        <div class="stat-box"><span class="label">防御率</span><span class="value">{pitching.era}</span></div>
+      <div class="section-title">
+        <span class="title-icon" aria-hidden="true">🥎</span>
+        <h2>投手成績（基本）</h2>
+      </div>
+      <div class="stat-grid hero-grid">
+        <div class="stat-box accent"><span class="label">防御率</span><span class="value">{pitching.era}</span></div>
+        <div class="stat-box accent"><span class="label">奪三振</span><span class="value">{pitching.so}</span></div>
+        <div class="stat-box accent"><span class="label">WHIP</span><span class="value">{pitching.whip}</span></div>
         <div class="stat-box"><span class="label">勝</span><span class="value">{pitching.w}</span></div>
         <div class="stat-box"><span class="label">敗</span><span class="value">{pitching.l}</span></div>
-        <div class="stat-box"><span class="label">奪三振</span><span class="value">{pitching.so}</span></div>
-        <div class="stat-box"><span class="label">WHIP</span><span class="value">{pitching.whip}</span></div>
         <div class="stat-box"><span class="label">投球回</span><span class="value">{pitching.ip}</span></div>
       </div>
     </section>
@@ -60,46 +77,61 @@ const arsenal = player.savant?.pitch_arsenal;
 
   {savantHit && (
     <section class="stat-section">
-      <h2>打撃 Statcast 指標</h2>
+      <div class="section-title">
+        <span class="title-icon" aria-hidden="true">📊</span>
+        <h2>打撃 Statcast 指標</h2>
+      </div>
       <div class="stat-grid">
         <div class="stat-box"><span class="label">平均打球速度 (mph)</span><span class="value">{savantHit.exit_velocity_avg}</span></div>
         <div class="stat-box"><span class="label">平均打球角度 (°)</span><span class="value">{savantHit.launch_angle_avg}</span></div>
-        <div class="stat-box"><span class="label">Barrel率 (%)</span><span class="value">{savantHit.barrel_batted_rate}</span></div>
-        <div class="stat-box"><span class="label">Hard-Hit率 (%)</span><span class="value">{savantHit.hard_hit_percent}</span></div>
+        <div class="stat-box"><span class="label">Barrel率</span><span class="value">{formatPercent(savantHit.barrel_batted_rate)}</span></div>
+        <div class="stat-box"><span class="label">Hard-Hit率</span><span class="value">{formatPercent(savantHit.hard_hit_percent)}</span></div>
         <div class="stat-box"><span class="label">xBA</span><span class="value">{savantHit.xba}</span></div>
         <div class="stat-box"><span class="label">xSLG</span><span class="value">{savantHit.xslg}</span></div>
         <div class="stat-box"><span class="label">xwOBA</span><span class="value">{savantHit.xwoba}</span></div>
-        <div class="stat-box"><span class="label">K%</span><span class="value">{savantHit.k_percent}</span></div>
-        <div class="stat-box"><span class="label">BB%</span><span class="value">{savantHit.bb_percent}</span></div>
+        <div class="stat-box"><span class="label">K%</span><span class="value">{formatPercent(savantHit.k_percent)}</span></div>
+        <div class="stat-box"><span class="label">BB%</span><span class="value">{formatPercent(savantHit.bb_percent)}</span></div>
       </div>
     </section>
   )}
 
   {arsenal && arsenal.length > 0 && (
     <section class="stat-section">
-      <h2>球種別成績</h2>
-      <table class="arsenal-table">
-        <thead>
-          <tr>
-            <th>球種</th>
-            <th>使用率 (%)</th>
-            <th>被打率</th>
-            <th>空振り率 (%)</th>
-            <th>Hard-Hit率 (%)</th>
-          </tr>
-        </thead>
-        <tbody>
-          {arsenal.map((a) => (
-            <tr>
-              <td>{a.jp}</td>
-              <td>{a.usage}</td>
-              <td>{a.ba}</td>
-              <td>{a.whiff}</td>
-              <td>{a.hard_hit}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div class="section-title">
+        <span class="title-icon" aria-hidden="true">🎯</span>
+        <h2>球種別成績</h2>
+      </div>
+      <div class="arsenal-list">
+        {arsenal.map((a: any) => (
+          <div class="pitch-row">
+            <div class="pitch-name">
+              <div class="pitch-name-jp">{a.jp}</div>
+              <div class="pitch-name-en">{a.en}</div>
+            </div>
+            <div class="pitch-bars">
+              <div class="bar-row">
+                <span class="bar-label">使用率</span>
+                <div class="bar-track"><div class="bar-fill usage" style={`width: ${Math.min(a.usage, 100)}%`}></div></div>
+                <span class="bar-value">{formatPercent(a.usage)}</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">空振り率</span>
+                <div class="bar-track"><div class="bar-fill whiff" style={`width: ${Math.min(a.whiff, 100)}%`}></div></div>
+                <span class="bar-value">{formatPercent(a.whiff)}</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">Hard-Hit率</span>
+                <div class="bar-track"><div class="bar-fill hardhit" style={`width: ${Math.min(a.hard_hit, 100)}%`}></div></div>
+                <span class="bar-value">{formatPercent(a.hard_hit)}</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-label">被打率</span>
+                <div class="bar-value-only">{a.ba}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   )}
 
@@ -107,23 +139,175 @@ const arsenal = player.savant?.pitch_arsenal;
 </Layout>
 
 <style>
-  .breadcrumb { margin-bottom: 1rem; font-size: 0.9rem; }
-  .player-header { border-bottom: 2px solid var(--pink); padding-bottom: 1rem; margin-bottom: 1.5rem; }
-  .player-header h1 { font-size: 2rem; margin: 0 0 0.3rem; color: var(--pink-dark); }
-  .team { font-size: 1rem; color: var(--text); }
-  .pos { font-size: 0.85rem; color: var(--muted); }
-  .stat-section { margin-bottom: 2rem; }
-  .stat-section h2 { font-size: 1.1rem; border-left: 4px solid var(--pink); padding-left: 0.6rem; margin-bottom: 0.8rem; }
-  .stat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.6rem; }
-  .stat-box {
-    background: white; border: 1px solid var(--border); border-radius: 6px;
-    padding: 0.7rem; display: flex; flex-direction: column; gap: 0.2rem;
+  .breadcrumb { margin-bottom: 1.5rem; font-size: 0.88rem; }
+  .breadcrumb a { color: var(--text-muted); }
+  .breadcrumb a:hover { color: var(--accent); }
+
+  .player-hero {
+    text-align: center;
+    padding: 2.4rem 1.5rem;
+    background: linear-gradient(135deg, var(--rose-50), var(--cream));
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    margin-bottom: 2.5rem;
+    box-shadow: var(--shadow-sm);
   }
-  .stat-box .label { font-size: 0.75rem; color: var(--muted); }
-  .stat-box .value { font-size: 1.2rem; font-weight: bold; color: var(--text); }
-  .arsenal-table { width: 100%; border-collapse: collapse; background: white; border-radius: 6px; overflow: hidden; }
-  .arsenal-table th, .arsenal-table td { padding: 0.6rem; text-align: left; border-bottom: 1px solid var(--border); }
-  .arsenal-table th { background: var(--pink); color: white; font-size: 0.85rem; }
-  .arsenal-table td { font-size: 0.9rem; }
-  .updated { text-align: right; color: var(--muted); font-size: 0.8rem; }
+  .hero-badges {
+    display: flex; gap: 0.5rem; justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .badge {
+    font-size: 0.7rem; font-weight: 600;
+    padding: 0.22rem 0.7rem;
+    border-radius: 100px;
+    letter-spacing: 0.06em;
+  }
+  .badge.type { background: var(--rose-100); color: var(--rose-700); }
+  .badge.type.type-two_way { background: linear-gradient(90deg, var(--rose-200), #f7d8a8); color: var(--rose-700); }
+  .badge.league.league-nl { background: #e8f0fc; color: #1a4a8a; }
+  .badge.league.league-al { background: #fde8e8; color: #8a1a1a; }
+
+  .player-name {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: var(--text);
+    letter-spacing: -0.01em;
+  }
+  .player-team {
+    font-size: 1.05rem; color: var(--text); margin-bottom: 0.2rem;
+  }
+  .player-pos {
+    font-size: 0.85rem; color: var(--text-muted);
+  }
+
+  .stat-section { margin-bottom: 2.4rem; }
+  .section-title {
+    display: flex; align-items: center; gap: 0.6rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .title-icon { font-size: 1.1rem; }
+  .section-title h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 0.6rem;
+  }
+  .hero-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+  .stat-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 0.85rem 0.95rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    transition: all 0.18s ease;
+  }
+  .stat-box:hover {
+    border-color: var(--rose-200);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+  }
+  .stat-box.accent {
+    background: linear-gradient(135deg, var(--rose-50), var(--surface));
+    border-color: var(--rose-200);
+  }
+  .stat-box .label {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+  .stat-box .value {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat-box.accent .value { color: var(--accent); }
+
+  /* Arsenal */
+  .arsenal-list { display: flex; flex-direction: column; gap: 0.7rem; }
+  .pitch-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 1.2rem;
+    padding: 1.1rem 1.3rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    align-items: center;
+  }
+  .pitch-name-jp {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .pitch-name-en {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+  }
+  .pitch-bars { display: flex; flex-direction: column; gap: 0.5rem; }
+  .bar-row {
+    display: grid;
+    grid-template-columns: 78px 1fr 56px;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 0.82rem;
+  }
+  .bar-label { color: var(--text-muted); }
+  .bar-track {
+    height: 7px;
+    background: var(--rose-50);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 100px;
+    background: var(--rose-300);
+    transition: width 0.4s ease;
+  }
+  .bar-fill.usage { background: linear-gradient(90deg, var(--rose-300), var(--rose-500)); }
+  .bar-fill.whiff { background: linear-gradient(90deg, #4a90e2, #2a6cb8); }
+  .bar-fill.hardhit { background: linear-gradient(90deg, #e2a04a, #b87a2a); }
+  .bar-value {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .bar-value-only {
+    grid-column: 2 / 4;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .updated {
+    text-align: right;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 640px) {
+    .pitch-row { grid-template-columns: 1fr; gap: 0.8rem; }
+    .player-hero { padding: 1.8rem 1.2rem; }
+  }
 </style>
