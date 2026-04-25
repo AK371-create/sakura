@@ -1,0 +1,3 @@
+# Sitemap convenience: typical /sitemap.xml -> Astro's /sitemap-index.xml
+/sitemap.xml      /sitemap-index.xml      301
+/sitemap_index.xml /sitemap-index.xml     301
