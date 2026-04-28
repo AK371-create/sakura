@@ -12,12 +12,12 @@
   "position_en": "Starting Pitcher",
   "basic": {
     "pitching": {
-      "w": 0,
+      "w": 1,
       "l": 2,
-      "era": "6.11",
-      "so": 17,
-      "ip": "17.2",
-      "whip": "1.87",
+      "era": "6.35",
+      "so": 22,
+      "ip": "22.2",
+      "whip": "1.81",
       "sv": 0,
       "hld": 0
     }
