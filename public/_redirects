@@ -3,8 +3,6 @@
 /sitemap_index.xml /sitemap-index.xml     301
 
 # Removed pages — 301 to relevant listing (search engines de-index over time)
-/players/murakami/*                       /                301
-/en/players/murakami/*                    /en/             301
 /articles/ohtani-5hr-pace-2026/*          /articles/       301
 /articles/murakami-low-slider-problem/*   /articles/       301
 /articles/murakami-ops-adjustment/*       /articles/       301

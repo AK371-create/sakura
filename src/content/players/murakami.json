@@ -1,0 +1,106 @@
+{
+  "key": "murakami",
+  "name_jp": "村上宗隆",
+  "name_en": "Munetaka Murakami",
+  "team_jp": "シカゴ・ホワイトソックス",
+  "team_en": "Chicago White Sox",
+  "team_short": "CWS",
+  "league": "AL",
+  "level": "MLB",
+  "type": "batter",
+  "position_jp": "一塁手",
+  "position_en": "First Baseman",
+  "basic": {
+    "hitting": {
+      "avg": ".243",
+      "h": 25,
+      "hr": 12,
+      "rbi": 23,
+      "sb": 0,
+      "obp": ".373",
+      "slg": ".592",
+      "ops": ".965"
+    }
+  },
+  "yearly": [
+    {
+      "year": 2026,
+      "team": "CWS",
+      "type": "hit",
+      "avg": ".243",
+      "h": 25,
+      "hr": 12,
+      "rbi": 23,
+      "sb": 0,
+      "obp": ".373",
+      "slg": ".592",
+      "ops": ".965",
+      "led": [
+        "hr"
+      ],
+      "top10": [
+        "slg",
+        "ops"
+      ]
+    }
+  ],
+  "updated_at": "2026-04-29",
+  "basic_season": {
+    "hitting": 2026
+  },
+  "splits_lr_current": {
+    "hitting": {
+      "vs_left": {
+        "ab": 31,
+        "h": 5,
+        "hr": 4,
+        "rbi": 9,
+        "sb": null,
+        "avg": ".161",
+        "obp": ".270",
+        "slg": ".548",
+        "ops": ".818"
+      },
+      "vs_right": {
+        "ab": 72,
+        "h": 20,
+        "hr": 8,
+        "rbi": 14,
+        "sb": null,
+        "avg": ".278",
+        "obp": ".416",
+        "slg": ".611",
+        "ops": "1.027"
+      }
+    }
+  },
+  "splits_lr_current_season": 2026,
+  "bio_jp": "東京ヤクルトで2022年に三冠王、シーズン56本塁打のNPB歴代最多を記録した長距離砲。2026年3月26日にホワイトソックスでMLBデビューし、開幕から長打力を発揮。NPB時代は三塁手だったがMLBでは一塁にコンバート。",
+  "bio_en": "Triple Crown winner with Yakult in 2022 and holder of the NPB single-season HR record (56). MLB debut on 2026-03-26 with the White Sox, displaying his power from the start. Converted from third base to first base for his MLB role.",
+  "splits_lr_career": {
+    "hitting": {
+      "vs_left": {
+        "ab": 31,
+        "h": 5,
+        "hr": 4,
+        "rbi": 9,
+        "sb": null,
+        "avg": ".161",
+        "obp": ".270",
+        "slg": ".548",
+        "ops": ".818"
+      },
+      "vs_right": {
+        "ab": 72,
+        "h": 20,
+        "hr": 8,
+        "rbi": 14,
+        "sb": null,
+        "avg": ".278",
+        "obp": ".416",
+        "slg": ".611",
+        "ops": "1.027"
+      }
+    }
+  }
+}

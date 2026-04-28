@@ -1,0 +1,104 @@
+[
+  {
+    "season": "2026",
+    "stat": {
+      "age": 26,
+      "gamesPlayed": 29,
+      "groundOuts": 17,
+      "airOuts": 21,
+      "runs": 21,
+      "doubles": 0,
+      "triples": 0,
+      "homeRuns": 12,
+      "strikeOuts": 41,
+      "baseOnBalls": 22,
+      "intentionalWalks": 3,
+      "hits": 25,
+      "hitByPitch": 0,
+      "avg": ".243",
+      "atBats": 103,
+      "obp": ".373",
+      "slg": ".592",
+      "ops": ".965",
+      "caughtStealing": 1,
+      "stolenBases": 0,
+      "stolenBasePercentage": ".000",
+      "caughtStealingPercentage": "1.000",
+      "groundIntoDoublePlay": 1,
+      "numberOfPitches": 529,
+      "plateAppearances": 126,
+      "totalBases": 61,
+      "rbi": 23,
+      "leftOnBase": 39,
+      "sacBunts": 0,
+      "sacFlies": 1,
+      "babip": ".255",
+      "groundOutsToAirouts": "0.81",
+      "catchersInterference": 0,
+      "atBatsPerHomeRun": "8.58"
+    },
+    "team": {
+      "springLeague": {
+        "id": 114,
+        "name": "Cactus League",
+        "link": "/api/v1/league/114",
+        "abbreviation": "CL"
+      },
+      "allStarStatus": "N",
+      "id": 145,
+      "name": "Chicago White Sox",
+      "link": "/api/v1/teams/145",
+      "season": 2026,
+      "venue": {
+        "id": 4,
+        "name": "Rate Field",
+        "link": "/api/v1/venues/4"
+      },
+      "springVenue": {
+        "id": 3809,
+        "link": "/api/v1/venues/3809"
+      },
+      "teamCode": "cha",
+      "fileCode": "cws",
+      "abbreviation": "CWS",
+      "teamName": "White Sox",
+      "locationName": "Chicago",
+      "firstYearOfPlay": "1901",
+      "league": {
+        "id": 103,
+        "name": "American League",
+        "link": "/api/v1/league/103"
+      },
+      "division": {
+        "id": 202,
+        "name": "American League Central",
+        "link": "/api/v1/divisions/202"
+      },
+      "sport": {
+        "id": 1,
+        "link": "/api/v1/sports/1",
+        "name": "Major League Baseball"
+      },
+      "shortName": "Chi White Sox",
+      "franchiseName": "Chicago",
+      "clubName": "White Sox",
+      "active": true
+    },
+    "player": {
+      "id": 808959,
+      "fullName": "Munetaka Murakami",
+      "link": "/api/v1/people/808959"
+    },
+    "league": {
+      "id": 103,
+      "name": "American League",
+      "link": "/api/v1/league/103"
+    },
+    "sport": {
+      "id": 1,
+      "link": "/api/v1/sports/1",
+      "abbreviation": "MLB"
+    },
+    "gameType": "R"
+  }
+]
