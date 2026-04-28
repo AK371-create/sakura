@@ -24,7 +24,7 @@ const { article, prev, next, related } = Astro.props;
 const categoryLabels: Record<string, string> = {
   player: "選手", statcast: "Statcast", history: "歴史", rivalry: "対戦",
   rules: "ルール", team: "チーム", prospects: "若手", culture: "文化", market: "市場",
-  stats: "用語解説",
+  stats: "用語解説", defense: "守備",
 };
 const catLabel = categoryLabels[article.category] ?? article.category;
 

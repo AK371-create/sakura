@@ -9,7 +9,7 @@ const articles = Object.values(modules)
 const categoryLabels: Record<string, string> = {
   player: "PLAYER", statcast: "STATCAST", history: "HISTORY", rivalry: "MATCHUP",
   rules: "RULES", team: "TEAM", prospects: "PROSPECT", culture: "CULTURE", market: "MARKET",
-  stats: "STATS",
+  stats: "STATS", defense: "DEFENSE",
 };
 const categories = ["all", ...Array.from(new Set(articles.map((a: any) => a.category)))];
 ---
