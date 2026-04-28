@@ -1,0 +1,28 @@
+{
+  "slug": "stats-pitch-sinker-twoseam",
+  "date": "2026-04-27",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitch-type"
+  ],
+  "title_jp": "シンカー (SI) と ツーシーム (FT) の違い",
+  "title_en": "Sinker (SI) vs. Two-Seam Fastball (FT)",
+  "summary_jp": "両者は同系統の沈むファストボール。Statcast 上の分類が時代で揺れたが、今は SI に統合されている。",
+  "summary_en": "Two pitches in the same family of sinking fastballs — Statcast's classification has shifted over time and now folds them into SI.",
+  "body_jp": [
+    "ツーシーム (FT) とシンカー (SI) は、4シームより低めにシュート気味に沈むファストボールという共通項を持つ。腕の振りを 4シームと変えずに、握りで縫い目に指を沿わせると沈みが出る。",
+    "Statcast (Pitch Info 由来) の球種分類は 2017 年頃まで FT と SI を分けていたが、近年は両者を区別しにくいケースが多く SI に統合する流れになった。古い記録では FT、最近は SI と表記される。",
+    "速度域は 4シームより 1〜3 mph 遅い 90〜95 mph 帯が中心。ゴロ率を上げてダブルプレーを狙う球種で、被 BABIP は高めだが長打を抑える特徴がある。",
+    "今永昇太の高めストレートとは対照的に、藤川球児や上原浩治のようなツーシーム使いは「打たせて取る」スタイル。Statcast の Vertical Break (縦変化) や Horizontal Break (横変化) で個性が分かる。",
+    "→ 関連: 4シーム / カッター / Spin Rate"
+  ],
+  "body_en": [
+    "Sinker (SI) and two-seam fastball (FT) are kin: low-90s fastballs that move down and into same-handed batters. Same arm action as a four-seamer; the grip along the seams generates the dive.",
+    "Statcast (via Pitch Info) used to label them separately, but since the late 2010s the two are usually folded into SI because the distinction is hard to draw consistently.",
+    "Velocity sits 1–3 mph below a four-seamer (90–95 mph). The job is to induce groundballs and double plays — opponent BABIP runs higher but extra-base damage is limited.",
+    "Where Shota Imanaga lives at the top of the zone, sinker artists like Kyuji Fujikawa and Koji Uehara worked in this contact-management band. Statcast's vertical and horizontal break numbers reveal each pitcher's personality.",
+    "→ Related: 4-Seam Fastball / Cutter / Spin Rate"
+  ],
+  "updated_at": "2026-04-27"
+}

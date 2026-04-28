@@ -1,0 +1,28 @@
+{
+  "slug": "rule-injury-list",
+  "date": "2026-05-13",
+  "category": "rules",
+  "tags": [
+    "rule",
+    "roster"
+  ],
+  "title_jp": "インジャリーリスト (IL) 10 / 15 / 60 日の違い",
+  "title_en": "Injury List 10 / 15 / 60-Day Distinctions",
+  "summary_jp": "IL は故障者を 26 人ロスターから外す制度。野手 10 日・投手 15 日が基本、60 日 IL は 40 人枠から外せる。",
+  "summary_en": "The IL removes injured players from the 26-man roster. 10 days for hitters, 15 for pitchers; the 60-day IL also opens a 40-man slot.",
+  "body_jp": [
+    "MLB の Injured List (旧 Disabled List) は、故障した選手を 26 人ロスターから外して別の選手をアクティブにできる制度。最低在籍日数で 3 種類に分かれる。",
+    "10 日 IL: 野手と捕手用。最短 10 日で復帰可能。15 日 IL: 投手 (先発・救援共通) 用で、2022 年に 10 日から 15 日に延長された。「中5日先発」を避ける軽傷利用を防ぐため。",
+    "60 日 IL: 重傷者用。在籍中は 40 人枠から外せるため、別の選手を 40 人枠に加えるための玉突き処理に使われる。トミー・ジョン手術組はだいたいここに入る。",
+    "千賀滉大の右肩故障 (2024 年) は 60 日 IL に変更されて長期離脱、菊池雄星のリハビリ登板期間中は 15 日 IL を行ったり来たり、というパターンが典型。日本人選手のシーズン序盤は IL 動向が要注目。",
+    "→ 関連: 26 人ロスター / 40 人枠 / リハビリ登板"
+  ],
+  "body_en": [
+    "The Injured List (formerly Disabled List) lets clubs move an injured player off the 26-man active roster and call up a replacement. Three tiers exist by minimum stay.",
+    "10-Day IL: position players and catchers, minimum 10 days. 15-Day IL: pitchers (starters and relievers) — extended from 10 to 15 in 2022 to discourage skipping a start with a minor injury.",
+    "60-Day IL: severe injuries. Players on it are removed from the 40-man roster, opening space to add new 40-man players. Tommy John surgery cases typically land here.",
+    "Kodai Senga's 2024 shoulder issue moved to the 60-day IL for an extended absence; Yusei Kikuchi shuttled between the 15-day IL and rehab outings. Early-season IL moves are critical to track for Japanese players.",
+    "→ Related: 26-man roster / 40-man roster / Rehab assignments"
+  ],
+  "updated_at": "2026-05-13"
+}

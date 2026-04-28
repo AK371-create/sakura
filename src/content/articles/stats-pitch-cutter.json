@@ -1,0 +1,28 @@
+{
+  "slug": "stats-pitch-cutter",
+  "date": "2026-05-02",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitch-type"
+  ],
+  "title_jp": "カッター (FC) とは",
+  "title_en": "What is a Cutter (FC)?",
+  "summary_jp": "4シーム軌道から手元で曲がる速球系の変化球。リベラの代名詞で、芯を外してバットを折る効果を狙う。",
+  "summary_en": "A fastball-look pitch that breaks late toward glove-side. Mariano Rivera's signature — designed to miss the barrel and break bats.",
+  "body_jp": [
+    "カッター (FC) は 4シームより 3〜5 mph 遅い 88〜93 mph 帯で、打者の手元 (15〜30 cm 程度) で投げ手と逆方向に曲がる。スライダーほどの大きな曲がりではないため、打者に「直球」と誤認させやすい。",
+    "代表格はマリアノ・リベラの一球種特化型キャリア。ダルビッシュ有や山本由伸も使用比率を年々上げており、4シームの被打率を抑える「補完球」として機能する。",
+    "上原浩治もカッターを使い分けて長打抑制を実現。被打球はバットの先か根元 (詰まり) になりやすく、Hard-Hit% を低く保てるのが利点。",
+    "Statcast 上は FC で表記。回転軸は 4シームに近いがわずかに傾き、Spin Efficiency が下がることで横変化が生まれる。Stuff+ では「球質が良くも悪くもない」と評価されることが多いが、Location+ で価値が出るタイプ。",
+    "→ 関連: 4シーム / スライダー / Stuff+ Location+"
+  ],
+  "body_en": [
+    "A cutter sits 3–5 mph slower than a four-seamer (88–93 mph) and breaks 6–12 inches glove-side late. Less movement than a slider, so batters often read it as a fastball until it's too late.",
+    "Mariano Rivera built a Hall of Fame career on his cutter alone. Yu Darvish and Yoshinobu Yamamoto have leaned on it more each year as a complement that suppresses four-seam BABIP.",
+    "Koji Uehara also worked the cutter to limit hard contact. Cutters tend to produce weak contact off the end or handle, keeping Hard-Hit% low.",
+    "Statcast tags it FC. The spin axis tilts slightly off a four-seamer's, and lower spin efficiency creates the horizontal break. Stuff+ models often grade cutters as average; they shine in Location+.",
+    "→ Related: 4-Seam Fastball / Slider / Stuff+ & Location+"
+  ],
+  "updated_at": "2026-05-02"
+}

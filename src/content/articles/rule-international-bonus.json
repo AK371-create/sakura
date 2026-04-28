@@ -1,0 +1,28 @@
+{
+  "slug": "rule-international-bonus",
+  "date": "2026-05-09",
+  "category": "rules",
+  "tags": [
+    "rule",
+    "transfer"
+  ],
+  "title_jp": "国際 FA 枠 (International Bonus Pool) とは",
+  "title_en": "What is the International Bonus Pool?",
+  "summary_jp": "25 歳未満かつプロ年数 6 未満の海外選手を「アマチュア扱い」とする制度。プールで年俸上限が制限される。",
+  "summary_en": "Foreign players under 25 with under 6 pro years are treated as amateurs. Their signing bonus is capped by each team's pool.",
+  "body_jp": [
+    "国際 FA 枠は MLB 球団が海外のアマチュア (主に中南米のティーンや、アジア出身選手) を契約する際に使用するボーナスプール。各球団に毎年約 $5M〜$7M の上限が割り当てられる。",
+    "対象は「25 歳未満かつプロ年数 6 未満」の選手。これに該当する場合、契約はマイナーリーグ契約となり、サイニング・ボーナスもプール内に収まる金額に限定される。",
+    "佐々木朗希 (2025 年契約時 23 歳・プロ 4 年目) はこの「アマチュア」扱いに該当し、最高でも約 $6.5M のサイニングボーナスでドジャースと契約。本来の市場価値 (10 年 $300M 超想定) と比べ大幅に抑えられた。",
+    "千賀滉大は 2023 年契約時 30 歳でこの制限が外れ、メッツと 5 年 $75M の本契約。年齢タイミングで契約価値が激変するため、選手側は「いつポストするか」が重大判断となる。",
+    "→ 関連: ポスティングシステム / FA / マイナー契約"
+  ],
+  "body_en": [
+    "The International Bonus Pool is the budget MLB clubs use to sign amateur foreign players — mostly Latin American teenagers and certain Asian imports. Each team gets roughly $5M–$7M per signing period.",
+    "Eligibility: under 25 and under 6 professional seasons. Players in this bucket sign minor-league deals with bonuses limited by the team's pool.",
+    "Roki Sasaki (age 23 / 4 NPB seasons when posted in 2025) qualified as an 'amateur' and signed with the Dodgers for at most ~$6.5M — far below his projected open-market value of 10/$300M+.",
+    "Kodai Senga, by contrast, was 30 when posted in 2023 — past the cap — and signed a major-league 5/$75M deal with the Mets. Age timing has enormous contract implications, making the post-or-wait decision pivotal for players.",
+    "→ Related: Posting system / Free agency / Minor-league contracts"
+  ],
+  "updated_at": "2026-05-09"
+}

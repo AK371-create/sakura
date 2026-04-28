@@ -1,0 +1,28 @@
+{
+  "slug": "stats-defense-oaa",
+  "date": "2026-04-29",
+  "category": "defense",
+  "tags": [
+    "statcast",
+    "defense"
+  ],
+  "title_jp": "OAA (Outs Above Average) とは",
+  "title_en": "What is OAA?",
+  "summary_jp": "Statcast ベースの守備指標。打球速度・角度・捕球位置から期待アウト率を出し、実績との差分を取る。",
+  "summary_en": "Statcast's defensive metric. It calculates an expected out rate per play based on ball speed, angle, and starting position, then compares to reality.",
+  "body_jp": [
+    "OAA (Outs Above Average) は、各打球を「捕球までの距離」「初動方向」「打球の難易度」で評価し、リーグ平均野手と比べて何アウト多く取れたかを集計する Statcast ベースの守備指標。",
+    "従来の DRS (Defensive Runs Saved) や UZR は、ヒットゾーンや守備位置を区切って評価するゾーン型。OAA は打球レベルで連続的に評価するため、シフトが多い現代でも歪まない強みがある。",
+    "感覚値: 0 が平均、+5 で平均的にやや上、+10 でゴールドグラブ候補、+15 以上で歴史的水準。マイナスはいわゆる失点要因。",
+    "外野手は Sprint Speed が高い方が有利、内野手は初動の早さと送球精度で稼ぐ。日本人選手では秋山翔吾の外野守備が +10 級の年もあった。",
+    "→ 関連: Sprint Speed / DRS / UZR"
+  ],
+  "body_en": [
+    "OAA (Outs Above Average) grades each batted ball by required distance, direction of first step, and play difficulty, then sums how many more outs a fielder converted than league average.",
+    "DRS and UZR use zone-based evaluation; OAA evaluates each play continuously, which holds up better in the modern shift era when zones don't carry the same meaning.",
+    "Reference: 0 is average, +5 is solid, +10 is Gold Glove level, +15+ is historic. Negatives correspond to runs allowed via defense.",
+    "Outfielders benefit from high Sprint Speed; infielders earn OAA via reaction time and arm accuracy. Among Japanese players, Shogo Akiyama posted +10-class outfield seasons.",
+    "→ Related: Sprint Speed / DRS / UZR"
+  ],
+  "updated_at": "2026-04-29"
+}

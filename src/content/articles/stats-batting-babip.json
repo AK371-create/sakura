@@ -1,0 +1,28 @@
+{
+  "slug": "stats-batting-babip",
+  "date": "2026-04-26",
+  "category": "stats",
+  "tags": [
+    "batting",
+    "advanced"
+  ],
+  "title_jp": "BABIP (インプレー打率) とは",
+  "title_en": "What is BABIP?",
+  "summary_jp": "本塁打を除いた打球がヒットになる率。リーグ平均.300前後で、運の影響と平均回帰を測る指標。",
+  "summary_en": "Batting Average on Balls In Play. League average is around .300 — used to flag luck and regression.",
+  "body_jp": [
+    "BABIP は (H − HR) ÷ (AB − K − HR + SF) で計算する。本塁打と三振を除き、グラウンドに収まった打球がヒットになった割合を出す。",
+    "MLB のリーグ平均 BABIP はおおむね .295〜.305 に収束する。.350 を超える打者は内野安打や強い打球が好位置に飛ぶ「運の上振れ」、.250 を切る打者は不運というのが基本の読み方。",
+    "ただし足の速い打者 (内野安打が多い) や打球速度が極めて高い打者 (Hard-Hit% が高い) は構造的に BABIP が高くなりやすく、単なる運だけでは判断できない。",
+    "BABIP は AVG とほぼ連動するため、シーズン序盤に AVG が極端な打者は BABIP の動きで先行きを推測できる。投手側でも被 BABIP を使い、不運な失点を分離する。",
+    "→ 関連: AVG / Hard-Hit / xBA・xSLG"
+  ],
+  "body_en": [
+    "BABIP = (H − HR) / (AB − K − HR + SF). It strips out home runs and strikeouts to measure how often batted balls become hits.",
+    "MLB league-average BABIP hovers around .295–.305. A hitter above .350 has likely gotten lucky on placement; below .250 suggests bad luck.",
+    "Caveats: speedy hitters (more infield hits) and elite Hard-Hit% bats systematically run higher BABIPs, so it isn't pure luck for them.",
+    "BABIP closely tracks AVG, so early-season outliers in batting average usually correct as BABIP normalizes. Pitchers use opponent BABIP the same way to filter out unlucky runs.",
+    "→ Related: AVG / Hard-Hit / xBA & xSLG"
+  ],
+  "updated_at": "2026-04-26"
+}

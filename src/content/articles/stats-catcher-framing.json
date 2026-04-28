@@ -1,0 +1,28 @@
+{
+  "slug": "stats-catcher-framing",
+  "date": "2026-05-04",
+  "category": "defense",
+  "tags": [
+    "defense",
+    "catcher"
+  ],
+  "title_jp": "キャッチャー・フレーミングとは",
+  "title_en": "What is Catcher Framing?",
+  "summary_jp": "ストライクを引き出す捕球技術。Framing Runs (FRM) で価値が数値化され、ロボ審判導入で重要度が変わる。",
+  "summary_en": "The art of catching pitches in a way that earns called strikes. Quantified by Framing Runs (FRM); the metric's value shifts as automated balls and strikes loom.",
+  "body_jp": [
+    "フレーミングは、際どい投球をストライクに「見せる」捕球技術。捕球面が固定されているか、ミットの動きが小さいか、グラブの角度が審判の視界に入っているかが評価ポイント。",
+    "数値化される指標が Framing Runs (FRM)。トップクラスの捕手は年間 +15〜+20 ラン、最下位クラスは −10 を超え、FRM だけで WAR で 2 勝差以上が生まれることも珍しくない。",
+    "代表的な使い手はホセ・トレヴィーノやアダム・トラオウィッキー級。日本人で MLB 経験のある城島健司は本場で「ストライクを増やす型」として研究対象になった。",
+    "ABS (Automated Ball-Strike, ロボ審判) の本格導入が議論される 2026 年現在、フレーミングの価値は将来的に消える可能性がある。逆にチャレンジ制度では捕手の判断力が新たな評価軸になる。",
+    "→ 関連: OAA / Pop Time / 捕手指標"
+  ],
+  "body_en": [
+    "Framing is the catcher's craft of receiving borderline pitches in a way that earns called strikes. Stable target, minimal mitt movement, and a glove angle that's friendly to the umpire's sightline all matter.",
+    "Framing Runs (FRM) quantifies the impact. Elite framers add +15 to +20 runs a season, while the worst lose 10+. The gap can swing WAR by two wins.",
+    "Modern names include Jose Trevino and others in that tier. Among Japanese players, Kenji Johjima was studied as a 'strike-stealing' archetype during his MLB years.",
+    "With ABS (the automated ball-strike system) on the horizon in 2026, framing's long-term value may shrink — but in the challenge format, catcher decision-making becomes a new dimension of evaluation.",
+    "→ Related: OAA / Pop Time / Catcher metrics"
+  ],
+  "updated_at": "2026-05-04"
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "market-luxury-tax",
+  "date": "2026-05-14",
+  "category": "market",
+  "tags": [
+    "rule",
+    "market"
+  ],
+  "title_jp": "競争均衡税 (CBT / Luxury Tax) とは",
+  "title_en": "What is the Competitive Balance Tax (Luxury Tax)?",
+  "summary_jp": "総年俸が閾値を超えると課される段階課税。超過時はドラフト指名権の後退などペナルティもある。",
+  "summary_en": "A tiered tax on team payrolls above a threshold. Exceeding it also costs draft pick position.",
+  "body_jp": [
+    "競争均衡税 (CBT, 通称 Luxury Tax) は、各球団の年俸総額が CBA (労使協定) で定めた閾値を超えると課される段階課税制度。資金力格差を抑える目的。",
+    "2026 年シーズンの第 1 閾値は約 $244M、超過分には 20% (初年度) 〜 50% (3 年連続超過) の税率が掛かる。さらに $44M、$64M、$84M の超過閾値があり、上に行くほど税率が跳ね上がる。",
+    "罰則は税金だけでなく、第 3 閾値超でドラフト指名権が 10 順位下がる、Qualifying Offer 拒否選手の補償指名権が 4 巡目に下がる、などの「市場での不利」も伴う。",
+    "ドジャースは大谷・山本・佐々木の獲得で連続超過状態。それでも勝利優先で支払いを受け入れる戦略をとっている。逆に小規模球団は CBT を理由にトップ FA を諦める。",
+    "→ 関連: FA / 大型契約 / ドラフト"
+  ],
+  "body_en": [
+    "The Competitive Balance Tax (CBT), commonly called the luxury tax, is a tiered tax on team payrolls above thresholds set by the Collective Bargaining Agreement. The goal is to dampen spending gaps.",
+    "For 2026, the first threshold is around $244M. Tax rates start at 20% (first overage year) and rise to 50% (third consecutive overage). Overlaid thresholds at +$44M, +$64M, and +$84M layer in higher rates.",
+    "Penalties go beyond the tax: exceeding the third threshold drops a team's draft pick by 10 spots, and Qualifying Offer compensation picks fall to round 4 — real market disadvantages.",
+    "The Dodgers have run consecutive overages signing Ohtani, Yamamoto, and Sasaki, accepting the bill in pursuit of titles. Smaller clubs avoid top FAs partly to stay below the threshold.",
+    "→ Related: Free agency / Mega-contracts / MLB draft"
+  ],
+  "updated_at": "2026-05-14"
+}

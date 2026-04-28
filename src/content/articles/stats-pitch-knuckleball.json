@@ -1,0 +1,28 @@
+{
+  "slug": "stats-pitch-knuckleball",
+  "date": "2026-05-07",
+  "category": "stats",
+  "tags": [
+    "statcast",
+    "pitch-type"
+  ],
+  "title_jp": "ナックルボール (KN) とは",
+  "title_en": "What is a Knuckleball (KN)?",
+  "summary_jp": "回転をほぼ消した変化球で、空気抵抗で予測不能に揺れる。投げる選手は希少で、現代 MLB では絶滅危惧種。",
+  "summary_en": "A near-zero-spin pitch that flutters unpredictably from air drag. Rare in modern MLB — almost an endangered species.",
+  "body_jp": [
+    "ナックルボールは指の関節 (ナックル) や指先で球を押し出し、回転をほぼゼロ (Spin Rate < 500 rpm) に抑える。空気の流れで縫い目が突然乱れ、予測不能な揺れが生まれる。",
+    "速度域は 60〜75 mph と遅く、捕球側もパスボール覚悟。専用キャッチャーが付くケースもあり、R.A. ディッキー (2012 年 Cy Young) やティム・ウェイクフィールドが直近の代表格。",
+    "メリットは肩肘への負担が小さく長期キャリアになりやすいこと、デメリットは習得難度が極端に高く、再現性が低いこと。コーチング体系も確立されておらず、属人的に伝承されてきた。",
+    "現代 MLB では本格派ナックル投手はほぼ不在。日本人投手で常用例はほぼないが、岩隈久志がスプリッターと並べる小細工として落差を変えるシュート系を投げ分けた程度。Statcast 上は KN タグ。",
+    "→ 関連: スプリッター / Spin Rate / 球種分類"
+  ],
+  "body_en": [
+    "A knuckleball is gripped with the fingertips or knuckles to kill spin (under 500 rpm). Air turbulence around the seams causes erratic, unpredictable break.",
+    "Velocity sits 60–75 mph — slow enough that catchers risk passed balls, sometimes warranting a personal catcher. Recent torchbearers: R.A. Dickey (2012 Cy Young) and Tim Wakefield.",
+    "Pros: minimal arm stress, often allowing long careers. Cons: notoriously hard to master and low repeatability. There's no real coaching pipeline; the pitch is passed down individually.",
+    "Modern MLB has almost no full-time knuckleballers. Japanese pitchers haven't really used it as a primary; Hisashi Iwakuma's varied splitter shapes are the closest cousin. Statcast tags it KN.",
+    "→ Related: Splitter / Spin Rate / Pitch classification"
+  ],
+  "updated_at": "2026-05-07"
+}

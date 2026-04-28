@@ -1,0 +1,29 @@
+{
+  "slug": "stats-adv-ops-plus-era-plus",
+  "date": "2026-05-06",
+  "category": "stats",
+  "tags": [
+    "batting",
+    "pitching",
+    "advanced"
+  ],
+  "title_jp": "OPS+ と ERA+ の読み方",
+  "title_en": "How to Read OPS+ and ERA+",
+  "summary_jp": "100 = リーグ平均、100 を超えるほど良い。球場・年度補正済みで、打者と投手を同じスケールで比較できる。",
+  "summary_en": "Both centered at 100 with higher being better. Park- and league-adjusted, letting you compare hitters and pitchers on the same scale.",
+  "body_jp": [
+    "OPS+ は打者の OPS をリーグ平均と球場で補正したスケール、ERA+ は投手の ERA に同じ補正をかけたスケール。どちらも 100 がリーグ平均で、両指標とも数値が大きいほど良いという統一感がある。",
+    "計算式: OPS+ ≒ 100 × (OBP/lgOBP + SLG/lgSLG − 1)、ERA+ = lgERA / ERA × 100 × 球場補正。年度の極端な投高打低/投低打高に左右されないのが利点。",
+    "感覚値: 120 で平均より 20% 上、150 で MVP / Cy Young 候補級、180+ で歴史的シーズン。年度比較がしやすいので、過去の選手と現役を並べる時に重宝する。",
+    "OPS+ より精度の高い指標として wRC+ が登場したが、ERA+ は今でも投手評価のスタンダード。FIP+ という FIP ベースの拡張版も存在する。",
+    "→ 関連: OPS / ERA / wRC+ / FIP"
+  ],
+  "body_en": [
+    "OPS+ scales a hitter's OPS to league average and park; ERA+ does the same for pitchers' ERA. Both center at 100, and higher is better for both — a clean cross-role comparison.",
+    "Formulas: OPS+ ≈ 100 × (OBP/lgOBP + SLG/lgSLG − 1); ERA+ = lgERA / ERA × 100 × park factor. Both neutralize unusual run environments year-to-year.",
+    "Reference points: 120 = 20% above average, 150 = MVP / Cy Young level, 180+ = historic season. Useful for comparing players across eras.",
+    "wRC+ has emerged as a more refined version of OPS+, but ERA+ remains the standard for pitchers. FIP+ extends the same logic to FIP.",
+    "→ Related: OPS / ERA / wRC+ / FIP"
+  ],
+  "updated_at": "2026-05-06"
+}

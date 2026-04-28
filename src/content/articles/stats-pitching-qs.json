@@ -1,0 +1,27 @@
+{
+  "slug": "stats-pitching-qs",
+  "date": "2026-05-12",
+  "category": "stats",
+  "tags": [
+    "pitching"
+  ],
+  "title_jp": "クオリティスタート (QS) とは",
+  "title_en": "What is a Quality Start (QS)?",
+  "summary_jp": "先発が 6 回以上を投げ、自責点 3 以下に抑えた登板。最低限の合格ラインだが現代では物足りないとされる。",
+  "summary_en": "A start of 6+ innings with 3 or fewer earned runs. The minimum bar — increasingly seen as too low in modern baseball.",
+  "body_jp": [
+    "QS は「6 イニング以上 × 自責点 3 以下」を満たした先発登板。1985 年に John Lowe が提唱した、勝敗より公平な先発評価指標として広まった。",
+    "ただし「6 回 3 自責」は ERA 4.50 換算で、現代の良好な先発のラインと比べると緩い。そこで HQS (High Quality Start: 7 回 2 自責) が補助指標として用いられる。",
+    "投球イニング短縮が進んだ近年、QS 数自体が減少傾向。2024 年は MLB 平均で 1 球団あたり QS 60 前後、エースでも 20〜25 が目安。",
+    "今永昇太は 2024 年に QS 多数で安定感を示した一方、佐々木朗希のような球数管理型はイニング不足で QS を取りにくい。役割で読み方を変えるべき指標。",
+    "→ 関連: ERA / FIP / WHIP"
+  ],
+  "body_en": [
+    "A QS requires 6+ innings pitched with 3 or fewer earned runs. Coined by John Lowe in 1985 as a fairer alternative to wins/losses.",
+    "Note: 6 IP / 3 ER works out to a 4.50 ERA — the modern bar for a quality start feels too low. HQS (High Quality Start: 7 IP / 2 ER or fewer) is often used as a stricter version.",
+    "With shorter starts becoming the norm, total QS counts are declining. League average is about 60 QS per team in 2024, and even aces post just 20–25.",
+    "Shota Imanaga racked up steady QS counts in 2024, while pitch-limited starters like Roki Sasaki struggle to log enough innings to qualify. Read it in role context.",
+    "→ Related: ERA / FIP / WHIP"
+  ],
+  "updated_at": "2026-05-12"
+}

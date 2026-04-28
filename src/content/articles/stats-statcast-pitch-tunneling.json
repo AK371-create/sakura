@@ -1,0 +1,28 @@
+{
+  "slug": "stats-statcast-pitch-tunneling",
+  "date": "2026-05-11",
+  "category": "statcast",
+  "tags": [
+    "statcast",
+    "pitching"
+  ],
+  "title_jp": "Pitch Tunneling (球種トンネル) とは",
+  "title_en": "What is Pitch Tunneling?",
+  "summary_jp": "異なる球種を同じ軌道で投げ分け、打者の判断時点まで球種を読ませない技術。トンネル距離と分離距離が指標。",
+  "summary_en": "Throwing different pitches on the same early trajectory so the batter can't tell them apart in time. Measured by tunnel point and break separation.",
+  "body_jp": [
+    "Pitch Tunneling は、複数の球種を打者の「判断ポイント」までほぼ同じ軌道で投げ分け、判断後に大きく変化させて打者を出し抜く技術。Driveline / Baseball Prospectus 由来の概念。",
+    "重要な指標は 2 つ。(1) Tunnel Point Distance: 打者が判断を下す位置 (本塁から約 23 ft) までの軌道差。(2) Break Differential: 判断後にどれだけ別方向へ離れるか。",
+    "理想は「判断点までは同じ、判断後は別」。例えば 4シーム高めとカーブ低めを同じトンネルから投げると、打者は同じ球と思って振り、軌道が大きく外れる。",
+    "上原浩治の「同じ腕の振りからの 4シーム + スプリッター」、千賀滉大のお化けフォーク、佐々木朗希の 4シーム + スライダーは典型的なトンネル巧者。Stuff+ では球質、Location+ では制球、Tunneling は「組み立て」を測る別軸。",
+    "→ 関連: Stuff+ Location+ / Spin Rate / 球種分類"
+  ],
+  "body_en": [
+    "Pitch tunneling is the art of throwing different pitches on identical early trajectories so the hitter can't differentiate them by the decision point — then breaking them apart afterward. Concept popularized by Driveline and Baseball Prospectus.",
+    "Two key metrics: (1) Tunnel Point Distance — how similar the trajectories are at ~23 ft from home plate (where the batter commits). (2) Break Differential — how much they separate after that point.",
+    "The ideal: same path until commit, very different paths after. A high four-seamer and a low curve thrown from the same tunnel force batters to swing at one and miss the other entirely.",
+    "Koji Uehara's four-seam / splitter combo, Kodai Senga's ghost forkball, and Roki Sasaki's four-seam / slider pairing are classic examples. Tunneling sits alongside Stuff+ (pitch quality) and Location+ (command) as a third axis: sequencing.",
+    "→ Related: Stuff+ & Location+ / Spin Rate / Pitch classification"
+  ],
+  "updated_at": "2026-05-11"
+}

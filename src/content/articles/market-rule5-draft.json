@@ -1,0 +1,28 @@
+{
+  "slug": "market-rule5-draft",
+  "date": "2026-05-15",
+  "category": "market",
+  "tags": [
+    "rule",
+    "market"
+  ],
+  "title_jp": "ルール 5 ドラフト (Rule 5 Draft) とは",
+  "title_en": "What is the Rule 5 Draft?",
+  "summary_jp": "40 人枠から漏れた選手を他球団が指名できる制度。指名後はメジャーで 1 シーズン抱えるのが条件。",
+  "summary_en": "A draft of players left off 40-man rosters. Teams that pick must keep them on the major-league roster for a full season.",
+  "body_jp": [
+    "ルール 5 ドラフトは MLB ウィンターミーティングの最終日に行われる、40 人枠から漏れた一定年数のマイナー選手を他球団が指名できる制度。1 人当たり指名料 $100,000。",
+    "指名条件は厳しい。指名球団は翌年シーズン中ずっとアクティブロースター (26 人枠) に置く必要があり、外す場合は元の球団が $50,000 で買い戻す権利を持つ。",
+    "つまり「即戦力でメジャーで使える」選手しか指名されない。マイナーで眠っているが伸び代のある選手を発掘する場という意味で、各球団のスカウト力が問われる。",
+    "過去の成功例にヨハン・サンタナ (1999 年指名 → 2 度の Cy Young) やジョージ・ベル。日本人ではほとんど例がないが、メジャー昇格を狙う日本人マイナーリーガーが対象になる可能性はある。",
+    "→ 関連: 40 人枠 / マイナー契約 / ドラフト"
+  ],
+  "body_en": [
+    "The Rule 5 Draft is held on the final day of the Winter Meetings. Teams can pick eligible minor leaguers left off other clubs' 40-man rosters for $100,000 per selection.",
+    "Conditions are strict: the picking team must keep the player on the active 26-man roster all of the next season. To send him down, they must offer him back to the original club for $50,000.",
+    "That's why only ready-for-the-majors talent gets picked — it's a place to surface developed players buried in someone else's system. Strong scouting departments win here.",
+    "Notable success stories: Johan Santana (1999, two Cy Youngs) and George Bell. Japanese players have rarely been involved, but Japanese minor leaguers chasing MLB callups could become Rule 5 candidates.",
+    "→ Related: 40-man roster / Minor-league contracts / MLB draft"
+  ],
+  "updated_at": "2026-05-15"
+}

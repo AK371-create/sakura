@@ -1,0 +1,28 @@
+{
+  "slug": "stats-batting-wrc-plus",
+  "date": "2026-05-01",
+  "category": "stats",
+  "tags": [
+    "batting",
+    "advanced"
+  ],
+  "title_jp": "wRC+ (調整得点創出力) とは",
+  "title_en": "What is wRC+?",
+  "summary_jp": "100 がリーグ平均の打撃総合指標。球場・年度補正済みで、120 で平均より 20% 上、150 で MVP 級。",
+  "summary_en": "Park- and league-adjusted offensive metric centered at 100 — 120 means 20% above average, 150 is MVP territory.",
+  "body_jp": [
+    "wRC+ は wRC (Weighted Runs Created) を球場と年度のリーグ平均で補正した指標。100 がリーグ平均で、150 なら平均より 50% 多く得点を創出していることを意味する。",
+    "OPS+ も似た発想だが、wRC+ は四球や打球内容の重み付け (wOBA ベース) が反映されるため、現代の打撃評価としては OPS+ より精度が高いとされる。",
+    "感覚値: 100 = 平均、120 = レギュラー級、140 = オールスター候補、160+ = MVP 候補。投手有利の球場 (T-Mobile Park など) で打つ打者は実数値より wRC+ で高く評価される。",
+    "大谷翔平の 2024 年は wRC+ 約 180 でリーグトップクラス。鈴木誠也のように OPS が中位でも、Wrigley Field の風補正で wRC+ がさらに上がるケースもある。",
+    "→ 関連: OPS / OPS+・ERA+ / 球場補正"
+  ],
+  "body_en": [
+    "wRC+ = Weighted Runs Created adjusted for park and league. Centered at 100, where 150 means a hitter creates 50% more runs than league average.",
+    "Compared to OPS+, wRC+ uses wOBA-style weighting that values walks and batted-ball quality more accurately, making it the modern preferred metric.",
+    "Rules of thumb: 100 = average, 120 = solid regular, 140 = All-Star candidate, 160+ = MVP territory. Hitters in pitcher-friendly parks (e.g., T-Mobile) get a boost via park adjustment.",
+    "Shohei Ohtani posted a wRC+ around 180 in 2024 — elite class. Wrigley's wind effects can also bump up Seiya Suzuki's wRC+ relative to his raw OPS.",
+    "→ Related: OPS / OPS+ & ERA+ / Park factors"
+  ],
+  "updated_at": "2026-05-01"
+}

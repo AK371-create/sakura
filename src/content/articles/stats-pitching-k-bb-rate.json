@@ -1,0 +1,28 @@
+{
+  "slug": "stats-pitching-k-bb-rate",
+  "date": "2026-05-10",
+  "category": "stats",
+  "tags": [
+    "pitching",
+    "advanced"
+  ],
+  "title_jp": "K% と BB% (打席率ベース) とは",
+  "title_en": "K% and BB% — Per-Plate-Appearance Rates",
+  "summary_jp": "K/9・BB/9 は「9 イニング換算」、K%・BB% は「打席数あたり」。投手評価では K% の方が打者対峙力をより正確に表す。",
+  "summary_en": "K/9 and BB/9 are per-9-innings; K% and BB% are per plate appearance. For evaluating pitcher dominance, K% is the cleaner number.",
+  "body_jp": [
+    "K% = 三振 ÷ 打席、BB% = 四球 ÷ 打席。一方、K/9 と BB/9 は「9 イニング換算」で、被打球運や走者ありきの被打率に左右される。",
+    "投手の三振奪取力をストレートに測るには K% の方が向く。被打率が低くて打席数が少ない投手ほど K/9 は底上げされ、過大評価されるからだ。",
+    "現代 MLB の感覚値: K% 22% でリーグ平均、25% で平均以上、30%+ でエース級、35%+ で歴史的水準。BB% は 6% 以下で良好、10% 以上だと制球に問題あり。",
+    "K-BB% (K% − BB%) は単純差分ながら投手の総合的な支配力を表す万能指標として人気。20% 以上で Cy Young 候補級、佐々木朗希・山本由伸はこの領域を狙う。",
+    "→ 関連: K/9・BB/9 / FIP / Stuff+"
+  ],
+  "body_en": [
+    "K% = strikeouts / plate appearances; BB% = walks / PA. K/9 and BB/9, by contrast, are per-9-innings and depend on opponent batting average.",
+    "K% is the cleaner measure of dominance because pitchers with low opponent batting averages have inflated K/9 numbers (fewer batters per inning).",
+    "Modern MLB benchmarks: K% 22% = league average, 25% = above average, 30%+ = ace, 35%+ = historic. BB% under 6% is excellent; 10%+ signals control problems.",
+    "K-BB% (the simple difference) is a beloved single-number summary of pitcher quality. 20%+ is Cy Young territory — Roki Sasaki and Yoshinobu Yamamoto target this band.",
+    "→ Related: K/9 & BB/9 / FIP / Stuff+"
+  ],
+  "updated_at": "2026-05-10"
+}

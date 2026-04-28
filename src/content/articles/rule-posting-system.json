@@ -1,0 +1,28 @@
+{
+  "slug": "rule-posting-system",
+  "date": "2026-04-30",
+  "category": "rules",
+  "tags": [
+    "rule",
+    "transfer"
+  ],
+  "title_jp": "ポスティングシステムとは",
+  "title_en": "What is the Posting System?",
+  "summary_jp": "NPB 選手が MLB に移籍する公式ルート。譲渡金は契約総額に応じて決まり、独占交渉期間は 45 日。",
+  "summary_en": "The official path for NPB players to MLB. The transfer fee is tied to contract value, and exclusive negotiation runs 45 days.",
+  "body_jp": [
+    "ポスティングシステムは NPB と MLB が結ぶ協定で、FA に達していない NPB 選手が MLB 移籍を希望した時に使う制度。NPB 球団が「ポスト」した時点で MLB 全球団が交渉可能になる。",
+    "譲渡金は契約総額に連動した段階制。Major リーグ契約の最初 $25M に 20%、$25M 〜 $50M に 17.5%、$50M 超に 15% が掛かる。マイナー契約 (年額換算 $25M 未満) は別計算。",
+    "交渉期間は 45 日。期間内に契約合意できなければ NPB に戻る。前年 12 月 5 日〜翌年 1 月中旬がメインのウィンドウだが、シーズン後の早期ポストもある。",
+    "山本由伸の 12 年 $325M 契約 (2024 年) ではドジャースが約 $50M の譲渡金をオリックスに支払った。今永昇太・千賀滉大もこの制度で MLB 入りした典型例。",
+    "→ 関連: 国際 FA 枠 / FA / 契約総額"
+  ],
+  "body_en": [
+    "The posting system is the formal NPB–MLB pact that lets NPB players move to MLB before reaching free agency. Once an NPB club 'posts' a player, all 30 MLB clubs can negotiate.",
+    "Release fees scale with contract value: 20% of the first $25M, 17.5% on the next $25M, and 15% above $50M for major-league deals. Minor-league deals use a separate calculation.",
+    "The exclusive negotiating window is 45 days. If no deal closes, the player returns to NPB. Most postings happen between December 5 and mid-January, though earlier post-season postings occur.",
+    "Yoshinobu Yamamoto's 12-year $325M deal in 2024 sent roughly $50M back to Orix. Shota Imanaga and Kodai Senga came over via the same channel.",
+    "→ Related: International Bonus Pool / Free agency / Contract value"
+  ],
+  "updated_at": "2026-04-30"
+}

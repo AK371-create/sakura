@@ -1,0 +1,27 @@
+{
+  "slug": "stats-adv-war",
+  "date": "2026-04-28",
+  "category": "stats",
+  "tags": [
+    "advanced"
+  ],
+  "title_jp": "WAR (Wins Above Replacement) とは",
+  "title_en": "What is WAR?",
+  "summary_jp": "代替選手と比べて何勝分上乗せしたかを表す総合指標。fWAR と bWAR で算出方法が異なる。",
+  "summary_en": "Total contribution measured in wins above a replacement-level player. fWAR and bWAR use slightly different formulas.",
+  "body_jp": [
+    "WAR は、AAA から呼ばれた「代替選手」と比べて何勝分価値があるかを 1 つの数値にまとめた総合指標。打撃・守備・走塁・投球を全て統合して評価できる。",
+    "FanGraphs 版が fWAR、Baseball-Reference 版が bWAR。守備指標 (UZR vs DRS) や投球評価 (FIP vs RA) の違いで数値がやや変わるが、傾向はおおむね一致する。",
+    "感覚値: 2 でレギュラー級、4 でオールスター候補、6+ で MVP 級、10+ で歴史的シーズン。投手は試合数の少なさを補正済みで、6 で Cy Young 候補レベル。",
+    "大谷翔平の 2021 年は投打合計で fWAR 9 を超えた歴史的水準。ダルビッシュ有・松井秀喜は通算 WAR でも日本人 MLB 選手のトップクラスに位置する。",
+    "→ 関連: wRC+ / FIP / OPS+・ERA+"
+  ],
+  "body_en": [
+    "WAR (Wins Above Replacement) summarizes a player's total value in wins versus a replacement-level player called up from AAA. It bundles hitting, defense, baserunning, and pitching into one number.",
+    "FanGraphs publishes fWAR; Baseball-Reference publishes bWAR. They differ on defensive metric (UZR vs DRS) and pitching philosophy (FIP vs RA), but the rankings mostly agree.",
+    "Reference: 2 is solid regular, 4 is All-Star, 6+ is MVP, 10+ is historic. Pitchers max around 7–8 WAR — 6 is already Cy Young territory.",
+    "Shohei Ohtani's 2021 fWAR surpassed 9 (hitting + pitching combined) — a historic level. Yu Darvish and Hideki Matsui sit among the all-time leaders in career WAR for Japanese MLB players.",
+    "→ Related: wRC+ / FIP / OPS+ & ERA+"
+  ],
+  "updated_at": "2026-04-28"
+}

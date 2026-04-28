@@ -1,0 +1,28 @@
+{
+  "slug": "rule-wildcard-system",
+  "date": "2026-05-05",
+  "category": "rules",
+  "tags": [
+    "rule",
+    "postseason"
+  ],
+  "title_jp": "MLB ワイルドカード制度の仕組み",
+  "title_en": "How the MLB Wild Card Works",
+  "summary_jp": "各リーグ 3 つのワイルドカード枠と WC シリーズ (3 戦先勝)。2022 年改革で参加枠が拡大した。",
+  "summary_en": "Three wild card spots per league plus a 3-game WC Series (best-of-3). 2022 expansion increased the number of teams that qualify.",
+  "body_jp": [
+    "MLB のポストシーズン (PS) は AL / NL 各 6 チームが進出。地区優勝 3 + ワイルドカード 3 で計 6。WC は地区優勝でなくとも勝率上位 3 チームが入る制度。",
+    "2022 年の制度改革で WC が 2 から 3 に拡大、同時に新たな WC シリーズ (3 戦先勝) が導入。1 シードと 2 シードの地区優勝はバイで Division Series (DS) からスタート、3 シード地区優勝と WC 上位は WC シリーズで激突する。",
+    "WC シリーズは全試合 3 シードか 4 シードのホームで行われ、2 連勝で終わるとレギュラーシーズン上位の地区優勝 (1〜2 シード) は約 5 日間休んだあとで DS を戦うことになる。",
+    "日本人選手では大谷翔平 (LAD) や鈴木誠也 (CHC) が WC 出場経験あり。短期決戦で先発投手の起用順 (山本由伸を Game 1 に持ってくるか etc.) が監督の重要判断になる。",
+    "→ 関連: ポストシーズン / 地区優勝 / シード制度"
+  ],
+  "body_en": [
+    "Each league sends six teams to the MLB postseason: three division winners plus three wild cards. Wild cards are awarded by record, regardless of division.",
+    "The 2022 reform expanded wild cards from two to three and introduced the WC Series (best-of-3). Top two division winners (seeds 1 & 2) get a bye to the Division Series; the third division winner and top WC face each other in the WC Series.",
+    "All WC Series games are at the higher seed's park (3rd or 4th seed). A sweep means seeds 1 & 2 sit ~5 days before their DS — fresh, but at risk of losing rhythm.",
+    "Japanese players like Shohei Ohtani (LAD) and Seiya Suzuki (CHC) have appeared in WC games. The biggest manager call: rotation order in a short series (e.g., starting Yamamoto in Game 1).",
+    "→ Related: Postseason / Division titles / Seeding"
+  ],
+  "updated_at": "2026-05-05"
+}

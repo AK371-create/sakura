@@ -1,0 +1,28 @@
+{
+  "slug": "stats-adv-stuff-location",
+  "date": "2026-05-03",
+  "category": "stats",
+  "tags": [
+    "pitching",
+    "advanced"
+  ],
+  "title_jp": "Stuff+ / Location+ とは",
+  "title_en": "What are Stuff+ and Location+?",
+  "summary_jp": "投手評価の 2 軸。Stuff+ は球質、Location+ は制球の質を 100 中央で数値化。両者を統合したのが Pitching+。",
+  "summary_en": "Two pitcher-evaluation axes. Stuff+ scores raw pitch quality; Location+ scores command. Combined, they form Pitching+.",
+  "body_jp": [
+    "Stuff+ は、球速・回転・変化量・リリースポイントといった「球そのものの良さ」を機械学習モデルで 100 中央のスケールに数値化した指標。FanGraphs 版が代表的。",
+    "Location+ は同じスケールで「制球の質」を測る。同じ球質でも、ストライクゾーンの中で「打者を一番苦しめる位置」に投げ込めているかが評価される。",
+    "両者を統合した Pitching+ が球種ごと・投手全体の総合評価。Stuff+ 130 でも Location+ 90 だと Pitching+ は中位、Stuff+ 100 でも Location+ 120 のタイプは Pitching+ 110 で十分通用する。",
+    "山本由伸は Stuff+ も Location+ も高水準で Pitching+ 上位。今永昇太は球速が出ない代わりに Location+ で稼ぐ典型。佐々木朗希は Stuff+ 極上、Location+ がシーズンで揺れるタイプ。",
+    "→ 関連: Spin Rate / K%・BB% / Pitch Tunneling"
+  ],
+  "body_en": [
+    "Stuff+ uses machine learning to grade raw pitch quality — velocity, spin, movement, release — on a 100-centered scale. FanGraphs publishes the most-cited version.",
+    "Location+ scores command on the same scale: even with identical Stuff+, can the pitcher hit the spots that hurt batters most?",
+    "Pitching+ combines both. A pitcher with Stuff+ 130 and Location+ 90 lands as a middling Pitching+; the inverse (100 / 120) plays up to Pitching+ 110 — playable.",
+    "Yoshinobu Yamamoto rates highly on both. Shota Imanaga makes up for modest velocity with elite Location+. Roki Sasaki posts otherworldly Stuff+ with Location+ that swings through the season.",
+    "→ Related: Spin Rate / K% & BB% / Pitch Tunneling"
+  ],
+  "updated_at": "2026-05-03"
+}

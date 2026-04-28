@@ -1,0 +1,28 @@
+{
+  "slug": "stats-statcast-sprint-speed",
+  "date": "2026-05-08",
+  "category": "statcast",
+  "tags": [
+    "statcast",
+    "running"
+  ],
+  "title_jp": "Sprint Speed (走塁速度) とは",
+  "title_en": "What is Sprint Speed?",
+  "summary_jp": "Statcast が計測する走力指標。リーグ平均 27.0 ft/sec、エリートで 30+。盗塁数より純粋な脚力を表す。",
+  "summary_en": "Statcast's pure running speed metric in feet per second — 27.0 is league average, 30+ is elite.",
+  "body_jp": [
+    "Sprint Speed は打者の二塁打や三塁打など「全力疾走」が必要な場面の最高速度を ft/sec で計測した指標。Statcast が選手の真の脚力を出すために設計した。",
+    "リーグ平均は約 27.0 ft/sec、29.0 が「上位 5%」、30.0+ で「最速クラス」。MLB 史上最速級のクラブを記録するのは外野手・遊撃手の若手が多い。",
+    "盗塁数が脚力の指標として使われがちだが、盗塁はリードや判断力にも依存するためノイズが多い。Sprint Speed なら走塁の判断を排除した「裸の脚」を比較できる。",
+    "大谷翔平は二刀流ながら 28.5 ft/sec 級でリーグ上位を維持。鈴木誠也や吉田正尚は平均並み、村上宗隆は一塁手のため脚力よりパワーが評価軸となる。",
+    "→ 関連: OAA / 盗塁 (SB) / Statcast 入門"
+  ],
+  "body_en": [
+    "Sprint Speed is Statcast's pure running speed metric, measuring a hitter's top ft/sec on plays that require an all-out effort (doubles, triples, etc.).",
+    "League average is around 27.0 ft/sec; 29.0 is top-5%, and 30.0+ is elite. Outfielders and young middle infielders typically headline the leaderboard.",
+    "Stolen-base totals are noisy proxies for speed because they depend on jumps and reads. Sprint Speed isolates the raw athletic component.",
+    "Shohei Ohtani holds steady around 28.5 ft/sec — top-tier even as a two-way player. Seiya Suzuki and Masataka Yoshida sit near average; first-baseman Munetaka Murakami is judged on power, not speed.",
+    "→ Related: OAA / Stolen Bases / Statcast 101"
+  ],
+  "updated_at": "2026-05-08"
+}
