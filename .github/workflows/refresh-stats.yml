@@ -75,4 +75,4 @@ jobs:
         run: |
           npm ci
           npm run build
-          npx wrangler@3 pages deploy dist --project-name=sakuraballpark --branch=main
+          npx wrangler@3 pages deploy dist --project-name=sakura --branch=main
