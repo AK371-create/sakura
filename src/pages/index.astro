@@ -47,6 +47,12 @@ const stats = {
   articles: articles.length,
   lastUpdate: articles[0]?.date ?? "",
 };
+
+const statsUpdatedAt = allPlayers
+  .map((p: any) => p.updated_at)
+  .filter(Boolean)
+  .sort()
+  .at(-1) ?? "";
 ---
 <Layout title="SakuraBall" description="日本人メジャーリーガーのシーズン成績、Statcast指標、分析記事" lang="ja" currentPath="/">
   <section class="hero">
@@ -73,6 +79,9 @@ const stats = {
         <div class="hstat-lbl">記事</div>
       </div>
     </div>
+    {statsUpdatedAt && (
+      <div class="hero-meta mono">スタッツ最終更新 · {statsUpdatedAt}</div>
+    )}
   </section>
 
   <section class="section">
@@ -200,6 +209,12 @@ const stats = {
   .hstat-lbl {
     font-size: 0.78rem; color: var(--text-muted);
     font-weight: 500;
+  }
+  .hero-meta {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    margin-top: 0.8rem;
+    letter-spacing: 0.02em;
   }
 
   .section { margin-top: 3rem; }
