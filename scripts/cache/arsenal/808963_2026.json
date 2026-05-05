@@ -2,25 +2,25 @@
   {
     "code": "FF",
     "name": "Four-seam FB",
-    "usage": 44.7,
-    "speed": 97.0,
-    "count": 152,
-    "totalPitches": 340
+    "usage": 42.2,
+    "speed": 96.9,
+    "count": 229,
+    "totalPitches": 543
   },
   {
     "code": "SL",
     "name": "Slider",
-    "usage": 24.1,
-    "speed": 86.4,
-    "count": 82,
-    "totalPitches": 340
+    "usage": 20.3,
+    "speed": 86.1,
+    "count": 110,
+    "totalPitches": 543
   },
   {
     "code": "FS",
     "name": "Splitter",
-    "usage": 31.2,
-    "speed": 85.0,
-    "count": 106,
-    "totalPitches": 340
+    "usage": 37.6,
+    "speed": 87.3,
+    "count": 204,
+    "totalPitches": 543
   }
 ]
