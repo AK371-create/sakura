@@ -12,7 +12,7 @@
   "position_en": "Starting Pitcher",
   "basic": {
     "pitching": {
-      "w": 2,
+      "w": 3,
       "l": 2,
       "era": "3.09",
       "so": 40,
@@ -28,21 +28,21 @@
         "pitch": "FS",
         "jp": "スプリット",
         "en": "Splitter",
-        "usage": 29.4,
-        "speed": 91.2
+        "usage": 29.9,
+        "speed": 91.3
       },
       {
         "pitch": "FF",
         "jp": "4シーム",
         "en": "4-Seam Fastball",
-        "usage": 24.9,
+        "usage": 25.1,
         "speed": 95.5
       },
       {
         "pitch": "FC",
         "jp": "カッター",
         "en": "Cutter",
-        "usage": 17.7,
+        "usage": 17.9,
         "speed": 91.0
       },
       {
@@ -56,8 +56,8 @@
         "pitch": "SI",
         "jp": "シンカー",
         "en": "Sinker",
-        "usage": 9.9,
-        "speed": 94.9
+        "usage": 9.2,
+        "speed": 95.0
       },
       {
         "pitch": "SL",
@@ -131,24 +131,24 @@
   "splits_lr_current": {
     "pitching": {
       "vs_left": {
-        "ab": 77,
-        "ba": ".221",
-        "hr": 3,
-        "k": 17,
+        "ab": 82,
+        "ba": ".244",
+        "hr": 4,
+        "k": 18,
         "bb": 7,
-        "ops": ".671",
-        "obp": ".294",
-        "slg": ".377"
+        "ops": ".738",
+        "obp": ".311",
+        "slg": ".427"
       },
       "vs_right": {
-        "ab": 59,
-        "ba": ".203",
+        "ab": 76,
+        "ba": ".184",
         "hr": 1,
-        "k": 15,
-        "bb": 2,
-        "ops": ".565",
-        "obp": ".226",
-        "slg": ".339"
+        "k": 22,
+        "bb": 3,
+        "ops": ".502",
+        "obp": ".213",
+        "slg": ".289"
       }
     }
   },
@@ -156,24 +156,24 @@
   "splits_lr_career": {
     "pitching": {
       "vs_left": {
-        "ab": 543,
-        "ba": ".186",
-        "hr": 9,
-        "k": 164,
+        "ab": 548,
+        "ba": ".190",
+        "hr": 10,
+        "k": 165,
         "bb": 45,
-        "ops": ".524",
-        "obp": ".251",
-        "slg": ".273"
+        "ops": ".535",
+        "obp": ".254",
+        "slg": ".281"
       },
       "vs_right": {
-        "ab": 552,
-        "ba": ".216",
+        "ab": 569,
+        "ba": ".213",
         "hr": 16,
-        "k": 174,
-        "bb": 45,
-        "ops": ".637",
-        "obp": ".275",
-        "slg": ".362"
+        "k": 181,
+        "bb": 46,
+        "ops": ".627",
+        "obp": ".272",
+        "slg": ".355"
       }
     }
   },

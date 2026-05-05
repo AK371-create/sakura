@@ -2,9 +2,9 @@
   {
     "code": "FF",
     "name": "Four-seam FB",
-    "usage": 24.9,
+    "usage": 25.1,
     "speed": 95.5,
-    "count": 166,
+    "count": 167,
     "totalPitches": 666
   },
   {
@@ -18,9 +18,9 @@
   {
     "code": "SI",
     "name": "Sinker",
-    "usage": 9.9,
-    "speed": 94.9,
-    "count": 66,
+    "usage": 9.2,
+    "speed": 95.0,
+    "count": 61,
     "totalPitches": 666
   },
   {
@@ -34,17 +34,17 @@
   {
     "code": "FS",
     "name": "Splitter",
-    "usage": 29.4,
-    "speed": 91.2,
-    "count": 196,
+    "usage": 29.9,
+    "speed": 91.3,
+    "count": 199,
     "totalPitches": 666
   },
   {
     "code": "FC",
     "name": "Cutter",
-    "usage": 17.7,
+    "usage": 17.9,
     "speed": 91.0,
-    "count": 118,
+    "count": 119,
     "totalPitches": 666
   }
 ]
