@@ -4,6 +4,7 @@
 For active MLB players: latest available season (2026 → 2025 → 2024).
 For FORMER: career totals.
 """
+import datetime as _dt
 import json
 import time
 import urllib.request
@@ -109,6 +110,7 @@ def main():
         data["basic"] = new_basic
         if season_used:
             data["basic_season"] = season_used
+        data["updated_at"] = _dt.date.today().isoformat()
         f.write_text(json.dumps(data, ensure_ascii=False, indent=2))
         updated += 1
         parts = [f"{g}({len(new_basic[g])} fields, {season_used.get(g, '?')})" for g in new_basic]

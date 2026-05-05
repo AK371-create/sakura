@@ -1,0 +1,58 @@
+name: Refresh MLB stats
+
+on:
+  schedule:
+    # 毎日 18:00 UTC = 03:00 JST (前日の試合終了後)
+    - cron: "0 18 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-stats
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Invalidate current-season cache
+        run: |
+          rm -f scripts/cache/arsenal/*_2026.json
+          rm -rf scripts/cache/splits_lr
+          rm -f scripts/cache/arsenal_resolved.json
+
+      - name: Refresh basic season stats
+        run: python scripts/enrich_basic_full.py
+
+      - name: Refresh yearly history
+        run: python scripts/enrich_yearly_full.py
+
+      - name: Refresh pitch arsenal
+        run: |
+          python scripts/fetch_pitch_arsenal.py
+          python scripts/apply_pitch_arsenal.py
+
+      - name: Refresh L/R splits
+        run: python scripts/fetch_splits_lr.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/content/players scripts/cache
+          if git diff --cached --quiet; then
+            echo "No stat changes today."
+            exit 0
+          fi
+          git commit -m "chore(auto): daily MLB stats refresh ($(date -u +%Y-%m-%d))"
+          git push
