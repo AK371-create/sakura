@@ -47,31 +47,46 @@ const stats = {
   articles: articles.length,
   lastUpdate: articles[0]?.date ?? "",
 };
+
+const statsUpdatedAt = allPlayers
+  .map((p: any) => p.updated_at)
+  .filter(Boolean)
+  .sort()
+  .at(-1) ?? "";
 ---
 <Layout title="SakuraBall" description="日本人メジャーリーガーのシーズン成績、Statcast指標、分析記事" lang="ja" currentPath="/">
   <section class="hero">
-    <div class="hero-eyebrow mono">日本人メジャーリーガー / 2026シーズン</div>
-    <h1 class="hero-title">日本人MLB、<br /><span class="accent">データで読む。</span></h1>
-    <p class="hero-lede">
-      年度別成績、球種別データ、受賞歴、対左右splits — 日本人メジャーリーガーを追う。
-    </p>
-    <div class="hero-stats">
-      <div class="hstat">
-        <div class="hstat-val mono">{stats.mlb}</div>
-        <div class="hstat-lbl">MLB所属</div>
+    <div class="hero-grid">
+      <div class="hero-main">
+        <div class="hero-eyebrow mono">日本人メジャーリーガー / 2026シーズン</div>
+        <h1 class="hero-title">日本人MLB、<br /><span class="accent">データで読む。</span></h1>
+        <p class="hero-lede">
+          年度別成績、球種別データ、受賞歴、対左右splits — 日本人メジャーリーガーを追う。
+        </p>
       </div>
-      <div class="hstat">
-        <div class="hstat-val mono">{stats.aaa}</div>
-        <div class="hstat-lbl">3A所属</div>
-      </div>
-      <div class="hstat">
-        <div class="hstat-val mono">{stats.former}</div>
-        <div class="hstat-lbl">元MLB</div>
-      </div>
-      <div class="hstat">
-        <div class="hstat-val mono">{stats.articles}</div>
-        <div class="hstat-lbl">記事</div>
-      </div>
+      <aside class="hero-side">
+        <div class="hero-stats">
+          <div class="hstat">
+            <div class="hstat-val mono">{stats.mlb}</div>
+            <div class="hstat-lbl">MLB所属</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-val mono">{stats.aaa}</div>
+            <div class="hstat-lbl">3A所属</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-val mono">{stats.former}</div>
+            <div class="hstat-lbl">元MLB</div>
+          </div>
+          <div class="hstat">
+            <div class="hstat-val mono">{stats.articles}</div>
+            <div class="hstat-lbl">記事</div>
+          </div>
+        </div>
+        {statsUpdatedAt && (
+          <div class="hero-meta mono">スタッツ最終更新 · {statsUpdatedAt}</div>
+        )}
+      </aside>
     </div>
   </section>
 
@@ -165,7 +180,15 @@ const stats = {
 </Layout>
 
 <style>
-  .hero { padding: 3rem 0 2.5rem; margin-bottom: 1rem; }
+  .hero { padding: 2rem 0 1.2rem; margin-bottom: 0.5rem; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 2.5rem;
+    align-items: end;
+  }
+  .hero-main { min-width: 0; }
+  .hero-side { display: flex; flex-direction: column; gap: 0.4rem; }
   .hero-eyebrow {
     font-size: 0.72rem; font-weight: 600;
     color: var(--accent);
@@ -182,24 +205,34 @@ const stats = {
   .hero-lede {
     max-width: 560px;
     font-size: 1.02rem; color: var(--text-muted);
-    line-height: 1.7; margin: 0 0 2rem;
+    line-height: 1.7; margin: 0;
   }
   .hero-stats {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 0.5rem;
-    padding: 1.2rem 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem 1rem;
+    padding: 0.9rem 0;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
   }
-  .hstat { display: flex; flex-direction: column; gap: 0.25rem; }
+  .hstat { display: flex; flex-direction: column; gap: 0.2rem; }
   .hstat-val {
-    font-size: 1.5rem; font-weight: 700;
+    font-size: 1.35rem; font-weight: 700;
     color: var(--text); line-height: 1;
   }
   .hstat-lbl {
-    font-size: 0.78rem; color: var(--text-muted);
+    font-size: 0.74rem; color: var(--text-muted);
     font-weight: 500;
+  }
+  .hero-meta {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    letter-spacing: 0.02em;
+    text-align: right;
+  }
+  @media (max-width: 720px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+    .hero-meta { text-align: left; }
   }
 
   .section { margin-top: 3rem; }
