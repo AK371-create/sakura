@@ -5,58 +5,58 @@
       {
         "code": "FF",
         "name": "Four-seam FB",
-        "usage": 44.8,
-        "speed": 97.9,
-        "count": 212,
-        "totalPitches": 473
+        "usage": 44.5,
+        "speed": 98.0,
+        "count": 250,
+        "totalPitches": 562
       },
       {
         "code": "ST",
         "name": "Sweeper",
-        "usage": 21.6,
-        "speed": 84.8,
-        "count": 102,
-        "totalPitches": 473
+        "usage": 24.4,
+        "speed": 84.9,
+        "count": 137,
+        "totalPitches": 562
       },
       {
         "code": "CU",
         "name": "Curveball",
-        "usage": 13.3,
-        "speed": 74.4,
-        "count": 63,
-        "totalPitches": 473
+        "usage": 12.8,
+        "speed": 74.5,
+        "count": 72,
+        "totalPitches": 562
       },
       {
         "code": "SI",
         "name": "Sinker",
-        "usage": 4.2,
-        "speed": 95.5,
-        "count": 20,
-        "totalPitches": 473
+        "usage": 4.3,
+        "speed": 95.7,
+        "count": 24,
+        "totalPitches": 562
       },
       {
         "code": "SL",
         "name": "Slider",
-        "usage": 1.9,
+        "usage": 1.6,
         "speed": 87.4,
         "count": 9,
-        "totalPitches": 473
+        "totalPitches": 562
       },
       {
         "code": "FS",
         "name": "Splitter",
-        "usage": 13.1,
-        "speed": 88.0,
-        "count": 62,
-        "totalPitches": 473
+        "usage": 11.6,
+        "speed": 88.1,
+        "count": 65,
+        "totalPitches": 562
       },
       {
         "code": "FC",
         "name": "Cutter",
-        "usage": 1.1,
+        "usage": 0.9,
         "speed": 91.8,
         "count": 5,
-        "totalPitches": 473
+        "totalPitches": 562
       }
     ]
   },
