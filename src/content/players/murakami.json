@@ -12,14 +12,14 @@
   "position_en": "First Baseman",
   "basic": {
     "hitting": {
-      "avg": ".240",
+      "avg": ".237",
       "h": 31,
       "hr": 14,
       "rbi": 28,
       "sb": 0,
-      "obp": ".373",
-      "slg": ".574",
-      "ops": ".947"
+      "obp": ".369",
+      "slg": ".565",
+      "ops": ".934"
     }
   },
   "yearly": [
@@ -37,33 +37,33 @@
       "ops": ".965"
     }
   ],
-  "updated_at": "2026-05-06",
+  "updated_at": "2026-05-07",
   "basic_season": {
     "hitting": 2026
   },
   "splits_lr_current": {
     "hitting": {
       "vs_left": {
-        "ab": 38,
+        "ab": 39,
         "h": 9,
         "hr": 4,
         "rbi": 9,
         "sb": null,
-        "avg": ".237",
-        "obp": ".375",
-        "slg": ".579",
-        "ops": ".954"
+        "avg": ".231",
+        "obp": ".367",
+        "slg": ".564",
+        "ops": ".931"
       },
       "vs_right": {
-        "ab": 89,
+        "ab": 92,
         "h": 22,
         "hr": 10,
         "rbi": 19,
         "sb": null,
-        "avg": ".247",
-        "obp": ".380",
-        "slg": ".584",
-        "ops": ".964"
+        "avg": ".239",
+        "obp": ".369",
+        "slg": ".565",
+        "ops": ".934"
       }
     }
   },
@@ -73,26 +73,26 @@
   "splits_lr_career": {
     "hitting": {
       "vs_left": {
-        "ab": 38,
+        "ab": 39,
         "h": 9,
         "hr": 4,
         "rbi": 9,
         "sb": null,
-        "avg": ".237",
-        "obp": ".375",
-        "slg": ".579",
-        "ops": ".954"
+        "avg": ".231",
+        "obp": ".367",
+        "slg": ".564",
+        "ops": ".931"
       },
       "vs_right": {
-        "ab": 89,
+        "ab": 92,
         "h": 22,
         "hr": 10,
         "rbi": 19,
         "sb": null,
-        "avg": ".247",
-        "obp": ".380",
-        "slg": ".584",
-        "ops": ".964"
+        "avg": ".239",
+        "obp": ".369",
+        "slg": ".565",
+        "ops": ".934"
       }
     }
   }
