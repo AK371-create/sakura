@@ -28,36 +28,36 @@
         "pitch": "FF",
         "jp": "4シーム",
         "en": "4-Seam Fastball",
-        "usage": 33.0,
-        "speed": 95.5
-      },
-      {
-        "pitch": "FS",
-        "jp": "スプリット",
-        "en": "Splitter",
-        "usage": 22.0,
-        "speed": 86.7
+        "usage": 33.9,
+        "speed": 95.4
       },
       {
         "pitch": "SL",
         "jp": "スライダー",
         "en": "Slider",
-        "usage": 19.2,
-        "speed": 86.1
+        "usage": 23.6,
+        "speed": 86.9
+      },
+      {
+        "pitch": "FS",
+        "jp": "スプリット",
+        "en": "Splitter",
+        "usage": 22.2,
+        "speed": 86.7
       },
       {
         "pitch": "FC",
         "jp": "カッター",
         "en": "Cutter",
-        "usage": 16.6,
-        "speed": 90.1
+        "usage": 11.5,
+        "speed": 90.2
       },
       {
         "pitch": "CU",
         "jp": "カーブ",
         "en": "Curveball",
-        "usage": 8.6,
-        "speed": 78.6
+        "usage": 8.8,
+        "speed": 78.7
       }
     ],
     "arsenal_season": 2026
@@ -168,7 +168,7 @@
       "hld": 0
     }
   ],
-  "updated_at": "2026-05-07",
+  "updated_at": "2026-05-08",
   "awards": [
     {
       "year": 2021,
