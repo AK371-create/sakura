@@ -12,55 +12,55 @@
   "position_en": "Relief Pitcher",
   "basic": {
     "pitching": {
-      "w": 3,
-      "l": 1,
-      "era": "3.98",
-      "so": 61,
-      "ip": "63.1",
-      "whip": "1.36",
-      "sv": 1,
-      "hld": 3
+      "w": 0,
+      "l": 0,
+      "era": "0.00",
+      "so": 2,
+      "ip": "2.2",
+      "whip": "1.50",
+      "sv": 0,
+      "hld": 0
     }
   },
   "savant": {
     "pitch_arsenal": [
       {
-        "pitch": "FF",
-        "jp": "4シーム",
-        "en": "4-Seam Fastball",
-        "usage": 39.5,
-        "speed": 92.1
-      },
-      {
         "pitch": "FS",
         "jp": "スプリット",
         "en": "Splitter",
-        "usage": 32.2,
-        "speed": 84.0
+        "usage": 36.8,
+        "speed": 83.7
+      },
+      {
+        "pitch": "FF",
+        "jp": "4シーム",
+        "en": "4-Seam Fastball",
+        "usage": 31.6,
+        "speed": 91.6
       },
       {
         "pitch": "SL",
         "jp": "スライダー",
         "en": "Slider",
-        "usage": 15.9,
-        "speed": 86.6
+        "usage": 26.3,
+        "speed": 85.7
       },
       {
         "pitch": "ST",
         "jp": "スイーパー",
         "en": "Sweeper",
-        "usage": 10.7,
-        "speed": 81.4
+        "usage": 2.6,
+        "speed": 80.6
       },
       {
         "pitch": "SI",
         "jp": "シンカー",
         "en": "Sinker",
-        "usage": 1.5,
-        "speed": 91.5
+        "usage": 2.6,
+        "speed": 90.2
       }
     ],
-    "arsenal_season": 2025
+    "arsenal_season": 2026
   },
   "yearly": [
     {
@@ -90,56 +90,56 @@
       "hld": 3
     }
   ],
-  "updated_at": "2026-05-08",
+  "updated_at": "2026-05-09",
   "basic_season": {
-    "pitching": 2025
+    "pitching": 2026
   },
   "splits_lr_current": {
     "pitching": {
       "vs_left": {
-        "ab": 99,
-        "ba": ".263",
-        "hr": 6,
-        "k": 27,
-        "bb": 14,
-        "ops": ".849",
-        "obp": ".354",
-        "slg": ".495"
+        "ab": 7,
+        "ba": ".286",
+        "hr": 0,
+        "k": 2,
+        "bb": 0,
+        "ops": ".572",
+        "obp": ".286",
+        "slg": ".286"
       },
       "vs_right": {
-        "ab": 134,
-        "ba": ".201",
-        "hr": 4,
-        "k": 34,
-        "bb": 19,
-        "ops": ".655",
-        "obp": ".297",
-        "slg": ".358"
+        "ab": 2,
+        "ba": ".500",
+        "hr": 0,
+        "k": 0,
+        "bb": 1,
+        "ops": "1.000",
+        "obp": ".500",
+        "slg": ".500"
       }
     }
   },
-  "splits_lr_current_season": 2025,
+  "splits_lr_current_season": 2026,
   "splits_lr_career": {
     "pitching": {
       "vs_left": {
-        "ab": 187,
-        "ba": ".241",
+        "ab": 194,
+        "ba": ".242",
         "hr": 9,
-        "k": 57,
+        "k": 59,
         "bb": 22,
-        "ops": ".767",
-        "obp": ".318",
-        "slg": ".449"
+        "ops": ".760",
+        "obp": ".317",
+        "slg": ".443"
       },
       "vs_right": {
-        "ab": 272,
-        "ba": ".199",
+        "ab": 274,
+        "ba": ".201",
         "hr": 9,
         "k": 73,
-        "bb": 38,
-        "ops": ".657",
-        "obp": ".293",
-        "slg": ".364"
+        "bb": 39,
+        "ops": ".661",
+        "obp": ".296",
+        "slg": ".365"
       }
     }
   },
