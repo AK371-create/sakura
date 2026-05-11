@@ -12,14 +12,14 @@
   "position_en": "Right Fielder",
   "basic": {
     "hitting": {
-      "avg": ".302",
+      "avg": ".293",
       "h": 29,
       "hr": 7,
       "rbi": 16,
       "sb": 0,
-      "obp": ".414",
-      "slg": ".552",
-      "ops": ".966"
+      "obp": ".403",
+      "slg": ".535",
+      "ops": ".938"
     }
   },
   "savant": {
@@ -102,33 +102,33 @@
       "ops": ".909"
     }
   ],
-  "updated_at": "2026-05-10",
+  "updated_at": "2026-05-11",
   "basic_season": {
     "hitting": 2026
   },
   "splits_lr_current": {
     "hitting": {
       "vs_left": {
-        "ab": 25,
+        "ab": 26,
         "h": 8,
         "hr": 1,
         "rbi": 2,
         "sb": null,
-        "avg": ".320",
-        "obp": ".469",
-        "slg": ".480",
-        "ops": ".949"
+        "avg": ".308",
+        "obp": ".455",
+        "slg": ".462",
+        "ops": ".917"
       },
       "vs_right": {
-        "ab": 70,
+        "ab": 73,
         "h": 21,
         "hr": 6,
         "rbi": 14,
         "sb": null,
-        "avg": ".300",
-        "obp": ".398",
-        "slg": ".586",
-        "ops": ".984"
+        "avg": ".288",
+        "obp": ".384",
+        "slg": ".562",
+        "ops": ".946"
       }
     }
   },
@@ -136,26 +136,26 @@
   "splits_lr_career": {
     "hitting": {
       "vs_left": {
-        "ab": 542,
+        "ab": 543,
         "h": 148,
         "hr": 22,
         "rbi": 78,
         "sb": null,
         "avg": ".273",
         "obp": ".373",
-        "slg": ".472",
-        "ops": ".845"
+        "slg": ".471",
+        "ops": ".844"
       },
       "vs_right": {
-        "ab": 1548,
+        "ab": 1551,
         "h": 417,
         "hr": 72,
         "rbi": 234,
         "sb": null,
         "avg": ".269",
-        "obp": ".341",
-        "slg": ".477",
-        "ops": ".818"
+        "obp": ".340",
+        "slg": ".476",
+        "ops": ".816"
       }
     }
   },
