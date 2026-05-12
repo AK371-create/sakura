@@ -2,25 +2,33 @@
   {
     "code": "FF",
     "name": "Four-seam FB",
-    "usage": 42.2,
-    "speed": 96.9,
-    "count": 229,
-    "totalPitches": 543
+    "usage": 43.8,
+    "speed": 97.0,
+    "count": 278,
+    "totalPitches": 634
   },
   {
     "code": "SL",
     "name": "Slider",
-    "usage": 20.3,
-    "speed": 86.1,
-    "count": 110,
-    "totalPitches": 543
+    "usage": 18.9,
+    "speed": 86.2,
+    "count": 120,
+    "totalPitches": 634
+  },
+  {
+    "code": "FO",
+    "name": "Forkball",
+    "usage": 19.9,
+    "speed": 85.0,
+    "count": 126,
+    "totalPitches": 634
   },
   {
     "code": "FS",
     "name": "Splitter",
-    "usage": 37.6,
-    "speed": 87.3,
-    "count": 204,
-    "totalPitches": 543
+    "usage": 17.4,
+    "speed": 90.3,
+    "count": 110,
+    "totalPitches": 634
   }
 ]
