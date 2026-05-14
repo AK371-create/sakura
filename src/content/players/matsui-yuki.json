@@ -15,9 +15,9 @@
       "w": 0,
       "l": 0,
       "era": "0.00",
-      "so": 5,
-      "ip": "4.2",
-      "whip": "1.07",
+      "so": 7,
+      "ip": "5.2",
+      "whip": "0.88",
       "sv": 0,
       "hld": 0
     }
@@ -28,35 +28,35 @@
         "pitch": "FF",
         "jp": "4シーム",
         "en": "4-Seam Fastball",
-        "usage": 38.1,
-        "speed": 91.7
+        "usage": 39.5,
+        "speed": 91.6
       },
       {
         "pitch": "FS",
         "jp": "スプリット",
         "en": "Splitter",
-        "usage": 28.6,
-        "speed": 83.6
+        "usage": 28.9,
+        "speed": 83.4
       },
       {
         "pitch": "SL",
         "jp": "スライダー",
         "en": "Slider",
-        "usage": 23.8,
-        "speed": 85.8
+        "usage": 23.7,
+        "speed": 85.9
       },
       {
         "pitch": "SI",
         "jp": "シンカー",
         "en": "Sinker",
-        "usage": 6.3,
+        "usage": 5.3,
         "speed": 90.4
       },
       {
         "pitch": "ST",
         "jp": "スイーパー",
         "en": "Sweeper",
-        "usage": 3.2,
+        "usage": 2.6,
         "speed": 80.7
       }
     ],
@@ -90,7 +90,7 @@
       "hld": 3
     }
   ],
-  "updated_at": "2026-05-13",
+  "updated_at": "2026-05-14",
   "basic_season": {
     "pitching": 2026
   },
