@@ -445,42 +445,42 @@
       {
         "code": "FF",
         "name": "Four-seam FB",
-        "usage": 39.5,
-        "speed": 91.6,
-        "count": 30,
-        "totalPitches": 76
+        "usage": 40.4,
+        "speed": 91.5,
+        "count": 36,
+        "totalPitches": 89
       },
       {
         "code": "ST",
         "name": "Sweeper",
-        "usage": 2.6,
+        "usage": 2.2,
         "speed": 80.7,
         "count": 2,
-        "totalPitches": 76
+        "totalPitches": 89
       },
       {
         "code": "SI",
         "name": "Sinker",
-        "usage": 5.3,
+        "usage": 4.5,
         "speed": 90.4,
         "count": 4,
-        "totalPitches": 76
+        "totalPitches": 89
       },
       {
         "code": "SL",
         "name": "Slider",
-        "usage": 23.7,
+        "usage": 22.5,
         "speed": 85.9,
-        "count": 18,
-        "totalPitches": 76
+        "count": 20,
+        "totalPitches": 89
       },
       {
         "code": "FS",
         "name": "Splitter",
-        "usage": 28.9,
-        "speed": 83.4,
-        "count": 22,
-        "totalPitches": 76
+        "usage": 30.3,
+        "speed": 83.1,
+        "count": 27,
+        "totalPitches": 89
       }
     ]
   }

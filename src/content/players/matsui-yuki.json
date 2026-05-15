@@ -15,9 +15,9 @@
       "w": 0,
       "l": 0,
       "era": "0.00",
-      "so": 7,
-      "ip": "5.2",
-      "whip": "0.88",
+      "so": 8,
+      "ip": "6.2",
+      "whip": "0.90",
       "sv": 0,
       "hld": 0
     }
@@ -28,35 +28,35 @@
         "pitch": "FF",
         "jp": "4シーム",
         "en": "4-Seam Fastball",
-        "usage": 39.5,
-        "speed": 91.6
+        "usage": 40.4,
+        "speed": 91.5
       },
       {
         "pitch": "FS",
         "jp": "スプリット",
         "en": "Splitter",
-        "usage": 28.9,
-        "speed": 83.4
+        "usage": 30.3,
+        "speed": 83.1
       },
       {
         "pitch": "SL",
         "jp": "スライダー",
         "en": "Slider",
-        "usage": 23.7,
+        "usage": 22.5,
         "speed": 85.9
       },
       {
         "pitch": "SI",
         "jp": "シンカー",
         "en": "Sinker",
-        "usage": 5.3,
+        "usage": 4.5,
         "speed": 90.4
       },
       {
         "pitch": "ST",
         "jp": "スイーパー",
         "en": "Sweeper",
-        "usage": 2.6,
+        "usage": 2.2,
         "speed": 80.7
       }
     ],
@@ -90,31 +90,31 @@
       "hld": 3
     }
   ],
-  "updated_at": "2026-05-14",
+  "updated_at": "2026-05-15",
   "basic_season": {
     "pitching": 2026
   },
   "splits_lr_current": {
     "pitching": {
       "vs_left": {
-        "ab": 12,
-        "ba": ".250",
+        "ab": 14,
+        "ba": ".214",
         "hr": 0,
-        "k": 4,
+        "k": 5,
         "bb": 0,
-        "ops": ".583",
-        "obp": ".250",
-        "slg": ".333"
+        "ops": ".500",
+        "obp": ".214",
+        "slg": ".286"
       },
       "vs_right": {
-        "ab": 4,
-        "ba": ".250",
+        "ab": 8,
+        "ba": ".125",
         "hr": 0,
-        "k": 1,
-        "bb": 1,
-        "ops": ".583",
-        "obp": ".333",
-        "slg": ".250"
+        "k": 3,
+        "bb": 2,
+        "ops": ".398",
+        "obp": ".273",
+        "slg": ".125"
       }
     }
   },
@@ -122,24 +122,24 @@
   "splits_lr_career": {
     "pitching": {
       "vs_left": {
-        "ab": 199,
-        "ba": ".241",
+        "ab": 201,
+        "ba": ".239",
         "hr": 9,
-        "k": 61,
+        "k": 62,
         "bb": 22,
-        "ops": ".756",
-        "obp": ".314",
-        "slg": ".442"
+        "ops": ".749",
+        "obp": ".311",
+        "slg": ".438"
       },
       "vs_right": {
-        "ab": 276,
-        "ba": ".199",
+        "ab": 280,
+        "ba": ".196",
         "hr": 9,
-        "k": 74,
-        "bb": 39,
-        "ops": ".656",
-        "obp": ".294",
-        "slg": ".362"
+        "k": 76,
+        "bb": 40,
+        "ops": ".650",
+        "obp": ".293",
+        "slg": ".357"
       }
     }
   },
